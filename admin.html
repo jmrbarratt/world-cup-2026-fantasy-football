@@ -1109,26 +1109,26 @@ function parseCSV(csv) {
 // ── INIT ──
 load();
 // Fetch CSV — players + scores
-fetch('./data/players.csv')
-  .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.text();})
+fetch('/data/players.csv?v=' + Date.now())
+  .then(function(r){
+    if(!r.ok) throw new Error('HTTP ' + r.status);
+    return r.text();
+  })
   .then(function(csv){
-    var parsed=parseCSV(csv);
-    PLAYERS=parsed.players;
-    // Merge CSV scores into state: CSV provides baseline, localStorage manual edits win per-cell
-    Object.keys(parsed.scores).forEach(function(name){
-      if(!state.scores[name]) state.scores[name]={};
-      Object.keys(parsed.scores[name]).forEach(function(md){
-        // Only set from CSV if not already set by localStorage
-        if(state.scores[name][md]===undefined) {
-          state.scores[name][md]=parsed.scores[name][md];
-        }
-      });
-    });
+    var parsed = parseCSV(csv);
+
+    // CSV is the single source of truth
+    PLAYERS = parsed.players;
+    state.scores = parsed.scores;
+
+    // Optional but recommended: persist the new truth
+    save();
+
     renderTeams();
   })
   .catch(function(e){
     console.error('Failed to load players.csv:', e);
-    renderTeams(); // render with whatever we have
+    renderTeams();
   });
 </script>
 <!-- TEAM DETAIL MODAL -->
