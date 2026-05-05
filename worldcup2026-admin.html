@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Cup 2026 Fantasy — Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:       #0d1117;
+  --bg2:      #161b22;
+  --bg3:      #21262d;
+  --border:   rgba(255,255,255,.08);
+  --gold:     #f5c842;
+  --green:    #1a7a3c;
+  --green2:   #26a653;
+  --red:      #e53935;
+  --amber:    #f5a623;
+  --blue:     #1e88e5;
+  --white:    #f0f6fc;
+  --gray:     #8b949e;
+  --gray2:    #6e7681;
+  --gk-c:     #f5a623;
+  --def-c:    #1e88e5;
+  --mid-c:    #26a653;
+  --fwd-c:    #e53935;
+}
+*, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+html, body { height:100%; background:var(--bg); color:var(--white); font-family:'DM Sans',sans-serif; font-size:14px; }
+a { color:inherit; text-decoration:none; }
+
+/* ── LAYOUT ── */
+.app { display:flex; flex-direction:column; min-height:100vh; }
+
+/* ── HEADER ── */
+.header {
+  display:flex; align-items:center; gap:16px;
+  padding:14px 28px; border-bottom:1px solid var(--border);
+  background:var(--bg2); position:sticky; top:0; z-index:100;
+}
+.logo { font-family:'Bebas Neue',cursive; font-size:1.5rem; letter-spacing:3px; color:var(--gold); }
+.logo span { color:var(--gray); font-size:1rem; letter-spacing:1px; }
+.nav { display:flex; gap:4px; margin-left:auto; }
+.nav-btn {
+  padding:7px 16px; border-radius:7px; border:1px solid transparent;
+  background:transparent; color:var(--gray); font-family:'DM Sans',sans-serif;
+  font-size:.82rem; font-weight:600; cursor:pointer; transition:all .15s;
+  letter-spacing:.3px;
+}
+.nav-btn:hover { color:var(--white); background:var(--bg3); }
+.nav-btn.active { color:var(--gold); border-color:rgba(245,200,66,.3); background:rgba(245,200,66,.07); }
+
+/* ── PANELS ── */
+.panel { display:none; padding:28px; max-width:1400px; margin:0 auto; width:100%; }
+.panel.active { display:block; }
+
+/* ── SHARED COMPONENTS ── */
+.section-title {
+  font-family:'Bebas Neue',cursive; font-size:1.6rem; letter-spacing:3px;
+  color:var(--gold); margin-bottom:6px;
+}
+.section-sub { font-size:.82rem; color:var(--gray); margin-bottom:22px; }
+.card {
+  background:var(--bg2); border:1px solid var(--border);
+  border-radius:12px; overflow:hidden;
+}
+.card-header {
+  padding:14px 18px; border-bottom:1px solid var(--border);
+  display:flex; align-items:center; gap:10px;
+}
+.card-title { font-family:'Bebas Neue',cursive; font-size:1rem; letter-spacing:2px; color:var(--gray); }
+.btn {
+  padding:9px 18px; border-radius:8px; border:none; cursor:pointer;
+  font-family:'DM Sans',sans-serif; font-weight:600; font-size:.82rem;
+  transition:all .15s; display:inline-flex; align-items:center; gap:6px;
+}
+.btn-gold { background:var(--gold); color:#111; }
+.btn-gold:hover { background:#ffd84a; }
+.btn-ghost { background:transparent; border:1px solid var(--border); color:var(--gray); }
+.btn-ghost:hover { border-color:var(--white); color:var(--white); }
+.btn-red { background:rgba(229,57,53,.15); border:1px solid rgba(229,57,53,.3); color:var(--red); }
+.btn-red:hover { background:rgba(229,57,53,.25); }
+.empty-state { text-align:center; padding:60px 20px; color:var(--gray); }
+.empty-state .icon { font-size:3rem; margin-bottom:12px; }
+.empty-state p { font-size:.88rem; line-height:1.6; }
+input[type=text], input[type=number], select {
+  background:var(--bg3); border:1px solid var(--border); border-radius:7px;
+  padding:8px 12px; color:var(--white); font-family:'DM Sans',sans-serif;
+  font-size:.84rem;
+}
+input:focus, select:focus { outline:none; border-color:var(--gold); }
+
+/* ── UTILITIES ── */
+.teams-toolbar { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; flex-wrap:wrap; gap:8px; }
+.teams-count { font-size:.82rem; color:var(--gray); }
+.export-cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px; margin-bottom:28px; }
+.card-icon { font-size:1.2rem; }
+.card-desc { padding:14px 18px; font-size:.8rem; color:var(--gray); line-height:1.6; }
+.card-action { padding:0 18px 16px; display:flex; gap:8px; }
+.card-action .btn { flex:1; }
+.lb-spacer { margin-bottom:20px; }
+.scores-sort { background:var(--bg3); border:1px solid var(--border); border-radius:7px; padding:8px 12px; color:var(--white); font-family:'DM Sans',sans-serif; font-size:.82rem; }
+.file-label { cursor:pointer; }
+.hidden-input { display:none; }
+.drop-sub { margin-top:6px; }
+.owner-muted { color:var(--gray); }
+
+/* ── TEAMS PANEL ── */
+.import-zone {
+  border:2px dashed rgba(245,200,66,.3); border-radius:12px;
+  padding:36px; text-align:center; cursor:pointer; transition:all .2s;
+  background:rgba(245,200,66,.03); margin-bottom:24px;
+}
+.import-zone:hover, .import-zone.drag-over {
+  border-color:var(--gold); background:rgba(245,200,66,.07);
+}
+.import-zone .drop-icon { font-size:2.5rem; margin-bottom:10px; }
+.import-zone p { color:var(--gray); font-size:.84rem; }
+.import-zone strong { color:var(--white); }
+.teams-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:14px; }
+.team-card {
+  background:var(--bg2); border:1px solid var(--border); border-radius:12px;
+  overflow:hidden; transition:border-color .15s;
+}
+.team-card:hover { border-color:rgba(245,200,66,.3); }
+.team-card-header {
+  padding:14px 16px; display:flex; align-items:flex-start;
+  justify-content:space-between; border-bottom:1px solid var(--border);
+}
+.team-name { font-weight:700; font-size:.95rem; }
+.team-owner { font-size:.75rem; color:var(--gray); margin-top:2px; }
+.team-score { font-family:'Bebas Neue',cursive; font-size:1.6rem; color:var(--gold); line-height:1; }
+.team-score-label { font-size:.6rem; color:var(--gray); text-align:right; }
+.team-card-body { padding:12px 16px; }
+.team-meta { font-size:.72rem; color:var(--gray); margin-bottom:10px; }
+.team-meta span { color:var(--white); margin-right:10px; }
+.team-players { display:flex; flex-wrap:wrap; gap:4px; }
+.team-player-chip {
+  font-size:.65rem; padding:2px 7px; border-radius:9px;
+  background:var(--bg3); border:1px solid var(--border); color:var(--gray);
+}
+.team-player-chip.captain { border-color:var(--gold); color:var(--gold); background:rgba(245,200,66,.08); }
+.team-card-footer {
+  padding:10px 16px; border-top:1px solid var(--border);
+  display:flex; gap:8px; align-items:center; justify-content:flex-end;
+}
+
+/* ── SCORES PANEL ── */
+.scores-toolbar {
+  display:flex; gap:10px; align-items:center; margin-bottom:16px; flex-wrap:wrap;
+}
+.scores-search { flex:1; min-width:160px; }
+.scores-wrap { overflow-x:auto; border-radius:12px; border:1px solid var(--border); }
+.scores-table {
+  width:100%; border-collapse:collapse; font-size:.78rem;
+  font-family:'DM Mono',monospace;
+}
+.scores-table th {
+  background:var(--bg3); padding:9px 10px; text-align:center;
+  font-family:'DM Sans',sans-serif; font-weight:700; font-size:.68rem;
+  letter-spacing:.8px; color:var(--gray); border-bottom:1px solid var(--border);
+  white-space:nowrap; position:sticky; top:0;
+}
+.scores-table th.col-name { text-align:left; min-width:180px; position:sticky; left:0; background:var(--bg3); z-index:2; }
+.scores-table th.col-total { color:var(--gold); }
+.scores-table th.col-sel { color:var(--gray); font-size:.65rem; }
+.scores-table td.col-sel { font-size:.75rem; color:var(--gray); white-space:nowrap; }
+.scores-table td {
+  padding:3px 6px; border-bottom:1px solid rgba(255,255,255,.04);
+  text-align:center; vertical-align:middle;
+}
+.scores-table td.col-name {
+  text-align:left; padding:3px 12px; white-space:nowrap;
+  position:sticky; left:0; background:var(--bg2); z-index:1;
+}
+.scores-table tr:hover td { background:var(--bg3); }
+.scores-table tr:hover td.col-name { background:var(--bg3); }
+.scores-table td.col-total {
+  font-weight:700; color:var(--gold); font-family:'DM Sans',sans-serif;
+}
+.score-input {
+  width:46px; padding:4px 5px; text-align:center; border-radius:5px;
+  background:var(--bg3); border:1px solid transparent; color:var(--white);
+  font-family:'DM Mono',monospace; font-size:.78rem;
+  transition:border-color .15s;
+  -moz-appearance:textfield;
+}
+.score-input::-webkit-outer-spin-button,
+.score-input::-webkit-inner-spin-button { -webkit-appearance:none; margin:0; }
+.score-input:focus { border-color:var(--gold); outline:none; background:var(--bg); }
+.score-input.has-value { border-color:rgba(255,255,255,.12); color:var(--white); }
+.player-pos-dot {
+  display:inline-block; width:7px; height:7px; border-radius:50%;
+  margin-right:6px; vertical-align:middle; flex-shrink:0;
+}
+.player-name-cell { display:flex; align-items:center; }
+.player-country-tag { font-size:.63rem; color:var(--gray); margin-left:6px; }
+
+/* ── LEADERBOARD PANEL ── */
+.lb-table-wrap { border-radius:12px; border:1px solid var(--border); overflow:hidden; margin-bottom:24px; }
+.lb-table { width:100%; border-collapse:collapse; font-size:.84rem; }
+.lb-table th {
+  background:var(--bg3); padding:11px 14px; text-align:left;
+  font-size:.7rem; font-weight:700; letter-spacing:.8px;
+  color:var(--gray); border-bottom:1px solid var(--border); white-space:nowrap;
+}
+.lb-table th.num { text-align:center; }
+.lb-table td { padding:11px 14px; border-bottom:1px solid rgba(255,255,255,.04); vertical-align:middle; }
+.lb-table td.num { text-align:center; font-family:'DM Mono',monospace; }
+.lb-table tr:last-child td { border-bottom:none; }
+.lb-table tr:hover td { background:rgba(255,255,255,.02); }
+.rank-badge {
+  width:26px; height:26px; border-radius:50%; display:inline-flex;
+  align-items:center; justify-content:center; font-weight:700; font-size:.8rem;
+  background:var(--bg3); color:var(--gray);
+}
+.rank-badge.rank-1 { background:var(--gold); color:#111; }
+.rank-badge.rank-2 { background:#c0c0c0; color:#111; }
+.rank-badge.rank-3 { background:#cd7f32; color:#111; }
+.rank-badge.rank-4 { background:#1a6eb5; color:#fff; }
+.rank-badge.rank-other { background:var(--bg3); color:var(--gray); font-size:.7rem; }
+.lb-score-total { font-family:'Bebas Neue',cursive; font-size:1.2rem; color:var(--gold); }
+.mono-score { font-family:'DM Mono',monospace; font-weight:600; }
+.dim { color:var(--gray2); }
+
+/* ── TOAST ── */
+.toast-container { position:fixed; bottom:24px; right:24px; display:flex; flex-direction:column; gap:8px; z-index:9999; }
+.toast {
+  padding:12px 18px; border-radius:10px; font-size:.82rem; font-weight:600;
+  background:var(--bg3); border:1px solid var(--border); color:var(--white);
+  animation:toastIn .2s ease; box-shadow:0 8px 30px rgba(0,0,0,.5);
+  display:flex; align-items:center; gap:8px;
+}
+.toast.success { border-color:rgba(38,166,83,.4); }
+.toast.error   { border-color:rgba(229,57,53,.4); }
+@keyframes toastIn { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+
+/* ── BACKUP BAR ── */
+.backup-bar {
+  display:flex; gap:10px; align-items:center; padding:12px 18px;
+  background:rgba(245,200,66,.04); border:1px solid rgba(245,200,66,.1);
+  border-radius:10px; margin-bottom:20px; flex-wrap:wrap;
+}
+.backup-bar p { font-size:.78rem; color:var(--gray); flex:1; min-width:200px; }
+
+/* ── TEAM DETAIL MODAL ── */
+.modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.8); z-index:500; align-items:center; justify-content:center; backdrop-filter:blur(4px); }
+.modal-overlay.open { display:flex; }
+.modal-box { background:var(--bg2); border:1px solid var(--border); border-radius:16px; width:980px; max-width:98vw; max-height:90vh; display:flex; flex-direction:column; box-shadow:0 24px 60px rgba(0,0,0,.7); animation:mIn .2s ease; }
+@keyframes mIn { from{opacity:0;transform:scale(.96) translateY(8px)} to{opacity:1;transform:none} }
+.modal-top { padding:20px 28px 16px; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+.modal-team-name { font-family:'Bebas Neue',cursive; font-size:1.5rem; letter-spacing:2px; color:var(--white); }
+.modal-team-meta { font-size:.75rem; color:var(--gray); margin-top:6px; }
+.modal-team-meta span { color:var(--white); margin-right:12px; }
+.modal-sep { color:var(--gray); margin:0 8px; }
+.gold { color:var(--gold); }
+.modal-total { font-family:'Bebas Neue',cursive; font-size:2.2rem; color:var(--gold); line-height:1; }
+.modal-body { overflow-y:auto; padding:12px 28px; flex:1; }
+.modal-footer { padding:14px 28px; border-top:1px solid var(--border); display:flex; justify-content:flex-end; }
+.modal-player-row { display:grid; grid-template-columns:18px minmax(160px,1fr) minmax(180px,220px) repeat(9,42px) 52px; gap:0; align-items:center; padding:3px 0; border-bottom:1px solid rgba(255,255,255,.04); font-size:.78rem; }
+.modal-player-row:last-child { border-bottom:none; }
+.modal-player-row.header { font-size:.62rem; font-weight:700; letter-spacing:.6px; color:var(--gray); padding:6px 0 8px; border-bottom:1px solid var(--border); }
+.modal-player-row .p-name { font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; padding-right:10px; }
+.modal-player-row .p-name.captain { color:var(--gold); }
+.modal-player-row .p-country { font-size:.7rem; color:var(--gray); white-space:nowrap; padding-right:6px; }
+.modal-player-row .p-md { text-align:center; font-family:'DM Mono',monospace; color:var(--gray2); }
+.modal-player-row .p-md.scored { color:var(--white); }
+.modal-player-row .p-md.captain-score { color:var(--gold); font-weight:700; }
+.modal-player-row .p-total { text-align:right; font-family:'DM Mono',monospace; font-weight:700; padding-right:4px; }
+.modal-player-row .p-total.captain-total { color:var(--gold); }
+
+/* make team cards and lb rows clickable */
+.team-card { cursor:pointer; }
+.lb-table tbody tr { cursor:pointer; }
+.lb-table tbody tr:hover td { background:rgba(245,200,66,.05) !important; }
+
+@media print {
+  .header, .nav, .backup-bar, .import-zone, .scores-toolbar, .btn, button { display:none !important; }
+  .panel { display:block !important; padding:0; }
+  body { background:#fff; color:#111; }
+}
+
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">World Cup 2026 <span>Fantasy Admin</span></div>
+  <nav class="nav">
+    <button class="nav-btn active" onclick="showPanel('teams')" id="nav-teams">⚽ Teams</button>
+    <button class="nav-btn" onclick="showPanel('scores')" id="nav-scores">📊 Scores</button>
+    <button class="nav-btn" onclick="showPanel('leaderboard')" id="nav-leaderboard">🏆 Leaderboard</button>
+    <button class="nav-btn" onclick="showPanel('export')" id="nav-export">📤 Export</button>
+  </nav>
+</header>
+
+<!-- TEAMS PANEL -->
+<div class="panel active" id="panel-teams">
+  <h1 class="section-title">Teams</h1>
+  <p class="section-sub">Import team JSON files sent by participants. Drag & drop one or many files at once.</p>
+
+  <div class="backup-bar">
+    <p>💾 Data is saved in your browser automatically. Use the buttons below to back up or restore everything.</p>
+    <button class="btn btn-ghost" onclick="exportBackup()">⬇ Download backup</button>
+    <label class="btn btn-ghost file-label">
+      ⬆ Restore backup <input type="file" accept=".json" class="hidden-input" onchange="importBackup(this)">
+    </label>
+  </div>
+
+  <div class="import-zone" id="dropZone" onclick="document.getElementById('fileInput').click()">
+    <div class="drop-icon">📂</div>
+    <p><strong>Click to import team files</strong> or drag & drop here</p>
+    <p class="drop-sub">Accepts .json files exported from the submission app</p>
+    <input type="file" id="fileInput" accept=".json" multiple class="hidden-input" onchange="handleFileImport(this.files)">
+  </div>
+
+  <div class="teams-toolbar">
+    <div id="teamsCount" class="teams-count"></div>
+    <button class="btn btn-red" onclick="clearAllTeams()" id="clearTeamsBtn" style="display:none">🗑 Clear all teams</button>
+  </div>
+
+  <div class="teams-grid" id="teamsGrid"></div>
+  <div id="teamsEmpty" class="empty-state">
+    <div class="icon">⚽</div>
+    <p>No teams imported yet.<br>Ask participants to export their team from the submission app<br>and email you the .json file.</p>
+  </div>
+</div>
+
+<!-- SCORES PANEL -->
+<div class="panel" id="panel-scores">
+  <h1 class="section-title">Player Scores</h1>
+
+  <div class="scores-toolbar">
+    <input type="text" class="scores-search" id="scoresSearch" placeholder="Search player or country…" oninput="renderScoresTable()">
+    <select id="scoresSortBy" class="scores-sort" onchange="renderScoresTable()">
+      <option value="country">Sort: Country → Position → Price → Name</option>
+      <option value="position">Sort: Position → Price → Name</option>
+      <option value="price_desc">Sort: Price (High → Low)</option>
+      <option value="price_asc">Sort: Price (Low → High)</option>
+      <option value="name">Sort: Name (A → Z)</option>
+      <option value="total_desc">Sort: Total Score (High → Low)</option>
+      <option value="sel_desc">Sort: Selections (High → Low)</option>
+    </select>
+  </div>
+
+  <div class="scores-wrap">
+    <table class="scores-table" id="scoresTable">
+      <thead>
+        <tr>
+          <th class="col-name">PLAYER</th>
+          <th class="col-sel">SEL</th>
+          <th>M1</th>
+          <th>M2</th>
+          <th>M3</th>
+          <th>L32</th>
+          <th>L16</th>
+          <th>QF</th>
+          <th>SF</th>
+          <th>3RD</th>
+          <th>FIN</th>
+          <th class="col-total">TOTAL</th>
+        </tr>
+      </thead>
+      <tbody id="scoresTbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- LEADERBOARD PANEL -->
+<div class="panel" id="panel-leaderboard">
+  <h1 class="section-title">Leaderboard</h1>
+  <p class="section-sub">Points calculated from your scores above. Captain scores are doubled.</p>
+  <div class="lb-spacer"></div>
+  <div class="lb-table-wrap">
+    <table class="lb-table" id="lbTable">
+      <thead>
+        <tr>
+          <th style="width:40px">#</th>
+          <th>TEAM</th>
+          <th>MANAGER</th>
+          <th class="num">M1</th>
+          <th class="num">M2</th>
+          <th class="num">M3</th>
+          <th class="num">L32</th>
+          <th class="num">L16</th>
+          <th class="num">QF</th>
+          <th class="num">SF</th>
+          <th class="num">3RD</th>
+          <th class="num">FIN</th>
+          <th class="num">TOTAL</th>
+        </tr>
+      </thead>
+      <tbody id="lbTbody"></tbody>
+    </table>
+  </div>
+  <div id="lbEmpty" class="empty-state" style="display:none">
+    <div class="icon">🏆</div>
+    <p>No teams or scores yet.<br>Import teams and enter scores to see the leaderboard.</p>
+  </div>
+</div>
+
+<!-- EXPORT PANEL -->
+<div class="panel" id="panel-export">
+  <h1 class="section-title">Export</h1>
+  <p class="section-sub">Download shareable HTML reports to send to participants or keep for your records.</p>
+  <div class="export-cards">
+
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🏆</span><div class="card-title">Leaderboard</div></div>
+      <div class="card-desc">Ranked table of all teams with scores per matchday and overall total. Share with participants.</div>
+      <div class="card-action">
+        <button class="btn btn-gold" onclick="downloadLeaderboardHTML()">⬇ Download HTML</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="card-icon">⚽</span><div class="card-title">All Teams</div></div>
+      <div class="card-desc">Full squad listing for every team — formation, captain, and all 11 players with position and price.</div>
+      <div class="card-action">
+        <button class="btn btn-gold" onclick="downloadTeamsHTML()">⬇ Download HTML</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="card-icon">📊</span><div class="card-title">Player Scores</div></div>
+      <div class="card-desc">All 764 players with their scores for each matchday and a running total.</div>
+      <div class="card-action">
+        <button class="btn btn-gold" onclick="downloadScoresHTML()">⬇ Download HTML</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div><!-- .app -->
+<div class="toast-container" id="toastContainer"></div>
+
+<script>
+// ── DATA ──
+var PLAYERS = [];
+const MATCHDAYS = ["Match 1", "Match 2", "Match 3", "Last 32", "Last 16", "Quarter-Finals", "Semi-Finals", "3rd Place", "Final"];
+const MD_LABELS  = ["M1", "M2", "M3", "L32", "L16", "QF", "SF", "3RD", "FIN"];
+
+const POS_COLORS = {Goalkeeper:'var(--gk-c)',Defender:'var(--def-c)',Midfielder:'var(--mid-c)',Forward:'var(--fwd-c)'};
+const POS_ABBR   = {Goalkeeper:'GK',Defender:'DEF',Midfielder:'MID',Forward:'FWD'};
+const POS_DOT    = {Goalkeeper:'gk-dot',Defender:'def-dot',Midfielder:'mid-dot',Forward:'fwd-dot'};
+
+// State
+var state = {
+  teams: {},
+  scores: {}
+};
+
+// ── PERSISTENCE ──
+function save() {
+  try { localStorage.setItem('euro2024_admin', JSON.stringify(state)); } catch(e) {}
+}
+function load() {
+  try {
+    var raw = localStorage.getItem('euro2024_admin');
+    if (raw) state = JSON.parse(raw);
+  } catch(e) {}
+}
+
+// ── PANELS ──
+function showPanel(name) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + name).classList.add('active');
+  document.getElementById('nav-' + name).classList.add('active');
+  if (name === 'scores') renderScoresTable();
+  if (name === 'leaderboard') renderLeaderboard();
+}
+
+// ── TOAST ──
+function toast(msg, type='success') {
+  var el = document.createElement('div');
+  el.className = 'toast ' + type;
+  el.textContent = msg;
+  document.getElementById('toastContainer').appendChild(el);
+  setTimeout(() => el.remove(), 3000);
+}
+
+// ── DRAG & DROP ──
+var dz = document.getElementById('dropZone');
+dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('drag-over'); });
+dz.addEventListener('dragleave', () => dz.classList.remove('drag-over'));
+dz.addEventListener('drop', e => {
+  e.preventDefault(); dz.classList.remove('drag-over');
+  handleFileImport(e.dataTransfer.files);
+});
+
+function handleFileImport(files) {
+  var count = 0;
+  Array.from(files).forEach(file => {
+    var reader = new FileReader();
+    reader.onload = e => {
+      try {
+        var data = JSON.parse(e.target.result);
+        if (!data.players || !data.name) throw new Error('Invalid format');
+        var id = 'team_' + data.name.replace(/\s+/g,'_') + '_' + data.owner.replace(/\s+/g,'_');
+        state.teams[id] = data;
+        count++;
+        save();
+        renderTeams();
+        toast('✓ Imported: ' + data.name);
+      } catch(err) {
+        toast('✗ Could not read: ' + file.name, 'error');
+      }
+    };
+    reader.readAsText(file);
+  });
+  document.getElementById('fileInput').value = '';
+}
+
+// ── RENDER TEAMS ──
+function renderTeams() {
+  var teams = Object.values(state.teams);
+  var grid = document.getElementById('teamsGrid');
+  var empty = document.getElementById('teamsEmpty');
+  var count = document.getElementById('teamsCount');
+  var clearBtn = document.getElementById('clearTeamsBtn');
+
+  count.textContent = teams.length + ' team' + (teams.length !== 1 ? 's' : '') + ' imported';
+  clearBtn.style.display = teams.length ? 'inline-flex' : 'none';
+
+  if (!teams.length) {
+    grid.innerHTML = '';
+    empty.style.display = '';
+    return;
+  }
+  empty.style.display = 'none';
+
+  grid.innerHTML = teams.map(team => {
+    var id = Object.keys(state.teams).find(k => state.teams[k] === team);
+    var total = calcTeamTotal(team);
+    var chipsHtml = team.players.map(p => {
+      var isCap = p.Name === team.captain;
+      return '<span class="team-player-chip' + (isCap?' captain':'') + '">'
+        + (isCap?'★ ':'') + p.Name + '</span>';
+    }).join('');
+    return '<div class="team-card" onclick="openTeamModal(\'' + escAttr(id) + '\')">'
+      + '<div class="team-card-header">'
+      + '<div><div class="team-name">' + esc(team.name) + '</div>'
+      + '<div class="team-owner">' + esc(team.owner) + '</div></div>'
+      + '<div style="text-align:right"><div class="team-score">' + total + '</div>'
+      + '<div class="team-score-label">PTS</div></div>'
+      + '</div>'
+      + '<div class="team-card-body">'
+      + '<div class="team-meta">Formation: <span>' + esc(team.formation) + '</span>'
+      + ' Captain: <span>' + esc(team.captain) + '</span></div>'
+      + '<div class="team-players">' + chipsHtml + '</div>'
+      + '</div>'
+      + '<div class="team-card-footer">'
+      + '<button class="btn btn-red" style="padding:5px 10px;font-size:.72rem" onclick="event.stopPropagation();deleteTeam(\'' + escAttr(id) + '\')">Remove</button>'
+      + '</div>'
+      + '</div>';
+  }).join('');
+}
+
+function deleteTeam(id) {
+  if (!confirm('Remove this team?')) return;
+  delete state.teams[id];
+  save();
+  renderTeams();
+  toast('Team removed');
+}
+
+function clearAllTeams() {
+  if (!confirm('Remove ALL teams? This cannot be undone.')) return;
+  state.teams = {};
+  save();
+  renderTeams();
+  toast('All teams cleared');
+}
+
+function formatDate() {
+  return new Date().toLocaleDateString('en-GB', {day:'numeric', month:'long', year:'numeric'});
+}
+
+// ── SCORES ──
+var POS_ORDER = {Goalkeeper:0, Defender:1, Midfielder:2, Forward:3};
+
+function renderScoresTable() {
+  var search  = (document.getElementById('scoresSearch').value || '').toLowerCase();
+  var sortBy  = document.getElementById('scoresSortBy').value;
+
+  var filtered = PLAYERS.filter(function(p) {
+    if (!search) return true;
+    return p.Name.toLowerCase().indexOf(search) >= 0 || p.Country.toLowerCase().indexOf(search) >= 0;
+  });
+
+  // Build selection counts from imported teams
+  var selCount = {}, capCount = {};
+  Object.values(state.teams).forEach(function(team) {
+    (team.players || []).forEach(function(p) {
+      selCount[p.Name] = (selCount[p.Name] || 0) + 1;
+      if (p.Name === team.captain) capCount[p.Name] = (capCount[p.Name] || 0) + 1;
+    });
+  });
+
+  // Sort
+  filtered.sort(function(a, b) {
+    switch (sortBy) {
+      case 'country':
+        return a.Country.localeCompare(b.Country)
+          || POS_ORDER[a.Position] - POS_ORDER[b.Position]
+          || b.price - a.price
+          || a.Name.localeCompare(b.Name);
+      case 'position':
+        return POS_ORDER[a.Position] - POS_ORDER[b.Position]
+          || b.price - a.price
+          || a.Name.localeCompare(b.Name);
+      case 'price_desc':
+        return b.price - a.price || a.Name.localeCompare(b.Name);
+      case 'price_asc':
+        return a.price - b.price || a.Name.localeCompare(b.Name);
+      case 'name':
+        return a.Name.localeCompare(b.Name);
+      case 'total_desc':
+        return getPlayerScore(b.Name) - getPlayerScore(a.Name);
+      case 'sel_desc':
+        return (selCount[b.Name] || 0) - (selCount[a.Name] || 0)
+          || (capCount[b.Name] || 0) - (capCount[a.Name] || 0)
+          || a.Name.localeCompare(b.Name);
+      default:
+        return 0;
+    }
+  });
+
+  var tbody = document.getElementById('scoresTbody');
+  tbody.innerHTML = filtered.map(function(p) {
+    var scores  = state.scores[p.Name] || {};
+    var total   = MATCHDAYS.reduce(function(s, md) {
+      var v = scores[md];
+      return s + (v !== null && v !== undefined && v !== '' ? parseFloat(v)||0 : 0);
+    }, 0);
+    var dotColor = POS_COLORS[p.Position] || '#fff';
+    var cells = MATCHDAYS.map(function(md) {
+      var val    = scores[md];
+      var hasVal = val !== null && val !== undefined && val !== '';
+      return '<td><input type="number" class="score-input' + (hasVal ? ' has-value' : '') + '" '
+        + 'data-player="' + escAttr(p.Name) + '" data-md="' + escAttr(md) + '" '
+        + 'value="' + (hasVal ? val : '') + '" step="1" '
+        + 'onchange="onScoreChange(this)" onkeydown="scoreKeyNav(event,this)"></td>';
+    }).join('');
+    var sel = selCount[p.Name] || 0;
+    var cap = capCount[p.Name] || 0;
+    var selLabel = sel ? sel + (cap ? ' (' + cap + ')' : '') : '–';
+    return '<tr>'
+      + '<td class="col-name"><div class="player-name-cell">'
+      + '<span class="player-pos-dot" style="background:' + dotColor + '"></span>'
+      + '<span>' + esc(p.Name) + '</span>'
+      + '<span class="player-country-tag">' + esc(p.Country) + ' · ' + POS_ABBR[p.Position] + ' · ' + p.price + 'm</span>'
+      + '</div></td>'
+      + '<td class="col-sel">' + selLabel + '</td>'
+      + cells
+      + '<td class="col-total">' + (total || '–') + '</td>'
+      + '</tr>';
+  }).join('');
+}
+
+function onScoreChange(input) {
+  var pName = input.getAttribute('data-player');
+  var md    = input.getAttribute('data-md');
+  var val   = input.value.trim();
+  if (!state.scores[pName]) state.scores[pName] = {};
+  state.scores[pName][md] = val === '' ? null : parseFloat(val)||0;
+  // Update total cell
+  var row = input.closest('tr');
+  var total = MATCHDAYS.reduce((s, m) => {
+    var scores = state.scores[pName] || {};
+    var v = scores[m];
+    return s + (v !== null && v !== undefined ? parseFloat(v)||0 : 0);
+  }, 0);
+  row.querySelector('.col-total').textContent = total || '–';
+  input.classList.toggle('has-value', val !== '');
+  // Auto-save
+  save();
+}
+
+function scoreKeyNav(e, input) {
+  if (e.key === 'Enter' || e.key === 'Tab') return; // default tab behaviour
+  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    var rows = Array.from(document.querySelectorAll('#scoresTbody tr'));
+    var curRow = input.closest('tr');
+    var idx = rows.indexOf(curRow);
+    var targetIdx = e.key === 'ArrowDown' ? idx + 1 : idx - 1;
+    if (targetIdx >= 0 && targetIdx < rows.length) {
+      var md = input.getAttribute('data-md');
+      var targetInput = rows[targetIdx].querySelector('[data-md="' + md + '"]');
+      if (targetInput) { targetInput.focus(); targetInput.select(); }
+    }
+  }
+}
+
+// ── CALC ──
+function getPlayerScore(playerName) {
+  var scores = state.scores[playerName] || {};
+  return MATCHDAYS.reduce((s, md) => {
+    var v = scores[md];
+    return s + (v !== null && v !== undefined && v !== '' ? parseFloat(v)||0 : 0);
+  }, 0);
+}
+
+function getPlayerScoreForMD(playerName, md) {
+  var scores = state.scores[playerName] || {};
+  var v = scores[md];
+  return (v !== null && v !== undefined && v !== '') ? parseFloat(v)||0 : 0;
+}
+
+function calcTeamTotal(team) {
+  var total = 0;
+  (team.players || []).forEach(p => {
+    var s = getPlayerScore(p.Name);
+    total += (p.Name === team.captain) ? s * 2 : s;
+  });
+  return total;
+}
+
+function calcTeamMD(team, md) {
+  var total = 0;
+  (team.players || []).forEach(p => {
+    var s = getPlayerScoreForMD(p.Name, md);
+    total += (p.Name === team.captain) ? s * 2 : s;
+  });
+  return total;
+}
+
+// ── LEADERBOARD ──
+function renderLeaderboard() {
+  var teams = getRankedTeams();
+
+  var tbody = document.getElementById('lbTbody');
+  var empty = document.getElementById('lbEmpty');
+
+  if (!teams.length) {
+    tbody.innerHTML = '';
+    empty.style.display = '';
+    return;
+  }
+  empty.style.display = 'none';
+
+  tbody.innerHTML = teams.map((entry, i) => {
+    var rank = i + 1;
+    var rankBadge = rank <= 4
+      ? '<span class="rank-badge rank-' + rank + '">' + rank + '</span>'
+      : '<span class="rank-badge rank-other">' + rank + '</span>';
+    var mdCells = entry.mdScores.map(s =>
+      '<td class="num">' + (s ? '<span class="mono-score">' + s + '</span>' : '<span class="dim">–</span>') + '</td>'
+    ).join('');
+    return '<tr onclick="openTeamModal(\'' + escAttr(entry.id) + '\')">'
+      + '<td>' + rankBadge + '</td>'
+      + '<td><strong>' + esc(entry.team.name) + '</strong></td>'
+      + '<td class="owner-muted">' + esc(entry.team.owner) + '</td>'
+      + mdCells
+      + '<td class="num"><span class="lb-score-total">' + entry.total + '</span></td>'
+      + '</tr>';
+  }).join('');
+}
+
+// ── RANKED TEAMS HELPER ──
+function getRankedTeams() {
+  return Object.entries(state.teams).map(([id, team]) => {
+    var mdScores = MATCHDAYS.map(md => calcTeamMD(team, md));
+    var total = mdScores.reduce((a, b) => a + b, 0);
+    return { id, team, mdScores, total };
+  }).sort((a, b) => b.total - a.total);
+}
+
+// ── TEAM DETAIL MODAL ──
+function openTeamModal(id) {
+  var team = state.teams[id];
+  if (!team) return;
+
+  var ranked = getRankedTeams();
+  var rankIdx = ranked.findIndex(e => e.id === id);
+  var rank = rankIdx + 1;
+  var total = calcTeamTotal(team);
+  var teamCount = ranked.length;
+
+  document.getElementById('modalTeamName').innerHTML = esc(team.name)
+    + '<span class="modal-sep" style="font-size:.85rem;font-family:Inter,sans-serif;font-weight:400;letter-spacing:0">·</span>'
+    + '<span style="font-family:Inter,sans-serif;font-size:.9rem;font-weight:400;color:var(--gray);letter-spacing:0">' + esc(team.owner) + '</span>';
+  document.getElementById('modalTeamMeta').innerHTML =
+    'Formation: <span>' + esc(team.formation) + '</span>'
+    + '<span class="modal-sep">·</span>Captain: <span class="gold">' + esc(team.captain) + '</span>'
+    + '<span class="modal-sep">·</span>Rank: <span class="gold">' + rank + ' / ' + teamCount + '</span>';
+  document.getElementById('modalTotal').textContent = total;
+
+  // Header row
+  var headerRow = '<div class="modal-player-row header">'
+    + '<div></div><div>PLAYER</div><div>COUNTRY · POS · PRICE</div>'
+    + MD_LABELS.map(m => '<div class="p-md">' + m + '</div>').join('')
+    + '<div style="text-align:right">TOT</div></div>';
+
+  var sorted = (team.players || []).slice().sort((a,b) => POS_ORDER[a.Position]-POS_ORDER[b.Position]);
+
+  var rows = sorted.map(function(p) {
+    var isCap = p.Name === team.captain;
+    var playerTotal = 0;
+    var mdCells = MATCHDAYS.map(function(md) {
+      var raw = getPlayerScoreForMD(p.Name, md);
+      var display = isCap ? raw * 2 : raw;
+      playerTotal += display;
+      var scores = state.scores[p.Name] || {};
+      var hasScore = scores[md] !== null && scores[md] !== undefined && scores[md] !== '';
+      var cls = !hasScore ? 'p-md' : (isCap ? 'p-md captain-score' : 'p-md scored');
+      var label = !hasScore ? '–' : (display || '0');
+      return '<div class="' + cls + '">' + label + '</div>';
+    }).join('');
+    return '<div class="modal-player-row">'
+      + '<div><span class="player-pos-dot" style="background:' + (POS_COLORS[p.Position]||'#fff') + ';display:inline-block;width:7px;height:7px;border-radius:50%"></span></div>'
+      + '<div class="p-name' + (isCap?' captain':'') + '">' + (isCap ? '★ ' : '') + esc(p.Name) + '</div>'
+      + '<div class="p-country">' + esc(p.Country) + ' · ' + POS_ABBR[p.Position] + ' · ' + p.price + 'm</div>'
+      + mdCells
+      + '<div class="p-total' + (isCap?' captain-total':'') + '">' + (playerTotal||'–') + '</div>'
+      + '</div>';
+  }).join('');
+
+  document.getElementById('modalBody').innerHTML = headerRow + rows
+    + '<div style="font-size:.68rem;color:var(--gray);margin-top:10px;padding-top:8px;border-top:1px solid var(--border)">★ Captain (doubled score shown)</div>';
+
+  document.getElementById('teamModal').classList.add('open');
+}
+
+function closeTeamModal() {
+  document.getElementById('teamModal').classList.remove('open');
+}
+
+// ── SHARED HTML SHELL ──
+function htmlShell(title, bodyHtml) {
+  return '<!DOCTYPE html><html><head><meta charset="UTF-8">'
+    + '<title>World Cup 2026 Fantasy — ' + title + '</title>'
+    + '<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">'
+    + '<style>'
+    + ':root{--bg:#0d1117;--bg2:#161b22;--bg3:#21262d;--border:rgba(255,255,255,.08);--gold:#f5c842;--white:#f0f6fc;--gray:#8b949e;--gray2:#6e7681;--gk:#f5a623;--def:#1e88e5;--mid:#26a653;--fwd:#e53935}'
+    + '*{box-sizing:border-box;margin:0;padding:0}'
+    + 'body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--white);padding:32px 40px;font-size:14px}'
+    + 'h1{font-family:"Bebas Neue",cursive;font-size:2rem;letter-spacing:3px;color:var(--gold);margin-bottom:2px}'
+    + '.subtitle{color:var(--gray);font-size:.8rem;margin-bottom:6px}'
+    + '.cap-note{color:var(--gold);font-size:.78rem;margin-bottom:28px}'
+    + '.note{font-size:.7rem;color:var(--gray2);margin-top:16px}'
+    + 'table{width:100%;border-collapse:collapse;font-size:.8rem}'
+    + 'thead tr{background:var(--bg3)}'
+    + 'th{padding:9px 12px;text-align:left;font-size:.68rem;font-weight:700;letter-spacing:.8px;color:var(--gray);border-bottom:1px solid var(--border);white-space:nowrap}'
+    + 'th.c{text-align:center}'
+    + 'td{padding:5px 12px;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:middle}'
+    + 'td.c{text-align:center;font-family:"DM Mono",monospace}'
+    + 'tr:last-child td{border-bottom:none}'
+    + 'tr:hover td{background:var(--bg3)}'
+    /* scores / leaderboard typography */
+    + '.mono-score{font-family:"DM Mono",monospace;font-weight:600}'
+    + '.lb-score-total{font-family:"Bebas Neue",cursive;font-size:1.2rem;color:var(--gold)}'
+    + '.dim{color:var(--gray2)}'
+    + '.owner-muted{color:var(--gray)}'
+    /* player scores typography */
+    + '.score-val{color:var(--white);font-weight:500}'
+    + '.score-dim{color:var(--gray2)}'
+    /* rank badges */
+    + '.rank-badge{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;font-weight:700;font-size:.8rem;background:var(--bg3);color:var(--gray)}'
+    + '.rank-1{background:var(--gold);color:#111}'
+    + '.rank-2{background:#c0c0c0;color:#111}'
+    + '.rank-3{background:#cd7f32;color:#111}'
+    + '.rank-4{background:#1a6eb5;color:#fff}'
+    /* pos dot (colour only, no text colour) */
+    + '.pos-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px;vertical-align:middle;flex-shrink:0}'
+    + '.gk-dot{background:var(--gk)}.def-dot{background:var(--def)}.mid-dot{background:var(--mid)}.fwd-dot{background:var(--fwd)}'
+    /* player name cell (mirrors scores tab) */
+    + '.player-name-cell{display:flex;align-items:center}'
+    + '.p-name{font-weight:600}'
+    + '.p-country{font-size:.7rem;color:var(--gray);margin-left:6px}'
+    /* captain */
+    + '.cap{color:var(--gold);font-weight:700}'
+    /* section card (All Teams) */
+    + '.section-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:32px}'
+    + '.section-head{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start}'
+    + '.section-title{font-family:"Bebas Neue",cursive;font-size:1.3rem;letter-spacing:2px;color:var(--white)}'
+    + '.section-meta{font-size:.75rem;color:var(--gray);margin-top:4px}'
+    + '.section-total{font-family:"Bebas Neue",cursive;font-size:2rem;color:var(--gold);line-height:1;text-align:right}'
+    + '.section-total-label{font-size:.6rem;color:var(--gray);text-align:right;margin-top:2px}'
+    + '.sep{color:var(--gray2);margin:0 6px}'
+    + '@media print{body{padding:16px}}'
+    + '</style></head><body>' + bodyHtml + '</body></html>';
+}
+
+// ── EXPORT 1: LEADERBOARD ──
+function downloadLeaderboardHTML() {
+  var teams = getRankedTeams();
+  var now = formatDate();
+
+  var mdTh = MD_LABELS.map(lbl => '<th class="c">' + lbl + '</th>').join('');
+  var rows = teams.map((e, i) => {
+    var rank = i + 1;
+    var badgeCls = rank <= 4 ? ' rank-' + rank : '';
+    var badge = '<span class="rank-badge' + badgeCls + '">' + rank + '</span>';
+    var mds = e.mdScores.map(s =>
+      '<td class="c">' + (s ? '<span class="mono-score">' + s + '</span>' : '<span class="dim">–</span>') + '</td>'
+    ).join('');
+    return '<tr>'
+      + '<td>' + badge + '</td>'
+      + '<td><strong>' + esc(e.team.name) + '</strong></td>'
+      + '<td class="owner-muted">' + esc(e.team.owner) + '</td>'
+      + mds
+      + '<td class="c"><span class="lb-score-total">' + e.total + '</span></td>'
+      + '</tr>';
+  }).join('') || '<tr><td colspan="' + (MD_LABELS.length + 4) + '" style="text-align:center;color:var(--gray);padding:20px">No data</td></tr>';
+
+  var body = '<h1>WORLD CUP 2026 <span style="color:#f0f6fc">FANTASY FOOTBALL</span></h1>'
+    + '<div class="subtitle">Leaderboard — ' + now + '</div>'
+    + '<div class="section-wrap">'
+    + '<table><thead><tr><th style="width:42px">#</th><th>TEAM</th><th>MANAGER</th>' + mdTh + '<th class="c">TOTAL</th></tr></thead>'
+    + '<tbody>' + rows + '</tbody></table></div>'
+    + '<p class="note">Generated ' + now + '.</p>';
+
+  downloadHTML(htmlShell('Leaderboard', body), 'WC2026_Leaderboard');
+  toast('✓ Leaderboard downloaded');
+}
+
+// ── EXPORT 2: ALL TEAMS ──
+function downloadTeamsHTML() {
+  var now = formatDate();
+  var ranked = getRankedTeams();
+  var teamCount = ranked.length;
+  var mdTh = MD_LABELS.map(lbl => '<th class="c">' + lbl + '</th>').join('');
+
+  var body = '<h1>WORLD CUP 2026 <span style="color:#f0f6fc">FANTASY FOOTBALL</span></h1>'
+    + '<div class="subtitle">All Teams — ' + now + '</div>'
+    + '<div class="cap-note">★ Captain (doubled score shown)</div>';
+
+  ranked.forEach((entry, i) => {
+    var team = entry.team;
+    var rank = i + 1;
+    var total = entry.total;
+    var badgeCls = rank <= 4 ? ' rank-' + rank : '';
+    var sorted = (team.players||[]).slice().sort((a,b) => POS_ORDER[a.Position]-POS_ORDER[b.Position]);
+
+    var rows = sorted.map(p => {
+      var isCap = p.Name === team.captain;
+      var mdCells = MATCHDAYS.map(md => {
+        var raw = getPlayerScoreForMD(p.Name, md);
+        var display = isCap ? raw * 2 : raw;
+        var scores = state.scores[p.Name] || {};
+        var hasScore = scores[md] !== null && scores[md] !== undefined && scores[md] !== '';
+        var cls = !hasScore ? 'score-dim' : (isCap ? 'cap' : 'score-val');
+        return '<td class="c"><span class="' + cls + '">' + (hasScore ? display : '–') + '</span></td>';
+      }).join('');
+      var playerTotal = MATCHDAYS.reduce((s, md) => {
+        var raw = getPlayerScoreForMD(p.Name, md); return s + (isCap ? raw*2 : raw);
+      }, 0);
+      return '<tr>'
+        + '<td style="width:18px"><span class="pos-dot ' + POS_DOT[p.Position] + '"></span></td>'
+        + '<td class="p-name">' + (isCap ? '<span class="cap">★ ' + esc(p.Name) + '</span>' : esc(p.Name)) + '</td>'
+        + '<td class="p-country">' + esc(p.Country) + ' · ' + POS_ABBR[p.Position] + ' · ' + p.price + 'm</td>'
+        + mdCells
+        + '<td class="c"><span class="' + (playerTotal ? (isCap ? 'cap' : 'score-val') : 'score-dim') + '">' + (playerTotal || '–') + '</span></td>'
+        + '</tr>';
+    }).join('');
+
+    body += '<div class="section-wrap">'
+      + '<div class="section-head">'
+      + '<div style="display:flex;align-items:center;gap:10px">'
+      + '<span class="rank-badge' + badgeCls + '">' + rank + '</span>'
+      + '<div>'
+      + '<div class="section-title">' + esc(team.name) + '<span class="sep" style="font-family:\'DM Sans\',sans-serif;font-size:.9rem;font-weight:400;letter-spacing:0">·</span><span style="font-family:\'DM Sans\',sans-serif;font-size:.9rem;font-weight:400;letter-spacing:0;color:var(--gray)">' + esc(team.owner) + '</span></div>'
+      + '<div class="section-meta">Formation: ' + esc(team.formation) + '<span class="sep">·</span>Captain: <span class="cap">★ ' + esc(team.captain) + '</span><span class="sep">·</span>Rank: <span class="cap">' + rank + ' / ' + teamCount + '</span></div>'
+      + '</div></div>'
+      + '<div><div class="section-total">' + total + '</div><div class="section-total-label">TOTAL PTS</div></div>'
+      + '</div>'
+      + '<table><thead><tr><th style="width:18px"></th><th>PLAYER</th><th>COUNTRY · POS · PRICE</th>' + mdTh + '<th class="c">TOT</th></tr></thead>'
+      + '<tbody>' + rows + '</tbody></table></div>';
+  });
+
+  body += '<p class="note">Teams ordered by current ranking. Generated ' + now + '.</p>';
+  downloadHTML(htmlShell('All Teams', body), 'WC2026_All_Teams');
+  toast('✓ All Teams downloaded');
+}
+
+// ── EXPORT 3: PLAYER SCORES ──
+function downloadScoresHTML() {
+  var now = formatDate();
+
+  var sorted = PLAYERS.slice().sort((a,b) =>
+    a.Country.localeCompare(b.Country) || POS_ORDER[a.Position]-POS_ORDER[b.Position]
+    || b.price-a.price || a.Name.localeCompare(b.Name)
+  );
+
+  var mdTh = MD_LABELS.map(lbl => '<th class="c">' + lbl + '</th>').join('');
+  var rows = sorted.map(p => {
+    var scores = state.scores[p.Name] || {};
+    var total = MATCHDAYS.reduce((s,md) => {
+      var v = scores[md]; return s + (v!==null&&v!==undefined&&v!==''?parseFloat(v)||0:0);
+    }, 0);
+    var mdTds = MATCHDAYS.map(md => {
+      var v = scores[md], hasVal = v!==null&&v!==undefined&&v!=='';
+      return '<td class="c">' + (hasVal ? '<span class="score-val">' + v + '</span>' : '<span class="score-dim">–</span>') + '</td>';
+    }).join('');
+    return '<tr>'
+      + '<td><div class="player-name-cell">'
+      + '<span class="pos-dot ' + POS_DOT[p.Position] + '"></span>'
+      + '<span class="p-name">' + esc(p.Name) + '</span>'
+      + '<span class="p-country">' + esc(p.Country) + ' · ' + POS_ABBR[p.Position] + ' · ' + p.price + 'm</span>'
+      + '</div></td>'
+      + mdTds
+      + '<td class="c"><span class="' + (total ? 'score-val' : 'score-dim') + '">' + (total || '–') + '</span></td>'
+      + '</tr>';
+  }).join('');
+
+  var body = '<h1>WORLD CUP 2026 <span style="color:#f0f6fc">FANTASY FOOTBALL</span></h1>'
+    + '<div class="subtitle">Player Scores — ' + now + '</div>'
+    + '<div class="section-wrap">'
+    + '<table><thead><tr><th>PLAYER</th>' + mdTh + '<th class="c">TOTAL</th></tr></thead>'
+    + '<tbody>' + rows + '</tbody></table></div>'
+    + '<p class="note">Sorted by Country → Position → Price. Generated ' + now + '.</p>';
+
+  downloadHTML(htmlShell('Player Scores', body), 'WC2026_Player_Scores');
+  toast('✓ Player Scores downloaded');
+}
+
+// ── DOWNLOAD HELPER ──
+function downloadHTML(html, filename) {
+  var blob = new Blob([html], {type:'text/html'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = filename + '_' + new Date().toISOString().slice(0,10) + '.html';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+// ── BACKUP / RESTORE ──
+function exportBackup() {
+  var blob = new Blob([JSON.stringify(state, null, 2)], {type:'application/json'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'WC2026_Admin_Backup_' + new Date().toISOString().slice(0,10) + '.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  toast('✓ Backup downloaded');
+}
+
+function importBackup(input) {
+  var file = input.files[0];
+  if (!file) return;
+  var reader = new FileReader();
+  reader.onload = e => {
+    try {
+      var data = JSON.parse(e.target.result);
+      if (!data.teams || !data.scores) throw new Error();
+      if (!confirm('This will replace ALL current data. Continue?')) return;
+      state = data;
+      save();
+      renderTeams();
+      toast('✓ Backup restored');
+    } catch(err) {
+      toast('✗ Invalid backup file', 'error');
+    }
+  };
+  reader.readAsText(file);
+  input.value = '';
+}
+
+// ── UTILS ──
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function escAttr(s) {
+  return String(s).replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
+// ── CSV helpers ──
+function splitCSVRow(row) {
+  var res=[],cur='',inQ=false;
+  for(var i=0;i<row.length;i++){
+    var c=row[i];
+    if(c==='"'){if(inQ&&row[i+1]==='"'){cur+='"';i++;}else inQ=!inQ;}
+    else if(c===','&&!inQ){res.push(cur);cur='';}
+    else cur+=c;
+  }
+  res.push(cur);return res;
+}
+function parseCSV(csv) {
+  var lines=csv.split(/\r?\n/).filter(function(l){return l.trim();});
+  var h=splitCSVRow(lines[0]).map(function(x){return x.trim();});
+  var ni=h.indexOf('Name'),ci=h.indexOf('Country'),pi=h.indexOf('Position'),ri=h.indexOf('Price');
+  // Find score columns by matching MD_LABELS
+  var mdCols=MD_LABELS.map(function(lbl){return h.indexOf(lbl);});
+  var players=[], csvScores={};
+  for(var i=1;i<lines.length;i++){
+    var cols=splitCSVRow(lines[i]);
+    var name=(cols[ni]||'').trim(); if(!name) continue;
+    players.push({Name:name,Country:(cols[ci]||'').trim(),Position:(cols[pi]||'').trim(),price:parseFloat(cols[ri]||0)});
+    // Read score columns
+    var ps={};
+    mdCols.forEach(function(colIdx,j){
+      if(colIdx<0) return;
+      var val=(cols[colIdx]||'').trim();
+      ps[MATCHDAYS[j]] = val==='' ? null : parseFloat(val);
+    });
+    csvScores[name]=ps;
+  }
+  return {players:players, scores:csvScores};
+}
+
+// ── INIT ──
+load();
+// Fetch CSV — players + scores
+fetch('./data/players.csv')
+  .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.text();})
+  .then(function(csv){
+    var parsed=parseCSV(csv);
+    PLAYERS=parsed.players;
+    // Merge CSV scores into state: CSV provides baseline, localStorage manual edits win per-cell
+    Object.keys(parsed.scores).forEach(function(name){
+      if(!state.scores[name]) state.scores[name]={};
+      Object.keys(parsed.scores[name]).forEach(function(md){
+        // Only set from CSV if not already set by localStorage
+        if(state.scores[name][md]===undefined) {
+          state.scores[name][md]=parsed.scores[name][md];
+        }
+      });
+    });
+    renderTeams();
+  })
+  .catch(function(e){
+    console.error('Failed to load players.csv:', e);
+    renderTeams(); // render with whatever we have
+  });
+</script>
+<!-- TEAM DETAIL MODAL -->
+<div class="modal-overlay" id="teamModal" onclick="if(event.target===this)closeTeamModal()">
+  <div class="modal-box">
+    <div class="modal-top">
+      <div>
+        <div class="modal-team-name" id="modalTeamName"></div>
+        <div class="modal-team-meta" id="modalTeamMeta"></div>
+      </div>
+      <div style="text-align:right">
+        <div class="modal-total" id="modalTotal"></div>
+        <div style="font-size:.65rem;color:var(--gray);margin-top:2px">TOTAL PTS</div>
+      </div>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" onclick="closeTeamModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

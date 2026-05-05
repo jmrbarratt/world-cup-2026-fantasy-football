@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Cup 2026 Fantasy Football</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green:#1a7a3c; --green-light:#25a050; --green-dark:#0f5228;
+  --gold:#f5c842; --white:#f8f9fa; --gray:#8a9bb0;
+  --dark:#0d1520; --dark2:#162030; --dark3:#1e2d40;
+  --red:#e53935;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Inter',sans-serif; background:var(--dark); color:var(--white); min-height:100vh; overflow-x:hidden; }
+
+/* ── HEADER ── */
+header {
+  background:linear-gradient(135deg,var(--dark2) 0%,var(--green-dark) 100%);
+  border-bottom:2px solid var(--gold);
+  padding:8px 24px;
+  display:flex; align-items:center; justify-content:space-between;
+  position:sticky; top:0; z-index:100;
+  box-shadow:0 4px 20px rgba(0,0,0,.5);
+}
+header h1 { font-family:'Bebas Neue',cursive; font-size:1.5rem; letter-spacing:3px; color:var(--red); line-height:1; }
+header h1 span { color:var(--green-light); }
+.hdr-right { display:flex; gap:6px; align-items:center; }
+.hdr-stat { background:rgba(0,0,0,.25); border:1px solid rgba(255,255,255,.1); border-radius:8px; padding:5px 12px; display:flex; flex-direction:column; align-items:center; min-width:80px; }
+.hdr-stat .lbl { font-size:.58rem; color:var(--gray); text-transform:uppercase; letter-spacing:.8px; line-height:1; margin-bottom:2px; }
+.hdr-stat .val { font-size:.92rem; font-weight:700; color:var(--gold); line-height:1; }
+.hdr-stat .val.danger { color:var(--red); }
+.hdr-stat .val.warn { color:var(--gold); }
+.hdr-stat .val.ok { color:#4caf50; }
+.hdr-divider { width:1px; height:24px; background:rgba(255,255,255,.12); margin:0 6px; }
+.hdr-rule { font-size:.62rem; color:var(--gray); line-height:1.3; text-align:center; padding:0 4px; }
+.hdr-rule strong { color:rgba(255,255,255,.55); font-weight:600; display:block; }
+
+/* ── 4-COLUMN LAYOUT ── */
+.page {
+  display:grid;
+  grid-template-columns:minmax(0,1.3fr) minmax(0,1.3fr) minmax(0,1.8fr) minmax(0,2.4fr);
+  align-items:start;
+  width:100%;
+  overflow-x:hidden;
+}
+
+/* ── COLUMNS ── */
+.col {
+  padding:14px 12px;
+  border-right:1px solid rgba(255,255,255,.06);
+  display:flex; flex-direction:column; gap:14px;
+  align-self:stretch;
+  min-width:0;
+}
+.col:last-of-type { border-right:none; }
+.col-details  { background:var(--dark2); }
+.col-progress { background:var(--dark3); }
+.col-pitch    { background:var(--dark2); padding:12px 6px; display:flex; flex-direction:column; height:440px; }
+.col-team     { background:var(--dark3); padding:0; gap:0; height:440px; }
+
+/* ── PLAYER LIST STRIP (full width, row 2) ── */
+.player-list-area {
+  grid-column:1 / -1;
+  border-top:2px solid rgba(255,255,255,.1);
+  background:var(--dark2);
+}
+
+/* ── SECTION LABEL ── */
+.section-label { font-family:'Bebas Neue',cursive; font-size:.85rem; letter-spacing:2px; color:var(--gray); margin-bottom:6px; }
+
+/* ── FIELDS ── */
+.field { margin-bottom:7px; }
+.field label { display:block; font-size:.6rem; color:var(--gray); text-transform:uppercase; letter-spacing:1px; margin-bottom:3px; }
+.field input { width:100%; background:rgba(0,0,0,.3); border:1.5px solid rgba(255,255,255,.1); border-radius:7px; padding:7px 10px; color:var(--white); font-size:.82rem; font-family:'Inter',sans-serif; transition:border-color .2s; }
+.field input:focus { outline:none; border-color:var(--gold); }
+.field-last { margin-bottom:0; }
+
+/* ── FORMATION ── */
+.formations { display:flex; gap:5px; }
+.formation-btn { flex:1; padding:7px 2px; border-radius:7px; border:2px solid rgba(255,255,255,.15); background:var(--dark); color:var(--gray); font-family:'Bebas Neue',cursive; font-size:1rem; letter-spacing:1px; cursor:pointer; transition:all .2s; }
+.formation-btn:hover { border-color:var(--gold); color:var(--gold); }
+.formation-btn.active { border-color:var(--gold); background:rgba(245,200,66,.15); color:var(--gold); }
+
+/* ── STEPS ── */
+.steps { display:flex; flex-direction:column; gap:5px; }
+.step { display:flex; align-items:center; gap:7px; padding:6px 9px; border-radius:7px; font-size:.72rem; font-weight:600; border:1.5px solid rgba(255,255,255,.1); color:var(--gray); background:var(--dark); transition:all .25s; }
+.step.active { border-color:var(--gold); color:var(--gold); background:rgba(245,200,66,.08); }
+.step.done { border-color:var(--green-light); color:var(--green-light); background:rgba(37,160,80,.08); }
+.step-num { width:17px; height:17px; border-radius:50%; background:currentColor; display:flex; align-items:center; justify-content:center; font-size:.58rem; color:var(--dark); font-weight:700; flex-shrink:0; }
+
+/* ── PITCH ── */
+.pitch-wrapper {
+  position:relative; width:100%; height:100%;
+  background:repeating-linear-gradient(180deg,#1a5c2a 0px,#1a5c2a 30px,#1e6830 30px,#1e6830 60px);
+  border-radius:10px; border:2px solid rgba(255,255,255,.22); overflow:hidden;
+  display:flex; flex-direction:column; justify-content:space-evenly; padding:10px 2px;
+  box-sizing:border-box;
+}
+.pitch-wrapper::before { content:''; position:absolute; left:0; right:0; top:50%; height:2px; background:rgba(255,255,255,.18); transform:translateY(-50%); }
+.pitch-wrapper::after { content:''; position:absolute; left:50%; top:50%; width:42px; height:42px; border-radius:50%; border:1.5px solid rgba(255,255,255,.18); transform:translate(-50%,-50%); background:transparent; }
+.pitch-row { display:grid; grid-template-columns:repeat(9,1fr); align-items:center; position:relative; z-index:2; margin:0; }
+.pitch-row .player-slot { justify-self:center; }
+
+/* ── PLAYER SLOT ── */
+.player-slot { display:flex; flex-direction:column; align-items:center; cursor:pointer; width:50px; transition:transform .15s; }
+.player-slot:hover { transform:translateY(-2px); }
+.kit-wrap { position:relative; width:32px; height:32px; margin-bottom:2px; }
+.empty-slot-circle { width:32px; height:32px; border-radius:50%; border:2px dashed rgba(255,255,255,.28); background:rgba(0,0,0,.25); display:flex; align-items:center; justify-content:center; font-size:.75rem; transition:all .2s; }
+.player-slot:hover .empty-slot-circle { border-color:var(--gold); border-style:solid; }
+.captain-badge { position:absolute; top:-3px; right:-3px; width:12px; height:12px; background:var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:.42rem; font-weight:900; color:var(--dark); border:1px solid var(--dark); z-index:3; }
+.player-name  { font-size:.52rem; font-weight:700; text-align:center; color:var(--white); text-shadow:0 1px 4px rgba(0,0,0,1); max-width:56px; white-space:nowrap; }
+.player-country { font-size:.45rem; color:rgba(255,255,255,.7); text-shadow:0 1px 4px rgba(0,0,0,1); text-align:center; }
+.player-price { font-size:.46rem; color:var(--gold); font-weight:700; text-shadow:0 1px 4px rgba(0,0,0,1); }
+.pos-label { font-size:.44rem; text-transform:uppercase; letter-spacing:.4px; color:rgba(255,255,255,.38); text-shadow:0 1px 3px rgba(0,0,0,.9); }
+
+/* ── TEAM SUMMARY (col 4) ── */
+.team-summary-inner { flex:1; padding:14px 13px 8px; overflow:hidden; }
+.selected-player-row { display:flex; align-items:center; gap:5px; padding:4px 5px; border-radius:5px; background:rgba(255,255,255,.03); margin-bottom:2px; border:1px solid transparent; transition:all .15s; }
+.selected-player-row:hover { background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.08); }
+.empty-slot-row { opacity:.4; }
+.sel-pos-dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+.sel-name { flex:1; font-size:.75rem; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.sel-empty { color:var(--gray); font-style:italic; font-size:.7rem; font-weight:400; }
+.sel-country { font-size:.62rem; color:var(--gray); flex-shrink:0; }
+.sel-price { font-size:.7rem; font-weight:700; color:var(--gold); flex-shrink:0; }
+.sel-actions { display:flex; gap:2px; flex-shrink:0; }
+.btn-small { width:18px; height:18px; border-radius:3px; border:none; cursor:pointer; font-size:.58rem; display:flex; align-items:center; justify-content:center; transition:all .15s; }
+.btn-captain { background:rgba(245,200,66,.15); color:var(--gold); border:1px solid rgba(245,200,66,.3); }
+.btn-captain:hover { background:rgba(245,200,66,.3); }
+.btn-captain.active { background:var(--gold); color:var(--dark); }
+.btn-remove { background:rgba(229,57,53,.15); color:var(--red); border:1px solid rgba(229,57,53,.3); }
+.btn-remove:hover { background:rgba(229,57,53,.3); }
+
+/* ── SUBMIT FOOTER ── */
+.submit-footer { padding:10px 13px; border-top:1px solid rgba(255,255,255,.07); flex-shrink:0; }
+.submit-btn { width:100%; padding:10px; background:linear-gradient(135deg,var(--green),var(--green-light)); border:none; border-radius:8px; color:var(--white); font-family:'Bebas Neue',cursive; font-size:1.05rem; letter-spacing:3px; cursor:pointer; transition:all .2s; box-shadow:0 4px 14px rgba(26,122,60,.4); }
+.submit-btn:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 6px 20px rgba(26,122,60,.6); }
+.submit-btn:disabled { background:rgba(255,255,255,.1); color:var(--gray); cursor:not-allowed; box-shadow:none; transform:none; }
+
+/* player list (full-width strip) */
+.player-list-header { padding:10px 14px 8px; display:flex; flex-direction:column; gap:7px; border-bottom:1px solid rgba(255,255,255,.06); }
+.player-list-header-row { display:flex; gap:8px; align-items:center; }
+.section-title-bar { font-family:'Bebas Neue',cursive; font-size:1rem; letter-spacing:2px; color:var(--gray); }
+.search-box { flex:1; background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15); border-radius:7px; padding:7px 12px; color:var(--white); font-size:.82rem; font-family:'Inter',sans-serif; }
+.search-box:focus { outline:none; border-color:var(--gold); }
+.search-box::placeholder { color:var(--gray); }
+.filter-row { display:flex; gap:5px; }
+.filter-btn { flex:1; padding:5px 4px; border-radius:6px; border:1.5px solid rgba(255,255,255,.1); background:transparent; color:var(--gray); font-size:.7rem; font-weight:600; cursor:pointer; transition:all .2s; }
+.filter-btn:hover { border-color:var(--white); color:var(--white); }
+.filter-btn.active { border-color:var(--gold); color:var(--gold); background:rgba(245,200,66,.1); }
+.filter-btn.gk-f.active  { border-color:#f5a623; color:#f5a623; background:rgba(245,166,35,.1); }
+.filter-btn.def-f.active { border-color:#1e88e5; color:#1e88e5; background:rgba(30,136,229,.1); }
+.filter-btn.mid-f.active { border-color:#43a047; color:#43a047; background:rgba(67,160,71,.1); }
+.filter-btn.fwd-f.active { border-color:#e53935; color:#e53935; background:rgba(229,57,53,.1); }
+.sort-select { background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15); border-radius:7px; padding:7px 9px; color:var(--white); font-size:.75rem; cursor:pointer; font-family:'Inter',sans-serif; }
+.sort-select option { background:#3a4a5c; color:var(--white); }
+.sort-select:focus { outline:none; border-color:var(--gold); }
+.player-list { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:1px; padding:6px 10px 14px; max-height:300px; overflow-y:auto; }
+.player-list::-webkit-scrollbar { width:4px; }
+.player-list::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
+.player-item { display:flex; align-items:center; gap:6px; padding:4px 7px; border-radius:5px; transition:all .15s; border:1px solid transparent; cursor:pointer; min-width:0; }
+.player-item:hover { background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.1); }
+.player-item.selected { background:rgba(245,200,66,.07); border-color:rgba(245,200,66,.2); opacity:.6; cursor:not-allowed; }
+.player-item.cant-afford { opacity:.35; cursor:not-allowed; }
+.pos-dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+.pos-dot.gk { background:#f5a623; } .pos-dot.def { background:#1e88e5; } .pos-dot.mid { background:#43a047; } .pos-dot.fwd { background:#e53935; }
+.player-item-info { flex:1; min-width:0; }
+.player-item-name { font-size:.72rem; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.player-item-meta { font-size:.61rem; color:var(--gray); }
+.player-item-price { font-size:.74rem; font-weight:700; color:var(--gold); flex-shrink:0; }
+
+.rules-btn { padding:6px 13px; border-radius:7px; border:1.5px solid rgba(245,200,66,.4); background:rgba(245,200,66,.1); color:var(--gold); font-family:'Inter',sans-serif; font-size:.72rem; font-weight:600; cursor:pointer; letter-spacing:.3px; transition:all .2s; white-space:nowrap; }
+.rules-btn:hover { background:rgba(245,200,66,.2); border-color:var(--gold); }
+
+/* ── RULES MODAL ── */
+.rules-modal { background:var(--dark2); border:1px solid rgba(255,255,255,.1); border-radius:14px; width:820px; max-width:96vw; max-height:88vh; overflow-y:auto; box-shadow:0 20px 60px rgba(0,0,0,.7); animation:mIn .2s ease; display:flex; flex-direction:column; }
+.rules-modal::-webkit-scrollbar { width:5px; }
+.rules-modal::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
+.rules-body { padding:22px 26px 26px; display:flex; flex-direction:column; gap:22px; }
+.rules-cols { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+.rules-section { display:flex; flex-direction:column; gap:6px; }
+.rules-section-title { font-family:'Bebas Neue',cursive; font-size:.9rem; letter-spacing:2px; color:var(--gold); border-bottom:1px solid rgba(245,200,66,.2); padding-bottom:4px; margin-bottom:2px; }
+.rules-text { font-size:.8rem; color:rgba(255,255,255,.8); line-height:1.55; }
+.rules-text a, .rules-source a { color:var(--white) !important; text-decoration:none; }
+.rules-text a:hover, .rules-source a:hover { text-decoration:underline; }
+.rules-list { list-style:none; display:flex; flex-direction:column; gap:3px; }
+.rules-list li { font-size:.78rem; color:rgba(255,255,255,.8); display:flex; gap:8px; align-items:baseline; }
+.rules-list li::before { content:'–'; color:var(--gray); flex-shrink:0; }
+.scoring-table { width:100%; border-collapse:collapse; }
+.scoring-table tr { border-bottom:1px solid rgba(255,255,255,.05); }
+.scoring-table tr:last-child { border-bottom:none; }
+.scoring-table td { padding:5px 4px; font-size:.78rem; vertical-align:middle; }
+.scoring-table td:first-child { color:rgba(255,255,255,.8); }
+.scoring-table td:last-child { text-align:right; font-family:'DM Mono',monospace; font-weight:700; white-space:nowrap; padding-left:12px; }
+.pts-pos { color:#4caf50; }
+.pts-neg { color:var(--red); }
+.rules-note { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:8px; padding:10px 13px; }
+.rules-note-title { font-size:.72rem; font-weight:700; color:var(--gold); letter-spacing:.5px; margin-bottom:4px; }
+.rules-note-text { font-size:.76rem; color:rgba(255,255,255,.7); line-height:1.5; }
+.winners-table { width:100%; border-collapse:collapse; }
+.winners-table tr { border-bottom:1px solid rgba(255,255,255,.05); }
+.winners-table tr:last-child { border-bottom:none; }
+.winners-table td { padding:4px 4px; font-size:.76rem; color:rgba(255,255,255,.75); }
+.winners-table td:first-child { color:var(--gray); width:110px; }
+.rules-source { font-size:.7rem; color:var(--gray); text-align:center; padding-top:4px; font-style:italic; }
+.modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.85); z-index:1000; align-items:center; justify-content:center; backdrop-filter:blur(4px); }
+.modal-overlay.open { display:flex; }
+#successModal { align-items:flex-start; padding-top:4vh; }
+.modal { background:var(--dark2); border:1px solid rgba(255,255,255,.1); border-radius:14px; width:580px; max-width:96vw; height:82vh; display:flex; flex-direction:column; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.7); animation:mIn .2s ease; }
+@keyframes mIn { from{opacity:0;transform:scale(.95) translateY(10px)} to{opacity:1;transform:scale(1) translateY(0)} }
+.modal-header { padding:8px 20px; border-bottom:1px solid rgba(255,255,255,.07); display:flex; align-items:center; justify-content:space-between; flex-shrink:0; }
+.modal-header-submit { padding:5px 20px; }
+.modal-header-submit .modal-title { font-size:1rem; letter-spacing:2px; }
+.modal-title { font-family:'Bebas Neue',cursive; font-size:1.25rem; letter-spacing:2px; color:var(--gold); }
+.modal-close { width:28px; height:28px; border-radius:6px; border:1px solid rgba(255,255,255,.15); background:transparent; color:var(--gray); cursor:pointer; font-size:.95rem; display:flex; align-items:center; justify-content:center; }
+.modal-close:hover { border-color:var(--white); color:var(--white); }
+.modal-slot-info { padding:7px 20px; background:rgba(0,0,0,.2); border-bottom:1px solid rgba(255,255,255,.05); font-size:.8rem; color:var(--gray); display:flex; gap:8px; align-items:center; flex-wrap:wrap; flex-shrink:0; }
+.slot-pos-badge { padding:3px 9px; border-radius:11px; font-size:.7rem; font-weight:700; }
+.slot-pos-badge.gk  { background:rgba(245,166,35,.2);  color:#f5a623; }
+.slot-pos-badge.def { background:rgba(30,136,229,.2);   color:#1e88e5; }
+.slot-pos-badge.mid { background:rgba(67,160,71,.2);    color:#43a047; }
+.slot-pos-badge.fwd { background:rgba(229,57,53,.2);    color:#e53935; }
+.modal-search { padding:8px 12px; border-bottom:1px solid rgba(255,255,255,.05); display:flex; gap:7px; flex-shrink:0; }
+.modal-search input { flex:1; background:rgba(0,0,0,.3); border:1.5px solid rgba(255,255,255,.1); border-radius:7px; padding:7px 11px; color:var(--white); font-size:.84rem; font-family:'Inter',sans-serif; }
+.modal-search input:focus { outline:none; border-color:var(--gold); }
+.country-select { background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15); border-radius:7px; padding:7px 9px; color:var(--white); font-size:.75rem; font-family:'Inter',sans-serif; max-width:130px; }
+.country-select option { background:#3a4a5c; color:var(--white); }
+.country-select:focus { outline:none; border-color:var(--gold); }
+.modal-player-list { flex:1; overflow-y:auto; padding:5px 7px; }
+.modal-player-list::-webkit-scrollbar { width:4px; }
+.modal-player-list::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
+.modal-player-item { display:flex; align-items:center; gap:9px; padding:6px 10px; border-radius:7px; cursor:pointer; transition:all .15s; border:1px solid transparent; margin-bottom:1px; }
+.modal-player-item:hover:not(.disabled) { background:rgba(245,200,66,.08); border-color:rgba(245,200,66,.3); }
+.modal-player-item.disabled { opacity:.35; cursor:not-allowed; }
+.modal-kit { width:28px; height:28px; flex-shrink:0; }
+.modal-player-info { flex:1; min-width:0; }
+.modal-player-name { font-size:.78rem; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.modal-player-meta { font-size:.66rem; color:var(--gray); margin-top:1px; }
+.modal-player-price { font-size:.8rem; font-weight:700; color:var(--gold); }
+.no-results { text-align:center; color:var(--gray); font-size:.84rem; padding:28px; }
+
+/* submit modal */
+.success-body { padding:10px 18px 14px; flex:1; overflow-y:auto; display:flex; flex-direction:column; }
+.success-body::-webkit-scrollbar { width:4px; }
+.success-body::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
+.submit-download-box { padding:11px 14px; background:rgba(30,136,229,.08); border-radius:10px; border:1px solid rgba(30,136,229,.35); margin-top:auto; }
+.submit-download-label { font-size:.67rem; color:#64b5f6; text-transform:uppercase; letter-spacing:1px; margin-bottom:5px; font-weight:700; }
+.submit-download-desc { font-size:.78rem; color:var(--white); line-height:1.45; margin-bottom:10px; }
+.submit-team-header { padding-bottom:5px; margin-bottom:4px; border-bottom:1px solid rgba(255,255,255,.07); flex-shrink:0; }
+.submit-team-name { font-weight:700; font-size:.92rem; }
+.submit-team-meta { font-size:.74rem; color:var(--gray); margin-top:2px; display:flex; gap:12px; flex-wrap:wrap; }
+.submit-team-meta span { color:var(--white); }
+.submit-players { margin-bottom:8px; }
+.submit-players > div { flex:1; min-width:0; }
+.success-team-row { display:flex; align-items:center; font-size:.75rem; padding:1px 0; border-bottom:1px solid rgba(255,255,255,.04); gap:5px; }
+.success-team-row:last-child { border-bottom:none; }
+.pos-tag { font-size:.63rem; padding:2px 5px; border-radius:4px; font-weight:700; flex-shrink:0; }
+.pos-tag.gk  { background:rgba(245,166,35,.2);  color:#f5a623; }
+.pos-tag.def { background:rgba(30,136,229,.2);  color:#1e88e5; }
+.pos-tag.mid { background:rgba(67,160,71,.2);   color:#43a047; }
+.pos-tag.fwd { background:rgba(229,57,53,.2);   color:#e53935; }
+.row-name  { flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.row-country { font-size:.68rem; color:var(--gray); flex-shrink:0; }
+.row-price { font-size:.72rem; color:var(--gold); flex-shrink:0; }
+.gold-label    { color:var(--gold); font-size:.62rem; }
+.reason-label  { color:var(--red); }
+.btn-download  { width:100%; padding:10px; font-size:.88rem; font-weight:700; background:linear-gradient(135deg,#1565c0,#1e88e5); border:none; border-radius:8px; color:var(--white); cursor:pointer; letter-spacing:.5px; transition:background .2s; }
+.btn-download:hover { background:#1e88e5; }
+.json-note     { font-size:.75rem; margin-top:7px; text-align:center; min-height:1em; color:var(--gray); }
+.player-item-right { display:flex; flex-direction:column; align-items:flex-end; gap:3px; }
+.add-label { font-size:.58rem; color:var(--green-light); }
+.in-team-label { color:var(--green-light); }
+.no-slot-label { color:var(--gray); }
+.remove-btn { color:var(--red); margin-left:auto; cursor:pointer; }
+.file-ext { font-weight:700; }
+.gold-text { font-weight:700; color:var(--gold); }
+</style>
+</head>
+<body>
+<div id="loadingOverlay" style="position:fixed;inset:0;background:#0d1520;display:flex;align-items:center;justify-content:center;z-index:9999;flex-direction:column;gap:14px">
+  <div style="font-family:'Bebas Neue',cursive;font-size:2rem;letter-spacing:3px;color:#f5c842;line-height:1">WORLD CUP 2026</div>
+  <div style="color:#8a9bb0;font-family:Inter,sans-serif;font-size:.85rem">Loading player data…</div>
+  <div style="width:36px;height:36px;border:3px solid rgba(255,255,255,.1);border-top-color:#25a050;border-radius:50%;animation:csvSpin .8s linear infinite"></div>
+  <style>@keyframes csvSpin{to{transform:rotate(360deg)}}</style>
+</div>
+
+
+<header>
+  <div style="display:flex;align-items:center;gap:14px;">
+    <h1>WORLD CUP 2026 <span>Fantasy Football</span></h1>
+    <button class="rules-btn" onclick="openRules()">📋 Rules &amp; Scoring</button>
+  </div>
+  <div class="hdr-right">
+    <div class="hdr-rule"><strong>Max 2 players</strong>per country</div>
+    <div class="hdr-divider"></div>
+    <div class="hdr-stat">
+      <span class="lbl">Players</span>
+      <span class="val" id="playerCount">0 / 11</span>
+    </div>
+    <div class="hdr-divider"></div>
+    <div class="hdr-stat">
+      <span class="lbl">Budget Used</span>
+      <span class="val ok" id="budgetUsed">$0.0m</span>
+    </div>
+    <div class="hdr-stat">
+      <span class="lbl">Remaining</span>
+      <span class="val ok" id="budgetDisplay">$80.0m</span>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+
+  <!-- ═══ COL 1: Your details ═══ -->
+  <div class="col col-details">
+    <div class="section-label">Your Details</div>
+    <div class="field"><label>Your Name *</label><input type="text" id="userName" placeholder="e.g. John Smith" oninput="onInfoChange()"/></div>
+    <div class="field"><label>Team Name *</label><input type="text" id="teamName" placeholder="e.g. Three Lions FC" oninput="onInfoChange()"/></div>
+    <div class="field field-last"><label>Email Address *</label><input type="email" id="userEmail" placeholder="you@example.com" oninput="onInfoChange()"/></div>
+  </div>
+
+  <!-- ═══ COL 2: Formation + Progress ═══ -->
+  <div class="col col-progress">
+    <div>
+      <div class="section-label">Formation</div>
+      <div class="formations">
+        <button class="formation-btn active" id="form-442" onclick="setFormation('4-4-2')">4-4-2</button>
+        <button class="formation-btn" id="form-433" onclick="setFormation('4-3-3')">4-3-3</button>
+        <button class="formation-btn" id="form-343" onclick="setFormation('3-4-3')">3-4-3</button>
+      </div>
+    </div>
+    <div>
+      <div class="section-label">Progress</div>
+      <div class="steps">
+        <div class="step" id="step1"><span class="step-num">1</span> Your Details</div>
+        <div class="step" id="step2"><span class="step-num">2</span> Choose Formation</div>
+        <div class="step" id="step3"><span class="step-num">3</span> Pick 11 Players</div>
+        <div class="step" id="step4"><span class="step-num">4</span> Set Captain</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ COL 3: Pitch graphic ═══ -->
+  <div class="col col-pitch">
+    <div class="pitch-wrapper">
+      <div class="pitch-row" id="row-gk"></div>
+      <div class="pitch-row" id="row-def"></div>
+      <div class="pitch-row" id="row-mid"></div>
+      <div class="pitch-row" id="row-fwd"></div>
+    </div>
+  </div>
+
+  <!-- ═══ COL 4: Team summary + Submit ═══ -->
+  <div class="col col-team">
+    <div class="team-summary-inner">
+      <div class="section-label">My Team</div>
+      <div id="selectedList"></div>
+    </div>
+    <div class="submit-footer">
+      <button class="submit-btn" id="submitBtn" onclick="openSubmit()" disabled>SUBMIT TEAM</button>
+    </div>
+  </div>
+
+  <!-- ═══ FULL-WIDTH: Player selector ═══ -->
+  <div class="player-list-area">
+    <div class="player-list-header">
+      <div class="player-list-header-row">
+        <span class="section-title-bar">Available Players</span>
+        <input class="search-box" type="text" id="sideSearch" placeholder="Search by name or country…" oninput="renderPlayerList()"/>
+        <select class="sort-select" id="sortBy" onchange="renderPlayerList()">
+          <option value="price-desc">Price ↓</option>
+          <option value="price-asc">Price ↑</option>
+          <option value="name-asc">Name A–Z</option>
+          <option value="country-asc">Country</option>
+        </select>
+      </div>
+      <div class="filter-row">
+        <button class="filter-btn active" id="f-All" onclick="setFilter('All')">All</button>
+        <button class="filter-btn gk-f" id="f-Goalkeeper" onclick="setFilter('Goalkeeper')">GK</button>
+        <button class="filter-btn def-f" id="f-Defender" onclick="setFilter('Defender')">DEF</button>
+        <button class="filter-btn mid-f" id="f-Midfielder" onclick="setFilter('Midfielder')">MID</button>
+        <button class="filter-btn fwd-f" id="f-Forward" onclick="setFilter('Forward')">FWD</button>
+      </div>
+    </div>
+    <div class="player-list" id="playerList"></div>
+  </div>
+
+</div>
+
+<!-- ── Rules & Scoring modal ── -->
+<div class="modal-overlay" id="rulesModal">
+  <div class="rules-modal">
+    <div class="modal-header">
+      <div class="modal-title">📋 RULES &amp; SCORING</div>
+      <button class="modal-close" onclick="closeRules()">✕</button>
+    </div>
+    <div class="rules-body">
+
+      <!-- Top: two columns — Rules left, Scoring right -->
+      <div class="rules-cols">
+
+        <!-- LEFT: Rules -->
+        <div style="display:flex;flex-direction:column;gap:16px;">
+
+          <div class="rules-section">
+            <div class="rules-section-title">Budget</div>
+            <div class="rules-text">The total value of your team must not exceed <strong style="color:var(--gold)">$80m</strong>.</div>
+          </div>
+
+          <div class="rules-section">
+            <div class="rules-section-title">Formations Available</div>
+            <ul class="rules-list">
+              <li>1 GK · 4 DEF · 4 MID · 2 FWD &nbsp;<strong>(4-4-2)</strong></li>
+              <li>1 GK · 4 DEF · 3 MID · 3 FWD &nbsp;<strong>(4-3-3)</strong></li>
+              <li>1 GK · 3 DEF · 4 MID · 3 FWD &nbsp;<strong>(3-4-3)</strong></li>
+            </ul>
+          </div>
+
+          <div class="rules-section">
+            <div class="rules-section-title">Captain</div>
+            <div class="rules-text">Pick one player on your team to be the <strong>Captain</strong>. His points will be doubled throughout the tournament.</div>
+          </div>
+
+          <div class="rules-section">
+            <div class="rules-section-title">Player Limits</div>
+            <div class="rules-text">You may select a maximum of two players from the same country.</div>
+          </div>
+
+          <div class="rules-section">
+            <div class="rules-section-title">Deadline</div>
+            <div class="rules-text">The deadline for team entries is <strong>3pm on Thursday 11th June 2026</strong>. Your team selection is final — you cannot make any transfers during the tournament!</div>
+          </div>
+
+          <div class="rules-section">
+            <div class="rules-section-title">Entry Fee &amp; Prize Money</div>
+            <div class="rules-text" style="margin-bottom:6px;">The entry fee is <strong>£15 per team</strong>. 50% of all takings will be donated to the <strong>British Red Cross</strong>. Prize money is awarded to the top 4 places:</div>
+            <ul class="rules-list">
+              <li>Winner: 20% of all takings</li>
+              <li>Runner-up: 15% of all takings</li>
+              <li>Third place: 10% of all takings</li>
+              <li>Fourth place: 5% of all takings</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Scoring + Previous Winners -->
+        <div style="display:flex;flex-direction:column;gap:16px;">
+
+          <div class="rules-section">
+            <div class="rules-section-title">Points Scoring</div>
+            <table class="scoring-table">
+              <tr><td>Starting appearance</td><td class="pts-pos">+2</td></tr>
+              <tr><td>Substitute appearance</td><td class="pts-pos">+1</td></tr>
+              <tr><td>Non-penalty goal — Goalkeeper or Defender</td><td class="pts-pos">+6</td></tr>
+              <tr><td>Non-penalty goal — Midfielder</td><td class="pts-pos">+5</td></tr>
+              <tr><td>Non-penalty goal — Forward</td><td class="pts-pos">+4</td></tr>
+              <tr><td>Assist</td><td class="pts-pos">+3</td></tr>
+              <tr><td>Clean sheet — Goalkeeper or Defender (60+ mins)</td><td class="pts-pos">+4</td></tr>
+              <tr><td>Penalty scored</td><td class="pts-pos">+3</td></tr>
+              <tr><td>Penalty save — Goalkeeper</td><td class="pts-pos">+2</td></tr>
+              <tr><td>Man of the Match</td><td class="pts-pos">+2</td></tr>
+              <tr><td>Goal conceded — Goalkeeper or Defender</td><td class="pts-neg">−1</td></tr>
+              <tr><td>Missed penalty</td><td class="pts-neg">−2</td></tr>
+              <tr><td>Own goal</td><td class="pts-neg">−2</td></tr>
+              <tr><td>Yellow card</td><td class="pts-neg">−1</td></tr>
+              <tr><td>Red card (incl. two yellows)</td><td class="pts-neg">−3</td></tr>
+            </table>
+            <div class="rules-source">All statistics from <a href="https://www.whoscored.com" target="_blank">www.whoscored.com</a></div>
+          </div>
+
+          <div class="rules-section">
+            <div class="rules-section-title">Previous Winners</div>
+            <table class="winners-table">
+              <tr><td>World Cup 2006</td><td>Fin Watkinson</td></tr>
+              <tr><td>World Cup 2010</td><td>Fin Watkinson</td></tr>
+              <tr><td>Euro 2012</td><td>Jonny Taghavi</td></tr>
+              <tr><td>World Cup 2014</td><td>Garo Heath</td></tr>
+              <tr><td>Euro 2016</td><td>Josh Billings</td></tr>
+              <tr><td>World Cup 2018</td><td>Ed Perchard</td></tr>
+              <tr><td>Euro 2020</td><td>Josh Billings</td></tr>
+              <tr><td>World Cup 2022</td><td>Guy Fenner</td></tr>
+              <tr><td>Euro 2024</td><td>Laura York</td></tr>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bottom: Notes (full width) -->
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div class="rules-note">
+          <div class="rules-note-title">Note 1: Red Cards for Goalkeepers and Defenders</div>
+          <div class="rules-note-text">If a Goalkeeper or Defender receives a red card, he will continue to lose points for any goals conceded by his team thereafter. However, if he has played at least 60 minutes without conceding a goal and the team do not concede a goal after he is sent off, he will still receive clean sheet points.</div>
+        </div>
+        <div class="rules-note">
+          <div class="rules-note-title">Note 2: Knockout Stages</div>
+          <div class="rules-note-text">In the event of a draw at the end of normal time in the knockout stages, clean sheet points will be awarded at the end of normal time (players must have played at least 60 minutes).</div>
+        </div>
+        <div class="rules-note">
+          <div class="rules-note-title">Note 3: Penalty Shootouts</div>
+          <div class="rules-note-text">Goals scored in penalty shootouts DO NOT count towards a player's points tally.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ── Player picker modal ── -->
+<div class="modal-overlay" id="pickerModal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="modalTitle">SELECT PLAYER</div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-slot-info" id="modalSlotInfo"></div>
+    <div class="modal-search">
+      <input type="text" id="modalSearch" placeholder="Search…"/>
+      <select class="country-select" id="modalCountry">
+        <option value="">All Countries</option>
+      </select>
+    </div>
+    <div class="modal-player-list" id="modalPlayerList"></div>
+  </div>
+</div>
+
+<!-- ── Submit / review modal ── -->
+<div class="modal-overlay" id="successModal">
+  <div class="modal">
+    <div class="modal-header modal-header-submit">
+      <div class="modal-title">🏆 REVIEW &amp; SUBMIT</div>
+      <button class="modal-close" onclick="closeSuccessModal()">✕</button>
+    </div>
+    <div class="success-body" id="successBody"></div>
+  </div>
+</div>
+
+<script>
+// ── DATA ──
+var PLAYERS = [];
+
+const KIT = {
+  Algeria:['#006233','#FFFFFF'],Argentina:['#75AADB','#FFFFFF'],
+  Australia:['#FFD700','#006400'],Austria:['#ED2939','#FFFFFF'],
+  Belgium:['#000000','#EF3340'],'Bosnia-Herzegovina':['#002395','#FFCD00'],
+  Brazil:['#FFE500','#009C3B'],Canada:['#FF0000','#FFFFFF'],
+  'Cape Verde':['#003893','#FFD100'],Colombia:['#FCD116','#003087'],
+  Croatia:['#FF0000','#FFFFFF'],Curacao:['#002868','#F9E300'],
+  'Czech Republic':['#D7141A','#FFFFFF'],'DR Congo':['#007FFF','#F7D618'],
+  Ecuador:['#FFD100','#003087'],Egypt:['#CE1126','#FFFFFF'],
+  England:['#FFFFFF','#003399'],France:['#003189','#FFFFFF'],
+  Germany:['#FFFFFF','#000000'],Ghana:['#006B3F','#FCD116'],
+  Haiti:['#00209F','#D21034'],Iran:['#239F40','#FFFFFF'],
+  Iraq:['#CE1126','#000000'],'Ivory Coast':['#F77F00','#009A44'],
+  Japan:['#003DA5','#FFFFFF'],Jordan:['#007A3D','#FFFFFF'],
+  Mexico:['#006847','#FFFFFF'],Morocco:['#C1272D','#006233'],
+  Netherlands:['#FF6600','#FFFFFF'],'New Zealand':['#FFFFFF','#003087'],
+  Norway:['#EF2B2D','#FFFFFF'],Panama:['#DA121A','#FFFFFF'],
+  Paraguay:['#D52B1E','#FFFFFF'],Portugal:['#8B0000','#006600'],
+  Qatar:['#8D1B3D','#FFFFFF'],'Saudi Arabia':['#006C35','#FFFFFF'],
+  Scotland:['#003380','#FFFFFF'],Senegal:['#00853F','#FDEF42'],
+  'South Africa':['#007A4D','#FFB81C'],'South Korea':['#FFFFFF','#003087'],
+  Spain:['#AA151B','#F1BF00'],Sweden:['#006AA7','#FECC02'],
+  Switzerland:['#FF0000','#FFFFFF'],Tunisia:['#E70013','#FFFFFF'],
+  Turkey:['#E30A17','#FFFFFF'],Uruguay:['#5EB6E4','#FFFFFF'],
+  USA:['#002868','#BF0A30'],Uzbekistan:['#1EB53A','#FFFFFF']
+};
+
+function kitSVG(country, size) {
+  const s = size || 32;
+  const cols = KIT[country] || ['#555','#888'];
+  const c1 = cols[0], c2 = cols[1];
+  const stroke = (c1 === '#FFFFFF' || c1 === '#fff') ? '#aaa' : c1;
+  const id = 'c' + country.replace(/[^a-zA-Z]/g,'') + s;
+  return '<svg width="'+s+'" height="'+s+'" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">'
+    + '<defs><clipPath id="'+id+'"><circle cx="26" cy="26" r="24"/></clipPath></defs>'
+    + '<g clip-path="url(#'+id+')">'
+    + '<rect width="52" height="52" fill="'+c1+'"/>'
+    + '<rect x="18" y="0" width="16" height="9" fill="'+c2+'" opacity=".9"/>'
+    + '<rect x="0" y="0" width="9" height="52" fill="'+c2+'" opacity=".2"/>'
+    + '<rect x="43" y="0" width="9" height="52" fill="'+c2+'" opacity=".2"/>'
+    + '</g>'
+    + '<circle cx="26" cy="26" r="24" fill="none" stroke="'+stroke+'" stroke-width="2"/>'
+    + '</svg>';
+}
+
+const FORMATIONS = {'4-4-2':{def:4,mid:4,fwd:2},'4-3-3':{def:4,mid:3,fwd:3},'3-4-3':{def:3,mid:4,fwd:3}};
+const POS_CLS  = {Goalkeeper:'gk',Defender:'def',Midfielder:'mid',Forward:'fwd'};
+const POS_COLOR = {Goalkeeper:'#f5a623',Defender:'#1e88e5',Midfielder:'#43a047',Forward:'#e53935'};
+const POS_LABEL = {Goalkeeper:'GK', Defender:'DEF', Midfielder:'MID', Forward:'FWD'};
+const BUDGET = 80;
+var allCountries = [];
+
+var state = {formation:'4-4-2', team:{}, captain:null, activeSlot:null};
+var sideFilter = 'All';
+
+// ── FORMATION ──
+function setFormation(f) {
+  var o = FORMATIONS[state.formation], n = FORMATIONS[f];
+  if (o.def !== n.def) for (var i = n.def+1; i <= 4; i++) delete state.team['def-'+i];
+  if (o.mid !== n.mid) for (var i = n.mid+1; i <= 4; i++) delete state.team['mid-'+i];
+  if (o.fwd !== n.fwd) for (var i = n.fwd+1; i <= 3; i++) delete state.team['fwd-'+i];
+  state.formation = f;
+  document.querySelectorAll('.formation-btn').forEach(function(b){b.classList.remove('active');});
+  document.getElementById('form-'+f.replace(/-/g,'')).classList.add('active');
+  renderPitch(); updateAll();
+}
+
+// ── PITCH ──
+function renderPitch() {
+  var d = FORMATIONS[state.formation];
+  renderRow('row-gk','Goalkeeper',1,'gk');
+  renderRow('row-def','Defender',d.def,'def');
+  renderRow('row-mid','Midfielder',d.mid,'mid');
+  renderRow('row-fwd','Forward',d.fwd,'fwd');
+}
+
+// 9-column grid: symmetric, equal-gap, 3-player midway between 4-player positions
+// 4 players → cols 2,4,6,8 | 3 players → cols 3,5,7 | 2 players → cols 4,6 | 1 player → col 5
+var GRID_COLS = { 1:[5], 2:[4,6], 3:[3,5,7], 4:[2,4,6,8] };
+
+function renderRow(rowId, position, count, cls) {
+  var row = document.getElementById(rowId);
+  row.innerHTML = '';
+  var cols = GRID_COLS[count] || GRID_COLS[4];
+  for (var i = 1; i <= count; i++) {
+    var slotId = cls+'-'+i;
+    var p = state.team[slotId];
+    var isCap = state.captain === slotId;
+    var el = document.createElement('div');
+    el.className = 'player-slot';
+    el.style.gridColumn = cols[i-1];
+    el.setAttribute('data-slot', slotId);
+    el.setAttribute('data-pos', position);
+    el.onclick = (function(sid, pos){ return function(){ openModal(sid, pos); }; })(slotId, position);
+    if (p) {
+      el.innerHTML =
+        '<div class="kit-wrap">'
+        + kitSVG(p.Country, 32)
+        + (isCap ? '<div class="captain-badge">C</div>' : '')
+        + '</div>'
+        + '<div class="player-name">'+lastName(p.Name)+'</div>'
+        + '<div class="player-country">'+p.Country+'</div>'
+        + '<div class="player-price">$'+p.price+'m</div>';
+    } else {
+      el.innerHTML =
+        '<div class="kit-wrap"><div class="empty-slot-circle">+</div></div>'
+        + '<div class="pos-label">'+POS_LABEL[position]+'</div>';
+    }
+    row.appendChild(el);
+  }
+}
+
+function lastName(name) {
+  var parts = name.split(' ');
+  if (parts.length === 1) return name;
+  var display = parts[parts.length - 1];
+  for (var i = parts.length - 2; i >= 0; i--) {
+    var candidate = parts[i] + ' ' + display;
+    if (candidate.length > 10) break;
+    display = candidate;
+  }
+  if (display.length > 11) display = display.slice(0, 10) + '…';
+  return display;
+}
+
+// ── MODAL ──
+function slotPos(slotId) {
+  if (slotId.startsWith('gk')) return 'Goalkeeper';
+  if (slotId.startsWith('def')) return 'Defender';
+  if (slotId.startsWith('mid')) return 'Midfielder';
+  return 'Forward';
+}
+
+function openModal(slotId, position) {
+  state.activeSlot = slotId;
+  var pos = position || slotPos(slotId);
+  document.getElementById('modalTitle').textContent = 'SELECT '+pos.toUpperCase();
+  var cur = state.team[slotId];
+  var removeBtn = cur
+    ? '<span class="remove-btn" onclick="removeFromSlot(\''+slotId+'\');closeModal()">✕ Remove</span>'
+    : '';
+  document.getElementById('modalSlotInfo').innerHTML =
+    '<span class="slot-pos-badge '+POS_CLS[pos]+'">'+pos+'</span>'
+    + '<span>Click a player to assign them</span>'
+    + removeBtn;
+  document.getElementById('modalSearch').value = '';
+  var sel = document.getElementById('modalCountry');
+  sel.innerHTML = '<option value="">All Countries</option>';
+  allCountries.forEach(function(c){ sel.innerHTML += '<option>'+c+'</option>'; });
+  renderModalList();
+  document.getElementById('pickerModal').classList.add('open');
+}
+
+function closeModal() {
+  document.getElementById('pickerModal').classList.remove('open');
+  state.activeSlot = null;
+}
+
+function removeFromSlot(slotId) {
+  if (state.captain === slotId) state.captain = null;
+  delete state.team[slotId];
+  renderPitch(); updateAll();
+}
+
+function renderModalList() {
+  var slotId = state.activeSlot; if (!slotId) return;
+  var position = slotPos(slotId);
+  var search = document.getElementById('modalSearch').value.toLowerCase();
+  var country = document.getElementById('modalCountry').value;
+  var cur = state.team[slotId];
+  var budgetAvail = BUDGET - getTotalCost() + (cur ? cur.price : 0);
+
+  var selectedNames = {};
+  Object.keys(state.team).forEach(function(k){
+    if (k !== slotId) selectedNames[state.team[k].Name] = true;
+  });
+  var countryCount = {};
+  Object.keys(state.team).forEach(function(k){
+    if (k !== slotId) { var c=state.team[k].Country; countryCount[c]=(countryCount[c]||0)+1; }
+  });
+
+  var filtered = PLAYERS.filter(function(p){
+    if (p.Position !== position) return false;
+    if (search && p.Name.toLowerCase().indexOf(search)<0 && p.Country.toLowerCase().indexOf(search)<0) return false;
+    if (country && p.Country !== country) return false;
+    return true;
+  });
+  filtered.sort(function(a,b){ return b.price - a.price; });
+
+  var container = document.getElementById('modalPlayerList');
+  if (!filtered.length) { container.innerHTML = '<div class="no-results">No players found</div>'; return; }
+
+  container.innerHTML = filtered.map(function(p){
+    var isSel = !!selectedNames[p.Name];
+    var isCur = cur && cur.Name === p.Name;
+    var tooExp = p.price > budgetAvail;
+    var cFull = !isSel && (countryCount[p.Country]||0) >= 2;
+    var disabled = (isSel || tooExp || cFull) && !isCur;
+    var reason = isSel ? '✓ In team' : tooExp ? 'Over budget' : cFull ? 'Country limit (max 2)' : '';
+    var safeName = p.Name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+    return '<div class="modal-player-item'+(disabled?' disabled':'')+'" '
+      + (disabled ? '' : 'onclick="selectPlayer(\''+safeName+'\')"') + '>'
+      + '<div class="modal-kit">'+kitSVG(p.Country,28)+'</div>'
+      + '<div class="modal-player-info">'
+      + '<div class="modal-player-name">'+p.Name+(isCur?' <span class="gold-label">(current)</span>':'')+'</div>'
+      + '<div class="modal-player-meta">'+p.Country+(reason?' · <span class="reason-label">'+reason+'</span>':'')+'</div>'
+      + '</div>'
+      + '<div class="modal-player-price">$'+p.price+'m</div>'
+      + '</div>';
+  }).join('');
+}
+
+function selectPlayer(name) {
+  var p = PLAYERS.find(function(pl){ return pl.Name === name; });
+  if (!p) return;
+  state.team[state.activeSlot] = p;
+  renderPitch(); updateAll(); closeModal();
+}
+
+// ── PLAYER LIST ──
+function setFilter(f) {
+  sideFilter = f;
+  document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
+  document.getElementById('f-'+f).classList.add('active');
+  renderPlayerList();
+}
+
+function addPlayerToTeam(name) {
+  var p = PLAYERS.find(function(pl){ return pl.Name === name; });
+  if (!p) return;
+  var cls = POS_CLS[p.Position];
+  var slotCount = cls === 'gk' ? 1 : FORMATIONS[state.formation][cls];
+  for (var s = 1; s <= slotCount; s++) {
+    var sid = cls + '-' + s;
+    if (!state.team[sid]) {
+      state.team[sid] = p;
+      renderPitch(); updateAll();
+      return;
+    }
+  }
+}
+
+function renderPlayerList() {
+  var search = document.getElementById('sideSearch').value.toLowerCase();
+  var sort = document.getElementById('sortBy').value;
+  var remaining = BUDGET - getTotalCost();
+  var selectedNames = {};
+  Object.values(state.team).forEach(function(p){ selectedNames[p.Name]=true; });
+
+  // Work out which positions still have empty slots
+  var d = FORMATIONS[state.formation];
+  var emptyByPos = {Goalkeeper:0, Defender:0, Midfielder:0, Forward:0};
+  if (!state.team['gk-1']) emptyByPos.Goalkeeper++;
+  for (var i=1; i<=d.def; i++) { if (!state.team['def-'+i]) emptyByPos.Defender++; }
+  for (var i=1; i<=d.mid; i++) { if (!state.team['mid-'+i]) emptyByPos.Midfielder++; }
+  for (var i=1; i<=d.fwd; i++) { if (!state.team['fwd-'+i]) emptyByPos.Forward++; }
+
+  var filtered = PLAYERS.filter(function(p){
+    if (sideFilter !== 'All' && p.Position !== sideFilter) return false;
+    if (search && p.Name.toLowerCase().indexOf(search)<0 && p.Country.toLowerCase().indexOf(search)<0) return false;
+    return true;
+  });
+
+  if (sort==='price-desc') filtered.sort(function(a,b){return b.price-a.price;});
+  else if (sort==='price-asc') filtered.sort(function(a,b){return a.price-b.price;});
+  else if (sort==='name-asc') filtered.sort(function(a,b){return a.Name.localeCompare(b.Name);});
+  else filtered.sort(function(a,b){return a.Country.localeCompare(b.Country)||b.price-a.price;});
+
+  // Country usage for limit check
+  var countryCount = {};
+  Object.values(state.team).forEach(function(p){ countryCount[p.Country]=(countryCount[p.Country]||0)+1; });
+
+  var container = document.getElementById('playerList');
+  container.innerHTML = filtered.map(function(p){
+    var isSel = !!selectedNames[p.Name];
+    var cantAfford = !isSel && p.price > remaining;
+    var countryFull = !isSel && (countryCount[p.Country]||0) >= 2;
+    var noSlot = !isSel && emptyByPos[p.Position] === 0;
+    var unselectable = cantAfford || countryFull || noSlot;
+    var safeName = p.Name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+
+    var reasonBits = [];
+    if (cantAfford) reasonBits.push('<span class="reason-label">Over budget</span>');
+    else if (countryFull) reasonBits.push('<span class="reason-label">Country limit</span>');
+    else if (noSlot) reasonBits.push('<span class="no-slot-label">No slot available</span>');
+
+    var clickAttr = (!isSel && !unselectable) ? 'onclick="addPlayerToTeam(\''+safeName+'\')"' : '';
+
+    return '<div class="player-item'+(isSel?' selected':'')+(unselectable&&!isSel?' cant-afford':'')+'" '+clickAttr+'>'
+      + '<div class="pos-dot '+POS_CLS[p.Position]+'"></div>'
+      + '<div class="player-item-info">'
+      + '<div class="player-item-name">'+p.Name+'</div>'
+      + '<div class="player-item-meta">'+p.Country+' · '+POS_LABEL[p.Position]
+      + (isSel?' · <span class="in-team-label">✓ In team</span>':'')
+      + (reasonBits.length?' · '+reasonBits.join(''):'')
+      + '</div>'
+      + '</div>'
+      + '<div class="player-item-right">'
+      + '<div class="player-item-price">$'+p.price+'m</div>'
+      + (!isSel && !unselectable ? '<div class="add-label">+ Add</div>' : '')
+      + '</div>'
+      + '</div>';
+  }).join('');
+}
+
+// ── TEAM SUMMARY ──
+function renderSelectedPanel() {
+  var d = FORMATIONS[state.formation];
+  var slots = [
+    {slotId:'gk-1',   pos:'Goalkeeper', color:POS_COLOR.Goalkeeper},
+  ];
+  for (var i=1; i<=d.def; i++) slots.push({slotId:'def-'+i, pos:'Defender',  color:POS_COLOR.Defender});
+  for (var i=1; i<=d.mid; i++) slots.push({slotId:'mid-'+i, pos:'Midfielder', color:POS_COLOR.Midfielder});
+  for (var i=1; i<=d.fwd; i++) slots.push({slotId:'fwd-'+i, pos:'Forward',    color:POS_COLOR.Forward});
+
+  var container = document.getElementById('selectedList');
+  var html = '';
+  slots.forEach(function(s){
+    var p = state.team[s.slotId];
+    var isCap = state.captain === s.slotId;
+    if (p) {
+      html += '<div class="selected-player-row">'
+        + '<span class="sel-pos-dot" style="background:'+s.color+'"></span>'
+        + '<div class="sel-name">'+p.Name+(isCap?' <span class="gold-label">(C)</span>':'')+'</div>'
+        + '<div class="sel-country">'+p.Country+'</div>'
+        + '<div class="sel-price">$'+p.price+'m</div>'
+        + '<div class="sel-actions">'
+        + '<button class="btn-small btn-captain'+(isCap?' active':'')+'" title="Set captain" onclick="setCaptain(\''+s.slotId+'\')">C</button>'
+        + '<button class="btn-small btn-remove" title="Remove" onclick="removeFromSlot(\''+s.slotId+'\')">✕</button>'
+        + '</div></div>';
+    } else {
+      html += '<div class="selected-player-row empty-slot-row">'
+        + '<span class="sel-pos-dot" style="background:'+s.color+';opacity:.35"></span>'
+        + '<div class="sel-name sel-empty">'+POS_LABEL[s.pos]+'</div>'
+        + '</div>';
+    }
+  });
+  container.innerHTML = html;
+}
+
+function setCaptain(slotId) {
+  state.captain = state.captain === slotId ? null : slotId;
+  renderPitch(); updateAll();
+}
+
+// ── CALCULATIONS ──
+function getTotalCost() {
+  return Object.values(state.team).reduce(function(s,p){return s+p.price;},0);
+}
+function getPlayerCount() { return Object.keys(state.team).length; }
+
+function updateAll() {
+  var count = getPlayerCount(), cost = getTotalCost(), rem = BUDGET - cost;
+  var remCls = rem < 0 ? 'danger' : rem < 10 ? 'warn' : 'ok';
+  document.getElementById('playerCount').textContent = count + ' / 11';
+  var usedEl = document.getElementById('budgetUsed');
+  usedEl.textContent = '$' + cost.toFixed(1) + 'm';
+  usedEl.className = 'val ' + remCls;
+  var remEl = document.getElementById('budgetDisplay');
+  remEl.textContent = '$' + rem.toFixed(1) + 'm';
+  remEl.className = 'val ' + remCls;
+  renderSelectedPanel();
+  renderPlayerList();
+  updateSubmitBtn(count, rem);
+  updateSteps(count);
+}
+
+function onInfoChange() {
+  updateSubmitBtn(getPlayerCount(), BUDGET - getTotalCost());
+  updateSteps(getPlayerCount());
+}
+
+function updateSteps(count) {
+  var hasInfo = document.getElementById('userName').value.trim()
+    && document.getElementById('teamName').value.trim()
+    && document.getElementById('userEmail').value.trim();
+  function cls(cond, active) { return 'step '+(cond?'done':active?'active':''); }
+  document.getElementById('step1').className = cls(hasInfo, true);
+  document.getElementById('step2').className = 'step done';
+  document.getElementById('step3').className = cls(count===11, count>0);
+  document.getElementById('step4').className = cls(!!state.captain, count===11);
+}
+
+function updateSubmitBtn(count, rem) {
+  var cc = {};
+  Object.values(state.team).forEach(function(p){ cc[p.Country]=(cc[p.Country]||0)+1; });
+  var countryOk = Object.values(cc).every(function(c){ return c <= 2; });
+  var hasInfo = document.getElementById('userName').value.trim()
+    && document.getElementById('teamName').value.trim()
+    && document.getElementById('userEmail').value.trim();
+  document.getElementById('submitBtn').disabled = !(count===11 && rem>=0 && countryOk && state.captain && hasInfo);
+}
+
+// ── RULES MODAL ──
+function openRules()  { document.getElementById('rulesModal').classList.add('open'); }
+function closeRules() { document.getElementById('rulesModal').classList.remove('open'); }
+
+// ── SUBMIT ──
+const POS_GROUPS = [
+  {c:'gk', l:'Goalkeeper'}, {c:'def', l:'Defender'},
+  {c:'mid', l:'Midfielder'}, {c:'fwd', l:'Forward'}
+];
+
+function getOrderedPlayers() {
+  var out = [];
+  POS_GROUPS.forEach(function(g){
+    Object.keys(state.team).filter(function(k){ return k.startsWith(g.c); }).sort()
+      .forEach(function(sid){ out.push({slot:sid, player:state.team[sid], posLabel:g.l}); });
+  });
+  return out;
+}
+
+
+function openSubmit() {
+  var name  = document.getElementById('userName').value.trim();
+  var tname = document.getElementById('teamName').value.trim();
+  var cap   = state.team[state.captain];
+  var cost  = getTotalCost();
+  var ordered = getOrderedPlayers();
+  var playerRows = ordered.map(function(entry) {
+    var p = entry.player;
+    var isCap = state.captain === entry.slot;
+    return '<div class="success-team-row">'
+      + '<span class="pos-tag ' + POS_CLS[entry.posLabel] + '">' + POS_LABEL[entry.posLabel] + '</span>'
+      + '<span class="row-name">' + (isCap ? '★ ' : '') + p.Name + '</span>'
+      + '<span class="row-country">' + p.Country + '</span>'
+      + '<span class="row-price">$' + p.price + 'm</span>'
+      + '</div>';
+  });
+
+  // Single column player list
+  var playerList = playerRows.join('');
+
+  document.getElementById('successBody').innerHTML =
+
+    // ── Compact team header ──
+    '<div class="submit-team-header">'
+    + '<div class="submit-team-name">' + tname + ' &nbsp;<span style="font-weight:400;font-size:.82rem;color:var(--gray)">— ' + name + '</span></div>'
+    + '<div class="submit-team-meta">'
+    + 'Formation: <span>' + state.formation + '</span>'
+    + 'Captain: <span>' + (cap ? cap.Name : '—') + '</span>'
+    + 'Total: <span>$' + cost.toFixed(1) + 'm</span>'
+    + '</div>'
+    + '</div>'
+
+    // ── Single-column player list ──
+    + '<div class="submit-players">'
+    + '<div>' + playerList + '</div>'
+    + '</div>'
+
+    // ── Download section below ──
+    + '<div class="submit-download-box">'
+    + '<div class="submit-download-label">📧 Download and email to Jack</div>'
+    + '<div class="submit-download-desc">Download your team as a <span class="file-ext">.json file</span> and email it to Jack at <span class="gold-text">jmrbarratt@gmail.com</span>.</div>'
+    + '<button class="btn-download" onclick="downloadJSON()">⬇ Download team file (.json)</button>'
+    + '<div id="jsonNote" class="json-note"></div>'
+    + '</div>';
+
+  document.getElementById('successModal').classList.add('open');
+}
+
+function closeSuccessModal() { document.getElementById('successModal').classList.remove('open'); }
+
+function downloadJSON() {
+  var name  = document.getElementById('userName').value.trim();
+  var tname = document.getElementById('teamName').value.trim();
+  var email = document.getElementById('userEmail').value.trim();
+  var cap   = state.team[state.captain];
+  var ordered = getOrderedPlayers();
+  var payload = {
+    name:      tname,
+    owner:     name,
+    email:     email,
+    formation: state.formation,
+    captain:   cap ? cap.Name : '',
+    players:   ordered.map(function(e){ return { Name:e.player.Name, Country:e.player.Country, Position:e.player.Position, price:e.player.price }; })
+  };
+  var blob = new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  var safeName = (tname + '_' + name).replace(/[^a-zA-Z0-9_\- ]/g,'').replace(/\s+/g,'_');
+  a.download = 'WC2026_Team_' + safeName + '.json';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(a.href);
+  var note = document.getElementById('jsonNote');
+  note.style.color = '#4caf50';
+  note.textContent = '✓ Downloaded! Email this file to Jack to be added to the leaderboard.';
+}
+
+// ── INIT ──
+// ── CSV helpers ──
+function splitCSVRow(row) {
+  var res=[], cur='', inQ=false;
+  for (var i=0;i<row.length;i++) {
+    var c=row[i];
+    if (c==='"') { if(inQ&&row[i+1]==='"'){cur+='"';i++;}else inQ=!inQ; }
+    else if (c===','&&!inQ){res.push(cur);cur='';}
+    else cur+=c;
+  }
+  res.push(cur); return res;
+}
+function parsePlayerCSV(csv) {
+  var lines=csv.split(/\r?\n/).filter(function(l){return l.trim();});
+  var h=splitCSVRow(lines[0]).map(function(x){return x.trim();});
+  var ni=h.indexOf('Name'),ci=h.indexOf('Country'),pi=h.indexOf('Position'),ri=h.indexOf('Price');
+  var out=[];
+  for (var i=1;i<lines.length;i++){
+    var c=splitCSVRow(lines[i]);
+    var name=(c[ni]||'').trim(); if(!name) continue;
+    out.push({Name:name,Country:(c[ci]||'').trim(),Position:(c[pi]||'').trim(),price:parseFloat(c[ri]||0)});
+  }
+  return out;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Wire up modal event listeners
+  document.getElementById('rulesModal').addEventListener('click', function(e){ if(e.target===this) closeRules(); });
+  document.getElementById('pickerModal').addEventListener('click', function(e){ if(e.target===this) closeModal(); });
+  document.getElementById('successModal').addEventListener('click', function(e){ if(e.target===this) closeSuccessModal(); });
+  document.getElementById('modalSearch').addEventListener('input', renderModalList);
+  document.getElementById('modalCountry').addEventListener('change', renderModalList);
+  // Fetch player data from CSV
+  fetch('./data/players.csv')
+    .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
+    .then(function(csv){
+      PLAYERS = parsePlayerCSV(csv);
+      var seen={};
+      PLAYERS.forEach(function(p){ seen[p.Country]=1; });
+      allCountries.splice(0,allCountries.length);
+      Array.prototype.push.apply(allCountries, Object.keys(seen).sort());
+      // Populate country filter dropdown
+      var sel=document.getElementById('modalCountry');
+      sel.innerHTML='<option value="">All Countries</option>';
+      allCountries.forEach(function(c){ sel.innerHTML+='<option>'+c+'</option>'; });
+      document.getElementById('loadingOverlay').style.display='none';
+      renderPitch(); renderPlayerList(); updateAll();
+    })
+    .catch(function(e){
+      var ov=document.getElementById('loadingOverlay');
+      ov.innerHTML='<div style="text-align:center;font-family:Inter,sans-serif;padding:40px">'
+        +'<div style="font-size:2rem;margin-bottom:12px">⚠</div>'
+        +'<div style="color:#f0f6fa;margin-bottom:6px">Could not load player data</div>'
+        +'<div style="color:#8a9bb0;font-size:.82rem">'+e.message+'</div>'
+        +'<div style="color:#8a9bb0;font-size:.78rem;margin-top:8px">Make sure players.csv is in the /data/ folder</div>'
+        +'</div>';
+    });
+});
+</script>
+</body>
+</html>
