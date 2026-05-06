@@ -1,0 +1,75 @@
+{
+  "name": "Test",
+  "owner": "Jack",
+  "email": "jmrbarratt@gmail.com",
+  "formation": "4-3-3",
+  "captain": "MEMPHIS DEPAY",
+  "players": [
+    {
+      "Name": "EMILIANO MARTINEZ",
+      "Country": "Argentina",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "EZRI KONSA",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "DAVID RAUM",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "JOAO CANCELO",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "ALPHONSO DAVIES",
+      "Country": "Canada",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "ANTOINE SEMENYO",
+      "Country": "Ghana",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "MAGHNES AKLIOUCHE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 8.5
+    },
+    {
+      "Name": "MEMPHIS DEPAY",
+      "Country": "Netherlands",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "ENDRICK",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 7
+    }
+  ]
+}
