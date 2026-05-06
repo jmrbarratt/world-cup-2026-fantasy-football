@@ -439,17 +439,6 @@ var state = {
   scores: {}
 };
 
-// ── PERSISTENCE ──
-function save() {
-  try { localStorage.setItem('euro2024_admin', JSON.stringify(state)); } catch(e) {}
-}
-function load() {
-  try {
-    var raw = localStorage.getItem('euro2024_admin');
-    if (raw) state = JSON.parse(raw);
-  } catch(e) {}
-}
-
 // ── PANELS ──
 function showPanel(name) {
   document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
