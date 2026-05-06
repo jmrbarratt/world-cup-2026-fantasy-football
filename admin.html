@@ -300,22 +300,7 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 <!-- TEAMS PANEL -->
 <div class="panel active" id="panel-teams">
   <h1 class="section-title">Teams</h1>
-  <p class="section-sub">Import team JSON files sent by participants. Drag & drop one or many files at once.</p>
-
-  <div class="backup-bar">
-    <p>💾 Data is saved in your browser automatically. Use the buttons below to back up or restore everything.</p>
-    <button class="btn btn-ghost" onclick="exportBackup()">⬇ Download backup</button>
-    <label class="btn btn-ghost file-label">
-      ⬆ Restore backup <input type="file" accept=".json" class="hidden-input" onchange="importBackup(this)">
-    </label>
-  </div>
-
-  <div class="import-zone" id="dropZone" onclick="document.getElementById('fileInput').click()">
-    <div class="drop-icon">📂</div>
-    <p><strong>Click to import team files</strong> or drag & drop here</p>
-    <p class="drop-sub">Accepts .json files exported from the submission app</p>
-    <input type="file" id="fileInput" accept=".json" multiple class="hidden-input" onchange="handleFileImport(this.files)">
-  </div>
+  <p class="section-sub">Teams are loaded automatically from the repository.</p>
 
   <div class="teams-toolbar">
     <div id="teamsCount" class="teams-count"></div>
@@ -325,7 +310,7 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
   <div class="teams-grid" id="teamsGrid"></div>
   <div id="teamsEmpty" class="empty-state">
     <div class="icon">⚽</div>
-    <p>No teams imported yet.<br>Ask participants to export their team from the submission app<br>and email you the .json file.</p>
+    <p>No teams found.<br>Upload team JSON files to the repository to display them here.</p>
   </div>
 </div>
 
@@ -492,29 +477,6 @@ dz.addEventListener('drop', e => {
   e.preventDefault(); dz.classList.remove('drag-over');
   handleFileImport(e.dataTransfer.files);
 });
-
-function handleFileImport(files) {
-  var count = 0;
-  Array.from(files).forEach(file => {
-    var reader = new FileReader();
-    reader.onload = e => {
-      try {
-        var data = JSON.parse(e.target.result);
-        if (!data.players || !data.name) throw new Error('Invalid format');
-        var id = 'team_' + data.name.replace(/\s+/g,'_') + '_' + data.owner.replace(/\s+/g,'_');
-        state.teams[id] = data;
-        count++;
-        save();
-        renderTeams();
-        toast('✓ Imported: ' + data.name);
-      } catch(err) {
-        toast('✗ Could not read: ' + file.name, 'error');
-      }
-    };
-    reader.readAsText(file);
-  });
-  document.getElementById('fileInput').value = '';
-}
 
 // ── RENDER TEAMS ──
 function renderTeams() {
