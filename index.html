@@ -166,7 +166,7 @@ header h1 span { color:var(--green-light); }
 .player-item.cant-afford { opacity:.35; cursor:not-allowed; }
 .pos-dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
 .pos-dot.gk { background:#f5a623; } .pos-dot.def { background:#1e88e5; } .pos-dot.mid { background:#43a047; } .pos-dot.fwd { background:#e53935; }
-.player-item-info { flex:1; min-width:0; }
+.player-item-info { flex:1; min-width:0; display:flex; flex-direction:column; justify-content:center; }
 .player-item-name { font-size:.72rem; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .player-item-meta { font-size:.61rem; color:var(--gray); }
 .player-item-price { font-size:.74rem; font-weight:700; color:var(--gold); flex-shrink:0; }
@@ -269,7 +269,7 @@ header h1 span { color:var(--green-light); }
 .btn-download  { width:100%; padding:10px; font-size:.88rem; font-weight:700; background:linear-gradient(135deg,#1565c0,#1e88e5); border:none; border-radius:8px; color:var(--white); cursor:pointer; letter-spacing:.5px; transition:background .2s; }
 .btn-download:hover { background:#1e88e5; }
 .json-note     { font-size:.75rem; margin-top:7px; text-align:center; min-height:1em; color:var(--gray); }
-.player-item-right { display:flex; flex-direction:column; align-items:flex-end; gap:3px; }
+.player-item-right { display:flex; flex-direction:column; align-items:flex-end; justify-content:center; gap:3px; }
 .add-label { font-size:.58rem; color:var(--green-light); }
 .in-team-label { color:var(--green-light); }
 .no-slot-label { color:var(--gray); }
@@ -282,103 +282,92 @@ header h1 span { color:var(--green-light); }
    ════════════════════════════════════════════ */
 @media (max-width:1024px) {
 
-  /* ── Mobile banner ── */
-  .mobile-banner {
-    display:flex !important;
+  /* ── Header: two-line layout ── */
+  header {
+    padding:6px 12px;
+    flex-direction:column;
+    align-items:stretch;
+    gap:4px;
   }
+  /* Top line: title + rules button */
+  header > div:first-child {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+  }
+  header h1 { font-size:1rem; letter-spacing:1.5px; }
+  /* Bottom line: stats row */
+  .hdr-right {
+    display:flex;
+    gap:4px;
+    align-items:center;
+    width:100%;
+    overflow:hidden;
+  }
+  .hdr-rule { display:none; }
+  .hdr-divider { display:none; }
+  .hdr-stat { min-width:0; flex:1; padding:3px 6px; }
+  .hdr-stat .val { font-size:.78rem; }
+  .hdr-stat .lbl { font-size:.5rem; }
 
   /* ── Hide desktop-only elements ── */
   .col-details,
   .col-progress,
-  .submit-footer,
-  #step1, #step2, #step3, #step4 {
+  .col-team,
+  .submit-footer {
     display:none !important;
   }
 
-  /* ── Header: simplify ── */
-  .hdr-rule { display:none; }
-  .hdr-divider { display:none; }
-  header { padding:6px 14px; }
-  header h1 { font-size:1.1rem; letter-spacing:2px; }
-  .hdr-right { gap:5px; }
-  .hdr-stat { min-width:60px; padding:4px 8px; }
-  .hdr-stat .val { font-size:.8rem; }
-  .hdr-stat .lbl { font-size:.52rem; }
+  /* ── Mobile banner ── */
+  .mobile-banner { display:flex !important; }
 
   /* ── Page: single column ── */
-  .page {
-    display:flex;
-    flex-direction:column;
-  }
+  .page { display:flex; flex-direction:column; }
 
   /* ── Pitch column ── */
   .col-pitch {
-    height:260px;
+    height:340px;
     padding:8px 4px;
     order:1;
   }
 
-  /* ── Pitch slots: scale down ── */
-  .player-slot { width:38px; }
-  .kit-wrap { width:26px; height:26px; margin-bottom:1px; }
-  .empty-slot-circle { width:26px; height:26px; font-size:.65rem; }
-  .player-name { font-size:.44rem; max-width:42px; }
-  .player-country { font-size:.38rem; }
-  .player-price { font-size:.38rem; }
-  .pos-label { font-size:.36rem; }
+  /* ── Pitch slots: scale down slightly ── */
+  .player-slot { width:42px; }
+  .kit-wrap { width:28px; height:28px; margin-bottom:2px; }
+  .empty-slot-circle { width:28px; height:28px; font-size:.68rem; }
+  .player-name { font-size:.47rem; max-width:46px; }
+  .player-country { font-size:.4rem; }
+  .player-price { font-size:.4rem; }
+  .pos-label { font-size:.38rem; }
   .captain-badge { width:10px; height:10px; font-size:.36rem; }
 
-  /* ── Team summary ── */
-  .col-team {
-    height:auto;
-    order:2;
-    border-top:1px solid rgba(255,255,255,.08);
-  }
-  .team-summary-inner {
-    padding:10px 12px 10px;
-    overflow:visible;
-  }
-
   /* ── Player list area ── */
-  .player-list-area {
-    order:3;
-  }
+  .player-list-area { order:2; }
   .player-list {
     grid-template-columns:repeat(2,minmax(0,1fr));
     max-height:none;
-    height:calc(100vh - 420px);
-    min-height:200px;
+    height:calc(100svh - 380px);
+    min-height:240px;
   }
-  .player-item { padding:5px 8px; gap:7px; }
+  .player-item { padding:5px 8px; gap:7px; align-items:center; }
   .player-item-name { font-size:.78rem; }
   .player-item-meta { font-size:.65rem; }
   .player-item-price { font-size:.78rem; }
 
   /* ── Picker modal: full screen ── */
   .modal {
-    width:100vw;
-    max-width:100vw;
-    height:100vh;
-    border-radius:0;
-    border:none;
+    width:100vw; max-width:100vw;
+    height:100svh; border-radius:0; border:none;
   }
   #successModal { padding-top:0; }
 
   /* ── Rules modal: full screen ── */
   .rules-modal {
-    width:100vw;
-    max-width:100vw;
-    max-height:100vh;
-    border-radius:0;
+    width:100vw; max-width:100vw;
+    max-height:100svh; border-radius:0;
   }
-  .rules-cols {
-    grid-template-columns:1fr;
-  }
-
-  /* ── Formation buttons ── */
-  .mobile-formation {
-    display:flex !important;
-  }
+  .rules-cols { grid-template-columns:1fr; }
 }
 
 /* Mobile banner hidden on desktop */
@@ -390,114 +379,7 @@ header h1 span { color:var(--green-light); }
   <div style="font-family:'Bebas Neue',cursive;font-size:2rem;letter-spacing:3px;color:#f5c842;line-height:1">WORLD CUP 2026</div>
   <div style="color:#8a9bb0;font-family:Inter,sans-serif;font-size:.85rem">Loading player data…</div>
   <div style="width:36px;height:36px;border:3px solid rgba(255,255,255,.1);border-top-color:#25a050;border-radius:50%;animation:csvSpin .8s linear infinite"></div>
-  <style>@keyframes csvSpin{to{transform:rotate(360deg)}}
-/* ════════════════════════════════════════════
-   MOBILE LAYOUT (≤1024px)
-   ════════════════════════════════════════════ */
-@media (max-width:1024px) {
-
-  /* ── Mobile banner ── */
-  .mobile-banner {
-    display:flex !important;
-  }
-
-  /* ── Hide desktop-only elements ── */
-  .col-details,
-  .col-progress,
-  .submit-footer,
-  #step1, #step2, #step3, #step4 {
-    display:none !important;
-  }
-
-  /* ── Header: simplify ── */
-  .hdr-rule { display:none; }
-  .hdr-divider { display:none; }
-  header { padding:6px 14px; }
-  header h1 { font-size:1.1rem; letter-spacing:2px; }
-  .hdr-right { gap:5px; }
-  .hdr-stat { min-width:60px; padding:4px 8px; }
-  .hdr-stat .val { font-size:.8rem; }
-  .hdr-stat .lbl { font-size:.52rem; }
-
-  /* ── Page: single column ── */
-  .page {
-    display:flex;
-    flex-direction:column;
-  }
-
-  /* ── Pitch column ── */
-  .col-pitch {
-    height:260px;
-    padding:8px 4px;
-    order:1;
-  }
-
-  /* ── Pitch slots: scale down ── */
-  .player-slot { width:38px; }
-  .kit-wrap { width:26px; height:26px; margin-bottom:1px; }
-  .empty-slot-circle { width:26px; height:26px; font-size:.65rem; }
-  .player-name { font-size:.44rem; max-width:42px; }
-  .player-country { font-size:.38rem; }
-  .player-price { font-size:.38rem; }
-  .pos-label { font-size:.36rem; }
-  .captain-badge { width:10px; height:10px; font-size:.36rem; }
-
-  /* ── Team summary ── */
-  .col-team {
-    height:auto;
-    order:2;
-    border-top:1px solid rgba(255,255,255,.08);
-  }
-  .team-summary-inner {
-    padding:10px 12px 10px;
-    overflow:visible;
-  }
-
-  /* ── Player list area ── */
-  .player-list-area {
-    order:3;
-  }
-  .player-list {
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    max-height:none;
-    height:calc(100vh - 420px);
-    min-height:200px;
-  }
-  .player-item { padding:5px 8px; gap:7px; }
-  .player-item-name { font-size:.78rem; }
-  .player-item-meta { font-size:.65rem; }
-  .player-item-price { font-size:.78rem; }
-
-  /* ── Picker modal: full screen ── */
-  .modal {
-    width:100vw;
-    max-width:100vw;
-    height:100vh;
-    border-radius:0;
-    border:none;
-  }
-  #successModal { padding-top:0; }
-
-  /* ── Rules modal: full screen ── */
-  .rules-modal {
-    width:100vw;
-    max-width:100vw;
-    max-height:100vh;
-    border-radius:0;
-  }
-  .rules-cols {
-    grid-template-columns:1fr;
-  }
-
-  /* ── Formation buttons ── */
-  .mobile-formation {
-    display:flex !important;
-  }
-}
-
-/* Mobile banner hidden on desktop */
-.mobile-banner { display:none; }
-</style>
+  <style>@keyframes csvSpin{to{transform:rotate(360deg)}}</style>
 </div>
 
 
@@ -531,7 +413,7 @@ header h1 span { color:var(--green-light); }
   <div class="mobile-banner" style="grid-column:1/-1;background:rgba(245,200,66,.08);border-bottom:1px solid rgba(245,200,66,.25);padding:10px 14px;gap:10px;align-items:flex-start;flex-direction:column;">
     <div style="display:flex;align-items:center;gap:8px;">
       <span style="font-size:1.1rem;">📱</span>
-      <span style="font-family:'Bebas Neue',cursive;font-size:.95rem;letter-spacing:2px;color:var(--gold);">Playing on mobile?</span>
+      <span style="font-family:'Bebas Neue',cursive;font-size:.95rem;letter-spacing:2px;color:var(--gold);">Viewing on mobile?</span>
     </div>
     <div style="font-size:.76rem;color:rgba(255,255,255,.8);line-height:1.55;">
       You can build and explore your team here — but <strong style="color:var(--white);">to officially submit your team you'll need to visit this page on a desktop or laptop computer</strong>, where you can fill in your details and download the team file to send to Jack.
