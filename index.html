@@ -276,6 +276,113 @@ header h1 span { color:var(--green-light); }
 .remove-btn { color:var(--red); margin-left:auto; cursor:pointer; }
 .file-ext { font-weight:700; }
 .gold-text { font-weight:700; color:var(--gold); }
+
+/* ════════════════════════════════════════════
+   MOBILE LAYOUT (≤1024px)
+   ════════════════════════════════════════════ */
+@media (max-width:1024px) {
+
+  /* ── Mobile banner ── */
+  .mobile-banner {
+    display:flex !important;
+  }
+
+  /* ── Hide desktop-only elements ── */
+  .col-details,
+  .col-progress,
+  .submit-footer,
+  #step1, #step2, #step3, #step4 {
+    display:none !important;
+  }
+
+  /* ── Header: simplify ── */
+  .hdr-rule { display:none; }
+  .hdr-divider { display:none; }
+  header { padding:6px 14px; }
+  header h1 { font-size:1.1rem; letter-spacing:2px; }
+  .hdr-right { gap:5px; }
+  .hdr-stat { min-width:60px; padding:4px 8px; }
+  .hdr-stat .val { font-size:.8rem; }
+  .hdr-stat .lbl { font-size:.52rem; }
+
+  /* ── Page: single column ── */
+  .page {
+    display:flex;
+    flex-direction:column;
+  }
+
+  /* ── Pitch column ── */
+  .col-pitch {
+    height:260px;
+    padding:8px 4px;
+    order:1;
+  }
+
+  /* ── Pitch slots: scale down ── */
+  .player-slot { width:38px; }
+  .kit-wrap { width:26px; height:26px; margin-bottom:1px; }
+  .empty-slot-circle { width:26px; height:26px; font-size:.65rem; }
+  .player-name { font-size:.44rem; max-width:42px; }
+  .player-country { font-size:.38rem; }
+  .player-price { font-size:.38rem; }
+  .pos-label { font-size:.36rem; }
+  .captain-badge { width:10px; height:10px; font-size:.36rem; }
+
+  /* ── Team summary ── */
+  .col-team {
+    height:auto;
+    order:2;
+    border-top:1px solid rgba(255,255,255,.08);
+  }
+  .team-summary-inner {
+    padding:10px 12px 10px;
+    overflow:visible;
+  }
+
+  /* ── Player list area ── */
+  .player-list-area {
+    order:3;
+  }
+  .player-list {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    max-height:none;
+    height:calc(100vh - 420px);
+    min-height:200px;
+  }
+  .player-item { padding:5px 8px; gap:7px; }
+  .player-item-name { font-size:.78rem; }
+  .player-item-meta { font-size:.65rem; }
+  .player-item-price { font-size:.78rem; }
+
+  /* ── Picker modal: full screen ── */
+  .modal {
+    width:100vw;
+    max-width:100vw;
+    height:100vh;
+    border-radius:0;
+    border:none;
+  }
+  #successModal { padding-top:0; }
+
+  /* ── Rules modal: full screen ── */
+  .rules-modal {
+    width:100vw;
+    max-width:100vw;
+    max-height:100vh;
+    border-radius:0;
+  }
+  .rules-cols {
+    grid-template-columns:1fr;
+  }
+
+  /* ── Formation buttons ── */
+  .mobile-formation {
+    display:flex !important;
+  }
+}
+
+/* Mobile banner hidden on desktop */
+.mobile-banner { display:none; }
 </style>
 </head>
 <body>
@@ -283,7 +390,114 @@ header h1 span { color:var(--green-light); }
   <div style="font-family:'Bebas Neue',cursive;font-size:2rem;letter-spacing:3px;color:#f5c842;line-height:1">WORLD CUP 2026</div>
   <div style="color:#8a9bb0;font-family:Inter,sans-serif;font-size:.85rem">Loading player data…</div>
   <div style="width:36px;height:36px;border:3px solid rgba(255,255,255,.1);border-top-color:#25a050;border-radius:50%;animation:csvSpin .8s linear infinite"></div>
-  <style>@keyframes csvSpin{to{transform:rotate(360deg)}}</style>
+  <style>@keyframes csvSpin{to{transform:rotate(360deg)}}
+/* ════════════════════════════════════════════
+   MOBILE LAYOUT (≤1024px)
+   ════════════════════════════════════════════ */
+@media (max-width:1024px) {
+
+  /* ── Mobile banner ── */
+  .mobile-banner {
+    display:flex !important;
+  }
+
+  /* ── Hide desktop-only elements ── */
+  .col-details,
+  .col-progress,
+  .submit-footer,
+  #step1, #step2, #step3, #step4 {
+    display:none !important;
+  }
+
+  /* ── Header: simplify ── */
+  .hdr-rule { display:none; }
+  .hdr-divider { display:none; }
+  header { padding:6px 14px; }
+  header h1 { font-size:1.1rem; letter-spacing:2px; }
+  .hdr-right { gap:5px; }
+  .hdr-stat { min-width:60px; padding:4px 8px; }
+  .hdr-stat .val { font-size:.8rem; }
+  .hdr-stat .lbl { font-size:.52rem; }
+
+  /* ── Page: single column ── */
+  .page {
+    display:flex;
+    flex-direction:column;
+  }
+
+  /* ── Pitch column ── */
+  .col-pitch {
+    height:260px;
+    padding:8px 4px;
+    order:1;
+  }
+
+  /* ── Pitch slots: scale down ── */
+  .player-slot { width:38px; }
+  .kit-wrap { width:26px; height:26px; margin-bottom:1px; }
+  .empty-slot-circle { width:26px; height:26px; font-size:.65rem; }
+  .player-name { font-size:.44rem; max-width:42px; }
+  .player-country { font-size:.38rem; }
+  .player-price { font-size:.38rem; }
+  .pos-label { font-size:.36rem; }
+  .captain-badge { width:10px; height:10px; font-size:.36rem; }
+
+  /* ── Team summary ── */
+  .col-team {
+    height:auto;
+    order:2;
+    border-top:1px solid rgba(255,255,255,.08);
+  }
+  .team-summary-inner {
+    padding:10px 12px 10px;
+    overflow:visible;
+  }
+
+  /* ── Player list area ── */
+  .player-list-area {
+    order:3;
+  }
+  .player-list {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    max-height:none;
+    height:calc(100vh - 420px);
+    min-height:200px;
+  }
+  .player-item { padding:5px 8px; gap:7px; }
+  .player-item-name { font-size:.78rem; }
+  .player-item-meta { font-size:.65rem; }
+  .player-item-price { font-size:.78rem; }
+
+  /* ── Picker modal: full screen ── */
+  .modal {
+    width:100vw;
+    max-width:100vw;
+    height:100vh;
+    border-radius:0;
+    border:none;
+  }
+  #successModal { padding-top:0; }
+
+  /* ── Rules modal: full screen ── */
+  .rules-modal {
+    width:100vw;
+    max-width:100vw;
+    max-height:100vh;
+    border-radius:0;
+  }
+  .rules-cols {
+    grid-template-columns:1fr;
+  }
+
+  /* ── Formation buttons ── */
+  .mobile-formation {
+    display:flex !important;
+  }
+}
+
+/* Mobile banner hidden on desktop */
+.mobile-banner { display:none; }
+</style>
 </div>
 
 
@@ -312,6 +526,26 @@ header h1 span { color:var(--green-light); }
 </header>
 
 <div class="page">
+
+  <!-- ═══ MOBILE BANNER (hidden on desktop) ═══ -->
+  <div class="mobile-banner" style="grid-column:1/-1;background:rgba(245,200,66,.08);border-bottom:1px solid rgba(245,200,66,.25);padding:10px 14px;gap:10px;align-items:flex-start;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:8px;">
+      <span style="font-size:1.1rem;">📱</span>
+      <span style="font-family:'Bebas Neue',cursive;font-size:.95rem;letter-spacing:2px;color:var(--gold);">Playing on mobile?</span>
+    </div>
+    <div style="font-size:.76rem;color:rgba(255,255,255,.8);line-height:1.55;">
+      You can build and explore your team here — but <strong style="color:var(--white);">to officially submit your team you'll need to visit this page on a desktop or laptop computer</strong>, where you can fill in your details and download the team file to send to Jack.
+    </div>
+    <div style="display:flex;flex-direction:column;gap:4px;width:100%">
+      <div style="font-family:'Bebas Neue',cursive;font-size:.8rem;letter-spacing:1.5px;color:var(--gray);margin-bottom:2px;">Formation</div>
+      <div style="display:flex;gap:5px;">
+        <button class="formation-btn active" id="mob-form-442" onclick="setFormation('4-4-2')">4-4-2</button>
+        <button class="formation-btn" id="mob-form-433" onclick="setFormation('4-3-3')">4-3-3</button>
+        <button class="formation-btn" id="mob-form-343" onclick="setFormation('3-4-3')">3-4-3</button>
+      </div>
+    </div>
+  </div>
+
 
   <!-- ═══ COL 1: Your details ═══ -->
   <div class="col col-details">
@@ -604,6 +838,14 @@ var sideFilter = 'All';
 
 // ── FORMATION ──
 function setFormation(f) {
+  // Sync mobile formation buttons
+  ['442','433','343'].forEach(function(code) {
+    var mBtn = document.getElementById('mob-form-'+code);
+    if (mBtn) mBtn.classList.remove('active');
+  });
+  var mobKey = f.replace(/-/g,'');
+  var mActive = document.getElementById('mob-form-'+mobKey);
+  if (mActive) mActive.classList.add('active');
   var o = FORMATIONS[state.formation], n = FORMATIONS[f];
   if (o.def !== n.def) for (var i = n.def+1; i <= 4; i++) delete state.team['def-'+i];
   if (o.mid !== n.mid) for (var i = n.mid+1; i <= 4; i++) delete state.team['mid-'+i];
