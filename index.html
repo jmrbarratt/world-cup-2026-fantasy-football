@@ -106,7 +106,7 @@ header h1 span { color:var(--green-light); }
 /* ── PLAYER SLOT ── */
 .player-slot { display:flex; flex-direction:column; align-items:center; cursor:pointer; width:50px; transition:transform .15s; }
 .player-slot:hover { transform:translateY(-2px); }
-.kit-wrap { position:relative; width:32px; height:32px; margin-bottom:2px; }
+.kit-wrap { position:relative; width:32px; height:32px; margin-bottom:2px; display:flex; align-items:center; justify-content:center; }
 .empty-slot-circle { width:32px; height:32px; border-radius:50%; border:2px dashed rgba(255,255,255,.28); background:rgba(0,0,0,.25); display:flex; align-items:center; justify-content:center; font-size:.75rem; transition:all .2s; }
 .player-slot:hover .empty-slot-circle { border-color:var(--gold); border-style:solid; }
 .captain-badge { position:absolute; top:-3px; right:-3px; width:12px; height:12px; background:var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:.42rem; font-weight:900; color:var(--dark); border:1px solid var(--dark); z-index:3; }
@@ -282,6 +282,8 @@ header h1 span { color:var(--green-light); }
    ════════════════════════════════════════════ */
 @media (max-width:1024px) {
 
+  html, body { overflow-x:hidden; width:100%; }
+
   /* ── Header: two-line layout ── */
   header {
     padding:6px 12px;
@@ -327,14 +329,14 @@ header h1 span { color:var(--green-light); }
 
   /* ── Pitch column ── */
   .col-pitch {
-    height:340px;
+    height:390px;
     padding:8px 4px;
     order:1;
   }
 
   /* ── Pitch slots: scale down slightly ── */
   .player-slot { width:42px; }
-  .kit-wrap { width:28px; height:28px; margin-bottom:2px; }
+  .kit-wrap { width:28px; height:28px; margin-bottom:2px; display:flex; align-items:center; justify-content:center; }
   .empty-slot-circle { width:28px; height:28px; font-size:.68rem; }
   .player-name { font-size:.47rem; max-width:46px; }
   .player-country { font-size:.4rem; }
@@ -342,13 +344,30 @@ header h1 span { color:var(--green-light); }
   .pos-label { font-size:.38rem; }
   .captain-badge { width:10px; height:10px; font-size:.36rem; }
 
-  /* ── Player list area ── */
-  .player-list-area { order:2; }
+  /* ── Player list area: prevent horizontal overflow ── */
+  .player-list-area {
+    order:2;
+    width:100%;
+    box-sizing:border-box;
+    overflow-x:hidden;
+  }
+  .player-list-header {
+    padding:8px 10px 6px;
+    box-sizing:border-box;
+  }
+  .search-box {
+    min-width:0;
+    flex:1;
+    width:0;
+  }
+  .filter-row { flex-wrap:wrap; }
   .player-list {
     grid-template-columns:repeat(2,minmax(0,1fr));
     max-height:none;
     height:calc(100svh - 380px);
     min-height:240px;
+    padding:6px 10px 14px;
+    box-sizing:border-box;
   }
   .player-item { padding:5px 8px; gap:7px; align-items:center; }
   .player-item-name { font-size:.78rem; }
@@ -484,7 +503,7 @@ header h1 span { color:var(--green-light); }
     <div class="player-list-header">
       <div class="player-list-header-row">
         <span class="section-title-bar">Available Players</span>
-        <input class="search-box" type="text" id="sideSearch" placeholder="Search by name or country…" oninput="renderPlayerList()"/>
+        <input class="search-box" type="text" id="sideSearch" placeholder="Search…" oninput="renderPlayerList()"/>
         <select class="sort-select" id="sortBy" onchange="renderPlayerList()">
           <option value="price-desc">Price ↓</option>
           <option value="price-asc">Price ↑</option>
