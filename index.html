@@ -191,6 +191,12 @@ header h1 span { color:var(--green-light); }
 .rules-modal { background:var(--dark2); border:1px solid rgba(255,255,255,.1); border-radius:14px; width:820px; max-width:96vw; max-height:88vh; overflow-y:auto; box-shadow:0 20px 60px rgba(0,0,0,.7); animation:mIn .2s ease; display:flex; flex-direction:column; }
 .rules-modal::-webkit-scrollbar { width:5px; }
 .rules-modal::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
+
+.groups-modal {
+  width:1100px;
+  max-width:96vw;
+}
+
 .rules-body { padding:22px 26px 26px; display:flex; flex-direction:column; gap:22px; }
 .rules-cols { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
 .rules-section { display:flex; flex-direction:column; gap:6px; }
@@ -665,7 +671,7 @@ header h1 span { color:var(--green-light); }
 
 <!-- ── Groups modal ── -->
 <div class="modal-overlay" id="groupsModal">
-  <div class="rules-modal">
+  <div class="rules-modal groups-modal">
     <div class="modal-header">
       <div class="modal-title">🌍 WORLD CUP GROUPS</div>
       <button class="modal-close" onclick="closeGroups()">✕</button>
