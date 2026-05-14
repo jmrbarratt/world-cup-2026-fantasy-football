@@ -881,31 +881,8 @@ function htmlShell(title, bodyHtml) {
     + '.section-total{font-family:"Bebas Neue",cursive;font-size:2rem;color:var(--gold);line-height:1;text-align:right}'
     + '.section-total-label{font-size:.6rem;color:var(--gray);text-align:right;margin-top:2px}'
     + '.sep{color:var(--gray2);margin:0 6px}'
-    + '@media print{'
-    + 'body{background:#fff !important;color:#111 !important;padding:16px}'
-    + 'h1{color:#111 !important}'
-    + '.subtitle,.cap-note,.note{color:#555 !important}'
-    + 'table{font-size:.75rem}'
-    + 'thead tr{background:#f0f0f0 !important}'
-    + 'th{color:#333 !important;border-bottom:1px solid #ccc !important}'
-    + 'td{border-bottom:1px solid #eee !important;color:#111 !important}'
-    + 'tr:hover td{background:none !important}'
-    + '.dim,.owner-muted,.score-dim,.p-country{color:#666 !important}'
-    + '.section-wrap{background:#f8f8f8 !important;border:1px solid #ddd !important}'
-    + '.section-head{border-bottom:1px solid #ddd !important;background:#f0f0f0 !important}'
-    + '.section-title{color:#111 !important}'
-    + '.section-total{color:#333 !important}'
-    + '.rank-badge{background:#eee !important;color:#333 !important}'
-    + '.rank-1{background:#d4a800 !important;color:#fff !important}'
-    + '.rank-2{background:#999 !important;color:#fff !important}'
-    + '.rank-3{background:#a0522d !important;color:#fff !important}'
-    + '.no-print{display:none !important}'
-    + '}'
-    + '</style></head><body>'
-    + '<div class="no-print" style="background:#1e2d40;border:1px solid rgba(245,200,66,.3);border-radius:8px;padding:10px 16px;margin-bottom:20px;font-size:.8rem;color:#f5c842;">'
-    + '📄 To save as PDF: <strong>File → Print → Save as PDF</strong> (or press Ctrl+P / Cmd+P)'
-    + '</div>'
-    + bodyHtml + '</body></html>';
+    + '@media print{body{padding:16px}}'
+    + '</style></head><body>' + bodyHtml + '</body></html>';
 }
 
 // ── EXPORT 1: LEADERBOARD ──
@@ -1043,13 +1020,12 @@ function downloadScoresHTML() {
 
 // ── DOWNLOAD HELPER ──
 function downloadHTML(html, filename) {
-  // Inject print-trigger script into the page so it auto-opens the print dialog
-  var printHtml = html.replace('</body>', '<script>window.onload=function(){window.print();}<\/script></body>');
-  var blob = new Blob([printHtml], {type:'text/html'});
-  var url = URL.createObjectURL(blob);
-  var tab = window.open(url, '_blank');
-  // Revoke after a delay to allow the tab to load
-  setTimeout(function(){ URL.revokeObjectURL(url); }, 10000);
+  var blob = new Blob([html], {type:'text/html'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = filename + '_' + new Date().toISOString().slice(0,10) + '.html';
+  a.click();
+  URL.revokeObjectURL(a.href);
 }
 
 // ── BACKUP / RESTORE ──
