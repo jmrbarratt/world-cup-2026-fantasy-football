@@ -107,15 +107,6 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 .owner-muted { color:var(--gray); }
 
 /* ── TEAMS PANEL ── */
-.import-zone {
-  border:2px dashed rgba(245,200,66,.3); border-radius:12px;
-  padding:36px; text-align:center; cursor:pointer; transition:all .2s;
-  background:rgba(245,200,66,.03); margin-bottom:24px;
-}
-.import-zone:hover, .import-zone.drag-over {
-  border-color:var(--gold); background:rgba(245,200,66,.07);
-}
-.import-zone .drop-icon { font-size:2.5rem; margin-bottom:10px; }
 .import-zone p { color:var(--gray); font-size:.84rem; }
 .import-zone strong { color:var(--white); }
 .teams-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:14px; }
@@ -179,17 +170,6 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 .scores-table td.col-total {
   font-weight:700; color:var(--gold); font-family:'DM Sans',sans-serif;
 }
-.score-input {
-  width:46px; padding:4px 5px; text-align:center; border-radius:5px;
-  background:var(--bg3); border:1px solid transparent; color:var(--white);
-  font-family:'DM Mono',monospace; font-size:.78rem;
-  transition:border-color .15s;
-  -moz-appearance:textfield;
-}
-.score-input::-webkit-outer-spin-button,
-.score-input::-webkit-inner-spin-button { -webkit-appearance:none; margin:0; }
-.score-input:focus { border-color:var(--gold); outline:none; background:var(--bg); }
-.score-input.has-value { border-color:rgba(255,255,255,.12); color:var(--white); }
 .player-pos-dot {
   display:inline-block; width:7px; height:7px; border-radius:50%;
   margin-right:6px; vertical-align:middle; flex-shrink:0;
@@ -237,12 +217,6 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 @keyframes toastIn { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
 
 /* ── BACKUP BAR ── */
-.backup-bar {
-  display:flex; gap:10px; align-items:center; padding:12px 18px;
-  background:rgba(245,200,66,.04); border:1px solid rgba(245,200,66,.1);
-  border-radius:10px; margin-bottom:20px; flex-wrap:wrap;
-}
-.backup-bar p { font-size:.78rem; color:var(--gray); flex:1; min-width:200px; }
 
 /* ── TEAM DETAIL MODAL ── */
 .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.8); z-index:500; align-items:center; justify-content:center; backdrop-filter:blur(4px); }
@@ -300,22 +274,9 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 <!-- TEAMS PANEL -->
 <div class="panel active" id="panel-teams">
   <h1 class="section-title">Teams</h1>
-  <p class="section-sub">Import team JSON files sent by participants. Drag & drop one or many files at once.</p>
+  <p class="section-sub">Teams are loaded automatically from the /teams/ folder in the GitHub repository.</p>
 
-  <div class="backup-bar">
-    <p>💾 Data is saved in your browser automatically. Use the buttons below to back up or restore everything.</p>
-    <button class="btn btn-ghost" onclick="exportBackup()">⬇ Download backup</button>
-    <label class="btn btn-ghost file-label">
-      ⬆ Restore backup <input type="file" accept=".json" class="hidden-input" onchange="importBackup(this)">
-    </label>
-  </div>
 
-  <div class="import-zone" id="dropZone" onclick="document.getElementById('fileInput').click()">
-    <div class="drop-icon">📂</div>
-    <p><strong>Click to import team files</strong> or drag & drop here</p>
-    <p class="drop-sub">Accepts .json files exported from the submission app</p>
-    <input type="file" id="fileInput" accept=".json" multiple class="hidden-input" onchange="handleFileImport(this.files)">
-  </div>
 
   <div class="teams-toolbar">
     <div id="teamsCount" class="teams-count"></div>
@@ -325,7 +286,7 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
   <div class="teams-grid" id="teamsGrid"></div>
   <div id="teamsEmpty" class="empty-state">
     <div class="icon">⚽</div>
-    <p>No teams imported yet.<br>Ask participants to export their team from the submission app<br>and email you the .json file.</p>
+    <p>No teams imported yet.<br>Teams will appear here once .json files are added to the /teams/ folder in the GitHub repo.</p>
   </div>
 </div>
 
@@ -484,37 +445,6 @@ function toast(msg, type='success') {
   setTimeout(() => el.remove(), 3000);
 }
 
-// ── DRAG & DROP ──
-var dz = document.getElementById('dropZone');
-dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('drag-over'); });
-dz.addEventListener('dragleave', () => dz.classList.remove('drag-over'));
-dz.addEventListener('drop', e => {
-  e.preventDefault(); dz.classList.remove('drag-over');
-  handleFileImport(e.dataTransfer.files);
-});
-
-function handleFileImport(files) {
-  var count = 0;
-  Array.from(files).forEach(file => {
-    var reader = new FileReader();
-    reader.onload = e => {
-      try {
-        var data = JSON.parse(e.target.result);
-        if (!data.players || !data.name) throw new Error('Invalid format');
-        var id = 'team_' + data.name.replace(/\s+/g,'_') + '_' + data.owner.replace(/\s+/g,'_');
-        state.teams[id] = data;
-        count++;
-        save();
-        renderTeams();
-        toast('✓ Imported: ' + data.name);
-      } catch(err) {
-        toast('✗ Could not read: ' + file.name, 'error');
-      }
-    };
-    reader.readAsText(file);
-  });
-  document.getElementById('fileInput').value = '';
-}
 
 // ── RENDER TEAMS ──
 function renderTeams() {
@@ -564,7 +494,6 @@ function renderTeams() {
 function deleteTeam(id) {
   if (!confirm('Remove this team?')) return;
   delete state.teams[id];
-  save();
   renderTeams();
   toast('Team removed');
 }
@@ -572,7 +501,6 @@ function deleteTeam(id) {
 function clearAllTeams() {
   if (!confirm('Remove ALL teams? This cannot be undone.')) return;
   state.teams = {};
-  save();
   renderTeams();
   toast('All teams cleared');
 }
@@ -663,42 +591,8 @@ function renderScoresTable() {
   }).join('');
 }
 
-function onScoreChange(input) {
-  var pName = input.getAttribute('data-player');
-  var md    = input.getAttribute('data-md');
-  var val   = input.value.trim();
-  if (!state.scores[pName]) state.scores[pName] = {};
-  state.scores[pName][md] = val === '' ? null : parseFloat(val)||0;
-  // Update total cell
-  var row = input.closest('tr');
-  var total = MATCHDAYS.reduce((s, m) => {
-    var scores = state.scores[pName] || {};
-    var v = scores[m];
-    return s + (v !== null && v !== undefined ? parseFloat(v)||0 : 0);
-  }, 0);
-  row.querySelector('.col-total').textContent = total || '–';
-  input.classList.toggle('has-value', val !== '');
-  // Auto-save
-  save();
-}
 
-function scoreKeyNav(e, input) {
-  if (e.key === 'Enter' || e.key === 'Tab') return; // default tab behaviour
-  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-    e.preventDefault();
-    var rows = Array.from(document.querySelectorAll('#scoresTbody tr'));
-    var curRow = input.closest('tr');
-    var idx = rows.indexOf(curRow);
-    var targetIdx = e.key === 'ArrowDown' ? idx + 1 : idx - 1;
-    if (targetIdx >= 0 && targetIdx < rows.length) {
-      var md = input.getAttribute('data-md');
-      var targetInput = rows[targetIdx].querySelector('[data-md="' + md + '"]');
-      if (targetInput) { targetInput.focus(); targetInput.select(); }
-    }
-  }
-}
 
-// ── CALC ──
 function getPlayerScore(playerName) {
   var scores = state.scores[playerName] || {};
   return MATCHDAYS.reduce((s, md) => {
@@ -1042,28 +936,6 @@ function exportBackup() {
   toast('✓ Backup downloaded');
 }
 
-function importBackup(input) {
-  var file = input.files[0];
-  if (!file) return;
-  var reader = new FileReader();
-  reader.onload = e => {
-    try {
-      var data = JSON.parse(e.target.result);
-      if (!data.teams || !data.scores) throw new Error();
-      if (!confirm('This will replace ALL current data. Continue?')) return;
-      state = data;
-      save();
-      renderTeams();
-      toast('✓ Backup restored');
-    } catch(err) {
-      toast('✗ Invalid backup file', 'error');
-    }
-  };
-  reader.readAsText(file);
-  input.value = '';
-}
-
-// ── UTILS ──
 function esc(s) {
   if (!s) return '';
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
