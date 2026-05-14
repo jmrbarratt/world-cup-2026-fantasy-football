@@ -148,11 +148,12 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
   font-family:'DM Mono',monospace;
 }
 .scores-table th {
-  background:var(--bg3); padding:9px 10px; text-align:center;
+  background:var(--bg3); padding:9px 6px; text-align:center;
   font-family:'DM Sans',sans-serif; font-weight:700; font-size:.68rem;
   letter-spacing:.8px; color:var(--gray); border-bottom:1px solid var(--border);
   white-space:nowrap; position:sticky; top:0;
 }
+.scores-table th.col-md { width:42px; max-width:42px; min-width:42px; }
 .scores-table th.col-name { text-align:left; min-width:180px; position:sticky; left:0; background:var(--bg3); z-index:2; }
 .scores-table th.col-total { color:var(--gold); }
 .scores-table th.col-sel { color:var(--gray); font-size:.65rem; }
@@ -169,6 +170,12 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 .scores-table tr:hover td.col-name { background:var(--bg3); }
 .scores-table td.col-total {
   font-weight:700; color:var(--gold); font-family:'DM Sans',sans-serif;
+}
+.scores-table td.col-md {
+  width:42px; max-width:42px; min-width:42px;
+  padding:3px 2px; text-align:center;
+  font-family:'DM Mono',monospace; font-size:.78rem;
+  user-select:text; pointer-events:none;
 }
 .player-pos-dot {
   display:inline-block; width:7px; height:7px; border-radius:50%;
@@ -313,15 +320,15 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
         <tr>
           <th class="col-name">PLAYER</th>
           <th class="col-sel">SEL</th>
-          <th>M1</th>
-          <th>M2</th>
-          <th>M3</th>
-          <th>L32</th>
-          <th>L16</th>
-          <th>QF</th>
-          <th>SF</th>
-          <th>3RD</th>
-          <th>FIN</th>
+          <th class="col-md">M1</th>
+          <th class="col-md">M2</th>
+          <th class="col-md">M3</th>
+          <th class="col-md">L32</th>
+          <th class="col-md">L16</th>
+          <th class="col-md">QF</th>
+          <th class="col-md">SF</th>
+          <th class="col-md">3RD</th>
+          <th class="col-md">FIN</th>
           <th class="col-total">TOTAL</th>
         </tr>
       </thead>
@@ -570,10 +577,7 @@ function renderScoresTable() {
     var cells = MATCHDAYS.map(function(md) {
       var val    = scores[md];
       var hasVal = val !== null && val !== undefined && val !== '';
-      return '<td><input type="number" class="score-input' + (hasVal ? ' has-value' : '') + '" '
-        + 'data-player="' + escAttr(p.Name) + '" data-md="' + escAttr(md) + '" '
-        + 'value="' + (hasVal ? val : '') + '" step="1" '
-        + 'onchange="onScoreChange(this)" onkeydown="scoreKeyNav(event,this)"></td>';
+      return '<td class="col-md">' + (hasVal ? val : '<span style="color:var(--gray)">–</span>') + '</td>';
     }).join('');
     var sel = selCount[p.Name] || 0;
     var cap = capCount[p.Name] || 0;
