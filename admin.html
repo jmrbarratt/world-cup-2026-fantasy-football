@@ -142,6 +142,40 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
   display:flex; gap:10px; align-items:center; margin-bottom:16px; flex-wrap:wrap;
 }
 .scores-search { flex:1; min-width:160px; }
+.scores-country-filter {
+  position:relative; display:inline-block;
+}
+.scores-country-btn {
+  padding:8px 12px; background:var(--bg3); border:1px solid var(--border);
+  border-radius:8px; color:var(--gray); font-family:inherit; font-size:.82rem;
+  cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:6px;
+  min-width:130px;
+}
+.scores-country-btn:hover { border-color:rgba(255,255,255,.25); color:var(--white); }
+.scores-country-btn.active { border-color:var(--gold); color:var(--gold); }
+.scores-country-dropdown {
+  display:none; position:absolute; top:calc(100% + 4px); left:0; z-index:100;
+  background:var(--bg3); border:1px solid var(--border); border-radius:10px;
+  padding:6px; min-width:200px; max-height:280px; overflow-y:auto;
+  box-shadow:0 8px 24px rgba(0,0,0,.5);
+}
+.scores-country-dropdown.open { display:block; }
+.scores-country-dropdown::-webkit-scrollbar { width:4px; }
+.scores-country-dropdown::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
+.country-filter-item {
+  display:flex; align-items:center; gap:8px; padding:5px 8px;
+  border-radius:6px; cursor:pointer; font-size:.8rem; color:var(--gray);
+  transition:background .1s;
+}
+.country-filter-item:hover { background:rgba(255,255,255,.06); color:var(--white); }
+.country-filter-item input[type=checkbox] { accent-color:var(--gold); cursor:pointer; }
+.country-filter-item.checked { color:var(--white); }
+.country-filter-clear {
+  display:block; width:100%; padding:5px 8px; margin-top:4px; border-top:1px solid var(--border);
+  background:none; border-left:none; border-right:none; border-bottom:none;
+  color:var(--gray); font-family:inherit; font-size:.75rem; cursor:pointer; text-align:left;
+}
+.country-filter-clear:hover { color:var(--red); }
 .scores-wrap { overflow-x:auto; border-radius:12px; border:1px solid var(--border); }
 .scores-table {
   width:100%; border-collapse:collapse; font-size:.78rem;
@@ -153,8 +187,8 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
   letter-spacing:.8px; color:var(--gray); border-bottom:1px solid var(--border);
   white-space:nowrap; position:sticky; top:0;
 }
-.scores-table th.col-md { width:42px; max-width:42px; min-width:42px; }
-.scores-table th.col-name { text-align:left; min-width:180px; position:sticky; left:0; background:var(--bg3); z-index:2; }
+.scores-table th.col-md { width:52px; max-width:52px; min-width:52px; }
+.scores-table th.col-name { text-align:left; min-width:140px; max-width:200px; width:180px; position:sticky; left:0; background:var(--bg3); z-index:2; }
 .scores-table th.col-total { color:var(--gold); }
 .scores-table th.col-sel { color:var(--gray); font-size:.65rem; }
 .scores-table td.col-sel { font-size:.75rem; color:var(--gray); white-space:nowrap; }
@@ -172,7 +206,7 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
   font-weight:700; color:var(--gold); font-family:'DM Sans',sans-serif;
 }
 .scores-table td.col-md {
-  width:42px; max-width:42px; min-width:42px;
+  width:52px; max-width:52px; min-width:52px;
   padding:3px 2px; text-align:center;
   font-family:'DM Mono',monospace; font-size:.78rem;
   user-select:text; pointer-events:none;
@@ -303,6 +337,15 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 
   <div class="scores-toolbar">
     <input type="text" class="scores-search" id="scoresSearch" placeholder="Search player or country…" oninput="renderScoresTable()">
+    <div class="scores-country-filter" id="countryFilterWrap">
+      <button class="scores-country-btn" id="countryFilterBtn" onclick="toggleCountryDropdown()">
+        <span id="countryFilterLabel">Filter: All Countries</span> ▾
+      </button>
+      <div class="scores-country-dropdown" id="countryDropdown">
+        <button class="country-filter-clear" onclick="clearCountryFilter()">Clear selection</button>
+        <div id="countryFilterList"></div>
+      </div>
+    </div>
     <select id="scoresSortBy" class="scores-sort" onchange="renderScoresTable()">
       <option value="country">Sort: Country → Position → Price → Name</option>
       <option value="position">Sort: Position → Price → Name</option>
@@ -519,11 +562,67 @@ function formatDate() {
 // ── SCORES ──
 var POS_ORDER = {Goalkeeper:0, Defender:1, Midfielder:2, Forward:3};
 
+// ── COUNTRY FILTER ──
+var selectedCountries = new Set();
+
+function buildCountryFilter() {
+  var countries = [...new Set(PLAYERS.map(p => p.Country))].sort();
+  var list = document.getElementById('countryFilterList');
+  if (!list) return;
+  list.innerHTML = countries.map(function(c) {
+    return '<label class="country-filter-item" id="cfi-' + c.replace(/\s+/g,'_') + '">'
+      + '<input type="checkbox" value="' + c + '" onchange="onCountryCheck(this)"> ' + c
+      + '</label>';
+  }).join('');
+}
+
+function onCountryCheck(cb) {
+  if (cb.checked) selectedCountries.add(cb.value);
+  else selectedCountries.delete(cb.value);
+  updateCountryBtn();
+  renderScoresTable();
+}
+
+function updateCountryBtn() {
+  var btn = document.getElementById('countryFilterBtn');
+  var lbl = document.getElementById('countryFilterLabel');
+  if (selectedCountries.size === 0) {
+    lbl.textContent = 'Filter: All Countries';
+    btn.classList.remove('active');
+  } else if (selectedCountries.size === 1) {
+    lbl.textContent = [...selectedCountries][0];
+    btn.classList.add('active');
+  } else {
+    lbl.textContent = selectedCountries.size + ' countries';
+    btn.classList.add('active');
+  }
+}
+
+function toggleCountryDropdown() {
+  document.getElementById('countryDropdown').classList.toggle('open');
+}
+
+function clearCountryFilter() {
+  selectedCountries.clear();
+  document.querySelectorAll('#countryFilterList input[type=checkbox]').forEach(cb => cb.checked = false);
+  updateCountryBtn();
+  renderScoresTable();
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e) {
+  var wrap = document.getElementById('countryFilterWrap');
+  if (wrap && !wrap.contains(e.target)) {
+    document.getElementById('countryDropdown').classList.remove('open');
+  }
+});
+
 function renderScoresTable() {
   var search  = (document.getElementById('scoresSearch').value || '').toLowerCase();
   var sortBy  = document.getElementById('scoresSortBy').value;
 
   var filtered = PLAYERS.filter(function(p) {
+    if (selectedCountries.size > 0 && !selectedCountries.has(p.Country)) return false;
     if (!search) return true;
     return p.Name.toLowerCase().indexOf(search) >= 0 || p.Country.toLowerCase().indexOf(search) >= 0;
   });
@@ -1035,6 +1134,7 @@ fetch('/data/players.csv?v=' + Date.now())
 
     // CSV is the single source of truth
     PLAYERS = parsed.players;
+    buildCountryFilter();
     state.scores = parsed.scores;
 
     // Optional but recommended: persist the new truth
