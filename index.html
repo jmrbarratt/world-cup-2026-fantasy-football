@@ -607,6 +607,15 @@ header h1 span { color:var(--green-light); }
       <div class="player-list-header-row">
         <span class="section-title-bar">Available Players</span>
         <input class="search-box" type="text" id="sideSearch" placeholder="Search…" oninput="renderPlayerList()"/>
+        <div class="side-country-filter" id="sideCountryWrap">
+          <button class="side-country-btn" id="sideCountryBtn" onclick="toggleSideCountryDropdown()">
+            <span id="sideCountryLabel">Country</span> ▾
+          </button>
+          <div class="side-country-dropdown" id="sideCountryDropdown">
+            <button class="side-country-clear" onclick="clearSideCountryFilter()">Clear selection</button>
+            <div id="sideCountryList"></div>
+          </div>
+        </div>
         <select class="sort-select" id="sortBy" onchange="renderPlayerList()">
           <option value="price-desc">Price ↓</option>
           <option value="price-asc">Price ↑</option>
