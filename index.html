@@ -429,16 +429,16 @@ header h1 span { color:var(--green-light); }
 /* ── COUNTRY FILTER (player list) ── */
 .side-country-filter { position:relative; display:inline-block; }
 .side-country-btn {
-  padding:7px 10px; background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15);
-  border-radius:7px; color:var(--gray); font-family:'Inter',sans-serif; font-size:.75rem;
+  padding:7px 9px; background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15);
+  border-radius:7px; color:var(--white); font-family:'Inter',sans-serif; font-size:.75rem;
   cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;
-  transition:border-color .2s;
+  transition:border-color .2s; width:100%;
 }
-.side-country-btn:hover { border-color:rgba(255,255,255,.3); color:var(--white); }
+.side-country-btn:hover { border-color:rgba(255,255,255,.3); }
 .side-country-btn.active { border-color:var(--gold); color:var(--gold); }
 .side-country-dropdown {
   display:none; position:absolute; top:calc(100% + 4px); left:0; z-index:200;
-  background:var(--dark3); border:1px solid rgba(255,255,255,.12); border-radius:10px;
+  background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15); border-radius:10px;
   padding:6px; min-width:190px; max-height:260px; overflow-y:auto;
   box-shadow:0 8px 24px rgba(0,0,0,.6);
 }
@@ -447,18 +447,17 @@ header h1 span { color:var(--green-light); }
 .side-country-dropdown::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
 .side-country-item {
   display:flex; align-items:center; gap:8px; padding:5px 8px; border-radius:6px;
-  cursor:pointer; font-size:.78rem; color:var(--gray); transition:background .1s; user-select:none;
+  cursor:pointer; font-size:.78rem; color:var(--white); transition:background .1s; user-select:none;
 }
-.side-country-item:hover { background:rgba(255,255,255,.06); color:var(--white); }
+.side-country-item:hover { background:rgba(255,255,255,.1); }
 .side-country-item input[type=checkbox] { accent-color:var(--gold); cursor:pointer; flex-shrink:0; }
-.side-country-item.checked { color:var(--white); }
 .side-country-clear {
   display:block; width:100%; padding:5px 8px; margin-top:2px;
-  border:none; border-top:1px solid rgba(255,255,255,.08);
-  background:none; color:var(--gray); font-family:'Inter',sans-serif;
-  font-size:.73rem; cursor:pointer; text-align:left;
+  border:none; border-top:1px solid rgba(255,255,255,.15);
+  background:none; color:var(--white); font-family:'Inter',sans-serif;
+  font-size:.73rem; cursor:pointer; text-align:left; opacity:.7;
 }
-.side-country-clear:hover { color:var(--red); }
+.side-country-clear:hover { opacity:1; color:var(--red); }
 </style>
 </head>
 <body>
@@ -466,41 +465,7 @@ header h1 span { color:var(--green-light); }
   <div style="font-family:'Bebas Neue',cursive;font-size:2rem;letter-spacing:3px;color:#f5c842;line-height:1">WORLD CUP 2026</div>
   <div style="color:#8a9bb0;font-family:Inter,sans-serif;font-size:.85rem">Loading player data…</div>
   <div style="width:36px;height:36px;border:3px solid rgba(255,255,255,.1);border-top-color:#25a050;border-radius:50%;animation:csvSpin .8s linear infinite"></div>
-  <style>@keyframes csvSpin{to{transform:rotate(360deg)}}
-/* ── COUNTRY FILTER (player list) ── */
-.side-country-filter { position:relative; display:inline-block; }
-.side-country-btn {
-  padding:7px 10px; background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15);
-  border-radius:7px; color:var(--gray); font-family:'Inter',sans-serif; font-size:.75rem;
-  cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;
-  transition:border-color .2s;
-}
-.side-country-btn:hover { border-color:rgba(255,255,255,.3); color:var(--white); }
-.side-country-btn.active { border-color:var(--gold); color:var(--gold); }
-.side-country-dropdown {
-  display:none; position:absolute; top:calc(100% + 4px); left:0; z-index:200;
-  background:var(--dark3); border:1px solid rgba(255,255,255,.12); border-radius:10px;
-  padding:6px; min-width:190px; max-height:260px; overflow-y:auto;
-  box-shadow:0 8px 24px rgba(0,0,0,.6);
-}
-.side-country-dropdown.open { display:block; }
-.side-country-dropdown::-webkit-scrollbar { width:4px; }
-.side-country-dropdown::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
-.side-country-item {
-  display:flex; align-items:center; gap:8px; padding:5px 8px; border-radius:6px;
-  cursor:pointer; font-size:.78rem; color:var(--gray); transition:background .1s; user-select:none;
-}
-.side-country-item:hover { background:rgba(255,255,255,.06); color:var(--white); }
-.side-country-item input[type=checkbox] { accent-color:var(--gold); cursor:pointer; flex-shrink:0; }
-.side-country-item.checked { color:var(--white); }
-.side-country-clear {
-  display:block; width:100%; padding:5px 8px; margin-top:2px;
-  border:none; border-top:1px solid rgba(255,255,255,.08);
-  background:none; color:var(--gray); font-family:'Inter',sans-serif;
-  font-size:.73rem; cursor:pointer; text-align:left;
-}
-.side-country-clear:hover { color:var(--red); }
-</style>
+  <style>@keyframes csvSpin{to{transform:rotate(360deg)}}</style>
 </div>
 
 
