@@ -882,15 +882,9 @@ header h1 span { color:var(--green-light); }
     <div class="modal-slot-info" id="modalSlotInfo"></div>
     <div class="modal-search">
       <input type="text" id="modalSearch" placeholder="Search…"/>
-      <div class="side-country-filter" id="modalCountryWrap">
-        <button class="side-country-btn" id="modalCountryBtn" onclick="toggleModalCountryDropdown()">
-          <span id="modalCountryLabel">Country</span> ▾
-        </button>
-        <div class="side-country-dropdown" id="modalCountryDropdown">
-          <button class="side-country-clear" onclick="clearModalCountryFilter()">Clear selection</button>
-          <div id="modalCountryList"></div>
-        </div>
-      </div>
+      <select class="country-select" id="modalCountry">
+        <option value="">All Countries</option>
+      </select>
     </div>
     <div class="modal-player-list" id="modalPlayerList"></div>
   </div>
@@ -1065,7 +1059,6 @@ function openModal(slotId, position) {
     + '<span>Click a player to assign them</span>'
     + removeBtn;
   document.getElementById('modalSearch').value = '';
-  clearModalCountryFilter();
   var sel = document.getElementById('modalCountry');
   sel.innerHTML = '<option value="">All Countries</option>';
   allCountries.forEach(function(c){ sel.innerHTML += '<option>'+c+'</option>'; });
@@ -1084,56 +1077,11 @@ function removeFromSlot(slotId) {
   renderPitch(); updateAll();
 }
 
-var selectedModalCountries = new Set();
-
-function buildModalCountryFilter() {
-  var list = document.getElementById('modalCountryList');
-  if (!list) return;
-  list.innerHTML = allCountries.map(function(c) {
-    return '<label class="side-country-item">'
-      + '<input type="checkbox" value="' + c + '" onchange="onModalCountryCheck(this)"> ' + c
-      + '</label>';
-  }).join('');
-}
-
-function onModalCountryCheck(cb) {
-  if (cb.checked) selectedModalCountries.add(cb.value);
-  else selectedModalCountries.delete(cb.value);
-  updateModalCountryBtn();
-  renderModalList();
-}
-
-function updateModalCountryBtn() {
-  var btn = document.getElementById('modalCountryBtn');
-  var lbl = document.getElementById('modalCountryLabel');
-  if (!btn) return;
-  if (selectedModalCountries.size === 0) {
-    lbl.textContent = 'Country';
-    btn.classList.remove('active');
-  } else if (selectedModalCountries.size === 1) {
-    lbl.textContent = [...selectedModalCountries][0];
-    btn.classList.add('active');
-  } else {
-    lbl.textContent = selectedModalCountries.size + ' countries';
-    btn.classList.add('active');
-  }
-}
-
-function toggleModalCountryDropdown() {
-  document.getElementById('modalCountryDropdown').classList.toggle('open');
-}
-
-function clearModalCountryFilter() {
-  selectedModalCountries.clear();
-  document.querySelectorAll('#modalCountryList input[type=checkbox]').forEach(function(cb){ cb.checked = false; });
-  updateModalCountryBtn();
-  renderModalList();
-}
-
 function renderModalList() {
   var slotId = state.activeSlot; if (!slotId) return;
   var position = slotPos(slotId);
   var search = document.getElementById('modalSearch').value.toLowerCase();
+  var country = document.getElementById('modalCountry').value;
   var cur = state.team[slotId];
   var budgetAvail = BUDGET - getTotalCost() + (cur ? cur.price : 0);
 
@@ -1149,7 +1097,7 @@ function renderModalList() {
   var filtered = PLAYERS.filter(function(p){
     if (p.Position !== position) return false;
     if (search && p.Name.toLowerCase().indexOf(search)<0 && p.Country.toLowerCase().indexOf(search)<0) return false;
-    if (selectedModalCountries.size > 0 && !selectedModalCountries.has(p.Country)) return false;
+    if (country && p.Country !== country) return false;
     return true;
   });
   filtered.sort(function(a,b){ return b.price - a.price; });
@@ -1254,15 +1202,13 @@ function clearSideCountryFilter() {
   renderPlayerList();
 }
 
-// Close country dropdowns when clicking outside
+// Close side country dropdown when clicking outside
 document.addEventListener('click', function(e) {
-  ['sideCountryWrap','modalCountryWrap'].forEach(function(id) {
-    var wrap = document.getElementById(id);
-    if (wrap && !wrap.contains(e.target)) {
-      var dd = wrap.querySelector('.side-country-dropdown');
-      if (dd) dd.classList.remove('open');
-    }
-  });
+  var wrap = document.getElementById('sideCountryWrap');
+  if (wrap && !wrap.contains(e.target)) {
+    var dd = document.getElementById('sideCountryDropdown');
+    if (dd) dd.classList.remove('open');
+  }
 });
 
 function renderPlayerList() {
@@ -1548,6 +1494,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('pickerModal').addEventListener('click', function(e){ if(e.target===this) closeModal(); });
   document.getElementById('successModal').addEventListener('click', function(e){ if(e.target===this) closeSuccessModal(); });
   document.getElementById('modalSearch').addEventListener('input', renderModalList);
+  document.getElementById('modalCountry').addEventListener('change', renderModalList);
   // Fetch player data from CSV
   fetch('./data/players.csv')
     .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
@@ -1558,8 +1505,10 @@ document.addEventListener('DOMContentLoaded', function() {
       allCountries.splice(0,allCountries.length);
       Array.prototype.push.apply(allCountries, Object.keys(seen).sort());
       buildSideCountryFilter();
-      buildModalCountryFilter();
       // Populate country filter dropdown
+      var sel=document.getElementById('modalCountry');
+      sel.innerHTML='<option value="">All Countries</option>';
+      allCountries.forEach(function(c){ sel.innerHTML+='<option>'+c+'</option>'; });
       document.getElementById('loadingOverlay').style.display='none';
       renderPitch(); renderPlayerList(); updateAll();
     })
