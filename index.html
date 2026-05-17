@@ -425,6 +425,40 @@ header h1 span { color:var(--green-light); }
 
 /* Mobile banner hidden on desktop */
 .mobile-banner { display:none; }
+
+/* ── COUNTRY FILTER (player list) ── */
+.side-country-filter { position:relative; display:inline-block; }
+.side-country-btn {
+  padding:7px 10px; background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15);
+  border-radius:7px; color:var(--gray); font-family:'Inter',sans-serif; font-size:.75rem;
+  cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;
+  transition:border-color .2s;
+}
+.side-country-btn:hover { border-color:rgba(255,255,255,.3); color:var(--white); }
+.side-country-btn.active { border-color:var(--gold); color:var(--gold); }
+.side-country-dropdown {
+  display:none; position:absolute; top:calc(100% + 4px); left:0; z-index:200;
+  background:var(--dark3); border:1px solid rgba(255,255,255,.12); border-radius:10px;
+  padding:6px; min-width:190px; max-height:260px; overflow-y:auto;
+  box-shadow:0 8px 24px rgba(0,0,0,.6);
+}
+.side-country-dropdown.open { display:block; }
+.side-country-dropdown::-webkit-scrollbar { width:4px; }
+.side-country-dropdown::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
+.side-country-item {
+  display:flex; align-items:center; gap:8px; padding:5px 8px; border-radius:6px;
+  cursor:pointer; font-size:.78rem; color:var(--gray); transition:background .1s; user-select:none;
+}
+.side-country-item:hover { background:rgba(255,255,255,.06); color:var(--white); }
+.side-country-item input[type=checkbox] { accent-color:var(--gold); cursor:pointer; flex-shrink:0; }
+.side-country-item.checked { color:var(--white); }
+.side-country-clear {
+  display:block; width:100%; padding:5px 8px; margin-top:2px;
+  border:none; border-top:1px solid rgba(255,255,255,.08);
+  background:none; color:var(--gray); font-family:'Inter',sans-serif;
+  font-size:.73rem; cursor:pointer; text-align:left;
+}
+.side-country-clear:hover { color:var(--red); }
 </style>
 </head>
 <body>
@@ -432,7 +466,41 @@ header h1 span { color:var(--green-light); }
   <div style="font-family:'Bebas Neue',cursive;font-size:2rem;letter-spacing:3px;color:#f5c842;line-height:1">WORLD CUP 2026</div>
   <div style="color:#8a9bb0;font-family:Inter,sans-serif;font-size:.85rem">Loading player data…</div>
   <div style="width:36px;height:36px;border:3px solid rgba(255,255,255,.1);border-top-color:#25a050;border-radius:50%;animation:csvSpin .8s linear infinite"></div>
-  <style>@keyframes csvSpin{to{transform:rotate(360deg)}}</style>
+  <style>@keyframes csvSpin{to{transform:rotate(360deg)}}
+/* ── COUNTRY FILTER (player list) ── */
+.side-country-filter { position:relative; display:inline-block; }
+.side-country-btn {
+  padding:7px 10px; background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15);
+  border-radius:7px; color:var(--gray); font-family:'Inter',sans-serif; font-size:.75rem;
+  cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;
+  transition:border-color .2s;
+}
+.side-country-btn:hover { border-color:rgba(255,255,255,.3); color:var(--white); }
+.side-country-btn.active { border-color:var(--gold); color:var(--gold); }
+.side-country-dropdown {
+  display:none; position:absolute; top:calc(100% + 4px); left:0; z-index:200;
+  background:var(--dark3); border:1px solid rgba(255,255,255,.12); border-radius:10px;
+  padding:6px; min-width:190px; max-height:260px; overflow-y:auto;
+  box-shadow:0 8px 24px rgba(0,0,0,.6);
+}
+.side-country-dropdown.open { display:block; }
+.side-country-dropdown::-webkit-scrollbar { width:4px; }
+.side-country-dropdown::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
+.side-country-item {
+  display:flex; align-items:center; gap:8px; padding:5px 8px; border-radius:6px;
+  cursor:pointer; font-size:.78rem; color:var(--gray); transition:background .1s; user-select:none;
+}
+.side-country-item:hover { background:rgba(255,255,255,.06); color:var(--white); }
+.side-country-item input[type=checkbox] { accent-color:var(--gold); cursor:pointer; flex-shrink:0; }
+.side-country-item.checked { color:var(--white); }
+.side-country-clear {
+  display:block; width:100%; padding:5px 8px; margin-top:2px;
+  border:none; border-top:1px solid rgba(255,255,255,.08);
+  background:none; color:var(--gray); font-family:'Inter',sans-serif;
+  font-size:.73rem; cursor:pointer; text-align:left;
+}
+.side-country-clear:hover { color:var(--red); }
+</style>
 </div>
 
 
@@ -1113,6 +1181,62 @@ function addPlayerToTeam(name) {
   }
 }
 
+var selectedSideCountries = new Set();
+
+function buildSideCountryFilter() {
+  var list = document.getElementById('sideCountryList');
+  if (!list) return;
+  list.innerHTML = allCountries.map(function(c) {
+    var id = 'scc-' + c.replace(/[^a-zA-Z0-9]/g,'_');
+    return '<label class="side-country-item" id="' + id + '">'
+      + '<input type="checkbox" value="' + c + '" onchange="onSideCountryCheck(this)"> ' + c
+      + '</label>';
+  }).join('');
+}
+
+function onSideCountryCheck(cb) {
+  if (cb.checked) selectedSideCountries.add(cb.value);
+  else selectedSideCountries.delete(cb.value);
+  updateSideCountryBtn();
+  renderPlayerList();
+}
+
+function updateSideCountryBtn() {
+  var btn = document.getElementById('sideCountryBtn');
+  var lbl = document.getElementById('sideCountryLabel');
+  if (!btn) return;
+  if (selectedSideCountries.size === 0) {
+    lbl.textContent = 'Country';
+    btn.classList.remove('active');
+  } else if (selectedSideCountries.size === 1) {
+    lbl.textContent = [...selectedSideCountries][0];
+    btn.classList.add('active');
+  } else {
+    lbl.textContent = selectedSideCountries.size + ' countries';
+    btn.classList.add('active');
+  }
+}
+
+function toggleSideCountryDropdown() {
+  document.getElementById('sideCountryDropdown').classList.toggle('open');
+}
+
+function clearSideCountryFilter() {
+  selectedSideCountries.clear();
+  document.querySelectorAll('#sideCountryList input[type=checkbox]').forEach(function(cb){ cb.checked = false; });
+  updateSideCountryBtn();
+  renderPlayerList();
+}
+
+// Close side country dropdown when clicking outside
+document.addEventListener('click', function(e) {
+  var wrap = document.getElementById('sideCountryWrap');
+  if (wrap && !wrap.contains(e.target)) {
+    var dd = document.getElementById('sideCountryDropdown');
+    if (dd) dd.classList.remove('open');
+  }
+});
+
 function renderPlayerList() {
   var search = document.getElementById('sideSearch').value.toLowerCase();
   var sort = document.getElementById('sortBy').value;
@@ -1130,6 +1254,7 @@ function renderPlayerList() {
 
   var filtered = PLAYERS.filter(function(p){
     if (sideFilter !== 'All' && p.Position !== sideFilter) return false;
+    if (selectedSideCountries.size > 0 && !selectedSideCountries.has(p.Country)) return false;
     if (search && p.Name.toLowerCase().indexOf(search)<0 && p.Country.toLowerCase().indexOf(search)<0) return false;
     return true;
   });
@@ -1405,6 +1530,7 @@ document.addEventListener('DOMContentLoaded', function() {
       PLAYERS.forEach(function(p){ seen[p.Country]=1; });
       allCountries.splice(0,allCountries.length);
       Array.prototype.push.apply(allCountries, Object.keys(seen).sort());
+      buildSideCountryFilter();
       // Populate country filter dropdown
       var sel=document.getElementById('modalCountry');
       sel.innerHTML='<option value="">All Countries</option>';
