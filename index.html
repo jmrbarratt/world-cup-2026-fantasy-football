@@ -598,7 +598,7 @@ header h1 span { color:var(--green-light); }
     <div class="player-list-header">
       <div class="player-list-header-row">
         <span class="section-title-bar">Players</span>
-        <input class="search-box" type="text" id="sideSearch" placeholder="Search…" oninput="renderPlayerList()"/>
+        <input class="search-box" type="text" id="sideSearch" placeholder="Search…" oninput="debouncedSearch()"/>
         <div class="side-country-filter" id="sideCountryWrap">
           <button class="side-country-btn" id="sideCountryBtn" onclick="toggleSideCountryDropdown()">
             <span id="sideCountryLabel">Country</span> ▾
@@ -1105,7 +1105,8 @@ function closeModal() {
 function removeFromSlot(slotId) {
   if (state.captain === slotId) state.captain = null;
   delete state.team[slotId];
-  renderPitch(); updateAll();
+  renderPitch(); renderSelectedPanel(); updateStats();
+  renderPlayerList(); // refresh affordability/slots
 }
 
 var selectedModalCountries = new Set();
@@ -1211,7 +1212,7 @@ function selectPlayer(name) {
   var p = PLAYERS.find(function(pl){ return pl.Name === name; });
   if (!p) return;
   state.team[state.activeSlot] = p;
-  renderPitch(); updateAll(); closeModal();
+  renderPitch(); renderSelectedPanel(); updateStats(); closeModal();
 }
 
 // ── PLAYER LIST ──
@@ -1231,7 +1232,8 @@ function addPlayerToTeam(name) {
     var sid = cls + '-' + s;
     if (!state.team[sid]) {
       state.team[sid] = p;
-      renderPitch(); updateAll();
+      renderPitch(); renderSelectedPanel(); updateStats();
+      renderPlayerList(); // refresh affordability/slots in the list
       return;
     }
   }
@@ -1294,6 +1296,12 @@ document.addEventListener('click', function(e) {
     }
   });
 });
+
+var _searchTimer = null;
+function debouncedSearch() {
+  clearTimeout(_searchTimer);
+  _searchTimer = setTimeout(renderPlayerList, 200);
+}
 
 function renderPlayerList() {
   var search = document.getElementById('sideSearch').value.toLowerCase();
@@ -1396,7 +1404,7 @@ function renderSelectedPanel() {
 
 function setCaptain(slotId) {
   state.captain = state.captain === slotId ? null : slotId;
-  renderPitch(); updateAll();
+  renderPitch(); renderSelectedPanel(); updateStats();
 }
 
 // ── CALCULATIONS ──
@@ -1405,7 +1413,7 @@ function getTotalCost() {
 }
 function getPlayerCount() { return Object.keys(state.team).length; }
 
-function updateAll() {
+function updateStats() {
   var count = getPlayerCount(), cost = getTotalCost(), rem = BUDGET - cost;
   var remCls = rem < 0 ? 'danger' : rem < 10 ? 'warn' : 'ok';
   document.getElementById('playerCount').textContent = count + ' / 11';
@@ -1415,10 +1423,13 @@ function updateAll() {
   var remEl = document.getElementById('budgetDisplay');
   remEl.textContent = '$' + rem.toFixed(1) + 'm';
   remEl.className = 'val ' + remCls;
-  renderSelectedPanel();
-  renderPlayerList();
   updateSubmitBtn(count, rem);
   updateSteps(count);
+}
+function updateAll() {
+  renderSelectedPanel();
+  renderPlayerList();
+  updateStats();
 }
 
 function onInfoChange() {
