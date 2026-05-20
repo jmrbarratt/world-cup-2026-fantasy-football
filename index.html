@@ -152,6 +152,8 @@ header h1 span { color:var(--green-light); }
 .submit-btn { width:100%; padding:10px; background:linear-gradient(135deg,var(--green),var(--green-light)); border:none; border-radius:8px; color:var(--white); font-family:'Bebas Neue',cursive; font-size:1.05rem; letter-spacing:3px; cursor:pointer; transition:all .2s; box-shadow:0 4px 14px rgba(26,122,60,.4); }
 .submit-btn:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 6px 20px rgba(26,122,60,.6); }
 .submit-btn:disabled { background:rgba(255,255,255,.1); color:var(--gray); cursor:not-allowed; box-shadow:none; transform:none; }
+.clear-team-btn { padding:10px; background:transparent; border:1.5px solid rgba(255,255,255,.2); border-radius:8px; color:var(--gray); font-family:'Bebas Neue',cursive; font-size:1.05rem; letter-spacing:3px; cursor:pointer; transition:all .2s; }
+.clear-team-btn:hover { border-color:var(--red); color:var(--red); }
 
 /* player list (full-width strip) */
 .player-list-header { padding:10px 14px 8px; display:flex; flex-direction:column; gap:7px; border-bottom:1px solid rgba(255,255,255,.06); }
@@ -562,7 +564,10 @@ header h1 span { color:var(--green-light); }
       <div id="selectedList"></div>
     </div>
     <div class="submit-footer">
-      <button class="submit-btn" id="submitBtn" onclick="openSubmit()" disabled>SUBMIT TEAM</button>
+      <div style="display:flex;gap:8px;">
+        <button class="clear-team-btn" onclick="clearTeam()" style="flex:1;">CLEAR TEAM</button>
+        <button class="submit-btn" id="submitBtn" onclick="openSubmit()" disabled style="flex:2;">SUBMIT TEAM</button>
+      </div>
     </div>
   </div>
 
@@ -570,7 +575,7 @@ header h1 span { color:var(--green-light); }
   <div class="player-list-area">
     <div class="player-list-header">
       <div class="player-list-header-row">
-        <span class="section-title-bar">Available Players</span>
+        <span class="section-title-bar">Players</span>
         <input class="search-box" type="text" id="sideSearch" placeholder="Search…" oninput="renderPlayerList()"/>
         <div class="side-country-filter" id="sideCountryWrap">
           <button class="side-country-btn" id="sideCountryBtn" onclick="toggleSideCountryDropdown()">
@@ -882,9 +887,15 @@ header h1 span { color:var(--green-light); }
     <div class="modal-slot-info" id="modalSlotInfo"></div>
     <div class="modal-search">
       <input type="text" id="modalSearch" placeholder="Search…"/>
-      <select class="country-select" id="modalCountry">
-        <option value="">All Countries</option>
-      </select>
+      <div class="side-country-filter" id="modalCountryWrap">
+        <button class="side-country-btn" id="modalCountryBtn" onclick="toggleModalCountryDropdown()">
+          <span id="modalCountryLabel">Country</span> ▾
+        </button>
+        <div class="side-country-dropdown" id="modalCountryDropdown">
+          <button class="side-country-clear" onclick="clearModalCountryFilter()">Clear selection</button>
+          <div id="modalCountryList"></div>
+        </div>
+      </div>
     </div>
     <div class="modal-player-list" id="modalPlayerList"></div>
   </div>
@@ -1059,9 +1070,7 @@ function openModal(slotId, position) {
     + '<span>Click a player to assign them</span>'
     + removeBtn;
   document.getElementById('modalSearch').value = '';
-  var sel = document.getElementById('modalCountry');
-  sel.innerHTML = '<option value="">All Countries</option>';
-  allCountries.forEach(function(c){ sel.innerHTML += '<option>'+c+'</option>'; });
+  resetModalCountryFilter();
   renderModalList();
   document.getElementById('pickerModal').classList.add('open');
 }
@@ -1077,11 +1086,62 @@ function removeFromSlot(slotId) {
   renderPitch(); updateAll();
 }
 
+var selectedModalCountries = new Set();
+
+function buildModalCountryFilter() {
+  var list = document.getElementById('modalCountryList');
+  if (!list) return;
+  list.innerHTML = allCountries.map(function(c) {
+    return '<label class="side-country-item">'
+      + '<input type="checkbox" value="' + c + '" onchange="onModalCountryCheck(this)"> ' + c
+      + '</label>';
+  }).join('');
+}
+
+function onModalCountryCheck(cb) {
+  if (cb.checked) selectedModalCountries.add(cb.value);
+  else selectedModalCountries.delete(cb.value);
+  updateModalCountryBtn();
+  renderModalList();
+}
+
+function updateModalCountryBtn() {
+  var btn = document.getElementById('modalCountryBtn');
+  var lbl = document.getElementById('modalCountryLabel');
+  if (!btn) return;
+  if (selectedModalCountries.size === 0) {
+    lbl.textContent = 'Country';
+    btn.classList.remove('active');
+  } else if (selectedModalCountries.size === 1) {
+    lbl.textContent = [...selectedModalCountries][0];
+    btn.classList.add('active');
+  } else {
+    lbl.textContent = selectedModalCountries.size + ' countries';
+    btn.classList.add('active');
+  }
+}
+
+function toggleModalCountryDropdown() {
+  document.getElementById('modalCountryDropdown').classList.toggle('open');
+}
+
+function clearModalCountryFilter() {
+  selectedModalCountries.clear();
+  document.querySelectorAll('#modalCountryList input[type=checkbox]').forEach(function(cb){ cb.checked = false; });
+  updateModalCountryBtn();
+  renderModalList();
+}
+
+function resetModalCountryFilter() {
+  selectedModalCountries.clear();
+  document.querySelectorAll('#modalCountryList input[type=checkbox]').forEach(function(cb){ cb.checked = false; });
+  updateModalCountryBtn();
+}
+
 function renderModalList() {
   var slotId = state.activeSlot; if (!slotId) return;
   var position = slotPos(slotId);
   var search = document.getElementById('modalSearch').value.toLowerCase();
-  var country = document.getElementById('modalCountry').value;
   var cur = state.team[slotId];
   var budgetAvail = BUDGET - getTotalCost() + (cur ? cur.price : 0);
 
@@ -1097,7 +1157,7 @@ function renderModalList() {
   var filtered = PLAYERS.filter(function(p){
     if (p.Position !== position) return false;
     if (search && p.Name.toLowerCase().indexOf(search)<0 && p.Country.toLowerCase().indexOf(search)<0) return false;
-    if (country && p.Country !== country) return false;
+    if (selectedModalCountries.size > 0 && !selectedModalCountries.has(p.Country)) return false;
     return true;
   });
   filtered.sort(function(a,b){ return b.price - a.price; });
@@ -1202,13 +1262,15 @@ function clearSideCountryFilter() {
   renderPlayerList();
 }
 
-// Close side country dropdown when clicking outside
+// Close country dropdowns when clicking outside
 document.addEventListener('click', function(e) {
-  var wrap = document.getElementById('sideCountryWrap');
-  if (wrap && !wrap.contains(e.target)) {
-    var dd = document.getElementById('sideCountryDropdown');
-    if (dd) dd.classList.remove('open');
-  }
+  ['sideCountryWrap','modalCountryWrap'].forEach(function(id) {
+    var wrap = document.getElementById(id);
+    if (wrap && !wrap.contains(e.target)) {
+      var dd = wrap.querySelector('.side-country-dropdown');
+      if (dd) dd.classList.remove('open');
+    }
+  });
 });
 
 function renderPlayerList() {
@@ -1387,6 +1449,13 @@ function getOrderedPlayers() {
 }
 
 
+function clearTeam() {
+  state.team = {};
+  state.captain = null;
+  renderPitch();
+  updateAll();
+}
+
 function openSubmit() {
   var name  = document.getElementById('userName').value.trim();
   var tname = document.getElementById('teamName').value.trim();
@@ -1494,7 +1563,6 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('pickerModal').addEventListener('click', function(e){ if(e.target===this) closeModal(); });
   document.getElementById('successModal').addEventListener('click', function(e){ if(e.target===this) closeSuccessModal(); });
   document.getElementById('modalSearch').addEventListener('input', renderModalList);
-  document.getElementById('modalCountry').addEventListener('change', renderModalList);
   // Fetch player data from CSV
   fetch('./data/players.csv')
     .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
@@ -1505,10 +1573,8 @@ document.addEventListener('DOMContentLoaded', function() {
       allCountries.splice(0,allCountries.length);
       Array.prototype.push.apply(allCountries, Object.keys(seen).sort());
       buildSideCountryFilter();
+      buildModalCountryFilter();
       // Populate country filter dropdown
-      var sel=document.getElementById('modalCountry');
-      sel.innerHTML='<option value="">All Countries</option>';
-      allCountries.forEach(function(c){ sel.innerHTML+='<option>'+c+'</option>'; });
       document.getElementById('loadingOverlay').style.display='none';
       renderPitch(); renderPlayerList(); updateAll();
     })
