@@ -153,7 +153,7 @@ header h1 span { color:var(--green-light); }
 .submit-btn:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 6px 20px rgba(26,122,60,.6); }
 .submit-btn:disabled { background:rgba(255,255,255,.1); color:var(--gray); cursor:not-allowed; box-shadow:none; transform:none; }
 .clear-team-btn { padding:10px; background:transparent; border:1.5px solid rgba(255,255,255,.2); border-radius:8px; color:var(--gray); font-family:'Bebas Neue',cursive; font-size:1.05rem; letter-spacing:3px; cursor:pointer; transition:all .2s; }
-.clear-team-btn:hover { border-color:var(--red); color:var(--red); }
+.mobile-clear-btn { display:none; }
 
 /* player list (full-width strip) */
 .player-list-header { padding:10px 14px 8px; display:flex; flex-direction:column; gap:7px; border-bottom:1px solid rgba(255,255,255,.06); }
@@ -356,6 +356,9 @@ header h1 span { color:var(--green-light); }
   .submit-footer {
     display:none !important;
   }
+  .mobile-clear-btn {
+    display:block !important;
+  }
 
   /* ── Mobile banner ── */
   .mobile-banner { display:flex !important; }
@@ -555,6 +558,9 @@ header h1 span { color:var(--green-light); }
       <div class="pitch-row" id="row-mid"></div>
       <div class="pitch-row" id="row-fwd"></div>
     </div>
+  </div>
+  <div class="mobile-clear-btn" style="padding:8px 12px;background:var(--dark2);border-top:1px solid rgba(255,255,255,.07);">
+    <button class="clear-team-btn" onclick="clearTeam()" style="width:100%;">CLEAR TEAM</button>
   </div>
 
   <!-- ═══ COL 4: Team summary + Submit ═══ -->
