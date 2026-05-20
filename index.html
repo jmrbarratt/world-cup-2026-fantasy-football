@@ -87,8 +87,10 @@ header h1 span { color:var(--green-light); }
 /* ── FIELDS ── */
 .field { margin-bottom:7px; }
 .field label { display:block; font-size:.6rem; color:var(--gray); text-transform:uppercase; letter-spacing:1px; margin-bottom:3px; }
-.field input { width:100%; background:rgba(0,0,0,.3); border:1.5px solid rgba(255,255,255,.1); border-radius:7px; padding:7px 10px; color:var(--white); font-size:.82rem; font-family:'Inter',sans-serif; transition:border-color .2s; }
-.field input:focus { outline:none; border-color:var(--gold); }
+.field input { width:100%; background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.25); border-radius:7px; padding:7px 10px; color:var(--white); font-size:.82rem; font-family:'Inter',sans-serif; transition:all .2s; }
+.field input::placeholder { color:rgba(255,255,255,.5); }
+.field input:focus { outline:none; border-color:var(--gold); background:rgba(255,255,255,.15); }
+.field input.filled { background:rgba(0,0,0,.3); border-color:rgba(255,255,255,.1); }
 .field-last { margin-bottom:0; }
 
 /* ── FORMATION ── */
@@ -1420,6 +1422,10 @@ function updateAll() {
 }
 
 function onInfoChange() {
+  ['userName','teamName','userEmail'].forEach(function(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('filled', el.value.trim().length > 0);
+  });
   updateSubmitBtn(getPlayerCount(), BUDGET - getTotalCost());
   updateSteps(getPlayerCount());
 }
