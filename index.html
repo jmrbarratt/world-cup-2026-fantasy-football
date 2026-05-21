@@ -1130,10 +1130,19 @@ function buildModalCountryFilter() {
   if (!list) return;
   list.innerHTML = allCountries.map(function(c) {
     var id = 'mcf-' + c.replace(/[^a-zA-Z0-9]/g, '_');
-    return '<label class="side-country-item" id="' + id + '">'
-      + '<input type="checkbox" value="' + c + '" onchange="onModalCountryCheck(this)"> ' + c
-      + '</label>';
+    return '<div class="side-country-item" id="' + id + '" onclick="toggleModalCountry(\'' + c.replace(/'/g,"\\'") + '\',this)">'
+      + '<input type="checkbox" value="' + c + '" onclick="event.stopPropagation()"> ' + c
+      + '</div>';
   }).join('');
+}
+
+function toggleModalCountry(country, el) {
+  var cb = el.querySelector('input[type=checkbox]');
+  cb.checked = !cb.checked;
+  if (cb.checked) selectedModalCountries.add(country);
+  else selectedModalCountries.delete(country);
+  updateModalCountryBtn();
+  renderModalList();
 }
 
 function onModalCountryCheck(cb) {
@@ -1261,10 +1270,19 @@ function buildSideCountryFilter() {
   if (!list) return;
   list.innerHTML = allCountries.map(function(c) {
     var id = 'scc-' + c.replace(/[^a-zA-Z0-9]/g,'_');
-    return '<label class="side-country-item" id="' + id + '">'
-      + '<input type="checkbox" value="' + c + '" onchange="onSideCountryCheck(this)"> ' + c
-      + '</label>';
+    return '<div class="side-country-item" id="' + id + '" onclick="toggleSideCountry(\'' + c.replace(/'/g,"\\'") + '\',this)">'
+      + '<input type="checkbox" value="' + c + '" onclick="event.stopPropagation()"> ' + c
+      + '</div>';
   }).join('');
+}
+
+function toggleSideCountry(country, el) {
+  var cb = el.querySelector('input[type=checkbox]');
+  cb.checked = !cb.checked;
+  if (cb.checked) selectedSideCountries.add(country);
+  else selectedSideCountries.delete(country);
+  updateSideCountryBtn();
+  renderPlayerList();
 }
 
 function onSideCountryCheck(cb) {
