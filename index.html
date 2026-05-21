@@ -267,8 +267,7 @@ header h1 span { color:var(--green-light); }
 .slot-pos-badge.def { background:rgba(30,136,229,.2);   color:#1e88e5; }
 .slot-pos-badge.mid { background:rgba(67,160,71,.2);    color:#43a047; }
 .slot-pos-badge.fwd { background:rgba(229,57,53,.2);    color:#e53935; }
-.modal-search { padding:8px 12px 6px; border-bottom:1px solid rgba(255,255,255,.05); display:flex; flex-direction:column; gap:6px; flex-shrink:0; overflow:visible; }
-.modal-search-row { display:flex; gap:7px; align-items:center; overflow:visible; }
+.modal-search { padding:8px 12px; border-bottom:1px solid rgba(255,255,255,.05); display:flex; gap:7px; flex-shrink:0; overflow:visible; }
 .modal-search input { flex:1; background:rgba(0,0,0,.3); border:1.5px solid rgba(255,255,255,.1); border-radius:7px; padding:7px 11px; color:var(--white); font-size:.84rem; font-family:'Inter',sans-serif; }
 .modal-search input:focus { outline:none; border-color:var(--gold); }
 .country-select { background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15); border-radius:7px; padding:7px 9px; color:var(--white); font-size:.75rem; font-family:'Inter',sans-serif; max-width:130px; }
@@ -468,14 +467,14 @@ header h1 span { color:var(--green-light); }
   display:none; position:absolute; top:calc(100% + 4px); left:0; z-index:200;
   background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15); border-radius:10px;
   padding:6px; min-width:190px; max-width:220px; max-height:260px; overflow-y:auto;
-  box-shadow:0 8px 24px rgba(0,0,0,.6); text-align:left;
+  box-shadow:0 8px 24px rgba(0,0,0,.6); text-align:left; direction:ltr;
 }
 .side-country-dropdown.open { display:block; }
 .side-country-dropdown::-webkit-scrollbar { width:4px; }
 .side-country-dropdown::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
 .side-country-item {
-  display:flex; align-items:center; justify-content:flex-start; gap:8px; padding:5px 8px; border-radius:6px;
-  cursor:pointer; font-size:.78rem; color:var(--white); transition:background .1s; user-select:none; width:100%;
+  display:flex !important; align-items:center; justify-content:flex-start; gap:8px; padding:5px 8px; border-radius:6px;
+  cursor:pointer; font-size:.78rem; color:var(--white); transition:background .1s; user-select:none; width:100%; box-sizing:border-box; text-align:left;
 }
 .side-country-item:hover { background:rgba(255,255,255,.1); }
 .side-country-item input[type=checkbox] { accent-color:var(--gold); cursor:pointer; flex-shrink:0; }
@@ -915,18 +914,14 @@ header h1 span { color:var(--green-light); }
     </div>
     <div class="modal-slot-info" id="modalSlotInfo"></div>
     <div class="modal-search">
-      <div class="modal-search-row">
-        <input type="text" id="modalSearch" placeholder="Search…"/>
-      </div>
-      <div class="modal-search-row">
-        <div class="side-country-filter" id="modalCountryWrap" style="position:relative;width:100%;">
-          <button class="side-country-btn" id="modalCountryBtn" onclick="toggleModalCountryDropdown()" style="width:100%;">
-            <span id="modalCountryLabel">Country</span> ▾
-          </button>
-          <div class="side-country-dropdown" id="modalCountryDropdown" style="left:0;right:auto;min-width:200px;text-align:left;direction:ltr;">
-            <button class="side-country-clear" onclick="clearModalCountryFilter()">Clear selection</button>
-            <div id="modalCountryList"></div>
-          </div>
+      <input type="text" id="modalSearch" placeholder="Search…"/>
+      <div class="side-country-filter" id="modalCountryWrap" style="position:relative;">
+        <button class="side-country-btn" id="modalCountryBtn" onclick="toggleModalCountryDropdown()">
+          <span id="modalCountryLabel">Country</span> ▾
+        </button>
+        <div class="side-country-dropdown" id="modalCountryDropdown" style="left:auto;right:0;">
+          <button class="side-country-clear" onclick="clearModalCountryFilter()">Clear selection</button>
+          <div id="modalCountryList"></div>
         </div>
       </div>
     </div>
