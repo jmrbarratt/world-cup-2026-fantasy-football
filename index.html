@@ -915,11 +915,11 @@ header h1 span { color:var(--green-light); }
     <div class="modal-slot-info" id="modalSlotInfo"></div>
     <div class="modal-search">
       <input type="text" id="modalSearch" placeholder="Search…"/>
-      <div class="side-country-filter" id="modalCountryWrap">
+      <div class="side-country-filter" id="modalCountryWrap" style="position:relative;">
         <button class="side-country-btn" id="modalCountryBtn" onclick="toggleModalCountryDropdown()">
           <span id="modalCountryLabel">Country</span> ▾
         </button>
-        <div class="side-country-dropdown" id="modalCountryDropdown">
+        <div class="side-country-dropdown" id="modalCountryDropdown" style="left:0;right:auto;">
           <button class="side-country-clear" onclick="clearModalCountryFilter()">Clear selection</button>
           <div id="modalCountryList"></div>
         </div>
@@ -1115,13 +1115,22 @@ function removeFromSlot(slotId) {
   renderPlayerList(); // refresh affordability/slots
 }
 
+
+
+
+
+
+
+
+// ── MODAL COUNTRY FILTER (copied from side filter pattern) ──
 var selectedModalCountries = new Set();
 
 function buildModalCountryFilter() {
   var list = document.getElementById('modalCountryList');
   if (!list) return;
   list.innerHTML = allCountries.map(function(c) {
-    return '<label class="side-country-item">'
+    var id = 'mcf-' + c.replace(/[^a-zA-Z0-9]/g, '_');
+    return '<label class="side-country-item" id="' + id + '">'
       + '<input type="checkbox" value="' + c + '" onchange="onModalCountryCheck(this)"> ' + c
       + '</label>';
   }).join('');
@@ -1156,14 +1165,14 @@ function toggleModalCountryDropdown() {
 
 function clearModalCountryFilter() {
   selectedModalCountries.clear();
-  document.querySelectorAll('#modalCountryList input[type=checkbox]').forEach(function(cb){ cb.checked = false; });
+  document.querySelectorAll('#modalCountryList input[type=checkbox]').forEach(function(cb) { cb.checked = false; });
   updateModalCountryBtn();
   renderModalList();
 }
 
 function resetModalCountryFilter() {
   selectedModalCountries.clear();
-  document.querySelectorAll('#modalCountryList input[type=checkbox]').forEach(function(cb){ cb.checked = false; });
+  document.querySelectorAll('#modalCountryList input[type=checkbox]').forEach(function(cb) { cb.checked = false; });
   updateModalCountryBtn();
 }
 
@@ -1185,8 +1194,8 @@ function renderModalList() {
 
   var filtered = PLAYERS.filter(function(p){
     if (p.Position !== position) return false;
-    if (search && p.Name.toLowerCase().indexOf(search)<0 && p.Country.toLowerCase().indexOf(search)<0) return false;
     if (selectedModalCountries.size > 0 && !selectedModalCountries.has(p.Country)) return false;
+    if (search && p.Name.toLowerCase().indexOf(search)<0 && p.Country.toLowerCase().indexOf(search)<0) return false;
     return true;
   });
   filtered.sort(function(a,b){ return b.price - a.price; });
@@ -1294,7 +1303,7 @@ function clearSideCountryFilter() {
 
 // Close country dropdowns when clicking outside
 document.addEventListener('click', function(e) {
-  ['sideCountryWrap','modalCountryWrap'].forEach(function(id) {
+  ['sideCountryWrap', 'modalCountryWrap'].forEach(function(id) {
     var wrap = document.getElementById(id);
     if (wrap && !wrap.contains(e.target)) {
       var dd = wrap.querySelector('.side-country-dropdown');
