@@ -87,8 +87,10 @@ header h1 span { color:var(--green-light); }
 /* ── FIELDS ── */
 .field { margin-bottom:7px; }
 .field label { display:block; font-size:.6rem; color:var(--gray); text-transform:uppercase; letter-spacing:1px; margin-bottom:3px; }
-.field input { width:100%; background:rgba(0,0,0,.3); border:1.5px solid rgba(255,255,255,.1); border-radius:7px; padding:7px 10px; color:var(--white); font-size:.82rem; font-family:'Inter',sans-serif; transition:border-color .2s; }
-.field input:focus { outline:none; border-color:var(--gold); }
+.field input { width:100%; background:rgba(255,255,255,.12); border:1.5px solid rgba(255,255,255,.25); border-radius:7px; padding:7px 10px; color:var(--white); font-size:.82rem; font-family:'Inter',sans-serif; transition:all .2s; }
+.field input::placeholder { color:rgba(255,255,255,.5); }
+.field input:focus { outline:none; border-color:var(--gold); background:rgba(255,255,255,.15); }
+.field input.filled { background:rgba(0,0,0,.3); border-color:rgba(255,255,255,.1); }
 .field-last { margin-bottom:0; }
 
 /* ── FORMATION ── */
@@ -152,7 +154,8 @@ header h1 span { color:var(--green-light); }
 .submit-btn { width:100%; padding:10px; background:linear-gradient(135deg,var(--green),var(--green-light)); border:none; border-radius:8px; color:var(--white); font-family:'Bebas Neue',cursive; font-size:1.05rem; letter-spacing:3px; cursor:pointer; transition:all .2s; box-shadow:0 4px 14px rgba(26,122,60,.4); }
 .submit-btn:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 6px 20px rgba(26,122,60,.6); }
 .submit-btn:disabled { background:rgba(255,255,255,.1); color:var(--gray); cursor:not-allowed; box-shadow:none; transform:none; }
-.clear-team-btn { padding:10px; background:transparent; border:1.5px solid rgba(255,255,255,.2); border-radius:8px; color:var(--gray); font-family:'Bebas Neue',cursive; font-size:1.05rem; letter-spacing:3px; cursor:pointer; transition:all .2s; }
+.clear-team-btn { padding:10px; background:var(--red); border:none; border-radius:8px; color:#fff; font-family:'Bebas Neue',cursive; font-size:1.05rem; letter-spacing:3px; cursor:pointer; opacity:1; transition:opacity .2s; }
+.clear-team-btn:hover { opacity:.85; }
 .mobile-clear-btn { display:none; }
 
 /* player list (full-width strip) */
@@ -394,11 +397,6 @@ header h1 span { color:var(--green-light); }
   .mobile-clear-btn .clear-team-btn {
     width:100%;
     display:block;
-    border-radius:0;
-    border-left:none;
-    border-right:none;
-    border-top:1px solid rgba(255,255,255,.07);
-    border-bottom:1px solid rgba(255,255,255,.07);
   }
 
   /* ── Player list area: prevent horizontal overflow ── */
@@ -600,7 +598,7 @@ header h1 span { color:var(--green-light); }
     <div class="player-list-header">
       <div class="player-list-header-row">
         <span class="section-title-bar">Players</span>
-        <input class="search-box" type="text" id="sideSearch" placeholder="Search…" oninput="renderPlayerList()"/>
+        <input class="search-box" type="text" id="sideSearch" placeholder="Search…" oninput="debouncedSearch()"/>
         <div class="side-country-filter" id="sideCountryWrap">
           <button class="side-country-btn" id="sideCountryBtn" onclick="toggleSideCountryDropdown()">
             <span id="sideCountryLabel">Country</span> ▾
@@ -1107,7 +1105,8 @@ function closeModal() {
 function removeFromSlot(slotId) {
   if (state.captain === slotId) state.captain = null;
   delete state.team[slotId];
-  renderPitch(); updateAll();
+  renderPitch(); renderSelectedPanel(); updateStats();
+  renderPlayerList(); // refresh affordability/slots
 }
 
 var selectedModalCountries = new Set();
@@ -1213,7 +1212,7 @@ function selectPlayer(name) {
   var p = PLAYERS.find(function(pl){ return pl.Name === name; });
   if (!p) return;
   state.team[state.activeSlot] = p;
-  renderPitch(); updateAll(); closeModal();
+  renderPitch(); renderSelectedPanel(); updateStats(); closeModal();
 }
 
 // ── PLAYER LIST ──
@@ -1233,7 +1232,8 @@ function addPlayerToTeam(name) {
     var sid = cls + '-' + s;
     if (!state.team[sid]) {
       state.team[sid] = p;
-      renderPitch(); updateAll();
+      renderPitch(); renderSelectedPanel(); updateStats();
+      renderPlayerList(); // refresh affordability/slots in the list
       return;
     }
   }
@@ -1296,6 +1296,12 @@ document.addEventListener('click', function(e) {
     }
   });
 });
+
+var _searchTimer = null;
+function debouncedSearch() {
+  clearTimeout(_searchTimer);
+  _searchTimer = setTimeout(renderPlayerList, 200);
+}
 
 function renderPlayerList() {
   var search = document.getElementById('sideSearch').value.toLowerCase();
@@ -1398,7 +1404,7 @@ function renderSelectedPanel() {
 
 function setCaptain(slotId) {
   state.captain = state.captain === slotId ? null : slotId;
-  renderPitch(); updateAll();
+  renderPitch(); renderSelectedPanel(); updateStats();
 }
 
 // ── CALCULATIONS ──
@@ -1407,7 +1413,7 @@ function getTotalCost() {
 }
 function getPlayerCount() { return Object.keys(state.team).length; }
 
-function updateAll() {
+function updateStats() {
   var count = getPlayerCount(), cost = getTotalCost(), rem = BUDGET - cost;
   var remCls = rem < 0 ? 'danger' : rem < 10 ? 'warn' : 'ok';
   document.getElementById('playerCount').textContent = count + ' / 11';
@@ -1417,13 +1423,20 @@ function updateAll() {
   var remEl = document.getElementById('budgetDisplay');
   remEl.textContent = '$' + rem.toFixed(1) + 'm';
   remEl.className = 'val ' + remCls;
-  renderSelectedPanel();
-  renderPlayerList();
   updateSubmitBtn(count, rem);
   updateSteps(count);
 }
+function updateAll() {
+  renderSelectedPanel();
+  renderPlayerList();
+  updateStats();
+}
 
 function onInfoChange() {
+  ['userName','teamName','userEmail'].forEach(function(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('filled', el.value.trim().length > 0);
+  });
   updateSubmitBtn(getPlayerCount(), BUDGET - getTotalCost());
   updateSteps(getPlayerCount());
 }
