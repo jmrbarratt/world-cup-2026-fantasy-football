@@ -1,0 +1,75 @@
+{
+  "name": "Green Wolves",
+  "owner": "Michael Tabone",
+  "email": "tabone.m@gmail.com",
+  "formation": "4-4-2",
+  "captain": "KYLIAN MBAPPE",
+  "players": [
+    {
+      "Name": "MIKE MAIGNAN",
+      "Country": "France",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "TAKEHIRO TOMIYASU",
+      "Country": "Japan",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "NOUSSAIR MAZRAOUI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "TAKEFUSA KUBO",
+      "Country": "Japan",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "PEDRI",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "MARTIN ODEGAARD",
+      "Country": "Norway",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "ERLING HAALAND",
+      "Country": "Norway",
+      "Position": "Forward",
+      "price": 10.5
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
