@@ -1134,9 +1134,11 @@ function buildModalCountryFilter() {
   if (!list) return;
   list.innerHTML = allCountries.map(function(c) {
     var id = 'mcf-' + c.replace(/[^a-zA-Z0-9]/g, '_');
-    return '<div class="side-country-item" id="' + id + '" onclick="toggleModalCountry(\'' + c.replace(/'/g,"\\'") + '\',this)">'
-      + '<input type="checkbox" value="' + c + '" onclick="event.stopPropagation()"> ' + c
-      + '</div>';
+    return '<div class="side-country-item" id="' + id +
+      '" onclick="toggleModalCountry(\'' + c.replace(/'/g,"\\'") + '\',this)">' +
+      '<input type="checkbox" value="' + c + '" onclick="event.stopPropagation()">' +
+      '<span>' + c + '</span>' +
+      '</div>';
   }).join('');
 }
 
