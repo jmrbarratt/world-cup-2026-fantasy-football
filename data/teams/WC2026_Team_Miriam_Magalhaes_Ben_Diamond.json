@@ -1,0 +1,75 @@
+{
+  "name": "Miriam Magalhaes",
+  "owner": "Ben Diamond",
+  "email": "ben.diamond@gmail.com",
+  "formation": "4-4-2",
+  "captain": "LAMINE YAMAL",
+  "players": [
+    {
+      "Name": "EMILIANO MARTINEZ",
+      "Country": "Argentina",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MARC CUCURELLA",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ANTONEE ROBINSON",
+      "Country": "USA",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "GABRIEL MAGALHAES",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "SADIO MANE",
+      "Country": "Senegal",
+      "Position": "Midfielder",
+      "price": 7
+    },
+    {
+      "Name": "RIYAD MAHREZ",
+      "Country": "Algeria",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "AMAD DIALLO",
+      "Country": "Ivory Coast",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "OUSMANE DEMBELE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 9.5
+    },
+    {
+      "Name": "KAI HAVERTZ",
+      "Country": "Germany",
+      "Position": "Forward",
+      "price": 8.5
+    }
+  ]
+}
