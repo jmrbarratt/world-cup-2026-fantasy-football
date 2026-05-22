@@ -270,9 +270,28 @@ header h1 span { color:var(--green-light); }
 .modal-search { padding:8px 12px; border-bottom:1px solid rgba(255,255,255,.05); display:flex; gap:7px; flex-shrink:0; overflow:visible; }
 .modal-search input { flex:1; background:rgba(0,0,0,.3); border:1.5px solid rgba(255,255,255,.1); border-radius:7px; padding:7px 11px; color:var(--white); font-size:.84rem; font-family:'Inter',sans-serif; }
 .modal-search input:focus { outline:none; border-color:var(--gold); }
-#modalCountryWrap {
-  position: relative;
-  flex-shrink: 0;
+#modalCountryDropdown {
+  all: unset;
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 200;
+  background: #3a4a5c;
+  border: 1.5px solid rgba(255,255,255,.15);
+  border-radius: 10px;
+  padding: 6px;
+  min-width: 190px;
+  max-width: 220px;
+  max-height: 260px;
+  overflow-y: auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,.6);
+  text-align: left;
+}
+#modalCountryDropdown .side-country-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 .country-select { background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15); border-radius:7px; padding:7px 9px; color:var(--white); font-size:.75rem; font-family:'Inter',sans-serif; max-width:130px; }
 .country-select option { background:#3a4a5c; color:var(--white); }
