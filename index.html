@@ -476,6 +476,9 @@ header h1 span { color:var(--green-light); }
   display:flex !important; align-items:center; justify-content:flex-start; gap:8px; padding:5px 8px; border-radius:6px;
   cursor:pointer; font-size:.78rem; color:var(--white); transition:background .1s; user-select:none; width:100%; box-sizing:border-box; text-align:left;
 }
+.side-country-item span {
+  text-align:left;
+}
 .side-country-item:hover { background:rgba(255,255,255,.1); }
 .side-country-item input[type=checkbox] { accent-color:var(--gold); cursor:pointer; flex-shrink:0; }
 .side-country-clear {
@@ -1132,6 +1135,7 @@ function buildModalCountryFilter() {
     var id = 'mcf-' + c.replace(/[^a-zA-Z0-9]/g, '_');
     return '<div class="side-country-item" id="' + id + '" onclick="toggleModalCountry(\'' + c.replace(/'/g,"\\'") + '\',this)">'
       + '<input type="checkbox" value="' + c + '" onclick="event.stopPropagation()"> ' + c
+      + '<span>' + c + '</span>'
       + '</div>';
   }).join('');
 }
