@@ -478,11 +478,7 @@ header h1 span { color:var(--green-light); }
 }
 .side-country-item:hover { background:rgba(255,255,255,.1); }
 .side-country-item input[type=checkbox] { accent-color:var(--gold); cursor:pointer; flex-shrink:0; }
-.side-country-item span {
-  flex: 1;
-  text-align: left;
-}
-  .side-country-clear {
+.side-country-clear {
   display:block; width:100%; padding:5px 8px; margin-top:2px;
   border:none; border-top:1px solid rgba(255,255,255,.15);
   background:none; color:var(--white); font-family:'Inter',sans-serif;
@@ -1134,11 +1130,9 @@ function buildModalCountryFilter() {
   if (!list) return;
   list.innerHTML = allCountries.map(function(c) {
     var id = 'mcf-' + c.replace(/[^a-zA-Z0-9]/g, '_');
-    return '<div class="side-country-item" id="' + id +
-      '" onclick="toggleModalCountry(\'' + c.replace(/'/g,"\\'") + '\',this)">' +
-      '<input type="checkbox" value="' + c + '" onclick="event.stopPropagation()">' +
-      '<span>' + c + '</span>' +
-      '</div>';
+    return '<div class="side-country-item" id="' + id + '" onclick="toggleModalCountry(\'' + c.replace(/'/g,"\\'") + '\',this)">'
+      + '<input type="checkbox" value="' + c + '" onclick="event.stopPropagation()"> ' + c
+      + '</div>';
   }).join('');
 }
 
