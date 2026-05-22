@@ -467,14 +467,14 @@ header h1 span { color:var(--green-light); }
   display:none; position:absolute; top:calc(100% + 4px); left:0; z-index:200;
   background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15); border-radius:10px;
   padding:6px; min-width:190px; max-width:220px; max-height:260px; overflow-y:auto;
-  box-shadow:0 8px 24px rgba(0,0,0,.6); text-align:left;
+  box-shadow:0 8px 24px rgba(0,0,0,.6); text-align:left; direction:ltr;
 }
 .side-country-dropdown.open { display:block; }
 .side-country-dropdown::-webkit-scrollbar { width:4px; }
 .side-country-dropdown::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
 .side-country-item {
-  display:flex; align-items:center; justify-content:flex-start; gap:8px; padding:5px 8px; border-radius:6px;
-  cursor:pointer; font-size:.78rem; color:var(--white); transition:background .1s; user-select:none; width:100%;
+  display:flex !important; align-items:center; justify-content:flex-start; gap:8px; padding:5px 8px; border-radius:6px;
+  cursor:pointer; font-size:.78rem; color:var(--white); transition:background .1s; user-select:none; width:100%; box-sizing:border-box; text-align:left;
 }
 .side-country-item:hover { background:rgba(255,255,255,.1); }
 .side-country-item input[type=checkbox] { accent-color:var(--gold); cursor:pointer; flex-shrink:0; }
@@ -914,8 +914,7 @@ header h1 span { color:var(--green-light); }
     </div>
     <div class="modal-slot-info" id="modalSlotInfo"></div>
     <div class="modal-search">
-      <input type="text" id="modalSearch" placeholder="Search…"/>
-      <div class="side-country-filter" id="modalCountryWrap" style="position:relative;">
+      <div class="side-country-filter" id="modalCountryWrap" style="position:relative;flex-shrink:0;">
         <button class="side-country-btn" id="modalCountryBtn" onclick="toggleModalCountryDropdown()">
           <span id="modalCountryLabel">Country</span> ▾
         </button>
@@ -924,6 +923,7 @@ header h1 span { color:var(--green-light); }
           <div id="modalCountryList"></div>
         </div>
       </div>
+      <input type="text" id="modalSearch" placeholder="Search…"/>
     </div>
     <div class="modal-player-list" id="modalPlayerList"></div>
   </div>
@@ -1130,10 +1130,19 @@ function buildModalCountryFilter() {
   if (!list) return;
   list.innerHTML = allCountries.map(function(c) {
     var id = 'mcf-' + c.replace(/[^a-zA-Z0-9]/g, '_');
-    return '<label class="side-country-item" id="' + id + '">'
-      + '<input type="checkbox" value="' + c + '" onchange="onModalCountryCheck(this)"> ' + c
-      + '</label>';
+    return '<div class="side-country-item" id="' + id + '" onclick="toggleModalCountry(\'' + c.replace(/'/g,"\\'") + '\',this)">'
+      + '<input type="checkbox" value="' + c + '" onclick="event.stopPropagation()"> ' + c
+      + '</div>';
   }).join('');
+}
+
+function toggleModalCountry(country, el) {
+  var cb = el.querySelector('input[type=checkbox]');
+  cb.checked = !cb.checked;
+  if (cb.checked) selectedModalCountries.add(country);
+  else selectedModalCountries.delete(country);
+  updateModalCountryBtn();
+  renderModalList();
 }
 
 function onModalCountryCheck(cb) {
@@ -1261,10 +1270,19 @@ function buildSideCountryFilter() {
   if (!list) return;
   list.innerHTML = allCountries.map(function(c) {
     var id = 'scc-' + c.replace(/[^a-zA-Z0-9]/g,'_');
-    return '<label class="side-country-item" id="' + id + '">'
-      + '<input type="checkbox" value="' + c + '" onchange="onSideCountryCheck(this)"> ' + c
-      + '</label>';
+    return '<div class="side-country-item" id="' + id + '" onclick="toggleSideCountry(\'' + c.replace(/'/g,"\\'") + '\',this)">'
+      + '<input type="checkbox" value="' + c + '" onclick="event.stopPropagation()"> ' + c
+      + '</div>';
   }).join('');
+}
+
+function toggleSideCountry(country, el) {
+  var cb = el.querySelector('input[type=checkbox]');
+  cb.checked = !cb.checked;
+  if (cb.checked) selectedSideCountries.add(country);
+  else selectedSideCountries.delete(country);
+  updateSideCountryBtn();
+  renderPlayerList();
 }
 
 function onSideCountryCheck(cb) {
