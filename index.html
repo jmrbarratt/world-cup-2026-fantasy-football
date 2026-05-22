@@ -91,6 +91,12 @@ header h1 span { color:var(--green-light); }
 .field input::placeholder { color:rgba(255,255,255,.5); }
 .field input:focus { outline:none; border-color:var(--gold); background:rgba(255,255,255,.15); }
 .field input.filled { background:rgba(0,0,0,.3); border-color:rgba(255,255,255,.1); }
+.field input:-webkit-autofill,
+.field input:-webkit-autofill:focus {
+  -webkit-box-shadow:0 0 0 1000px #1a2535 inset !important;
+  -webkit-text-fill-color:var(--white) !important;
+  border-color:rgba(255,255,255,.1) !important;
+}
 .field-last { margin-bottom:0; }
 
 /* ── FORMATION ── */
@@ -458,17 +464,17 @@ header h1 span { color:var(--green-light); }
 .side-country-btn:hover { border-color:rgba(255,255,255,.3); }
 .side-country-btn.active { border-color:var(--gold); color:var(--gold); }
 .side-country-dropdown {
-  display:none; position:absolute; top:calc(100% + 4px); left:0; z-index:200;
+  display:none; position:absolute; top:calc(100% + 4px); right:0; left:auto; z-index:200;
   background:#3a4a5c; border:1.5px solid rgba(255,255,255,.15); border-radius:10px;
-  padding:6px; min-width:190px; max-height:260px; overflow-y:auto;
-  box-shadow:0 8px 24px rgba(0,0,0,.6);
+  padding:6px; min-width:190px; max-width:min(260px, 80vw); max-height:260px; overflow-y:auto;
+  box-shadow:0 8px 24px rgba(0,0,0,.6); text-align:left;
 }
 .side-country-dropdown.open { display:block; }
 .side-country-dropdown::-webkit-scrollbar { width:4px; }
 .side-country-dropdown::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:4px; }
 .side-country-item {
-  display:flex; align-items:center; gap:8px; padding:5px 8px; border-radius:6px;
-  cursor:pointer; font-size:.78rem; color:var(--white); transition:background .1s; user-select:none;
+  display:flex; align-items:center; justify-content:flex-start; gap:8px; padding:5px 8px; border-radius:6px;
+  cursor:pointer; font-size:.78rem; color:var(--white); transition:background .1s; user-select:none; width:100%;
 }
 .side-country-item:hover { background:rgba(255,255,255,.1); }
 .side-country-item input[type=checkbox] { accent-color:var(--gold); cursor:pointer; flex-shrink:0; }
@@ -540,9 +546,9 @@ header h1 span { color:var(--green-light); }
   <!-- ═══ COL 1: Your details ═══ -->
   <div class="col col-details">
     <div class="section-label">Your Details</div>
-    <div class="field"><label>Your Name *</label><input type="text" id="userName" placeholder="e.g. John Smith" oninput="onInfoChange()"/></div>
-    <div class="field"><label>Team Name *</label><input type="text" id="teamName" placeholder="e.g. Three Lions FC" oninput="onInfoChange()"/></div>
-    <div class="field field-last"><label>Email Address *</label><input type="email" id="userEmail" placeholder="you@example.com" oninput="onInfoChange()"/></div>
+    <div class="field"><label>Your Name *</label><input type="text" id="userName" placeholder="e.g. John Smith" oninput="onInfoChange()" onchange="onInfoChange()"/></div>
+    <div class="field"><label>Team Name *</label><input type="text" id="teamName" placeholder="e.g. Three Lions FC" oninput="onInfoChange()" onchange="onInfoChange()"/></div>
+    <div class="field field-last"><label>Email Address *</label><input type="email" id="userEmail" placeholder="you@example.com" oninput="onInfoChange()" onchange="onInfoChange()"/></div>
   </div>
 
   <!-- ═══ COL 2: Formation + Progress ═══ -->
