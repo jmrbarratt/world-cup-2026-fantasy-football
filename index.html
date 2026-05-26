@@ -1556,12 +1556,13 @@ function downloadJSON() {
   var cap   = state.team[state.captain];
   var ordered = getOrderedPlayers();
   var payload = {
-    name:      tname,
-    owner:     name,
-    email:     email,
-    formation: state.formation,
-    captain:   cap ? cap.Name : '',
-    players:   ordered.map(function(e){ return { Name:e.player.Name, Country:e.player.Country, Position:e.player.Position, price:e.player.price }; })
+    name:       tname,
+    owner:      name,
+    email:      email,
+    formation:  state.formation,
+    captain:    cap ? cap.Name : '',
+    totalValue: getTotalCost(),
+    players:    ordered.map(function(e){ return { Name:e.player.Name, Country:e.player.Country, Position:e.player.Position, price:e.player.price }; })
   };
   var blob = new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'});
   var a = document.createElement('a');
