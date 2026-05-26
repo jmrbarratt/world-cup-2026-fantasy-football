@@ -1,0 +1,75 @@
+{
+  "name": "Lach Dogs 2.0",
+  "owner": "Lachlan Okoye",
+  "email": "lachlanokoye@hotmail.co.uk",
+  "formation": "4-4-2",
+  "captain": "LAMINE YAMAL",
+  "players": [
+    {
+      "Name": "BART VERBRUGGEN",
+      "Country": "Netherlands",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "WILLIAM SALIBA",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "RONALD ARAUJO",
+      "Country": "Uruguay",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "KIM MIN-JAE",
+      "Country": "South Korea",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "JUDE BELLINGHAM",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "VITINHA",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "RAPHINHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "LUIS SUAREZ",
+      "Country": "Colombia",
+      "Position": "Forward",
+      "price": 6.5
+    }
+  ]
+}
