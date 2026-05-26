@@ -833,7 +833,7 @@ function openTeamModal(id) {
     ? '<span style="color:var(--red);font-weight:600;margin-left:16px">⚠ ' + invalidCount + ' player' + (invalidCount>1?'s':'') + ' not in current player list</span>'
     : '';
   document.getElementById('modalBody').innerHTML = headerRow + rows
-    + '<div style="font-size:.68rem;color:var(--gray);margin-top:10px;padding-top:8px;border-top:1px solid var(--border);display:flex;gap:16px;align-items:center;flex-wrap:wrap">'    + '<span>★ Captain (doubled score shown)</span>'    + '<span>Team value: <span style="color:var(--gold);font-family:DM Mono,monospace;font-weight:700">$' + totalValue.toFixed(1) + 'm</span></span>'    + invalidNote    + '</div>';
+    + '<div style="font-size:.68rem;color:var(--gray);margin-top:10px;padding-top:8px;border-top:1px solid var(--border);display:flex;gap:16px;align-items:center;flex-wrap:wrap">'    + '<span>★ Captain (doubled score shown)</span>'    + '<span>Team value: <span style="color:var(--white);font-family:DM Mono,monospace;font-weight:700">$' + totalValue.toFixed(1) + 'm</span></span>'    + invalidNote    + '</div>';
 
   document.getElementById('teamModal').classList.add('open');
 }
