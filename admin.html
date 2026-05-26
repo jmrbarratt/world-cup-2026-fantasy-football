@@ -284,6 +284,8 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 .modal-player-row .p-md.captain-score { color:var(--gold); font-weight:700; }
 .modal-player-row .p-total { text-align:right; font-family:'DM Mono',monospace; font-weight:700; padding-right:4px; }
 .modal-player-row .p-total.captain-total { color:var(--gold); }
+.p-invalid { color:var(--red) !important; font-style:italic; }
+.p-invalid-flag { display:inline-block; background:var(--red); color:#fff; font-size:.6rem; font-weight:700; padding:1px 5px; border-radius:3px; margin-left:5px; letter-spacing:.5px; vertical-align:middle; }
 
 /* make team cards and lb rows clickable */
 .team-card { cursor:pointer; }
@@ -497,6 +499,10 @@ function toast(msg, type='success') {
 
 
 // ── RENDER TEAMS ──
+function isValidPlayer(name) {
+  return PLAYERS.some(function(p){ return p.Name === name; });
+}
+
 function renderTeams() {
   var teams = Object.values(state.teams);
   var grid = document.getElementById('teamsGrid');
@@ -812,15 +818,22 @@ function openTeamModal(id) {
     }).join('');
     return '<div class="modal-player-row">'
       + '<div><span class="player-pos-dot" style="background:' + (POS_COLORS[p.Position]||'#fff') + ';display:inline-block;width:7px;height:7px;border-radius:50%"></span></div>'
-      + '<div class="p-name' + (isCap?' captain':'') + '">' + (isCap ? '★ ' : '') + esc(p.Name) + '</div>'
-      + '<div class="p-country">' + esc(p.Country) + ' · ' + POS_ABBR[p.Position] + ' · ' + p.price + 'm</div>'
+      + '<div class="p-name' + (isCap?' captain':'') + (!isValidPlayer(p.Name)?' p-invalid':'') + '">' + (isCap ? '★ ' : '') + esc(p.Name) + (!isValidPlayer(p.Name) ? '<span class="p-invalid-flag">NOT IN LIST</span>' : '') + '</div>'
+      + '<div class="p-country">' + esc(p.Country) + ' · ' + POS_ABBR[p.Position] + ' · $' + p.price + 'm</div>'
       + mdCells
       + '<div class="p-total' + (isCap?' captain-total':'') + '">' + (playerTotal||'–') + '</div>'
       + '</div>';
   }).join('');
 
+  var totalValue = team.totalValue !== undefined
+    ? team.totalValue
+    : (team.players||[]).reduce(function(s,p){ return s+(p.price||0); }, 0);
+  var invalidCount = (team.players||[]).filter(function(p){ return !isValidPlayer(p.Name); }).length;
+  var invalidNote = invalidCount > 0
+    ? '<span style="color:var(--red);font-weight:600;margin-left:16px">⚠ ' + invalidCount + ' player' + (invalidCount>1?'s':'') + ' not in current player list</span>'
+    : '';
   document.getElementById('modalBody').innerHTML = headerRow + rows
-    + '<div style="font-size:.68rem;color:var(--gray);margin-top:10px;padding-top:8px;border-top:1px solid var(--border)">★ Captain (doubled score shown)</div>';
+    + '<div style="font-size:.68rem;color:var(--gray);margin-top:10px;padding-top:8px;border-top:1px solid var(--border);display:flex;gap:16px;align-items:center;flex-wrap:wrap">'    + '<span>★ Captain (doubled score shown)</span>'    + '<span>Team value: <span style="color:var(--gold);font-family:DM Mono,monospace;font-weight:700">$' + totalValue.toFixed(1) + 'm</span></span>'    + invalidNote    + '</div>';
 
   document.getElementById('teamModal').classList.add('open');
 }
