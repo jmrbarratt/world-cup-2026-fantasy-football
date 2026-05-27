@@ -1,0 +1,75 @@
+{
+  "name": "Spreading One's Bets",
+  "owner": "Penny Barratt",
+  "email": "penny-barratt@sky.com",
+  "formation": "3-4-3",
+  "captain": "HARRY KANE",
+  "players": [
+    {
+      "Name": "UNAI SIMON",
+      "Country": "Spain",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "JOSHUA KIMMICH",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "NAHUEL MOLINA",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "GABRIEL GUDMUNDSSON",
+      "Country": "Sweden",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "LUIS DIAZ",
+      "Country": "Colombia",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "GRANIT XHAKA",
+      "Country": "Switzerland",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "YOURI TIELEMANS",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "OUSMANE DEMBELE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 9.5
+    },
+    {
+      "Name": "AYOUB EL KAABI",
+      "Country": "Morocco",
+      "Position": "Forward",
+      "price": 5.5
+    }
+  ]
+}
