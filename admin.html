@@ -1119,8 +1119,8 @@ function loadTeamsFromRepo() {
 
       teamArray.forEach(function(team){
         var id = 'team_' 
-          + team.name.replace(/\s+/g,'_') + '_' 
-          + team.owner.replace(/\s+/g,'_');
+          + team.name.replace(/[^a-zA-Z0-9]+/g,'_') + '_' 
+          + team.owner.replace(/[^a-zA-Z0-9]+/g,'_');
 
         state.teams[id] = team;
       });
