@@ -1,0 +1,76 @@
+{
+  "name": "Left-Footed Legends",
+  "owner": "Zoë Parry",
+  "email": "zoeparry@gmail.com",
+  "formation": "4-4-2",
+  "captain": "ERLING HAALAND",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "THIBAUT COURTOIS",
+      "Country": "Belgium",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "NICOLAS TAGLIAFICO",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "PIERO HINCAPIE",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "MICKY VAN DE VEN",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "RICARDO RODRIGUEZ",
+      "Country": "Switzerland",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "BUKAYO SAKA",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "ARDA GULER",
+      "Country": "Turkey",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "LEE KANG-IN",
+      "Country": "South Korea",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "RAPHINHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "ERLING HAALAND",
+      "Country": "Norway",
+      "Position": "Forward",
+      "price": 10.5
+    }
+  ]
+}
