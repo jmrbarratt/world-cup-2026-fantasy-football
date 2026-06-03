@@ -1,0 +1,76 @@
+{
+  "name": "Junior School 1st X1",
+  "owner": "Penelope B",
+  "email": "penny-barratt@sky.com",
+  "formation": "3-4-3",
+  "captain": "VINICIUS JUNIOR",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "THIBAUT COURTOIS",
+      "Country": "Belgium",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "GABRIEL GUDMUNDSSON",
+      "Country": "Sweden",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "JULIAN RYERSON",
+      "Country": "Norway",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "ENZO FERNANDEZ",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "BRAHIM DIAZ",
+      "Country": "Morocco",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "VINICIUS JUNIOR",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9.5
+    },
+    {
+      "Name": "DONYELL MALEN",
+      "Country": "Netherlands",
+      "Position": "Forward",
+      "price": 7
+    },
+    {
+      "Name": "KAI HAVERTZ",
+      "Country": "Germany",
+      "Position": "Forward",
+      "price": 8.5
+    }
+  ]
+}
