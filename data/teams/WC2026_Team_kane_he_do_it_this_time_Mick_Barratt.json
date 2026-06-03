@@ -1,0 +1,76 @@
+{
+  "name": "kane he do it this time",
+  "owner": "Mick Barratt",
+  "email": "michael-barratt@sky.com",
+  "formation": "4-3-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "JORDAN PICKFORD",
+      "Country": "England",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "AYMERIC LAPORTE",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "DAVID RAUM",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "JAN PAUL VAN HECKE",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "RODRI",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "AURELIEN TCHOUAMENI",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "RODRIGO DE PAUL",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "MARCUS THURAM",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 6.5
+    },
+    {
+      "Name": "RAPHINHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
