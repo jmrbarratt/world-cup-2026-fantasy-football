@@ -1,0 +1,76 @@
+{
+  "name": "El Loco's Back",
+  "owner": "Timothy Ross",
+  "email": "timothy@ellandroad.net",
+  "formation": "4-3-3",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "DAVID RAYA",
+      "Country": "Spain",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "RAYAN AIT-NOURI",
+      "Country": "Algeria",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "VIRGIL VAN DIJK",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "BAE JUN-HO",
+      "Country": "South Korea",
+      "Position": "Midfielder",
+      "price": 4.5
+    },
+    {
+      "Name": "RAPHINHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "IBRAHIM MBAYE",
+      "Country": "Senegal",
+      "Position": "Forward",
+      "price": 5
+    }
+  ]
+}
