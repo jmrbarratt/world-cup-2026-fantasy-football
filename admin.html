@@ -364,7 +364,9 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
       <thead>
         <tr>
           <th class="col-name">PLAYER</th>
-          <th class="col-sel">SEL (CAP)</th>
+          <th class="col-sel">SEL</th>
+          <th class="col-sel">%</th>
+          <th class="col-sel">CAP</th>
           <th class="col-md">M1</th>
           <th class="col-md">M2</th>
           <th class="col-md">M3</th>
@@ -671,6 +673,8 @@ function renderScoresTable() {
     }
   });
 
+  var totalTeams = Object.keys(state.teams).length;
+
   var tbody = document.getElementById('scoresTbody');
   tbody.innerHTML = filtered.map(function(p) {
     var scores  = state.scores[p.Name] || {};
@@ -686,14 +690,16 @@ function renderScoresTable() {
     }).join('');
     var sel = selCount[p.Name] || 0;
     var cap = capCount[p.Name] || 0;
-    var selLabel = sel ? sel + (cap ? ' (' + cap + ')' : '') : '–';
+    var pct = totalTeams > 0 && sel > 0 ? (sel / totalTeams * 100).toFixed(1) + '%' : '–';
     return '<tr>'
       + '<td class="col-name"><div class="player-name-cell">'
       + '<span class="player-pos-dot" style="background:' + dotColor + '"></span>'
       + '<span>' + esc(p.Name) + '</span>'
       + '<span class="player-country-tag">' + esc(p.Country) + ' · ' + POS_ABBR[p.Position] + ' · ' + p.price + 'm</span>'
       + '</div></td>'
-      + '<td class="col-sel">' + selLabel + '</td>'
+      + '<td class="col-sel">' + (sel || '–') + '</td>'
+      + '<td class="col-sel">' + pct + '</td>'
+      + '<td class="col-sel">' + (cap || '–') + '</td>'
       + cells
       + '<td class="col-total">' + (total || '–') + '</td>'
       + '</tr>';
@@ -918,7 +924,7 @@ function downloadLeaderboardHTML() {
       + mds
       + '<td class="c"><span class="lb-score-total">' + e.total + '</span></td>'
       + '</tr>';
-  }).join('') || '<tr><td colspan="' + (MD_LABELS.length + 4) + '" style="text-align:center;color:var(--gray);padding:20px">No data</td></tr>';
+  }).join('') || '<tr><td colspan="' + (MD_LABELS.length + 5) + '" style="text-align:center;color:var(--gray);padding:20px">No data</td></tr>';
 
   var body = '<h1>WORLD CUP 2026 <span style="color:#f0f6fc">FANTASY FOOTBALL</span></h1>'
     + '<div class="subtitle">Leaderboard — ' + now + '</div>'
