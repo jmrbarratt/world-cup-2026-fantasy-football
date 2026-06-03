@@ -1,0 +1,76 @@
+{
+  "name": "Arda, Better, Faster, Guler",
+  "owner": "James Henson",
+  "email": "jhenson32@gmail.com",
+  "formation": "4-4-2",
+  "captain": "VINICIUS JUNIOR",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "DIOGO COSTA",
+      "Country": "Portugal",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "WESLEY FRANCA",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "RICARDO RODRIGUEZ",
+      "Country": "Switzerland",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MARC CUCURELLA",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ARDA GULER",
+      "Country": "Turkey",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "ANTONIO NUSA",
+      "Country": "Norway",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "JEREMY DOKU",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "FLORIAN WIRTZ",
+      "Country": "Germany",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "VINICIUS JUNIOR",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9.5
+    },
+    {
+      "Name": "OUSMANE DEMBELE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 9.5
+    }
+  ]
+}

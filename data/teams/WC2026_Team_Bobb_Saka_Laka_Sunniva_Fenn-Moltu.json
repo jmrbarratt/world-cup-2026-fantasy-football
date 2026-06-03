@@ -1,0 +1,76 @@
+{
+  "name": "Bobb Saka Laka",
+  "owner": "Sunniva Fenn-Moltu",
+  "email": "s.fennmoltu@gmail.com",
+  "formation": "3-4-3",
+  "captain": "EMILIANO MARTINEZ",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "EMILIANO MARTINEZ",
+      "Country": "Argentina",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "AMAR DEDIC",
+      "Country": "Bosnia-Herzegovina",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "VIRGIL VAN DIJK",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "JOSHUA KIMMICH",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "OSCAR BOBB",
+      "Country": "Norway",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "BUKAYO SAKA",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "NICO WILLIAMS",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "ISMAILA SARR",
+      "Country": "Senegal",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "OUSMANE DEMBELE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 9.5
+    },
+    {
+      "Name": "LUIS SUAREZ",
+      "Country": "Colombia",
+      "Position": "Forward",
+      "price": 6.5
+    },
+    {
+      "Name": "VINICIUS JUNIOR",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9.5
+    }
+  ]
+}
