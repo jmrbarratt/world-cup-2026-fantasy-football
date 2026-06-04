@@ -1,0 +1,76 @@
+{
+  "name": "Hot Spuds",
+  "owner": "Tom Dean",
+  "email": "deany15.td@gmail.com",
+  "formation": "3-4-3",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "THIBAUT COURTOIS",
+      "Country": "Belgium",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "JULES KOUNDE",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "GABRIEL MAGALHAES",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ARDA GULER",
+      "Country": "Turkey",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "JEREMY DOKU",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "ENZO FERNANDEZ",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "VITINHA",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "DONYELL MALEN",
+      "Country": "Netherlands",
+      "Position": "Forward",
+      "price": 7
+    },
+    {
+      "Name": "ALEXANDER SORLOTH",
+      "Country": "Norway",
+      "Position": "Forward",
+      "price": 6.5
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
