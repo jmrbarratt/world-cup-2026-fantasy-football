@@ -1,0 +1,76 @@
+{
+  "name": "Fentastic Swiss Bees",
+  "owner": "Beth Billington-Fenner",
+  "email": "bethanyfenner@hotmail.com",
+  "formation": "4-3-3",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "MANUEL NEUER",
+      "Country": "Germany",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "GABRIEL MAGALHAES",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "RUBEN DIAS",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "THOMAS MEUNIER",
+      "Country": "Belgium",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "GRANIT XHAKA",
+      "Country": "Switzerland",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "NONI MADUEKE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "BREEL EMBOLO",
+      "Country": "Switzerland",
+      "Position": "Forward",
+      "price": 6
+    },
+    {
+      "Name": "DESIRE DOUE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 7.5
+    }
+  ]
+}
