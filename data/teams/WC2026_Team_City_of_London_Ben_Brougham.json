@@ -1,0 +1,76 @@
+{
+  "name": "City of London",
+  "owner": "Ben Brougham",
+  "email": "broughamben@gmail.com",
+  "formation": "4-4-2",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "JOSE SA",
+      "Country": "Portugal",
+      "Position": "Goalkeeper",
+      "price": 6
+    },
+    {
+      "Name": "GABRIEL MAGALHAES",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "DAVID RAUM",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "VLADIMIR COUFAL",
+      "Country": "Czech Republic",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "TIM REAM",
+      "Country": "USA",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "RAYAN CHERKI",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "MORGAN ROGERS",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 7
+    },
+    {
+      "Name": "CHRISTIAN PULISIC",
+      "Country": "USA",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
