@@ -348,13 +348,12 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
       </div>
     </div>
     <select id="scoresSortBy" class="scores-sort" onchange="renderScoresTable()">
-      <option value="country">Sort: Country → Position → Price → Name</option>
-      <option value="position">Sort: Position → Price → Name</option>
-      <option value="price_desc">Sort: Price (High → Low)</option>
-      <option value="price_asc">Sort: Price (Low → High)</option>
-      <option value="name">Sort: Name (A → Z)</option>
-      <option value="total_desc">Sort: Total Score (High → Low)</option>
-      <option value="sel_desc">Sort: Selections (High → Low)</option>
+      <option value="country">Country → Position → Price → Name</option>
+      <option value="position">Position → Price → Name</option>
+      <option value="total_desc">Total Score (High → Low)</option>
+      <option value="sel_desc">Selections (High → Low)</option>
+      <option value="price_desc">Price (High → Low)</option>
+      <option value="name">Name (A → Z)</option>
     </select>
   </div>
 
@@ -632,45 +631,39 @@ function renderScoresTable() {
   // Sort
   filtered.sort(function(a, b) {
     switch (sortBy) {
-      case 'country':
-        return a.Country.localeCompare(b.Country)
-          || b.price - a.price
-          || POS_ORDER[a.Position] - POS_ORDER[b.Position]
-          || a.Name.localeCompare(b.Name);
       case 'position':
+        // Position - Price - Name
         return POS_ORDER[a.Position] - POS_ORDER[b.Position]
           || b.price - a.price
-          || a.Country.localeCompare(b.Country)
           || a.Name.localeCompare(b.Name);
       case 'price_desc':
+        // Price (High->Low) - Position - Country - Name
         return b.price - a.price
           || POS_ORDER[a.Position] - POS_ORDER[b.Position]
           || a.Country.localeCompare(b.Country)
           || a.Name.localeCompare(b.Name);
-      case 'price_asc':
-        return a.price - b.price
-          || POS_ORDER[a.Position] - POS_ORDER[b.Position]
-          || a.Country.localeCompare(b.Country)
-          || a.Name.localeCompare(b.Name);
-      case 'name':
-        return a.Name.localeCompare(b.Name);
       case 'total_desc':
+        // Total Score (High->Low) - Price - Position - Country - Name
         return getPlayerScore(b.Name) - getPlayerScore(a.Name)
           || b.price - a.price
           || POS_ORDER[a.Position] - POS_ORDER[b.Position]
           || a.Country.localeCompare(b.Country)
           || a.Name.localeCompare(b.Name);
       case 'sel_desc':
+        // Selections (High->Low) - Price - Position - Country - Name
         return (selCount[b.Name] || 0) - (selCount[a.Name] || 0)
-          || (capCount[b.Name] || 0) - (capCount[a.Name] || 0)
           || b.price - a.price
           || POS_ORDER[a.Position] - POS_ORDER[b.Position]
           || a.Country.localeCompare(b.Country)
           || a.Name.localeCompare(b.Name);
+      case 'name':
+        return a.Name.localeCompare(b.Name);
+      case 'country':
       default:
-        return b.price - a.price
+        // Country - Position - Price - Name (default)
+        return a.Country.localeCompare(b.Country)
           || POS_ORDER[a.Position] - POS_ORDER[b.Position]
-          || a.Country.localeCompare(b.Country)
+          || b.price - a.price
           || a.Name.localeCompare(b.Name);
     }
   });
