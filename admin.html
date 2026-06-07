@@ -317,13 +317,12 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 <!-- TEAMS PANEL -->
 <div class="panel active" id="panel-teams">
   <h1 class="section-title">Teams</h1>
-  <p class="section-sub">Teams are loaded automatically from the /teams/ folder in the GitHub repository.</p>
+  <p class="section-sub" id="teamsCountSub"></p>
 
 
 
   <div class="teams-toolbar">
     <div id="teamsCount" class="teams-count"></div>
-    <button class="btn btn-red" onclick="clearAllTeams()" id="clearTeamsBtn" style="display:none">🗑 Clear all teams</button>
   </div>
 
   <div class="teams-grid" id="teamsGrid"></div>
@@ -420,7 +419,7 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 <!-- EXPORT PANEL -->
 <div class="panel" id="panel-export">
   <h1 class="section-title">Export</h1>
-  <p class="section-sub">Download shareable HTML reports to send to participants or keep for your records.</p>
+  <p class="section-sub"></p>
   <div class="export-cards">
 
     <div class="card">
@@ -506,14 +505,15 @@ function isValidPlayer(name) {
 }
 
 function renderTeams() {
+  var count = Object.keys(state.teams).length;
+  var sub = document.getElementById('teamsCountSub');
+  if (sub) sub.textContent = count + ' team' + (count !== 1 ? 's' : '') + ' entered';
   var teams = Object.values(state.teams);
   var grid = document.getElementById('teamsGrid');
   var empty = document.getElementById('teamsEmpty');
   var count = document.getElementById('teamsCount');
-  var clearBtn = document.getElementById('clearTeamsBtn');
 
   count.textContent = teams.length + ' team' + (teams.length !== 1 ? 's' : '') + ' imported';
-  clearBtn.style.display = teams.length ? 'inline-flex' : 'none';
 
   if (!teams.length) {
     grid.innerHTML = '';
@@ -543,24 +543,9 @@ function renderTeams() {
       + '<div class="team-players">' + chipsHtml + '</div>'
       + '</div>'
       + '<div class="team-card-footer">'
-      + '<button class="btn btn-red" style="padding:5px 10px;font-size:.72rem" onclick="event.stopPropagation();deleteTeam(\'' + escAttr(id) + '\')">Remove</button>'
       + '</div>'
       + '</div>';
   }).join('');
-}
-
-function deleteTeam(id) {
-  if (!confirm('Remove this team?')) return;
-  delete state.teams[id];
-  renderTeams();
-  toast('Team removed');
-}
-
-function clearAllTeams() {
-  if (!confirm('Remove ALL teams? This cannot be undone.')) return;
-  state.teams = {};
-  renderTeams();
-  toast('All teams cleared');
 }
 
 function formatDate() {
@@ -673,8 +658,6 @@ function renderScoresTable() {
     }
   });
 
-  var totalTeams = Object.keys(state.teams).length;
-
   var tbody = document.getElementById('scoresTbody');
   tbody.innerHTML = filtered.map(function(p) {
     var scores  = state.scores[p.Name] || {};
@@ -690,6 +673,7 @@ function renderScoresTable() {
     }).join('');
     var sel = selCount[p.Name] || 0;
     var cap = capCount[p.Name] || 0;
+    var totalTeams = Object.keys(state.teams).length;
     var pct = totalTeams > 0 && sel > 0 ? (sel / totalTeams * 100).toFixed(1) + '%' : '–';
     return '<tr>'
       + '<td class="col-name"><div class="player-name-cell">'
