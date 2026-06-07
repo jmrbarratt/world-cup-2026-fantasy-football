@@ -1,0 +1,76 @@
+{
+  "name": "Silva Linings Kanebook",
+  "owner": "Sarah Williams",
+  "email": "sbewilliams95@gmail.com",
+  "formation": "4-4-2",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "EMILIANO MARTINEZ",
+      "Country": "Argentina",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "JOSHUA KIMMICH",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "PAU CUBARSI",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "MARQUINHOS",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "JESUS GALLARDO",
+      "Country": "Mexico",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "ANTONIO NUSA",
+      "Country": "Norway",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "CHRISTIAN PULISIC",
+      "Country": "USA",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "BERNARDO SILVA",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 7
+    },
+    {
+      "Name": "KEITO NAKAMURA",
+      "Country": "Japan",
+      "Position": "Midfielder",
+      "price": 5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
