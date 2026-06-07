@@ -1,0 +1,76 @@
+{
+  "name": "Maeda Meal Of It",
+  "owner": "Ben Norfolk-Whittaker",
+  "email": "bpnwhittaker@gmail.com",
+  "formation": "4-3-3",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "BART VERBRUGGEN",
+      "Country": "Netherlands",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "ISSA DIOP",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "WILLIAN PACHO",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "DAYOT UPAMECANO",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "PEDRI",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "JEREMY DOKU",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "JULIAN ALVAREZ",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "OMAR MARMOUSH",
+      "Country": "Egypt",
+      "Position": "Forward",
+      "price": 6
+    }
+  ]
+}
