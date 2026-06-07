@@ -1,0 +1,76 @@
+{
+  "name": "Put De Ketelaere On",
+  "owner": "Will Poley",
+  "email": "poleywill@gmail.com",
+  "formation": "3-4-3",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "ZION SUZUKI",
+      "Country": "Japan",
+      "Position": "Goalkeeper",
+      "price": 5
+    },
+    {
+      "Name": "JOSHUA KIMMICH",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "GABRIEL MAGALHAES",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "CHARLES DE KETELAERE",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "TAKEFUSA KUBO",
+      "Country": "Japan",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "KERIM ALAJBEGOVIC",
+      "Country": "Bosnia-Herzegovina",
+      "Position": "Midfielder",
+      "price": 5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "RAUL JIMENEZ",
+      "Country": "Mexico",
+      "Position": "Forward",
+      "price": 6
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
