@@ -1,0 +1,76 @@
+{
+  "name": "Real Betty's",
+  "owner": "Rob Mellows",
+  "email": "rob_mellows@hotmail.com",
+  "formation": "4-4-2",
+  "captain": "BRUNO FERNANDES",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "THIBAUT COURTOIS",
+      "Country": "Belgium",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "JURRIEN TIMBER",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "WESLEY FRANCA",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "BUKAYO SAKA",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "JOHN MCGINN",
+      "Country": "Scotland",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "RAPHINHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "RAUL JIMENEZ",
+      "Country": "Mexico",
+      "Position": "Forward",
+      "price": 6
+    }
+  ]
+}
