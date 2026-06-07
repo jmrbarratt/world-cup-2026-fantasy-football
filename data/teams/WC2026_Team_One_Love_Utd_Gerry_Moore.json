@@ -1,0 +1,76 @@
+{
+  "name": "One Love Utd",
+  "owner": "Gerry Moore",
+  "email": "Gerry@moore-online.co.uk",
+  "formation": "4-4-2",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "JORDAN PICKFORD",
+      "Country": "England",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "NICOLAS TAGLIAFICO",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "ALEX GRIMALDO",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "FERDI KADIOGLU",
+      "Country": "Turkey",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "ANDY ROBERTSON",
+      "Country": "Scotland",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "RAYAN CHERKI",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "YOURI TIELEMANS",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "JULIAN ALVAREZ",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
