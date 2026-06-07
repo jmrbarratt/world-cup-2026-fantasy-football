@@ -1,0 +1,76 @@
+{
+  "name": "Kobelled Together",
+  "owner": "Jack Barratt",
+  "email": "jmrbarratt@gmail.com",
+  "formation": "4-3-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "GREGOR KOBEL",
+      "Country": "Switzerland",
+      "Position": "Goalkeeper",
+      "price": 5.5
+    },
+    {
+      "Name": "NAHUEL MOLINA",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "PAU CUBARSI",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "NATHAN NGOY",
+      "Country": "Belgium",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ARDA GULER",
+      "Country": "Turkey",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "BRAHIM DIAZ",
+      "Country": "Morocco",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "AYASE UEDA",
+      "Country": "Japan",
+      "Position": "Forward",
+      "price": 5.5
+    }
+  ]
+}
