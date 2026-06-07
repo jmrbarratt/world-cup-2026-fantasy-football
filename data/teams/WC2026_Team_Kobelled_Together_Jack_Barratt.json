@@ -13,22 +13,22 @@
       "price": 5.5
     },
     {
-      "Name": "JOAO CANCELO",
-      "Country": "Portugal",
-      "Position": "Defender",
-      "price": 7
-    },
-    {
-      "Name": "PAU CUBARSI",
+      "Name": "MARC CUCURELLA",
       "Country": "Spain",
       "Position": "Defender",
-      "price": 7
+      "price": 7.5
     },
     {
       "Name": "NATHAN NGOY",
       "Country": "Belgium",
       "Position": "Defender",
       "price": 5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
     },
     {
       "Name": "NUNO MENDES",
