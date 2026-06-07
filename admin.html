@@ -513,7 +513,7 @@ function renderTeams() {
   var empty = document.getElementById('teamsEmpty');
   var count = document.getElementById('teamsCount');
 
-  count.textContent = teams.length + ' team' + (teams.length !== 1 ? 's' : '') + ' imported';
+  count.textContent = '';
 
   if (!teams.length) {
     grid.innerHTML = '';
@@ -634,27 +634,44 @@ function renderScoresTable() {
     switch (sortBy) {
       case 'country':
         return a.Country.localeCompare(b.Country)
-          || POS_ORDER[a.Position] - POS_ORDER[b.Position]
           || b.price - a.price
+          || POS_ORDER[a.Position] - POS_ORDER[b.Position]
           || a.Name.localeCompare(b.Name);
       case 'position':
         return POS_ORDER[a.Position] - POS_ORDER[b.Position]
           || b.price - a.price
+          || a.Country.localeCompare(b.Country)
           || a.Name.localeCompare(b.Name);
       case 'price_desc':
-        return b.price - a.price || a.Name.localeCompare(b.Name);
+        return b.price - a.price
+          || POS_ORDER[a.Position] - POS_ORDER[b.Position]
+          || a.Country.localeCompare(b.Country)
+          || a.Name.localeCompare(b.Name);
       case 'price_asc':
-        return a.price - b.price || a.Name.localeCompare(b.Name);
+        return a.price - b.price
+          || POS_ORDER[a.Position] - POS_ORDER[b.Position]
+          || a.Country.localeCompare(b.Country)
+          || a.Name.localeCompare(b.Name);
       case 'name':
         return a.Name.localeCompare(b.Name);
       case 'total_desc':
-        return getPlayerScore(b.Name) - getPlayerScore(a.Name);
+        return getPlayerScore(b.Name) - getPlayerScore(a.Name)
+          || b.price - a.price
+          || POS_ORDER[a.Position] - POS_ORDER[b.Position]
+          || a.Country.localeCompare(b.Country)
+          || a.Name.localeCompare(b.Name);
       case 'sel_desc':
         return (selCount[b.Name] || 0) - (selCount[a.Name] || 0)
           || (capCount[b.Name] || 0) - (capCount[a.Name] || 0)
+          || b.price - a.price
+          || POS_ORDER[a.Position] - POS_ORDER[b.Position]
+          || a.Country.localeCompare(b.Country)
           || a.Name.localeCompare(b.Name);
       default:
-        return 0;
+        return b.price - a.price
+          || POS_ORDER[a.Position] - POS_ORDER[b.Position]
+          || a.Country.localeCompare(b.Country)
+          || a.Name.localeCompare(b.Name);
     }
   });
 
