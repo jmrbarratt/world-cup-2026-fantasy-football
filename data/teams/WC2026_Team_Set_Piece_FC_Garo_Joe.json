@@ -1,0 +1,76 @@
+{
+  "name": "Set Piece FC",
+  "owner": "Garo & Joe",
+  "email": "garoheath@gmail.com",
+  "formation": "3-4-3",
+  "captain": "KAI HAVERTZ",
+  "totalValue": 78,
+  "players": [
+    {
+      "Name": "EMILIANO MARTINEZ",
+      "Country": "Argentina",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "WILLIAM SALIBA",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "GABRIEL MAGALHAES",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "PIERO HINCAPIE",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "BUKAYO SAKA",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "MARTIN ODEGAARD",
+      "Country": "Norway",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "LEANDRO TROSSARD",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "VIKTOR GYOKERES",
+      "Country": "Sweden",
+      "Position": "Forward",
+      "price": 8
+    },
+    {
+      "Name": "FOLARIN BALOGUN",
+      "Country": "USA",
+      "Position": "Forward",
+      "price": 5.5
+    },
+    {
+      "Name": "KAI HAVERTZ",
+      "Country": "Germany",
+      "Position": "Forward",
+      "price": 8.5
+    }
+  ]
+}
