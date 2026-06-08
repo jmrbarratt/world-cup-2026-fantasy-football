@@ -1,0 +1,76 @@
+{
+  "name": "Oyarzabal's Army",
+  "owner": "Jose Antonio Belso",
+  "email": "belsicscervantes@gmail.com",
+  "formation": "4-3-3",
+  "captain": "MIKEL OYARZABAL",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "BART VERBRUGGEN",
+      "Country": "Netherlands",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "MAXIM DE CUYPER",
+      "Country": "Belgium",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "DANIEL MUNOZ",
+      "Country": "Colombia",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MANUEL AKANJI",
+      "Country": "Switzerland",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "PIERO HINCAPIE",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "JAMAL MUSIALA",
+      "Country": "Germany",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "ENZO FERNANDEZ",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "VINICIUS JUNIOR",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9.5
+    },
+    {
+      "Name": "KAI HAVERTZ",
+      "Country": "Germany",
+      "Position": "Forward",
+      "price": 8.5
+    }
+  ]
+}
