@@ -1,0 +1,76 @@
+{
+  "name": "Trumpton Riots",
+  "owner": "Sean O'Haire",
+  "email": "seanohaire@outlook.com",
+  "formation": "3-4-3",
+  "captain": "MICHAEL OLISE",
+  "totalValue": 79.5,
+  "players": [
+    {
+      "Name": "MANUEL NEUER",
+      "Country": "Germany",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "LUIS DIAZ",
+      "Country": "Colombia",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "NICO WILLIAMS",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "JULIAN ALVAREZ",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "DESIRE DOUE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 7.5
+    },
+    {
+      "Name": "RAUL JIMENEZ",
+      "Country": "Mexico",
+      "Position": "Forward",
+      "price": 6
+    }
+  ]
+}
