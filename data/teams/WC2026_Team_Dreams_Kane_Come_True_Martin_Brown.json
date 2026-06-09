@@ -1,0 +1,76 @@
+{
+  "name": "Dreams Kane Come True",
+  "owner": "Martin Brown",
+  "email": "Martin@creditserve.co.uk",
+  "formation": "4-4-2",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "CAMILO VARGAS",
+      "Country": "Colombia",
+      "Position": "Goalkeeper",
+      "price": 5.5
+    },
+    {
+      "Name": "MICKY VAN DE VEN",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "MARCO FRIEDL",
+      "Country": "Austria",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "SANTIAGO BUENO",
+      "Country": "Uruguay",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "VALENTIN BARCO",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "JEREMY DOKU",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "JUDE BELLINGHAM",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "RODRI",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "VINICIUS JUNIOR",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9.5
+    }
+  ]
+}
