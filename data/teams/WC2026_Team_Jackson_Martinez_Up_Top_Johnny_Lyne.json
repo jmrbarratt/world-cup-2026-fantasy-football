@@ -1,0 +1,76 @@
+{
+  "name": "Jackson Martinez Up Top?",
+  "owner": "Johnny Lyne",
+  "email": "johnnylyne@hotmail.com",
+  "formation": "3-4-3",
+  "captain": "JULIAN ALVAREZ",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "JORDAN PICKFORD",
+      "Country": "England",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "JOEL ORDONEZ",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "OMAR ALDERETE",
+      "Country": "Paraguay",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "GONCALO INACIO",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "ARDA GULER",
+      "Country": "Turkey",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "JULIAN ALVAREZ",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "KAI HAVERTZ",
+      "Country": "Germany",
+      "Position": "Forward",
+      "price": 8.5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
