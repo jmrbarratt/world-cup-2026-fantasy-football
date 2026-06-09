@@ -1,0 +1,76 @@
+{
+  "name": "Pinky and De Bruyne",
+  "owner": "Adam Usden",
+  "email": "adam.usden@gmail.com",
+  "formation": "4-4-2",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "EMILIANO MARTINEZ",
+      "Country": "Argentina",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "PERVIS ESTUPINAN",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "JOHAN VASQUEZ",
+      "Country": "Mexico",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "PEDRO PORRO",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "CHRISTIAN PULISIC",
+      "Country": "USA",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "GRANIT XHAKA",
+      "Country": "Switzerland",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "RAPHINHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
