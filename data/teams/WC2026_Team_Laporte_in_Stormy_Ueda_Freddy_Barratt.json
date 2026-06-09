@@ -55,10 +55,10 @@
       "price": 6
     },
     {
-      "Name": "OUSMANE DEMBELE",
+      "Name": "MICHAEL OLISE",
       "Country": "France",
-      "Position": "Forward",
-      "price": 9.5
+      "Position": "Midfielder",
+      "price": 9
     },
     {
       "Name": "MIKEL OYARZABAL",
@@ -67,10 +67,10 @@
       "price": 9
     },
     {
-      "Name": "AYASE UEDA",
-      "Country": "Japan",
+      "Name": "KENAN YILDIZ",
+      "Country": "Turkey",
       "Position": "Forward",
-      "price": 5.5
+      "price": 6
     }
   ]
 }
