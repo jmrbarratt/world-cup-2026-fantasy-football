@@ -1,0 +1,76 @@
+{
+  "name": "Richard Rovers",
+  "owner": "Richard Reid",
+  "email": "hello.richard.reid@gmail.com",
+  "formation": "4-4-2",
+  "captain": "BRUNO FERNANDES",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "THIBAUT COURTOIS",
+      "Country": "Belgium",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "NAYEF AGUERD",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "PIERO HINCAPIE",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "FERDI KADIOGLU",
+      "Country": "Turkey",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "DANILO",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "FLORIAN WIRTZ",
+      "Country": "Germany",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "SADIO MANE",
+      "Country": "Senegal",
+      "Position": "Midfielder",
+      "price": 7
+    },
+    {
+      "Name": "ARDA GULER",
+      "Country": "Turkey",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "JULIAN ALVAREZ",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
