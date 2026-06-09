@@ -1,0 +1,76 @@
+{
+  "name": "Harrycane",
+  "owner": "Viktoria Altrock",
+  "email": "vicky.altrock@yahoo.de",
+  "formation": "3-4-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "MANUEL NEUER",
+      "Country": "Germany",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "JOEL ORDONEZ",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "DOUGLAS SANTOS",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "PHILIPP LIENHART",
+      "Country": "Austria",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "RICHARD RIOS",
+      "Country": "Colombia",
+      "Position": "Midfielder",
+      "price": 5
+    },
+    {
+      "Name": "NICO WILLIAMS",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "JULIAN ALVAREZ",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "KAI HAVERTZ",
+      "Country": "Germany",
+      "Position": "Forward",
+      "price": 8.5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
