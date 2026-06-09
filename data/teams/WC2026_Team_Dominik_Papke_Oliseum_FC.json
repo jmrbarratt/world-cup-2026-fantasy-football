@@ -1,0 +1,76 @@
+{
+  "name": "Dominik Papke",
+  "owner": "Oliseum FC",
+  "email": "dominik.papke@outlook.de",
+  "formation": "3-4-3",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "YASSINE BOUNOU",
+      "Country": "Morocco",
+      "Position": "Goalkeeper",
+      "price": 5
+    },
+    {
+      "Name": "SILVAN WIDMER",
+      "Country": "Switzerland",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "PERVIS ESTUPINAN",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "JOEL ORDONEZ",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "RODRI",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "HAKAN CALHANOGLU",
+      "Country": "Turkey",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "LAUTARO MARTINEZ",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 9.5
+    }
+  ]
+}
