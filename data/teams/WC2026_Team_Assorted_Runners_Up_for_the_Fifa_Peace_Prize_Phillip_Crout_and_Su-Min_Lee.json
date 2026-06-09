@@ -1,0 +1,76 @@
+{
+  "name": "Assorted Runners Up for the Fifa Peace Prize",
+  "owner": "Phillip Crout and Su-Min Lee",
+  "email": "phillip_crout@hotmail.co.uk",
+  "formation": "4-3-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "UNAI SIMON",
+      "Country": "Spain",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "JULES KOUNDE",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "AYMERIC LAPORTE",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "PIERO HINCAPIE",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "NICOLAS TAGLIAFICO",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "LUIS DIAZ",
+      "Country": "Colombia",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "OMAR MARMOUSH",
+      "Country": "Egypt",
+      "Position": "Forward",
+      "price": 6
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "RAUL JIMENEZ",
+      "Country": "Mexico",
+      "Position": "Forward",
+      "price": 6
+    }
+  ]
+}
