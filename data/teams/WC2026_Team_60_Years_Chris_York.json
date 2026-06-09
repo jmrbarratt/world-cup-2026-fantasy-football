@@ -1,0 +1,76 @@
+{
+  "name": "60 Years",
+  "owner": "Chris York",
+  "email": "chris@creditserve.co.uk",
+  "formation": "4-4-2",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "THIBAUT COURTOIS",
+      "Country": "Belgium",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "LUKA VUSKOVIC",
+      "Country": "Croatia",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MANUEL AKANJI",
+      "Country": "Switzerland",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "JOHAN VASQUEZ",
+      "Country": "Mexico",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "SCOTT MCTOMINAY",
+      "Country": "Scotland",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "BRADLEY BARCOLA",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 7
+    },
+    {
+      "Name": "JUDE BELLINGHAM",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "OUSMANE DEMBELE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 9.5
+    }
+  ]
+}
