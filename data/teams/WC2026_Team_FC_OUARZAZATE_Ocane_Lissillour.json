@@ -1,0 +1,76 @@
+{
+  "name": "FC OUARZAZATE",
+  "owner": "Océane Lissillour",
+  "email": "oceane.lissillour@york.ac.uk",
+  "formation": "4-3-3",
+  "captain": "MICHAEL OLISE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "MIKE MAIGNAN",
+      "Country": "France",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "MARQUINHOS",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MARC CUCURELLA",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MARCOS LLORENTE",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "VIRGIL VAN DIJK",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "JOAO NEVES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "VITINHA",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "MARCUS RASHFORD",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 7.5
+    },
+    {
+      "Name": "JULIAN ALVAREZ",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "ENDRICK",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 7
+    }
+  ]
+}
