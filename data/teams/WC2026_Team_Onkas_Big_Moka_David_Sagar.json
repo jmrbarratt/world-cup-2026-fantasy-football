@@ -1,0 +1,76 @@
+{
+  "name": "Onka's Big Moka",
+  "owner": "David Sagar",
+  "email": "davidsagar86@gmail.com",
+  "formation": "4-4-2",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "HERNAN GALINDEZ",
+      "Country": "Ecuador",
+      "Position": "Goalkeeper",
+      "price": 5
+    },
+    {
+      "Name": "WILLIAN PACHO",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "ALEX SANDRO",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "MARCOS LLORENTE",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "JOSKO GVARDIOL",
+      "Country": "Croatia",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "MARTIN ODEGAARD",
+      "Country": "Norway",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "ROBERTO ALVARADO",
+      "Country": "Mexico",
+      "Position": "Midfielder",
+      "price": 5
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "JULIAN ALVAREZ",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
