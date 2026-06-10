@@ -1,0 +1,76 @@
+{
+  "name": "Arda Guler? I hardly know her!",
+  "owner": "Richard White",
+  "email": "rich.a.white1059@gmail.com",
+  "formation": "4-4-2",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "GREGOR KOBEL",
+      "Country": "Switzerland",
+      "Position": "Goalkeeper",
+      "price": 5.5
+    },
+    {
+      "Name": "LUCAS DIGNE",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "PERVIS ESTUPINAN",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "NICOLAS OTAMENDI",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "JEREMY DOKU",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "THIAGO ALMADA",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
