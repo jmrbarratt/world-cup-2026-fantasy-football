@@ -1,0 +1,76 @@
+{
+  "name": "Team Tasje",
+  "owner": "Emma Taselaar",
+  "email": "emtasel@gmail.com",
+  "formation": "3-4-3",
+  "captain": "LAMINE YAMAL",
+  "totalValue": 79.5,
+  "players": [
+    {
+      "Name": "MANUEL NEUER",
+      "Country": "Germany",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "LISANDRO MARTINEZ",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "JAN PAUL VAN HECKE",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "AMAR DEDIC",
+      "Country": "Bosnia-Herzegovina",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "PEDRI",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "NICO PAZ",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "LEANDRO TROSSARD",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "OUSMANE DEMBELE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 9.5
+    },
+    {
+      "Name": "VINICIUS JUNIOR",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9.5
+    },
+    {
+      "Name": "MOHAMED SALAH",
+      "Country": "Egypt",
+      "Position": "Forward",
+      "price": 7.5
+    }
+  ]
+}
