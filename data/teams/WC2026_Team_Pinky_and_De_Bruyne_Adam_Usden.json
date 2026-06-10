@@ -7,10 +7,10 @@
   "totalValue": 80,
   "players": [
     {
-      "Name": "EMILIANO MARTINEZ",
-      "Country": "Argentina",
+      "Name": "DIOGO COSTA",
+      "Country": "Portugal",
       "Position": "Goalkeeper",
-      "price": 7.5
+      "price": 7
     },
     {
       "Name": "PERVIS ESTUPINAN",
@@ -25,10 +25,10 @@
       "price": 5
     },
     {
-      "Name": "PEDRO PORRO",
-      "Country": "Spain",
+      "Name": "NAHUEL MOLINA",
+      "Country": "Argentina",
       "Position": "Defender",
-      "price": 6.5
+      "price": 7
     },
     {
       "Name": "ACHRAF HAKIMI",
@@ -55,8 +55,8 @@
       "price": 8.5
     },
     {
-      "Name": "GRANIT XHAKA",
-      "Country": "Switzerland",
+      "Name": "PEDRI",
+      "Country": "Spain",
       "Position": "Midfielder",
       "price": 5.5
     },
