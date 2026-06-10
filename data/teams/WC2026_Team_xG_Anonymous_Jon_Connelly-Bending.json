@@ -1,0 +1,76 @@
+{
+  "name": "xG Anonymous",
+  "owner": "Jon Connelly-Bending",
+  "email": "bendingjp19@gmail.com",
+  "formation": "4-4-2",
+  "captain": "VINICIUS JUNIOR",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "SERGIO ROCHET",
+      "Country": "Uruguay",
+      "Position": "Goalkeeper",
+      "price": 5.5
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "THEO HERNANDEZ",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "MARC CUCURELLA",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "GILBERTO MORA",
+      "Country": "Mexico",
+      "Position": "Midfielder",
+      "price": 4.5
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "JAMAL MUSIALA",
+      "Country": "Germany",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "CHRISTIAN PULISIC",
+      "Country": "USA",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "ERLING HAALAND",
+      "Country": "Norway",
+      "Position": "Forward",
+      "price": 10.5
+    },
+    {
+      "Name": "VINICIUS JUNIOR",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9.5
+    }
+  ]
+}
