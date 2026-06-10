@@ -1,0 +1,76 @@
+{
+  "name": "Liquid Football FC",
+  "owner": "Kate Lockyear",
+  "email": "k.lockyear1@gmail.com",
+  "formation": "4-4-2",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "MANUEL NEUER",
+      "Country": "Germany",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "CRISTIAN ROMERO",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "VIRGIL VAN DIJK",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "OMAR ALDERETE",
+      "Country": "Paraguay",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "MARQUINHOS",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "GRANIT XHAKA",
+      "Country": "Switzerland",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "NILSON ANGULO",
+      "Country": "Ecuador",
+      "Position": "Midfielder",
+      "price": 4.5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "KAI HAVERTZ",
+      "Country": "Germany",
+      "Position": "Forward",
+      "price": 8.5
+    }
+  ]
+}
