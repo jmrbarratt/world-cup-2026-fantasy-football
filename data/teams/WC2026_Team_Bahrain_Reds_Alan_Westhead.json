@@ -1,0 +1,76 @@
+{
+  "name": "Bahrain Reds",
+  "owner": "Alan Westhead",
+  "email": "alanwesthead@me.com",
+  "formation": "4-4-2",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "JOSE SA",
+      "Country": "Portugal",
+      "Position": "Goalkeeper",
+      "price": 6
+    },
+    {
+      "Name": "VIRGIL VAN DIJK",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "MATHIAS OLIVERA",
+      "Country": "Uruguay",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "EL HADJI MALICK DIOUF",
+      "Country": "Senegal",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "EBERECHI EZE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "SADIO MANE",
+      "Country": "Senegal",
+      "Position": "Midfielder",
+      "price": 7
+    },
+    {
+      "Name": "RAYAN CHERKI",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "VINICIUS JUNIOR",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9.5
+    }
+  ]
+}
