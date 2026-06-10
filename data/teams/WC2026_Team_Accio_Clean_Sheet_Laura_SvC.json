@@ -1,0 +1,76 @@
+{
+  "name": "Accio Clean Sheet",
+  "owner": "Laura SvC",
+  "email": "lautje96@hotmail.com",
+  "formation": "4-4-2",
+  "captain": "ERLING HAALAND",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "UNAI SIMON",
+      "Country": "Spain",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "WILLIAM SALIBA",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "NATHAN NGOY",
+      "Country": "Belgium",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "RUBEN DIAS",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "WILLIAN PACHO",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "KEVIN DE BRUYNE",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "THIAGO ALMADA",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "FRENKIE DE JONG",
+      "Country": "Netherlands",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "ERLING HAALAND",
+      "Country": "Norway",
+      "Position": "Forward",
+      "price": 10.5
+    },
+    {
+      "Name": "RAPHINHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
