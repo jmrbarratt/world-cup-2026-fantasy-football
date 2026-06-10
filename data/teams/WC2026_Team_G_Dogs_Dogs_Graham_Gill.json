@@ -1,0 +1,76 @@
+{
+  "name": "G Dog's Dogs",
+  "owner": "Graham Gill",
+  "email": "graham.gill@york.ac.uk",
+  "formation": "4-4-2",
+  "captain": "MICHAEL OLISE",
+  "totalValue": 79.5,
+  "players": [
+    {
+      "Name": "JORDAN PICKFORD",
+      "Country": "England",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "JOSHUA KIMMICH",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "LUC DE FOUGEROLLES",
+      "Country": "Canada",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "JOHAN MOJICA",
+      "Country": "Colombia",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "BRUNO GUIMARAES",
+      "Country": "Brazil",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "SCOTT MCTOMINAY",
+      "Country": "Scotland",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "LYLE FOSTER",
+      "Country": "South Africa",
+      "Position": "Forward",
+      "price": 5
+    }
+  ]
+}
