@@ -1,0 +1,76 @@
+{
+  "name": "Jacob's Burgers FC",
+  "owner": "Matt Scudder",
+  "email": "scudder73@googlemail.com",
+  "formation": "3-4-3",
+  "captain": "MICHAEL OLISE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "THIBAUT COURTOIS",
+      "Country": "Belgium",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "TIM PAYNE",
+      "Country": "New Zealand",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "WILLIAM SALIBA",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "LEANDRO PAREDES",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "YAN DIOMANDE",
+      "Country": "Ivory Coast",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "RAUL JIMENEZ",
+      "Country": "Mexico",
+      "Position": "Forward",
+      "price": 6
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "MEMPHIS DEPAY",
+      "Country": "Netherlands",
+      "Position": "Forward",
+      "price": 8.5
+    }
+  ]
+}
