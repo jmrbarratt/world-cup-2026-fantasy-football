@@ -1,0 +1,76 @@
+{
+  "name": "Absolute Idiots",
+  "owner": "Laura SvC",
+  "email": "lautje96@hotmail.com",
+  "formation": "4-4-2",
+  "captain": "ERLING HAALAND",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "DIOGO COSTA",
+      "Country": "Portugal",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MARC CUCURELLA",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ANTONIO RUDIGER",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "WILLIAN PACHO",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "KEVIN DE BRUYNE",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "BUKAYO SAKA",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "SCOTT MCTOMINAY",
+      "Country": "Scotland",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "MARCEL SABITZER",
+      "Country": "Austria",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "ERLING HAALAND",
+      "Country": "Norway",
+      "Position": "Forward",
+      "price": 10.5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
