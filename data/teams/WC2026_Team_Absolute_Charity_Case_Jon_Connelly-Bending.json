@@ -1,0 +1,76 @@
+{
+  "name": "Absolute Charity Case",
+  "owner": "Jon Connelly-Bending",
+  "email": "bendingjp19@gmail.com",
+  "formation": "3-4-3",
+  "captain": "FLORIAN WIRTZ",
+  "totalValue": 79.5,
+  "players": [
+    {
+      "Name": "ALISSON",
+      "Country": "Brazil",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "VIRGIL VAN DIJK",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "ANDY ROBERTSON",
+      "Country": "Scotland",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "IBRAHIMA KONATE",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "FLORIAN WIRTZ",
+      "Country": "Germany",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "LUIS DIAZ",
+      "Country": "Colombia",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "ALEXIS MAC ALLISTER",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "SADIO MANE",
+      "Country": "Senegal",
+      "Position": "Midfielder",
+      "price": 7
+    },
+    {
+      "Name": "MOHAMED SALAH",
+      "Country": "Egypt",
+      "Position": "Forward",
+      "price": 7.5
+    },
+    {
+      "Name": "ALEXANDER ISAK",
+      "Country": "Sweden",
+      "Position": "Forward",
+      "price": 8
+    },
+    {
+      "Name": "DARWIN NUNEZ",
+      "Country": "Uruguay",
+      "Position": "Forward",
+      "price": 7.5
+    }
+  ]
+}
