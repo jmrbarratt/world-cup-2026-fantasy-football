@@ -1,0 +1,76 @@
+{
+  "name": "CITIZEN PAIN",
+  "owner": "Jake Gatehouse",
+  "email": "jake_gatehouse11@hotmail.com",
+  "formation": "3-4-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "EMILIANO MARTINEZ",
+      "Country": "Argentina",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "DAYOT UPAMECANO",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "PIERO HINCAPIE",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "JULIAN RYERSON",
+      "Country": "Norway",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "JUNYA ITO",
+      "Country": "Japan",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "MOISES CAICEDO",
+      "Country": "Ecuador",
+      "Position": "Midfielder",
+      "price": 5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "AYASE UEDA",
+      "Country": "Japan",
+      "Position": "Forward",
+      "price": 5.5
+    },
+    {
+      "Name": "ERLING HAALAND",
+      "Country": "Norway",
+      "Position": "Forward",
+      "price": 10.5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
