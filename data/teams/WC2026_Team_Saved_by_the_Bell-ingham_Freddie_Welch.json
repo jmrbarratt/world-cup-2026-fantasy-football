@@ -1,0 +1,76 @@
+{
+  "name": "Saved by the Bell-ingham",
+  "owner": "Freddie Welch",
+  "email": "freddiewelch07@gmail.com",
+  "formation": "4-4-2",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "GUILLERMO OCHOA",
+      "Country": "Mexico",
+      "Position": "Goalkeeper",
+      "price": 5
+    },
+    {
+      "Name": "JOSKO GVARDIOL",
+      "Country": "Croatia",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "JAN PAUL VAN HECKE",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "GABRIEL MAGALHAES",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ARTHUR THEATE",
+      "Country": "Belgium",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "JUDE BELLINGHAM",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "PEDRI",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "TIJJANI REIJNDERS",
+      "Country": "Netherlands",
+      "Position": "Midfielder",
+      "price": 7
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "FERRAN TORRES",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 7.5
+    }
+  ]
+}
