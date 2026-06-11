@@ -1,0 +1,76 @@
+{
+  "name": "From Baris to Galin(dez)",
+  "owner": "Farah Ghulamali",
+  "email": "farahghulamali@gmail.com",
+  "formation": "4-3-3",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "HERNAN GALINDEZ",
+      "Country": "Ecuador",
+      "Position": "Goalkeeper",
+      "price": 5
+    },
+    {
+      "Name": "PAU CUBARSI",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "NATHAN NGOY",
+      "Country": "Belgium",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "JOSHUA KIMMICH",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "JAN PAUL VAN HECKE",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "PEDRI",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "BARIS ALPER YILMAZ",
+      "Country": "Turkey",
+      "Position": "Midfielder",
+      "price": 5
+    },
+    {
+      "Name": "KAI HAVERTZ",
+      "Country": "Germany",
+      "Position": "Forward",
+      "price": 8.5
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "VINICIUS JUNIOR",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9.5
+    }
+  ]
+}
