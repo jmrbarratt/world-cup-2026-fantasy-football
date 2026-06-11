@@ -1,0 +1,76 @@
+{
+  "name": "It's Coming Kohn",
+  "owner": "Alex Kohn",
+  "email": "alexkohn8@gmail.com",
+  "formation": "3-4-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "EDOUARD MENDY",
+      "Country": "Senegal",
+      "Position": "Goalkeeper",
+      "price": 5
+    },
+    {
+      "Name": "MARC GUEHI",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "VLADIMIR COUFAL",
+      "Country": "Czech Republic",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "PIERO HINCAPIE",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "SADIO MANE",
+      "Country": "Senegal",
+      "Position": "Midfielder",
+      "price": 7
+    },
+    {
+      "Name": "SOFYAN AMRABAT",
+      "Country": "Morocco",
+      "Position": "Midfielder",
+      "price": 4.5
+    },
+    {
+      "Name": "SCOTT MCTOMINAY",
+      "Country": "Scotland",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "SON HEUNG-MIN",
+      "Country": "South Korea",
+      "Position": "Forward",
+      "price": 7
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
