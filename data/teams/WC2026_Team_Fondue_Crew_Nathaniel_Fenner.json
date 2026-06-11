@@ -1,0 +1,76 @@
+{
+  "name": "Fondue Crew",
+  "owner": "Nathaniel Fenner",
+  "email": "nathanielfenner@hotmail.com",
+  "formation": "3-4-3",
+  "captain": "LIONEL MESSI",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "YASSINE BOUNOU",
+      "Country": "Morocco",
+      "Position": "Goalkeeper",
+      "price": 5
+    },
+    {
+      "Name": "JOHAN VASQUEZ",
+      "Country": "Mexico",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "NICO ELVEDI",
+      "Country": "Switzerland",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "KEVIN DE BRUYNE",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "JAMES RODRIGUEZ",
+      "Country": "Colombia",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "BREEL EMBOLO",
+      "Country": "Switzerland",
+      "Position": "Forward",
+      "price": 6
+    },
+    {
+      "Name": "LIONEL MESSI",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 11
+    },
+    {
+      "Name": "RAPHINHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
