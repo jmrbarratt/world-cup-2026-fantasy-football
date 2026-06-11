@@ -1,0 +1,76 @@
+{
+  "name": "Bobby's Dazzlers",
+  "owner": "Rob Honeyman",
+  "email": "robert@hman.co.uk",
+  "formation": "4-4-2",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "DIOGO COSTA",
+      "Country": "Portugal",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "DAYOT UPAMECANO",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MARC CUCURELLA",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "NAHUEL MOLINA",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "WILLIAN PACHO",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "NICO WILLIAMS",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "BRUNO GUIMARAES",
+      "Country": "Brazil",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "CHARLES DE KETELAERE",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "ADRIEN RABIOT",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "JULIAN ALVAREZ",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
