@@ -1,0 +1,76 @@
+{
+  "name": "FC Zipperoo",
+  "owner": "James Clark",
+  "email": "eccentricman@gmail.com",
+  "formation": "4-3-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "ALISSON",
+      "Country": "Brazil",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "FERDI KADIOGLU",
+      "Country": "Turkey",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "MICKY VAN DE VEN",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "MONTASSAR TALBI",
+      "Country": "Tunisia",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "NICO WILLIAMS",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "NICO PAZ",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "RAYAN CHERKI",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "DESIRE DOUE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 7.5
+    },
+    {
+      "Name": "VIKTOR GYOKERES",
+      "Country": "Sweden",
+      "Position": "Forward",
+      "price": 8
+    }
+  ]
+}
