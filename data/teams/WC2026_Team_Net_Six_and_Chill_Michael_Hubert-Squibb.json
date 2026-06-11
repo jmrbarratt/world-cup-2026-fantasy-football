@@ -1,0 +1,76 @@
+{
+  "name": "Net Six and Chill",
+  "owner": "Michael Hubert-Squibb",
+  "email": "michael.hubert-squibb@computershare.co.uk",
+  "formation": "4-4-2",
+  "captain": "MIKEL OYARZABAL",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "GREGOR KOBEL",
+      "Country": "Switzerland",
+      "Position": "Goalkeeper",
+      "price": 5.5
+    },
+    {
+      "Name": "JOSHUA KIMMICH",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MARC CUCURELLA",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "FLORIAN WIRTZ",
+      "Country": "Germany",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "LUIS SUAREZ",
+      "Country": "Colombia",
+      "Position": "Forward",
+      "price": 6.5
+    }
+  ]
+}
