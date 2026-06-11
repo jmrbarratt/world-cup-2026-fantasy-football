@@ -1,0 +1,76 @@
+{
+  "name": "Perch XI Goes To Hollywood",
+  "owner": "Ed Perchard",
+  "email": "edward.perchard@gmail.com",
+  "formation": "4-4-2",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "DIOGO COSTA",
+      "Country": "Portugal",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "MARC CUCURELLA",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "PEDRI",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "AURELIEN TCHOUAMENI",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "JAMAL MUSIALA",
+      "Country": "Germany",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "AYASE UEDA",
+      "Country": "Japan",
+      "Position": "Forward",
+      "price": 5.5
+    }
+  ]
+}
