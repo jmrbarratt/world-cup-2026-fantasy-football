@@ -1,0 +1,76 @@
+{
+  "name": "FC MC",
+  "owner": "Milo Caiger-Smith",
+  "email": "caigersmithmilo@gmail.com",
+  "formation": "4-4-2",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "BART VERBRUGGEN",
+      "Country": "Netherlands",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "ALEX GRIMALDO",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "NATHANIEL BROWN",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "JORREL HATO",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "DJED SPENCE",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "FLORIAN WIRTZ",
+      "Country": "Germany",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "JUDE BELLINGHAM",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "LUIS DIAZ",
+      "Country": "Colombia",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "CUCHO HERNANDEZ",
+      "Country": "Colombia",
+      "Position": "Forward",
+      "price": 5
+    }
+  ]
+}
