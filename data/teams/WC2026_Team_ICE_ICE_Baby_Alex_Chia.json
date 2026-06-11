@@ -1,0 +1,76 @@
+{
+  "name": "ICE ICE Baby",
+  "owner": "Alex Chia",
+  "email": "alex_chia1@hotmail.com",
+  "formation": "4-4-2",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "MIKE MAIGNAN",
+      "Country": "France",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MARCOS LLORENTE",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "MARC CUCURELLA",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "LUIS DIAZ",
+      "Country": "Colombia",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "OSCAR BOBB",
+      "Country": "Norway",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "BILAL EL KHANNOUSS",
+      "Country": "Morocco",
+      "Position": "Midfielder",
+      "price": 4.5
+    },
+    {
+      "Name": "LAMINE CAMARA",
+      "Country": "Senegal",
+      "Position": "Midfielder",
+      "price": 4.5
+    },
+    {
+      "Name": "CRISTIANO RONALDO",
+      "Country": "Portugal",
+      "Position": "Forward",
+      "price": 10
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
