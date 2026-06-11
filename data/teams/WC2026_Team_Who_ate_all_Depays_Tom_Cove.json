@@ -1,0 +1,76 @@
+{
+  "name": "Who ate all Depays?",
+  "owner": "Tom Cove",
+  "email": "tomc13@sky.com",
+  "formation": "3-4-3",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "BART VERBRUGGEN",
+      "Country": "Netherlands",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "JOSIP STANISIC",
+      "Country": "Croatia",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "SILVAN WIDMER",
+      "Country": "Switzerland",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "YAN DIOMANDE",
+      "Country": "Ivory Coast",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "TAKEFUSA KUBO",
+      "Country": "Japan",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "NICO PAZ",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "JULIAN ALVAREZ",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "KAI HAVERTZ",
+      "Country": "Germany",
+      "Position": "Forward",
+      "price": 8.5
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
