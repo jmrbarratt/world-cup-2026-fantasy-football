@@ -1,0 +1,76 @@
+{
+  "name": "Lytham Lions",
+  "owner": "Steve Fisher",
+  "email": "steve.c.fisher@btopenworld.com",
+  "formation": "3-4-3",
+  "captain": "BRUNO GUIMARAES",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "SERGIO ROCHET",
+      "Country": "Uruguay",
+      "Position": "Goalkeeper",
+      "price": 5.5
+    },
+    {
+      "Name": "JOSHUA KIMMICH",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MARC CUCURELLA",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "WILLIAM SALIBA",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "BRUNO GUIMARAES",
+      "Country": "Brazil",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "JUDE BELLINGHAM",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "SOFYAN AMRABAT",
+      "Country": "Morocco",
+      "Position": "Midfielder",
+      "price": 4.5
+    },
+    {
+      "Name": "ALEXANDER ISAK",
+      "Country": "Sweden",
+      "Position": "Forward",
+      "price": 8
+    },
+    {
+      "Name": "ERLING HAALAND",
+      "Country": "Norway",
+      "Position": "Forward",
+      "price": 10.5
+    },
+    {
+      "Name": "OLLIE WATKINS",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 6.5
+    }
+  ]
+}
