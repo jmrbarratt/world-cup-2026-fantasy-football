@@ -1,0 +1,76 @@
+{
+  "name": "The Gyökeres Mask-arade",
+  "owner": "Daniel Stromgren",
+  "email": "dudelito@yahoo.com",
+  "formation": "4-4-2",
+  "captain": "VINICIUS JUNIOR",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "MIKE MAIGNAN",
+      "Country": "France",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "RONALD ARAUJO",
+      "Country": "Uruguay",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "GABRIEL MAGALHAES",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MALICK THIAW",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "RYAN GRAVENBERCH",
+      "Country": "Netherlands",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "VINICIUS JUNIOR",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9.5
+    }
+  ]
+}
