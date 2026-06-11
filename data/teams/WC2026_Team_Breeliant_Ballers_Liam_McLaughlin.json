@@ -1,0 +1,76 @@
+{
+  "name": "Breeliant Ballers",
+  "owner": "Liam McLaughlin",
+  "email": "liam.mclaughlin@hotmail.co.uk",
+  "formation": "3-4-3",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "RAUL RANGEL",
+      "Country": "Mexico",
+      "Position": "Goalkeeper",
+      "price": 4.5
+    },
+    {
+      "Name": "STEFAN POSCH",
+      "Country": "Austria",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "JOSHUA KIMMICH",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "JOHAN VASQUEZ",
+      "Country": "Mexico",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "KEVIN DE BRUYNE",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "MARCEL SABITZER",
+      "Country": "Austria",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "BREEL EMBOLO",
+      "Country": "Switzerland",
+      "Position": "Forward",
+      "price": 6
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
