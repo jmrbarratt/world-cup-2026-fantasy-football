@@ -1,0 +1,76 @@
+{
+  "name": "Chancellor Paulpatine's Senate",
+  "owner": "Paul Gellersen",
+  "email": "pgellersen2@gmail.com",
+  "formation": "4-3-3",
+  "captain": "MIKEL OYARZABAL",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "MANUEL NEUER",
+      "Country": "Germany",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "JOSHUA KIMMICH",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MARC GUEHI",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "JULES KOUNDE",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "MARC CUCURELLA",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ALEXIS MAC ALLISTER",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "LUKA MODRIC",
+      "Country": "Croatia",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "RAPHINHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "SON HEUNG-MIN",
+      "Country": "South Korea",
+      "Position": "Forward",
+      "price": 7
+    }
+  ]
+}
