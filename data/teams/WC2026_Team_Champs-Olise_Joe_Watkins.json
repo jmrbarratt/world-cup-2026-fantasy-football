@@ -1,0 +1,76 @@
+{
+  "name": "Champs-Olise",
+  "owner": "Joe Watkins",
+  "email": "j.watkins07@yahoo.com",
+  "formation": "4-4-2",
+  "captain": "MICHAEL OLISE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "YASSINE BOUNOU",
+      "Country": "Morocco",
+      "Position": "Goalkeeper",
+      "price": 5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "NUNO MENDES",
+      "Country": "Portugal",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MAXIM DE CUYPER",
+      "Country": "Belgium",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "PERVIS ESTUPINAN",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "RAYAN CHERKI",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "JEREMY DOKU",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "CODY GAKPO",
+      "Country": "Netherlands",
+      "Position": "Forward",
+      "price": 8.5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
