@@ -1,0 +1,76 @@
+{
+  "name": "Lines XI",
+  "owner": "Joel Lines",
+  "email": "joellines@live.co.uk",
+  "formation": "3-4-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "DIOGO COSTA",
+      "Country": "Portugal",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "PIERO HINCAPIE",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "GRANT HANLEY",
+      "Country": "Scotland",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "ARDA GULER",
+      "Country": "Turkey",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "JAMAL MUSIALA",
+      "Country": "Germany",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "MATHEUS CUNHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 7.5
+    },
+    {
+      "Name": "RAUL JIMENEZ",
+      "Country": "Mexico",
+      "Position": "Forward",
+      "price": 6
+    }
+  ]
+}
