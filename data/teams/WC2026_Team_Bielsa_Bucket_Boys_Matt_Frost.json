@@ -1,0 +1,76 @@
+{
+  "name": "Bielsa Bucket Boys",
+  "owner": "Matt Frost",
+  "email": "mattfrost28@hotmail.com",
+  "formation": "3-4-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "THIBAUT COURTOIS",
+      "Country": "Belgium",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "SERGINO DEST",
+      "Country": "USA",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "THEO HERNANDEZ",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "LEROY SANE",
+      "Country": "Germany",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "BRAHIM DIAZ",
+      "Country": "Morocco",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "JEREMY DOKU",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "THIAGO ALMADA",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "RAPHINHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "JONATHAN DAVID",
+      "Country": "Canada",
+      "Position": "Forward",
+      "price": 6
+    }
+  ]
+}
