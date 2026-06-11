@@ -1,0 +1,76 @@
+{
+  "name": "Jamaica",
+  "owner": "Cruise Kelly-Evans",
+  "email": "cruise490@googlemail.com",
+  "formation": "4-4-2",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "EMILIANO MARTINEZ",
+      "Country": "Argentina",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "GABRIEL MAGALHAES",
+      "Country": "Brazil",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "WILLIAM SALIBA",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "CASEMIRO",
+      "Country": "Brazil",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "ILIMAN NDIAYE",
+      "Country": "Senegal",
+      "Position": "Midfielder",
+      "price": 5
+    },
+    {
+      "Name": "ENZO FERNANDEZ",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "PATRIK SCHICK",
+      "Country": "Czech Republic",
+      "Position": "Forward",
+      "price": 6.5
+    }
+  ]
+}
