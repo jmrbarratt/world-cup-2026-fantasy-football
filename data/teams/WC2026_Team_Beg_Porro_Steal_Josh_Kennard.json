@@ -1,0 +1,76 @@
+{
+  "name": "Beg, Porro & Steal",
+  "owner": "Josh Kennard",
+  "email": "joshkennard@live.co.uk",
+  "formation": "4-3-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "DIOGO COSTA",
+      "Country": "Portugal",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "PEDRO PORRO",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "JULES KOUNDE",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "ANTONIO RUDIGER",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "HAKAN CALHANOGLU",
+      "Country": "Turkey",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "FREDRIK AURSNES",
+      "Country": "Norway",
+      "Position": "Midfielder",
+      "price": 4.5
+    },
+    {
+      "Name": "CHRISTIAN PULISIC",
+      "Country": "USA",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "AYASE UEDA",
+      "Country": "Japan",
+      "Position": "Forward",
+      "price": 5.5
+    }
+  ]
+}
