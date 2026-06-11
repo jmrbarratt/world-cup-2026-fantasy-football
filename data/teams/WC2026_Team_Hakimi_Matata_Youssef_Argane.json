@@ -1,0 +1,76 @@
+{
+  "name": "Hakimi Matata",
+  "owner": "Youssef Argane",
+  "email": "yoyoargane@gmail.com",
+  "formation": "4-4-2",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 76.5,
+  "players": [
+    {
+      "Name": "DOMINIK LIVAKOVIC",
+      "Country": "Croatia",
+      "Position": "Goalkeeper",
+      "price": 5.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "NICOLAS OTAMENDI",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "DENZEL DUMFRIES",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "NICO SCHLOTTERBECK",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "KEVIN DE BRUYNE",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "FEDERICO VALVERDE",
+      "Country": "Uruguay",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "VITINHA",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "PEDRI",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "OLLIE WATKINS",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 6.5
+    }
+  ]
+}
