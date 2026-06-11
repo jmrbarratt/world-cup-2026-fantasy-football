@@ -1,0 +1,76 @@
+{
+  "name": "David Nugent's Wonder Goal",
+  "owner": "Mike Bowker",
+  "email": "bowksrowks@gmail.com",
+  "formation": "3-4-3",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "JORDAN PICKFORD",
+      "Country": "England",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "PEDRO PORRO",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "REECE JAMES",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ISSA DIOP",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "THIAGO ALMADA",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "BRAHIM DIAZ",
+      "Country": "Morocco",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "MARKO ARNAUTOVIC",
+      "Country": "Austria",
+      "Position": "Forward",
+      "price": 6
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "FOLARIN BALOGUN",
+      "Country": "USA",
+      "Position": "Forward",
+      "price": 5.5
+    }
+  ]
+}
