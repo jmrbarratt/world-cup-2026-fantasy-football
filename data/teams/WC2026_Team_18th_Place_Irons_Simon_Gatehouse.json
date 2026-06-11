@@ -1,0 +1,76 @@
+{
+  "name": "18th Place Irons",
+  "owner": "Simon Gatehouse",
+  "email": "simon.rahg@gmail.com",
+  "formation": "4-4-2",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "ALISSON",
+      "Country": "Brazil",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "WILLIAM SALIBA",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "ANDY ROBERTSON",
+      "Country": "Scotland",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MICKY VAN DE VEN",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "VALENTIN BARCO",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "CRYSENCIO SUMMERVILLE",
+      "Country": "Netherlands",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "RODRI",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "IGOR THIAGO",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 8
+    }
+  ]
+}
