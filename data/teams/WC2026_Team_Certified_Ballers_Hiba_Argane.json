@@ -1,0 +1,76 @@
+{
+  "name": "Certified Ballers",
+  "owner": "Hiba Argane",
+  "email": "hibaargane@gmail.com",
+  "formation": "4-4-2",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "DIOGO COSTA",
+      "Country": "Portugal",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "EZRI KONSA",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "JOSHUA KIMMICH",
+      "Country": "Germany",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "DAYOT UPAMECANO",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "PEDRI",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "BRAHIM DIAZ",
+      "Country": "Morocco",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "ALEXIS MAC ALLISTER",
+      "Country": "Argentina",
+      "Position": "Midfielder",
+      "price": 6.5
+    },
+    {
+      "Name": "VITINHA",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "RAPHINHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
