@@ -1,0 +1,76 @@
+{
+  "name": "Lin's Lads",
+  "owner": "Lindsey Connelly-Bending",
+  "email": "lindseyconnelly09@hotmail.com",
+  "formation": "4-3-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "YASSINE BOUNOU",
+      "Country": "Morocco",
+      "Position": "Goalkeeper",
+      "price": 5
+    },
+    {
+      "Name": "DENZEL DUMFRIES",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "JOHAN MOJICA",
+      "Country": "Colombia",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MANUEL AKANJI",
+      "Country": "Switzerland",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "JOSE MARIA GIMENEZ",
+      "Country": "Uruguay",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "BRUNO GUIMARAES",
+      "Country": "Brazil",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "DECLAN RICE",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "KAI HAVERTZ",
+      "Country": "Germany",
+      "Position": "Forward",
+      "price": 8.5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "CODY GAKPO",
+      "Country": "Netherlands",
+      "Position": "Forward",
+      "price": 8.5
+    }
+  ]
+}
