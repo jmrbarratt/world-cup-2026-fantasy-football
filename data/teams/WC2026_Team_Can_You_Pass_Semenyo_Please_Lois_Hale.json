@@ -1,0 +1,76 @@
+{
+  "name": "Can You Pass Semenyo Please?",
+  "owner": "Lois Hale",
+  "email": "lois.hale@btinternet.com",
+  "formation": "3-4-3",
+  "captain": "VINICIUS JUNIOR",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "DAVID RAYA",
+      "Country": "Spain",
+      "Position": "Goalkeeper",
+      "price": 7
+    },
+    {
+      "Name": "ALISTAIR JOHNSTON",
+      "Country": "Canada",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "VALENTIN BARCO",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "JOSKO GVARDIOL",
+      "Country": "Croatia",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "ANTOINE SEMENYO",
+      "Country": "Ghana",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "LEROY SANE",
+      "Country": "Germany",
+      "Position": "Midfielder",
+      "price": 7.5
+    },
+    {
+      "Name": "JUDE BELLINGHAM",
+      "Country": "England",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "VINICIUS JUNIOR",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 9.5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "MATHEUS CUNHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 7.5
+    }
+  ]
+}
