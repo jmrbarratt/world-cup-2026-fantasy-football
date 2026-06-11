@@ -1,0 +1,76 @@
+{
+  "name": "Hanson",
+  "owner": "Robert",
+  "email": "robhanson27@gmail.com",
+  "formation": "3-4-3",
+  "captain": "KYLIAN MBAPPE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "HERNAN GALINDEZ",
+      "Country": "Ecuador",
+      "Position": "Goalkeeper",
+      "price": 5
+    },
+    {
+      "Name": "LUCA JAQUEZ",
+      "Country": "Switzerland",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "WILLIAN PACHO",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 5
+    },
+    {
+      "Name": "NICO O'REILLY",
+      "Country": "England",
+      "Position": "Defender",
+      "price": 6.5
+    },
+    {
+      "Name": "LAMINE YAMAL",
+      "Country": "Spain",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "JOAO NEVES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "BRUNO FERNANDES",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 8.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "AYASE UEDA",
+      "Country": "Japan",
+      "Position": "Forward",
+      "price": 5.5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
