@@ -1,0 +1,76 @@
+{
+  "name": "Der Fußball Kommt Nach Hause",
+  "owner": "Nizam Nurdin",
+  "email": "nizam.nurdin87@gmail.com",
+  "formation": "4-3-3",
+  "captain": "LIONEL MESSI",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "YASSINE BOUNOU",
+      "Country": "Morocco",
+      "Position": "Goalkeeper",
+      "price": 5
+    },
+    {
+      "Name": "NAHUEL MOLINA",
+      "Country": "Argentina",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "JULES KOUNDE",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "CHADI RIAD",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "MARC CUCURELLA",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "CHARLES DE KETELAERE",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "HAKAN CALHANOGLU",
+      "Country": "Turkey",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "DAN NDOYE",
+      "Country": "Switzerland",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "LIONEL MESSI",
+      "Country": "Argentina",
+      "Position": "Forward",
+      "price": 11
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "KYLIAN MBAPPE",
+      "Country": "France",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
