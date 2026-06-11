@@ -1,0 +1,76 @@
+{
+  "name": "Even Better Than the Breel Thing",
+  "owner": "Fin Watkinson",
+  "email": "finlaywatkinson@gmail.com",
+  "formation": "4-3-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "JORDAN PICKFORD",
+      "Country": "England",
+      "Position": "Goalkeeper",
+      "price": 7.5
+    },
+    {
+      "Name": "NICO ELVEDI",
+      "Country": "Switzerland",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "ACHRAF HAKIMI",
+      "Country": "Morocco",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "PAU CUBARSI",
+      "Country": "Spain",
+      "Position": "Defender",
+      "price": 7
+    },
+    {
+      "Name": "DAYOT UPAMECANO",
+      "Country": "France",
+      "Position": "Defender",
+      "price": 7.5
+    },
+    {
+      "Name": "CHARLES DE KETELAERE",
+      "Country": "Belgium",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "ISMAEL SAIBARI",
+      "Country": "Morocco",
+      "Position": "Midfielder",
+      "price": 5
+    },
+    {
+      "Name": "BREEL EMBOLO",
+      "Country": "Switzerland",
+      "Position": "Forward",
+      "price": 6
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    }
+  ]
+}
