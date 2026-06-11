@@ -1,0 +1,76 @@
+{
+  "name": "Kaneifornia Dreamin'",
+  "owner": "Grace Meyrick",
+  "email": "grace.meyrick@gmail.com",
+  "formation": "3-4-3",
+  "captain": "HARRY KANE",
+  "totalValue": 80,
+  "players": [
+    {
+      "Name": "BART VERBRUGGEN",
+      "Country": "Netherlands",
+      "Position": "Goalkeeper",
+      "price": 6.5
+    },
+    {
+      "Name": "JAN PAUL VAN HECKE",
+      "Country": "Netherlands",
+      "Position": "Defender",
+      "price": 6
+    },
+    {
+      "Name": "JOEL ORDONEZ",
+      "Country": "Ecuador",
+      "Position": "Defender",
+      "price": 4.5
+    },
+    {
+      "Name": "DANIEL MUNOZ",
+      "Country": "Colombia",
+      "Position": "Defender",
+      "price": 5.5
+    },
+    {
+      "Name": "MICHAEL OLISE",
+      "Country": "France",
+      "Position": "Midfielder",
+      "price": 9
+    },
+    {
+      "Name": "JAMAL MUSIALA",
+      "Country": "Germany",
+      "Position": "Midfielder",
+      "price": 8
+    },
+    {
+      "Name": "VITINHA",
+      "Country": "Portugal",
+      "Position": "Midfielder",
+      "price": 6
+    },
+    {
+      "Name": "JHON ARIAS",
+      "Country": "Colombia",
+      "Position": "Midfielder",
+      "price": 5.5
+    },
+    {
+      "Name": "MATHEUS CUNHA",
+      "Country": "Brazil",
+      "Position": "Forward",
+      "price": 7.5
+    },
+    {
+      "Name": "HARRY KANE",
+      "Country": "England",
+      "Position": "Forward",
+      "price": 12.5
+    },
+    {
+      "Name": "MIKEL OYARZABAL",
+      "Country": "Spain",
+      "Position": "Forward",
+      "price": 9
+    }
+  ]
+}
