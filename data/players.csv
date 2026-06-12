@@ -129,32 +129,32 @@ HANS VANAKEN,Belgium,Midfielder,5,,,,,,,,,,0
 NICOLAS RASKIN,Belgium,Midfielder,5,,,,,,,,,,0
 ROMELU LUKAKU,Belgium,Forward,9,,,,,,,,,,0
 MATIAS FERNANDEZ-PARDO,Belgium,Forward,6,,,,,,,,,,0
-NIKOLA VASILJ,Bosnia-Herzegovina,Goalkeeper,5,,,,,,,,,,0
+NIKOLA VASILJ,Bosnia-Herzegovina,Goalkeeper,5,1,,,,,,,,,1
 MARTIN ZLOMISLIC,Bosnia-Herzegovina,Goalkeeper,4.5,,,,,,,,,,0
 MLADEN JURKAS,Bosnia-Herzegovina,Goalkeeper,4.5,,,,,,,,,,0
-AMAR DEDIC,Bosnia-Herzegovina,Defender,5,,,,,,,,,,0
-NIKOLA KATIC,Bosnia-Herzegovina,Defender,5,,,,,,,,,,0
-SEAD KOLASINAC,Bosnia-Herzegovina,Defender,5,,,,,,,,,,0
+AMAR DEDIC,Bosnia-Herzegovina,Defender,5,1,,,,,,,,,1
+NIKOLA KATIC,Bosnia-Herzegovina,Defender,5,2,,,,,,,,,2
+SEAD KOLASINAC,Bosnia-Herzegovina,Defender,5,4,,,,,,,,,4
 ARJAN MALIC,Bosnia-Herzegovina,Defender,4.5,,,,,,,,,,0
 DENNIS HADZIKADUNIC,Bosnia-Herzegovina,Defender,4.5,,,,,,,,,,0
 NIHAD MUJAKIC,Bosnia-Herzegovina,Defender,4.5,,,,,,,,,,0
 STJEPAN RADELJIC,Bosnia-Herzegovina,Defender,4.5,,,,,,,,,,0
-TARIK MUHAREMOVIC,Bosnia-Herzegovina,Defender,4.5,,,,,,,,,,0
-BENJAMIN TAHIROVIC,Bosnia-Herzegovina,Midfielder,5,,,,,,,,,,0
-ESMIR BAJRAKTAREVIC,Bosnia-Herzegovina,Midfielder,5,,,,,,,,,,0
-KERIM ALAJBEGOVIC,Bosnia-Herzegovina,Midfielder,5,,,,,,,,,,0
-AMAR MEMIC,Bosnia-Herzegovina,Midfielder,4.5,,,,,,,,,,0
+TARIK MUHAREMOVIC,Bosnia-Herzegovina,Defender,4.5,1,,,,,,,,,1
+BENJAMIN TAHIROVIC,Bosnia-Herzegovina,Midfielder,5,2,,,,,,,,,2
+ESMIR BAJRAKTAREVIC,Bosnia-Herzegovina,Midfielder,5,2,,,,,,,,,2
+KERIM ALAJBEGOVIC,Bosnia-Herzegovina,Midfielder,5,1,,,,,,,,,1
+AMAR MEMIC,Bosnia-Herzegovina,Midfielder,4.5,2,,,,,,,,,2
 AMIR HADZIAHMETOVIC,Bosnia-Herzegovina,Midfielder,4.5,,,,,,,,,,0
-ARMIN GIGOVIC,Bosnia-Herzegovina,Midfielder,4.5,,,,,,,,,,0
-DZENIS BURNIC,Bosnia-Herzegovina,Midfielder,4.5,,,,,,,,,,0
+ARMIN GIGOVIC,Bosnia-Herzegovina,Midfielder,4.5,1,,,,,,,,,1
+DZENIS BURNIC,Bosnia-Herzegovina,Midfielder,4.5,1,,,,,,,,,1
 ERMIN MAHMIC,Bosnia-Herzegovina,Midfielder,4.5,,,,,,,,,,0
-IVAN BASIC,Bosnia-Herzegovina,Midfielder,4.5,,,,,,,,,,0
-IVAN SUNJIC,Bosnia-Herzegovina,Midfielder,4.5,,,,,,,,,,0
+IVAN BASIC,Bosnia-Herzegovina,Midfielder,4.5,2,,,,,,,,,2
+IVAN SUNJIC,Bosnia-Herzegovina,Midfielder,4.5,1,,,,,,,,,1
 EDIN DZEKO,Bosnia-Herzegovina,Forward,6,,,,,,,,,,0
-ERMEDIN DEMIROVIC,Bosnia-Herzegovina,Forward,5,,,,,,,,,,0
+ERMEDIN DEMIROVIC,Bosnia-Herzegovina,Forward,5,1,,,,,,,,,1
 HARIS TABAKOVIC,Bosnia-Herzegovina,Forward,5,,,,,,,,,,0
-JOVO LUKIC,Bosnia-Herzegovina,Forward,5,,,,,,,,,,0
-SAMED BAZDAR,Bosnia-Herzegovina,Forward,5,,,,,,,,,,0
+JOVO LUKIC,Bosnia-Herzegovina,Forward,5,5,,,,,,,,,5
+SAMED BAZDAR,Bosnia-Herzegovina,Forward,5,1,,,,,,,,,1
 ALISSON,Brazil,Goalkeeper,7.5,,,,,,,,,,0
 EDERSON,Brazil,Goalkeeper,7,,,,,,,,,,0
 WEVERTON,Brazil,Goalkeeper,6.5,,,,,,,,,,0
@@ -182,31 +182,31 @@ NEYMAR,Brazil,Forward,7,,,,,,,,,,0
 GABRIEL MARTINELLI,Brazil,Forward,6.5,,,,,,,,,,0
 RAYAN,Brazil,Forward,6,,,,,,,,,,0
 DAYNE ST. CLAIR,Canada,Goalkeeper,5,,,,,,,,,,0
-MAXIME CREPEAU,Canada,Goalkeeper,5,,,,,,,,,,0
+MAXIME CREPEAU,Canada,Goalkeeper,5,1,,,,,,,,,1
 OWEN GOODMAN,Canada,Goalkeeper,4.5,,,,,,,,,,0
 ALPHONSO DAVIES,Canada,Defender,5.5,,,,,,,,,,0
-ALISTAIR JOHNSTON,Canada,Defender,5,,,,,,,,,,0
-DEREK CORNELIUS,Canada,Defender,5,,,,,,,,,,0
-RICHIE LARYEA,Canada,Defender,5,,,,,,,,,,0
+ALISTAIR JOHNSTON,Canada,Defender,5,0,,,,,,,,,0
+DEREK CORNELIUS,Canada,Defender,5,1,,,,,,,,,1
+RICHIE LARYEA,Canada,Defender,5,1,,,,,,,,,1
 ALFIE JONES,Canada,Defender,4.5,,,,,,,,,,0
 JOEL WATERMAN,Canada,Defender,4.5,,,,,,,,,,0
-LUC DE FOUGEROLLES,Canada,Defender,4.5,,,,,,,,,,0
+LUC DE FOUGEROLLES,Canada,Defender,4.5,0,,,,,,,,,0
 MOISE BOMBITO,Canada,Defender,4.5,,,,,,,,,,0
 NIKO SIGUR,Canada,Defender,4.5,,,,,,,,,,0
-ISMAEL KONE,Canada,Midfielder,5,,,,,,,,,,0
-JONATHAN OSORIO,Canada,Midfielder,5,,,,,,,,,,0
-TAJON BUCHANAN,Canada,Midfielder,5,,,,,,,,,,0
-ALI AHMED,Canada,Midfielder,4.5,,,,,,,,,,0
-JACOB SHAFFELBURG,Canada,Midfielder,4.5,,,,,,,,,,0
+ISMAEL KONE,Canada,Midfielder,5,2,,,,,,,,,2
+JONATHAN OSORIO,Canada,Midfielder,5,1,,,,,,,,,1
+TAJON BUCHANAN,Canada,Midfielder,5,2,,,,,,,,,2
+ALI AHMED,Canada,Midfielder,4.5,1,,,,,,,,,1
+JACOB SHAFFELBURG,Canada,Midfielder,4.5,1,,,,,,,,,1
 JAYDEN NELSON,Canada,Midfielder,4.5,,,,,,,,,,0
-LIAM MILLAR,Canada,Midfielder,4.5,,,,,,,,,,0
+LIAM MILLAR,Canada,Midfielder,4.5,2,,,,,,,,,2
 MATHIEU CHOINIERE,Canada,Midfielder,4.5,,,,,,,,,,0
 NATHAN SALIBA,Canada,Midfielder,4.5,,,,,,,,,,0
-STEPHEN ESTAQUIO,Canada,Midfielder,4.5,,,,,,,,,,0
-JONATHAN DAVID,Canada,Forward,6,,,,,,,,,,0
-CYLE LARIN,Canada,Forward,5.5,,,,,,,,,,0
-PROMISE DAVID,Canada,Forward,5,,,,,,,,,,0
-TANI OLUWASEYI,Canada,Forward,5,,,,,,,,,,0
+STEPHEN ESTAQUIO,Canada,Midfielder,4.5,2,,,,,,,,,2
+JONATHAN DAVID,Canada,Forward,6,2,,,,,,,,,2
+CYLE LARIN,Canada,Forward,5.5,5,,,,,,,,,5
+PROMISE DAVID,Canada,Forward,5,4,,,,,,,,,4
+TANI OLUWASEYI,Canada,Forward,5,2,,,,,,,,,2
 CJ DOS SANTOS,Cape Verde,Goalkeeper,4.5,,,,,,,,,,0
 MARCIO ROSA,Cape Verde,Goalkeeper,4.5,,,,,,,,,,0
 VOZINHA,Cape Verde,Goalkeeper,4.5,,,,,,,,,,0
