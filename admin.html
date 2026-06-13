@@ -219,7 +219,7 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 .player-country-tag { font-size:.63rem; color:var(--gray); margin-left:6px; }
 
 /* ── LEADERBOARD PANEL ── */
-.lb-table-wrap { border-radius:12px; border:1px solid var(--border); overflow:hidden; margin-bottom:24px; }
+.lb-table-wrap { border-radius:12px; border:1px solid var(--border); overflow-x:auto; margin-bottom:24px; }
 .lb-table { width:100%; border-collapse:collapse; font-size:.84rem; }
 .lb-table th {
   background:var(--bg3); padding:11px 14px; text-align:left;
@@ -307,16 +307,16 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 <header class="header">
   <div class="logo">World Cup 2026 <span>Fantasy Admin</span></div>
   <nav class="nav">
-    <button class="nav-btn active" onclick="showPanel('teams')" id="nav-teams">⚽ Teams</button>
-    <button class="nav-btn" onclick="showPanel('scores')" id="nav-scores">📊 Scores</button>
-    <button class="nav-btn" onclick="showPanel('leaderboard')" id="nav-leaderboard">🏆 Leaderboard</button>
+    <button class="nav-btn active" onclick="showPanel('leaderboard')" id="nav-leaderboard">🏆 Standings</button>
+    <button class="nav-btn" onclick="showPanel('scores')" id="nav-scores">📊 Player Scores</button>
+    <button class="nav-btn" onclick="showPanel('teams')" id="nav-teams">⚽ All Teams</button>
     <button class="nav-btn" onclick="showPanel('export')" id="nav-export">📤 Export</button>
   </nav>
 </header>
 
 <!-- TEAMS PANEL -->
-<div class="panel active" id="panel-teams">
-  <h1 class="section-title">Teams</h1>
+<div class="panel" id="panel-teams">
+  <h1 class="section-title">All Teams</h1>
   <p class="section-sub" id="teamsCountSub"></p>
 
 
@@ -383,8 +383,8 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 </div>
 
 <!-- LEADERBOARD PANEL -->
-<div class="panel" id="panel-leaderboard">
-  <h1 class="section-title">Leaderboard</h1>
+<div class="panel active" id="panel-leaderboard">
+  <h1 class="section-title">Standings</h1>
   <p class="section-sub"></p>
   <div class="lb-spacer"></div>
   <div class="lb-table-wrap">
