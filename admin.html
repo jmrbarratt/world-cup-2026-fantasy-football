@@ -307,15 +307,15 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 <header class="header">
   <div class="logo">World Cup 2026 <span>Fantasy Admin</span></div>
   <nav class="nav">
-    <button class="nav-btn active" onclick="showPanel('leaderboard')" id="nav-leaderboard">🏆 Standings</button>
+    <button class="nav-btn active" onclick="showPanel('teams')" id="nav-teams">⚽ All Teams</button>
     <button class="nav-btn" onclick="showPanel('scores')" id="nav-scores">📊 Player Scores</button>
-    <button class="nav-btn" onclick="showPanel('teams')" id="nav-teams">⚽ All Teams</button>
+    <button class="nav-btn" onclick="showPanel('leaderboard')" id="nav-leaderboard">🏆 Standings</button>
     <button class="nav-btn" onclick="showPanel('export')" id="nav-export">📤 Export</button>
   </nav>
 </header>
 
 <!-- TEAMS PANEL -->
-<div class="panel" id="panel-teams">
+<div class="panel active" id="panel-teams">
   <h1 class="section-title">All Teams</h1>
   <p class="section-sub" id="teamsCountSub"></p>
 
@@ -383,7 +383,7 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 </div>
 
 <!-- LEADERBOARD PANEL -->
-<div class="panel active" id="panel-leaderboard">
+<div class="panel" id="panel-leaderboard">
   <h1 class="section-title">Standings</h1>
   <p class="section-sub"></p>
   <div class="lb-spacer"></div>
