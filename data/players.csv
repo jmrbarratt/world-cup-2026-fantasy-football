@@ -473,7 +473,7 @@ ALEXANDER NUBEL,Germany,Goalkeeper,6,,,,,,,,,,0
 JOSHUA KIMMICH,Germany,Defender,7.5,7,,,,,,,,,7
 DAVID RAUM,Germany,Defender,7,1,,,,,,,,,1
 JONATHAN TAH,Germany,Defender,7,1,,,,,,,,,1
-NICO SCHLOTTERBECK,Germany,Defender,7,7,,,,,,,,,7
+NICO SCHLOTTERBECK,Germany,Defender,7,9,,,,,,,,,9
 ANTONIO RUDIGER,Germany,Defender,6.5,1,,,,,,,,,1
 MALICK THIAW,Germany,Defender,6,,,,,,,,,,0
 NATHANIEL BROWN,Germany,Defender,6,10,,,,,,,,,10
@@ -489,7 +489,7 @@ ANGELO STILLER,Germany,Midfielder,5,,,,,,,,,,0
 ASSAN OUEDRAOGO,Germany,Midfielder,5,,,,,,,,,,0
 FELIX NMECHA,Germany,Midfielder,5,7,,,,,,,,,7
 PASCAL GROSS,Germany,Midfielder,5,,,,,,,,,,0
-KAI HAVERTZ,Germany,Forward,8.5,11,,,,,,,,,11
+KAI HAVERTZ,Germany,Forward,8.5,9,,,,,,,,,9
 NICK WOLTEMADE,Germany,Forward,7.5,,,,,,,,,,0
 DENIZ UNDAV,Germany,Forward,6,11,,,,,,,,,11
 MAXIMILIAN BEIER,Germany,Forward,6,,,,,,,,,,0
@@ -623,31 +623,31 @@ EVANN GUESSAND,Ivory Coast,Forward,5.5,,,,,,,,,,0
 ANGE-YOAN BONNY,Ivory Coast,Forward,5,,,,,,,,,,0
 ELYE WAHI,Ivory Coast,Forward,5,,,,,,,,,,0
 OUMAR DIAKITE,Ivory Coast,Forward,5,,,,,,,,,,0
-ZION SUZUKI,Japan,Goalkeeper,5,,,,,,,,,,0
+ZION SUZUKI,Japan,Goalkeeper,5,0,,,,,,,,,0
 KEISUKE OSAKO,Japan,Goalkeeper,4.5,,,,,,,,,,0
 TOMOKI HAYAKAWA,Japan,Goalkeeper,4.5,,,,,,,,,,0
-HIROKI ITO,Japan,Defender,5,,,,,,,,,,0
+HIROKI ITO,Japan,Defender,5,0,,,,,,,,,0
 KO ITAKURA,Japan,Defender,5,,,,,,,,,,0
-SHOGO TANIGUCHI,Japan,Defender,5,,,,,,,,,,0
-TAKEHIRO TOMIYASU,Japan,Defender,5,,,,,,,,,,0
-TSUYOSHI WATANABE,Japan,Defender,5,,,,,,,,,,0
+SHOGO TANIGUCHI,Japan,Defender,5,0,,,,,,,,,0
+TAKEHIRO TOMIYASU,Japan,Defender,5,1,,,,,,,,,1
+TSUYOSHI WATANABE,Japan,Defender,5,0,,,,,,,,,0
 YUKINARI SUGAWARA,Japan,Defender,5,,,,,,,,,,0
 AYUMU SEKO,Japan,Defender,4.5,,,,,,,,,,0
 JUNNOSUKE SUZUKI,Japan,Defender,4.5,,,,,,,,,,0
 YUTO NAGATOMO,Japan,Defender,4.5,,,,,,,,,,0
-JUNYA ITO,Japan,Midfielder,5.5,,,,,,,,,,0
-TAKEFUSA KUBO,Japan,Midfielder,5.5,,,,,,,,,,0
+JUNYA ITO,Japan,Midfielder,5.5,1,,,,,,,,,1
+TAKEFUSA KUBO,Japan,Midfielder,5.5,5,,,,,,,,,5
 AO TANAKA,Japan,Midfielder,5,,,,,,,,,,0
-DAICHI KAMADA,Japan,Midfielder,5,,,,,,,,,,0
-KEITO NAKAMURA,Japan,Midfielder,5,,,,,,,,,,0
-RITSU DOAN,Japan,Midfielder,5,,,,,,,,,,0
-KAISHU SANO,Japan,Midfielder,4.5,,,,,,,,,,0
+DAICHI KAMADA,Japan,Midfielder,5,9,,,,,,,,,9
+KEITO NAKAMURA,Japan,Midfielder,5,7,,,,,,,,,7
+RITSU DOAN,Japan,Midfielder,5,2,,,,,,,,,2
+KAISHU SANO,Japan,Midfielder,4.5,2,,,,,,,,,2
 YUITO SUZUKI,Japan,Midfielder,4.5,,,,,,,,,,0
-AYASE UEDA,Japan,Forward,5.5,,,,,,,,,,0
-DAIZEN MAEDA,Japan,Forward,5,,,,,,,,,,0
+AYASE UEDA,Japan,Forward,5.5,2,,,,,,,,,2
+DAIZEN MAEDA,Japan,Forward,5,2,,,,,,,,,2
 KEISUKE GOTO,Japan,Forward,5,,,,,,,,,,0
-KENTO SHIOGAI,Japan,Forward,5,,,,,,,,,,0
-KOKI OGAWA,Japan,Forward,5,,,,,,,,,,0
+KENTO SHIOGAI,Japan,Forward,5,1,,,,,,,,,1
+KOKI OGAWA,Japan,Forward,5,4,,,,,,,,,4
 SHUTO MACHINO,Japan,Forward,5,,,,,,,,,,0
 ABDALLAH AL-FAKHOURI,Jordan,Goalkeeper,4.5,,,,,,,,,,0
 NOUR BANI ATTIAH,Jordan,Goalkeeper,4.5,,,,,,,,,,0
@@ -727,32 +727,32 @@ SAMIR EL MOURABET,Morocco,Midfielder,4.5,1,,,,,,,,,1
 SOFYAN AMRABAT,Morocco,Midfielder,4.5,,,,,,,,,,0
 AYOUB EL KAABI,Morocco,Forward,5.5,,,,,,,,,,0
 SOUFIANE RAHIMI,Morocco,Forward,5,1,,,,,,,,,1
-BART VERBRUGGEN,Netherlands,Goalkeeper,6.5,,,,,,,,,,0
+BART VERBRUGGEN,Netherlands,Goalkeeper,6.5,0,,,,,,,,,0
 MARK FLEKKEN,Netherlands,Goalkeeper,6,,,,,,,,,,0
 ROBIN ROEFS,Netherlands,Goalkeeper,5.5,,,,,,,,,,0
-DENZEL DUMFRIES,Netherlands,Defender,7.5,,,,,,,,,,0
-MICKY VAN DE VEN,Netherlands,Defender,7,,,,,,,,,,0
-VIRGIL VAN DIJK,Netherlands,Defender,7,,,,,,,,,,0
-NATHAN AKE,Netherlands,Defender,6.5,,,,,,,,,,0
-JAN PAUL VAN HECKE,Netherlands,Defender,6,,,,,,,,,,0
+DENZEL DUMFRIES,Netherlands,Defender,7.5,0,,,,,,,,,0
+MICKY VAN DE VEN,Netherlands,Defender,7,-1,,,,,,,,,-1
+VIRGIL VAN DIJK,Netherlands,Defender,7,6,,,,,,,,,6
+NATHAN AKE,Netherlands,Defender,6.5,0,,,,,,,,,0
+JAN PAUL VAN HECKE,Netherlands,Defender,6,0,,,,,,,,,0
 JORREL HATO,Netherlands,Defender,5.5,,,,,,,,,,0
 LUTSHAREL GEERTRUIDA,Netherlands,Defender,5.5,,,,,,,,,,0
-TIJJANI REIJNDERS,Netherlands,Midfielder,7,,,,,,,,,,0
-FRENKIE DE JONG,Netherlands,Midfielder,6,,,,,,,,,,0
-CRYSENCIO SUMMERVILLE,Netherlands,Midfielder,5.5,,,,,,,,,,0
+TIJJANI REIJNDERS,Netherlands,Midfielder,7,2,,,,,,,,,2
+FRENKIE DE JONG,Netherlands,Midfielder,6,2,,,,,,,,,2
+CRYSENCIO SUMMERVILLE,Netherlands,Midfielder,5.5,6,,,,,,,,,6
 GUUS TIL,Netherlands,Midfielder,5.5,,,,,,,,,,0
 NOA LANG,Netherlands,Midfielder,5.5,,,,,,,,,,0
-RYAN GRAVENBERCH,Netherlands,Midfielder,5.5,,,,,,,,,,0
+RYAN GRAVENBERCH,Netherlands,Midfielder,5.5,8,,,,,,,,,8
 MARTEN DE ROON,Netherlands,Midfielder,5,,,,,,,,,,0
 MATS WIEFFER,Netherlands,Midfielder,5,,,,,,,,,,0
-QUINTEN TIMBER,Netherlands,Midfielder,5,,,,,,,,,,0
-TEUN KOOPMEINERS,Netherlands,Midfielder,5,,,,,,,,,,0
-CODY GAKPO,Netherlands,Forward,8.5,,,,,,,,,,0
-MEMPHIS DEPAY,Netherlands,Forward,8.5,,,,,,,,,,0
-DONYELL MALEN,Netherlands,Forward,7,,,,,,,,,,0
+QUINTEN TIMBER,Netherlands,Midfielder,5,1,,,,,,,,,1
+TEUN KOOPMEINERS,Netherlands,Midfielder,5,1,,,,,,,,,1
+CODY GAKPO,Netherlands,Forward,8.5,2,,,,,,,,,2
+MEMPHIS DEPAY,Netherlands,Forward,8.5,0,,,,,,,,,0
+DONYELL MALEN,Netherlands,Forward,7,2,,,,,,,,,2
 JUSTIN KLUIVERT,Netherlands,Forward,6,,,,,,,,,,0
 WOUT WEGHORST,Netherlands,Forward,6,,,,,,,,,,0
-BRIAN BROBBEY,Netherlands,Forward,5.5,,,,,,,,,,0
+BRIAN BROBBEY,Netherlands,Forward,5.5,1,,,,,,,,,1
 ALEX PAULSEN,New Zealand,Goalkeeper,4.5,,,,,,,,,,0
 MAX CROCOMBE,New Zealand,Goalkeeper,4.5,,,,,,,,,,0
 MICHAEL WOUD,New Zealand,Goalkeeper,4.5,,,,,,,,,,0
