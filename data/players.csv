@@ -363,32 +363,32 @@ CEDRIC BAKAMBU,DR Congo,Forward,5.5,,,,,,,,,,0
 YOANE WISSA,DR Congo,Forward,5.5,,,,,,,,,,0
 FISTON MAYELE,DR Congo,Forward,5,,,,,,,,,,0
 SIMON BANZA,DR Congo,Forward,5,,,,,,,,,,0
-HERNAN GALINDEZ,Ecuador,Goalkeeper,5,,,,,,,,,,0
+HERNAN GALINDEZ,Ecuador,Goalkeeper,5,1,,,,,,,,,1
 GONZALO VALLE,Ecuador,Goalkeeper,4.5,,,,,,,,,,0
 MOISES RAMIREZ,Ecuador,Goalkeeper,4.5,,,,,,,,,,0
-ANGELO PRECIADO,Ecuador,Defender,5,,,,,,,,,,0
+ANGELO PRECIADO,Ecuador,Defender,5,0,,,,,,,,,0
 FELIX TORRES,Ecuador,Defender,5,,,,,,,,,,0
 PERVIS ESTUPINAN,Ecuador,Defender,5,,,,,,,,,,0
-PIERO HINCAPIE,Ecuador,Defender,5,,,,,,,,,,0
-WILLIAN PACHO,Ecuador,Defender,5,,,,,,,,,,0
-JACKSON POROZO,Ecuador,Defender,4.5,,,,,,,,,,0
-JOEL ORDONEZ,Ecuador,Defender,4.5,,,,,,,,,,0
-ALAN FRANCO,Ecuador,Midfielder,5,,,,,,,,,,0
-GONZALO PLATA,Ecuador,Midfielder,5,,,,,,,,,,0
-MOISES CAICEDO,Ecuador,Midfielder,5,,,,,,,,,,0
-ALAN MINDA,Ecuador,Midfielder,4.5,,,,,,,,,,0
+PIERO HINCAPIE,Ecuador,Defender,5,1,,,,,,,,,1
+WILLIAN PACHO,Ecuador,Defender,5,1,,,,,,,,,1
+JACKSON POROZO,Ecuador,Defender,4.5,-1,,,,,,,,,-1
+JOEL ORDONEZ,Ecuador,Defender,4.5,1,,,,,,,,,1
+ALAN FRANCO,Ecuador,Midfielder,5,2,,,,,,,,,2
+GONZALO PLATA,Ecuador,Midfielder,5,2,,,,,,,,,2
+MOISES CAICEDO,Ecuador,Midfielder,5,2,,,,,,,,,2
+ALAN MINDA,Ecuador,Midfielder,4.5,2,,,,,,,,,2
 ANTHONY VALENCIA,Ecuador,Midfielder,4.5,,,,,,,,,,0
 DENIL CASTILLO,Ecuador,Midfielder,4.5,,,,,,,,,,0
-JOHN YEBOAH,Ecuador,Midfielder,4.5,,,,,,,,,,0
+JOHN YEBOAH,Ecuador,Midfielder,4.5,2,,,,,,,,,2
 JORDY ALCIVAR,Ecuador,Midfielder,4.5,,,,,,,,,,0
 KENDRY PAEZ,Ecuador,Midfielder,4.5,,,,,,,,,,0
-NILSON ANGULO,Ecuador,Midfielder,4.5,,,,,,,,,,0
-PEDRO VITE,Ecuador,Midfielder,4.5,,,,,,,,,,0
+NILSON ANGULO,Ecuador,Midfielder,4.5,1,,,,,,,,,1
+PEDRO VITE,Ecuador,Midfielder,4.5,2,,,,,,,,,2
 YAIMAR MEDINA,Ecuador,Midfielder,4.5,,,,,,,,,,0
-ENNER VALENCIA,Ecuador,Forward,5.5,,,,,,,,,,0
+ENNER VALENCIA,Ecuador,Forward,5.5,2,,,,,,,,,2
 JEREMY AREVALO,Ecuador,Forward,5,,,,,,,,,,0
 JORDY CAICEDO,Ecuador,Forward,5,,,,,,,,,,0
-KEVIN RODRIGUEZ,Ecuador,Forward,5,,,,,,,,,,0
+KEVIN RODRIGUEZ,Ecuador,Forward,5,1,,,,,,,,,1
 MOHAMED EL SHENAWY,Egypt,Goalkeeper,5,,,,,,,,,,0
 EL MAHDY SOLIMAN,Egypt,Goalkeeper,4.5,,,,,,,,,,0
 MOHAMED ALAA,Egypt,Goalkeeper,4.5,,,,,,,,,,0
@@ -597,31 +597,31 @@ ALI AL-HAMADI,Iraq,Forward,5,,,,,,,,,,0
 ALI YOUSIF,Iraq,Forward,5,,,,,,,,,,0
 AYMEN HUSSEIN,Iraq,Forward,5,,,,,,,,,,0
 MOHANAD ALI,Iraq,Forward,5,,,,,,,,,,0
-YAHIA FOFANA,Ivory Coast,Goalkeeper,5,,,,,,,,,,0
+YAHIA FOFANA,Ivory Coast,Goalkeeper,5,6,,,,,,,,,6
 ALBAN LAFONT,Ivory Coast,Goalkeeper,4.5,,,,,,,,,,0
 MOHAMED KONE,Ivory Coast,Goalkeeper,4.5,,,,,,,,,,0
 EVAN NDICKA,Ivory Coast,Defender,5,,,,,,,,,,0
-GHISLAIN KONAN,Ivory Coast,Defender,5,,,,,,,,,,0
-GUELA DOUE,Ivory Coast,Defender,5,,,,,,,,,,0
-ODILON KOSSOUNOU,Ivory Coast,Defender,5,,,,,,,,,,0
+GHISLAIN KONAN,Ivory Coast,Defender,5,6,,,,,,,,,6
+GUELA DOUE,Ivory Coast,Defender,5,5,,,,,,,,,5
+ODILON KOSSOUNOU,Ivory Coast,Defender,5,1,,,,,,,,,1
 CHRISTOPHER OPERI,Ivory Coast,Defender,4.5,,,,,,,,,,0
-EMMANUEL AGBADOU,Ivory Coast,Defender,4.5,,,,,,,,,,0
+EMMANUEL AGBADOU,Ivory Coast,Defender,4.5,6,,,,,,,,,6
 OUSMANE DIOMANDE,Ivory Coast,Defender,4.5,,,,,,,,,,0
-WILFRIEND SINGO,Ivory Coast,Defender,4.5,,,,,,,,,,0
-AMAD DIALLO,Ivory Coast,Midfielder,6,,,,,,,,,,0
-NICOLAS PEPE,Ivory Coast,Midfielder,5.5,,,,,,,,,,0
+WILFRIEND SINGO,Ivory Coast,Defender,4.5,9,,,,,,,,,9
+AMAD DIALLO,Ivory Coast,Midfielder,6,8,,,,,,,,,8
+NICOLAS PEPE,Ivory Coast,Midfielder,5.5,2,,,,,,,,,2
 SIMON ADINGRA,Ivory Coast,Midfielder,5.5,,,,,,,,,,0
-YAN DIOMANDE,Ivory Coast,Midfielder,5.5,,,,,,,,,,0
-FRANCK KESSIE,Ivory Coast,Midfielder,5,,,,,,,,,,0
-IBRAHIM SANGARE,Ivory Coast,Midfielder,5,,,,,,,,,,0
-SEKO FOFANA,Ivory Coast,Midfielder,5,,,,,,,,,,0
-BAZOUMANA TOURE,Ivory Coast,Midfielder,4.5,,,,,,,,,,0
-CHRIST INAO OULAI,Ivory Coast,Midfielder,4.5,,,,,,,,,,0
+YAN DIOMANDE,Ivory Coast,Midfielder,5.5,2,,,,,,,,,2
+FRANCK KESSIE,Ivory Coast,Midfielder,5,1,,,,,,,,,1
+IBRAHIM SANGARE,Ivory Coast,Midfielder,5,1,,,,,,,,,1
+SEKO FOFANA,Ivory Coast,Midfielder,5,1,,,,,,,,,1
+BAZOUMANA TOURE,Ivory Coast,Midfielder,4.5,2,,,,,,,,,2
+CHRIST INAO OULAI,Ivory Coast,Midfielder,4.5,1,,,,,,,,,1
 JEAN MICHAEL SERI,Ivory Coast,Midfielder,4.5,,,,,,,,,,0
 PARFAIT GUIAGON,Ivory Coast,Midfielder,4.5,,,,,,,,,,0
 EVANN GUESSAND,Ivory Coast,Forward,5.5,,,,,,,,,,0
-ANGE-YOAN BONNY,Ivory Coast,Forward,5,,,,,,,,,,0
-ELYE WAHI,Ivory Coast,Forward,5,,,,,,,,,,0
+ANGE-YOAN BONNY,Ivory Coast,Forward,5,1,,,,,,,,,1
+ELYE WAHI,Ivory Coast,Forward,5,2,,,,,,,,,2
 OUMAR DIAKITE,Ivory Coast,Forward,5,,,,,,,,,,0
 ZION SUZUKI,Japan,Goalkeeper,5,0,,,,,,,,,0
 KEISUKE OSAKO,Japan,Goalkeeper,4.5,,,,,,,,,,0
@@ -1065,31 +1065,31 @@ MIKEL OYARZABAL,Spain,Forward,9,,,,,,,,,,0
 FERRAN TORRES,Spain,Forward,7.5,,,,,,,,,,0
 BORJA IGLESIAS,Spain,Forward,6,,,,,,,,,,0
 VICTOR MUNOZ,Spain,Forward,6,,,,,,,,,,0
-KRISTOFFER NORDFELDT,Sweden,Goalkeeper,5.5,,,,,,,,,,0
+KRISTOFFER NORDFELDT,Sweden,Goalkeeper,5.5,1,,,,,,,,,1
 JACOB WIDELL ZETTERSTROM,Sweden,Goalkeeper,5,,,,,,,,,,0
 VIKTOR JOHANSSON,Sweden,Goalkeeper,5,,,,,,,,,,0
-GABRIEL GUDMUNDSSON,Sweden,Defender,5.5,,,,,,,,,,0
-GUSTAF LAGERBIELKE,Sweden,Defender,5.5,,,,,,,,,,0
-VICTOR LINDELOF,Sweden,Defender,5.5,,,,,,,,,,0
+GABRIEL GUDMUNDSSON,Sweden,Defender,5.5,1,,,,,,,,,1
+GUSTAF LAGERBIELKE,Sweden,Defender,5.5,1,,,,,,,,,1
+VICTOR LINDELOF,Sweden,Defender,5.5,1,,,,,,,,,1
 CARL STARFELT,Sweden,Defender,5,,,,,,,,,,0
-DANIEL SVENSSON,Sweden,Defender,5,,,,,,,,,,0
-ELLIOT STROUD,Sweden,Defender,4.5,,,,,,,,,,0
+DANIEL SVENSSON,Sweden,Defender,5,1,,,,,,,,,1
+ELLIOT STROUD,Sweden,Defender,4.5,1,,,,,,,,,1
 ERIC SMITH,Sweden,Defender,4.5,,,,,,,,,,0
 HERMAN JOHANSSON,Sweden,Defender,4.5,,,,,,,,,,0
 HJALMAR EKDAL,Sweden,Defender,4.5,,,,,,,,,,0
-ISAK HIEK,Sweden,Defender,4.5,,,,,,,,,,0
-ANTHONY ELANGA,Sweden,Midfielder,6,,,,,,,,,,0
-BENJAMIN NYGREN,Sweden,Midfielder,5.5,,,,,,,,,,0
-LUCAS BERGVALL,Sweden,Midfielder,5.5,,,,,,,,,,0
-JESPER KARLSTROM,Sweden,Midfielder,5,,,,,,,,,,0
-YASIN AYARI,Sweden,Midfielder,5,,,,,,,,,,0
+ISAK HIEK,Sweden,Defender,4.5,1,,,,,,,,,1
+ANTHONY ELANGA,Sweden,Midfielder,6,1,,,,,,,,,1
+BENJAMIN NYGREN,Sweden,Midfielder,5.5,2,,,,,,,,,2
+LUCAS BERGVALL,Sweden,Midfielder,5.5,4,,,,,,,,,4
+JESPER KARLSTROM,Sweden,Midfielder,5,2,,,,,,,,,2
+YASIN AYARI,Sweden,Midfielder,5,14,,,,,,,,,14
 BESFORT ZENELI,Sweden,Midfielder,4.5,,,,,,,,,,0
 KEN SEMA,Sweden,Midfielder,4.5,,,,,,,,,,0
-MATTIAS SVANBERG,Sweden,Midfielder,4.5,,,,,,,,,,0
+MATTIAS SVANBERG,Sweden,Midfielder,4.5,6,,,,,,,,,6
 TAHA ALI,Sweden,Midfielder,4.5,,,,,,,,,,0
-ALEXANDER ISAK,Sweden,Forward,8,,,,,,,,,,0
-VIKTOR GYOKERES,Sweden,Forward,8,,,,,,,,,,0
-ALEXANDER BERNHARDSSON,Sweden,Forward,5.5,,,,,,,,,,0
+ALEXANDER ISAK,Sweden,Forward,8,12,,,,,,,,,12
+VIKTOR GYOKERES,Sweden,Forward,8,9,,,,,,,,,9
+ALEXANDER BERNHARDSSON,Sweden,Forward,5.5,2,,,,,,,,,2
 GUSTAF NILSSON,Sweden,Forward,5.5,,,,,,,,,,0
 GREGOR KOBEL,Switzerland,Goalkeeper,5.5,1,,,,,,,,,1
 YVON MVOGO,Switzerland,Goalkeeper,5,,,,,,,,,,0
