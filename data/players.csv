@@ -103,32 +103,32 @@ PAUL WANNER,Austria,Midfielder,4.5,,,,,,,,,,0
 MARKO ARNAUTOVIC,Austria,Forward,6,,,,,,,,,,0
 MICHAEL GREGORITSCH,Austria,Forward,5.5,,,,,,,,,,0
 SASA KALAJDZIC,Austria,Forward,5,,,,,,,,,,0
-THIBAUT COURTOIS,Belgium,Goalkeeper,6.5,,,,,,,,,,0
+THIBAUT COURTOIS,Belgium,Goalkeeper,6.5,1,,,,,,,,,1
 MIKE PENDERS,Belgium,Goalkeeper,5.5,,,,,,,,,,0
 SENNE LAMMENS,Belgium,Goalkeeper,5.5,,,,,,,,,,0
-MAXIM DE CUYPER,Belgium,Defender,6.5,,,,,,,,,,0
+MAXIM DE CUYPER,Belgium,Defender,6.5,0,,,,,,,,,0
 ZENO DEBAST,Belgium,Defender,6.5,,,,,,,,,,0
 ARTHUR THEATE,Belgium,Defender,6,,,,,,,,,,0
-THOMAS MEUNIER,Belgium,Defender,6,,,,,,,,,,0
-TIMOTHY CASTAGNE,Belgium,Defender,6,,,,,,,,,,0
-BRANDON MECHELE,Belgium,Defender,5.5,,,,,,,,,,0
+THOMAS MEUNIER,Belgium,Defender,6,1,,,,,,,,,1
+TIMOTHY CASTAGNE,Belgium,Defender,6,0,,,,,,,,,0
+BRANDON MECHELE,Belgium,Defender,5.5,1,,,,,,,,,1
 KONI DE WINTER,Belgium,Defender,5.5,,,,,,,,,,0
 JOAQUIN SEYS,Belgium,Defender,5,,,,,,,,,,0
-NATHAN NGOY,Belgium,Defender,5,,,,,,,,,,0
-JEREMY DOKU,Belgium,Midfielder,8,,,,,,,,,,0
-KEVIN DE BRUYNE,Belgium,Midfielder,7.5,,,,,,,,,,0
-LEANDRO TROSSARD,Belgium,Midfielder,7.5,,,,,,,,,,0
-YOURI TIELEMANS,Belgium,Midfielder,6,,,,,,,,,,0
+NATHAN NGOY,Belgium,Defender,5,1,,,,,,,,,1
+JEREMY DOKU,Belgium,Midfielder,8,2,,,,,,,,,2
+KEVIN DE BRUYNE,Belgium,Midfielder,7.5,2,,,,,,,,,2
+LEANDRO TROSSARD,Belgium,Midfielder,7.5,2,,,,,,,,,2
+YOURI TIELEMANS,Belgium,Midfielder,6,2,,,,,,,,,2
 ALEXIS SAELEMAEKERS,Belgium,Midfielder,5.5,,,,,,,,,,0
-CHARLES DE KETELAERE,Belgium,Midfielder,5.5,,,,,,,,,,0
+CHARLES DE KETELAERE,Belgium,Midfielder,5.5,2,,,,,,,,,2
 DODI LUKEBAKIO,Belgium,Midfielder,5.5,,,,,,,,,,0
-AMADOU ONANA,Belgium,Midfielder,5,,,,,,,,,,0
+AMADOU ONANA,Belgium,Midfielder,5,2,,,,,,,,,2
 AXEL WITSEL,Belgium,Midfielder,5,,,,,,,,,,0
 DIEGO MOREIRA,Belgium,Midfielder,5,,,,,,,,,,0
-HANS VANAKEN,Belgium,Midfielder,5,,,,,,,,,,0
-NICOLAS RASKIN,Belgium,Midfielder,5,,,,,,,,,,0
-ROMELU LUKAKU,Belgium,Forward,9,,,,,,,,,,0
-MATIAS FERNANDEZ-PARDO,Belgium,Forward,6,,,,,,,,,,0
+HANS VANAKEN,Belgium,Midfielder,5,1,,,,,,,,,1
+NICOLAS RASKIN,Belgium,Midfielder,5,1,,,,,,,,,1
+ROMELU LUKAKU,Belgium,Forward,9,1,,,,,,,,,1
+MATIAS FERNANDEZ-PARDO,Belgium,Forward,6,1,,,,,,,,,1
 NIKOLA VASILJ,Bosnia-Herzegovina,Goalkeeper,5,1,,,,,,,,,1
 MARTIN ZLOMISLIC,Bosnia-Herzegovina,Goalkeeper,4.5,,,,,,,,,,0
 MLADEN JURKAS,Bosnia-Herzegovina,Goalkeeper,4.5,,,,,,,,,,0
@@ -209,30 +209,30 @@ PROMISE DAVID,Canada,Forward,5,4,,,,,,,,,4
 TANI OLUWASEYI,Canada,Forward,5,2,,,,,,,,,2
 CJ DOS SANTOS,Cape Verde,Goalkeeper,4.5,,,,,,,,,,0
 MARCIO ROSA,Cape Verde,Goalkeeper,4.5,,,,,,,,,,0
-VOZINHA,Cape Verde,Goalkeeper,4.5,,,,,,,,,,0
-DINEY,Cape Verde,Defender,4.5,,,,,,,,,,0
-JOAO PAULO,Cape Verde,Defender,4.5,,,,,,,,,,0
+VOZINHA,Cape Verde,Goalkeeper,4.5,8,,,,,,,,,8
+DINEY,Cape Verde,Defender,4.5,6,,,,,,,,,6
+JOAO PAULO,Cape Verde,Defender,4.5,1,,,,,,,,,1
 KELVIN PIRES,Cape Verde,Defender,4.5,,,,,,,,,,0
 LOGAN COSTA,Cape Verde,Defender,4.5,,,,,,,,,,0
-ROBERTO LOPES,Cape Verde,Defender,4.5,,,,,,,,,,0
-SIDNY LOPES CABRAL,Cape Verde,Defender,4.5,,,,,,,,,,0
-STEVEN MOREIRA,Cape Verde,Defender,4.5,,,,,,,,,,0
+ROBERTO LOPES,Cape Verde,Defender,4.5,6,,,,,,,,,6
+SIDNY LOPES CABRAL,Cape Verde,Defender,4.5,5,,,,,,,,,5
+STEVEN MOREIRA,Cape Verde,Defender,4.5,6,,,,,,,,,6
 STOPIRA,Cape Verde,Defender,4.5,,,,,,,,,,0
 WAGNER PINA,Cape Verde,Defender,4.5,,,,,,,,,,0
 GARRY RODRIGUES,Cape Verde,Midfielder,5,,,,,,,,,,0
-RYAN MENDES,Cape Verde,Midfielder,5,,,,,,,,,,0
-DEROY DUARTE,Cape Verde,Midfielder,4.5,,,,,,,,,,0
+RYAN MENDES,Cape Verde,Midfielder,5,2,,,,,,,,,2
+DEROY DUARTE,Cape Verde,Midfielder,4.5,1,,,,,,,,,1
 HELIO VARELA,Cape Verde,Midfielder,4.5,,,,,,,,,,0
-JAMIRO MONTEIRO,Cape Verde,Midfielder,4.5,,,,,,,,,,0
-JOVANE CABRAL,Cape Verde,Midfielder,4.5,,,,,,,,,,0
-KEVIN PINA,Cape Verde,Midfielder,4.5,,,,,,,,,,0
-LAROS DUARTE,Cape Verde,Midfielder,4.5,,,,,,,,,,0
-TELMO ARCANJO,Cape Verde,Midfielder,4.5,,,,,,,,,,0
-WILLY SEMEDO,Cape Verde,Midfielder,4.5,,,,,,,,,,0
+JAMIRO MONTEIRO,Cape Verde,Midfielder,4.5,2,,,,,,,,,2
+JOVANE CABRAL,Cape Verde,Midfielder,4.5,2,,,,,,,,,2
+KEVIN PINA,Cape Verde,Midfielder,4.5,2,,,,,,,,,2
+LAROS DUARTE,Cape Verde,Midfielder,4.5,2,,,,,,,,,2
+TELMO ARCANJO,Cape Verde,Midfielder,4.5,1,,,,,,,,,1
+WILLY SEMEDO,Cape Verde,Midfielder,4.5,1,,,,,,,,,1
 YANNICK SEMEDO,Cape Verde,Midfielder,4.5,,,,,,,,,,0
-DAILON LIVRAMENTO,Cape Verde,Forward,5,,,,,,,,,,0
+DAILON LIVRAMENTO,Cape Verde,Forward,5,2,,,,,,,,,2
 GILSON TAVARES,Cape Verde,Forward,5,,,,,,,,,,0
-NUNO DA COSTA,Cape Verde,Forward,5,,,,,,,,,,0
+NUNO DA COSTA,Cape Verde,Forward,5,1,,,,,,,,,1
 CAMILO VARGAS,Colombia,Goalkeeper,5.5,,,,,,,,,,0
 ALVARO MONTERO,Colombia,Goalkeeper,5,,,,,,,,,,0
 DAVID OSPINA,Colombia,Goalkeeper,5,,,,,,,,,,0
@@ -392,29 +392,29 @@ KEVIN RODRIGUEZ,Ecuador,Forward,5,1,,,,,,,,,1
 MOHAMED EL SHENAWY,Egypt,Goalkeeper,5,,,,,,,,,,0
 EL MAHDY SOLIMAN,Egypt,Goalkeeper,4.5,,,,,,,,,,0
 MOHAMED ALAA,Egypt,Goalkeeper,4.5,,,,,,,,,,0
-MOSTAFA SHOBEIR,Egypt,Goalkeeper,4.5,,,,,,,,,,0
-MOHAMED HANY,Egypt,Defender,5,,,,,,,,,,0
-RAMY RABIA,Egypt,Defender,5,,,,,,,,,,0
-YASSER IBRAHIM,Egypt,Defender,5,,,,,,,,,,0
-AHMED ABOU EL FOTOUH,Egypt,Defender,4.5,,,,,,,,,,0
+MOSTAFA SHOBEIR,Egypt,Goalkeeper,4.5,1,,,,,,,,,1
+MOHAMED HANY,Egypt,Defender,5,-1,,,,,,,,,-1
+RAMY RABIA,Egypt,Defender,5,1,,,,,,,,,1
+YASSER IBRAHIM,Egypt,Defender,5,1,,,,,,,,,1
+AHMED ABOU EL FOTOUH,Egypt,Defender,4.5,0,,,,,,,,,0
 HOSSAM ABDELMAGUID,Egypt,Defender,4.5,,,,,,,,,,0
-KARIM HAFEZ,Egypt,Defender,4.5,,,,,,,,,,0
+KARIM HAFEZ,Egypt,Defender,4.5,1,,,,,,,,,1
 MOHAMED ABDELMONEM,Egypt,Defender,4.5,,,,,,,,,,0
 TAREK ALAA,Egypt,Defender,4.5,,,,,,,,,,0
-HAMDY FATHY,Egypt,Midfielder,5,,,,,,,,,,0
-MARWAN ATTIA,Egypt,Midfielder,5,,,,,,,,,,0
+HAMDY FATHY,Egypt,Midfielder,5,1,,,,,,,,,1
+MARWAN ATTIA,Egypt,Midfielder,5,1,,,,,,,,,1
 TREZEGUET,Egypt,Midfielder,5,,,,,,,,,,0
-EMAM ASHOUR,Egypt,Midfielder,4.5,,,,,,,,,,0
-IBRAHIM ADEL,Egypt,Midfielder,4.5,,,,,,,,,,0
+EMAM ASHOUR,Egypt,Midfielder,4.5,9,,,,,,,,,9
+IBRAHIM ADEL,Egypt,Midfielder,4.5,1,,,,,,,,,1
 MAHMOUD SABER,Egypt,Midfielder,4.5,,,,,,,,,,0
-MOHANAD LASHEEN,Egypt,Midfielder,4.5,,,,,,,,,,0
-MOSTAFA ZIKO,Egypt,Midfielder,4.5,,,,,,,,,,0
+MOHANAD LASHEEN,Egypt,Midfielder,4.5,2,,,,,,,,,2
+MOSTAFA ZIKO,Egypt,Midfielder,4.5,2,,,,,,,,,2
 NABIL EMAD,Egypt,Midfielder,4.5,,,,,,,,,,0
-ZIZO,Egypt,Midfielder,4.5,,,,,,,,,,0
-MOHAMED SALAH,Egypt,Forward,7.5,,,,,,,,,,0
-OMAR MARMOUSH,Egypt,Forward,6,,,,,,,,,,0
+ZIZO,Egypt,Midfielder,4.5,1,,,,,,,,,1
+MOHAMED SALAH,Egypt,Forward,7.5,5,,,,,,,,,5
+OMAR MARMOUSH,Egypt,Forward,6,2,,,,,,,,,2
 HAISSEM HASSAN,Egypt,Forward,5,,,,,,,,,,0
-HAMZA ABDELKARIM,Egypt,Forward,5,,,,,,,,,,0
+HAMZA ABDELKARIM,Egypt,Forward,5,1,,,,,,,,,1
 JORDAN PICKFORD,England,Goalkeeper,7.5,,,,,,,,,,0
 DEAN HENDERSON,England,Goalkeeper,6.5,,,,,,,,,,0
 JAMES TRAFFORD,England,Goalkeeper,6,,,,,,,,,,0
@@ -1039,30 +1039,30 @@ SON HEUNG-MIN,South Korea,Forward,7,2,,,,,,,,,2
 HWANG HEE-CHAN,South Korea,Forward,5.5,1,,,,,,,,,1
 CHO GUE-SUNG,South Korea,Forward,5,,,,,,,,,,0
 OH HYEON-GYU,South Korea,Forward,5,5,,,,,,,,,5
-UNAI SIMON,Spain,Goalkeeper,7.5,,,,,,,,,,0
+UNAI SIMON,Spain,Goalkeeper,7.5,6,,,,,,,,,6
 DAVID RAYA,Spain,Goalkeeper,7,,,,,,,,,,0
 JOAN GARCIA,Spain,Goalkeeper,6,,,,,,,,,,0
-MARC CUCURELLA,Spain,Defender,7.5,,,,,,,,,,0
-AYMERIC LAPORTE,Spain,Defender,7,,,,,,,,,,0
-PAU CUBARSI,Spain,Defender,7,,,,,,,,,,0
+MARC CUCURELLA,Spain,Defender,7.5,6,,,,,,,,,6
+AYMERIC LAPORTE,Spain,Defender,7,6,,,,,,,,,6
+PAU CUBARSI,Spain,Defender,7,6,,,,,,,,,6
 ERIC GARCIA,Spain,Defender,6.5,,,,,,,,,,0
-MARCOS LLORENTE,Spain,Defender,6.5,,,,,,,,,,0
+MARCOS LLORENTE,Spain,Defender,6.5,6,,,,,,,,,6
 PEDRO PORRO,Spain,Defender,6.5,,,,,,,,,,0
 ALEX GRIMALDO,Spain,Defender,6,,,,,,,,,,0
 MARC PUBILL,Spain,Defender,6,,,,,,,,,,0
-LAMINE YAMAL,Spain,Midfielder,9,,,,,,,,,,0
-NICO WILLIAMS,Spain,Midfielder,8,,,,,,,,,,0
-DANI OLMO,Spain,Midfielder,7,,,,,,,,,,0
-MIKEL MERINO,Spain,Midfielder,7,,,,,,,,,,0
-FABIAN RUIZ,Spain,Midfielder,6,,,,,,,,,,0
-RODRI,Spain,Midfielder,6,,,,,,,,,,0
+LAMINE YAMAL,Spain,Midfielder,9,1,,,,,,,,,1
+NICO WILLIAMS,Spain,Midfielder,8,1,,,,,,,,,1
+DANI OLMO,Spain,Midfielder,7,1,,,,,,,,,1
+MIKEL MERINO,Spain,Midfielder,7,1,,,,,,,,,1
+FABIAN RUIZ,Spain,Midfielder,6,2,,,,,,,,,2
+RODRI,Spain,Midfielder,6,2,,,,,,,,,2
 ALEX BAENA,Spain,Midfielder,5.5,,,,,,,,,,0
-GAVI,Spain,Midfielder,5.5,,,,,,,,,,0
+GAVI,Spain,Midfielder,5.5,2,,,,,,,,,2
 MARTIN ZUBIMENDI,Spain,Midfielder,5.5,,,,,,,,,,0
-PEDRI,Spain,Midfielder,5.5,,,,,,,,,,0
+PEDRI,Spain,Midfielder,5.5,1,,,,,,,,,1
 YEREMY PINO,Spain,Midfielder,5.5,,,,,,,,,,0
-MIKEL OYARZABAL,Spain,Forward,9,,,,,,,,,,0
-FERRAN TORRES,Spain,Forward,7.5,,,,,,,,,,0
+MIKEL OYARZABAL,Spain,Forward,9,2,,,,,,,,,2
+FERRAN TORRES,Spain,Forward,7.5,2,,,,,,,,,2
 BORJA IGLESIAS,Spain,Forward,6,,,,,,,,,,0
 VICTOR MUNOZ,Spain,Forward,6,,,,,,,,,,0
 KRISTOFFER NORDFELDT,Sweden,Goalkeeper,5.5,1,,,,,,,,,1
