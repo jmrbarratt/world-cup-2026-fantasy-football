@@ -545,32 +545,32 @@ FRANTZDY PIERROT,Haiti,Forward,5,2,,,,,,,,,2
 LENNY JOSEPH,Haiti,Forward,5,1,,,,,,,,,1
 RUBEN PROVIDENCE,Haiti,Forward,5,2,,,,,,,,,2
 WILSON ISIDOR,Haiti,Forward,5,2,,,,,,,,,2
-ALIREZA BEIRANVAND,Iran,Goalkeeper,4.5,,,,,,,,,,0
+ALIREZA BEIRANVAND,Iran,Goalkeeper,4.5,0,,,,,,,,,0
 HOSSEIN HOSSEINI,Iran,Goalkeeper,4.5,,,,,,,,,,0
 PAYAM NIAZMAND,Iran,Goalkeeper,4.5,,,,,,,,,,0
-EHSAN HAJSAFI,Iran,Defender,5,,,,,,,,,,0
-ALI NEMATI,Iran,Defender,4.5,,,,,,,,,,0
-ARIA YOUSEFI,Iran,Defender,4.5,,,,,,,,,,0
+EHSAN HAJSAFI,Iran,Defender,5,0,,,,,,,,,0
+ALI NEMATI,Iran,Defender,4.5,0,,,,,,,,,0
+ARIA YOUSEFI,Iran,Defender,4.5,0,,,,,,,,,0
 DANIAL EIRI,Iran,Defender,4.5,,,,,,,,,,0
 HOSSEIN KANAANIZADEGAN,Iran,Defender,4.5,,,,,,,,,,0
-MILAD MOHAMMADI,Iran,Defender,4.5,,,,,,,,,,0
-RAMIN REZAEIAN,Iran,Defender,4.5,,,,,,,,,,0
+MILAD MOHAMMADI,Iran,Defender,4.5,0,,,,,,,,,0
+RAMIN REZAEIAN,Iran,Defender,4.5,11,,,,,,,,,11
 SALEH HARDANI,Iran,Defender,4.5,,,,,,,,,,0
-SHOJAE KHALILZADEH,Iran,Defender,4.5,,,,,,,,,,0
+SHOJAE KHALILZADEH,Iran,Defender,4.5,0,,,,,,,,,0
 ALIREZA JAHANBAKHSH,Iran,Midfielder,5,,,,,,,,,,0
-MOHAMMAD MOHEBI,Iran,Midfielder,5,,,,,,,,,,0
-SAMAN GHODDOS,Iran,Midfielder,5,,,,,,,,,,0
-AMIRHOSSEIN HOSSEINZADEH,Iran,Midfielder,4.5,,,,,,,,,,0
+MOHAMMAD MOHEBI,Iran,Midfielder,5,7,,,,,,,,,7
+SAMAN GHODDOS,Iran,Midfielder,5,2,,,,,,,,,2
+AMIRHOSSEIN HOSSEINZADEH,Iran,Midfielder,4.5,1,,,,,,,,,1
 AMIRMOHAMMAD RAZZAGHINIA,Iran,Midfielder,4.5,,,,,,,,,,0
 MEHDI TORABI,Iran,Midfielder,4.5,,,,,,,,,,0
 MOHAMMAD GHORBANI,Iran,Midfielder,4.5,,,,,,,,,,0
 ROUZBEH CHESHMI,Iran,Midfielder,4.5,,,,,,,,,,0
-SAEID EZATOLAHI,Iran,Midfielder,4.5,,,,,,,,,,0
-MEHDI TAREMI,Iran,Forward,5.5,,,,,,,,,,0
-ALI ALIPOUR,Iran,Forward,5,,,,,,,,,,0
+SAEID EZATOLAHI,Iran,Midfielder,4.5,2,,,,,,,,,2
+MEHDI TAREMI,Iran,Forward,5.5,2,,,,,,,,,2
+ALI ALIPOUR,Iran,Forward,5,1,,,,,,,,,1
 DENNIS ECKERT,Iran,Forward,5,,,,,,,,,,0
-MEHDI GHAYEDI,Iran,Forward,5,,,,,,,,,,0
-SHAHRIYAR MOGHANLOU,Iran,Forward,5,,,,,,,,,,0
+MEHDI GHAYEDI,Iran,Forward,5,1,,,,,,,,,1
+SHAHRIYAR MOGHANLOU,Iran,Forward,5,2,,,,,,,,,2
 AHMED BASIL,Iraq,Goalkeeper,4.5,,,,,,,,,,0
 FAHAD TALIB,Iraq,Goalkeeper,4.5,,,,,,,,,,0
 JALAL HASSAN,Iraq,Goalkeeper,4.5,,,,,,,,,,0
@@ -754,31 +754,31 @@ JUSTIN KLUIVERT,Netherlands,Forward,6,,,,,,,,,,0
 WOUT WEGHORST,Netherlands,Forward,6,,,,,,,,,,0
 BRIAN BROBBEY,Netherlands,Forward,5.5,1,,,,,,,,,1
 ALEX PAULSEN,New Zealand,Goalkeeper,4.5,,,,,,,,,,0
-MAX CROCOMBE,New Zealand,Goalkeeper,4.5,,,,,,,,,,0
+MAX CROCOMBE,New Zealand,Goalkeeper,4.5,0,,,,,,,,,0
 MICHAEL WOUD,New Zealand,Goalkeeper,4.5,,,,,,,,,,0
-CALLAN ELLIOT,New Zealand,Defender,4.5,,,,,,,,,,0
-FINN SURMAN,New Zealand,Defender,4.5,,,,,,,,,,0
+CALLAN ELLIOT,New Zealand,Defender,4.5,1,,,,,,,,,1
+FINN SURMAN,New Zealand,Defender,4.5,0,,,,,,,,,0
 FRANCIS DE VRIES,New Zealand,Defender,4.5,,,,,,,,,,0
-LIBERATO CACACE,New Zealand,Defender,4.5,,,,,,,,,,0
-MICHAEL BOXALL,New Zealand,Defender,4.5,,,,,,,,,,0
+LIBERATO CACACE,New Zealand,Defender,4.5,0,,,,,,,,,0
+MICHAEL BOXALL,New Zealand,Defender,4.5,0,,,,,,,,,0
 NANDO PIJNAKER,New Zealand,Defender,4.5,,,,,,,,,,0
-TIM PAYNE,New Zealand,Defender,4.5,,,,,,,,,,0
+TIM PAYNE,New Zealand,Defender,4.5,0,,,,,,,,,0
 TOMMY SMITH,New Zealand,Defender,4.5,,,,,,,,,,0
-TYLER BINDON,New Zealand,Defender,4.5,,,,,,,,,,0
-CALLUM MCCOWATT,New Zealand,Midfielder,5,,,,,,,,,,0
-ELIJAH JUST,New Zealand,Midfielder,5,,,,,,,,,,0
+TYLER BINDON,New Zealand,Defender,4.5,1,,,,,,,,,1
+CALLUM MCCOWATT,New Zealand,Midfielder,5,2,,,,,,,,,2
+ELIJAH JUST,New Zealand,Midfielder,5,12,,,,,,,,,12
 KOSTA BARBAROUSES,New Zealand,Midfielder,5,,,,,,,,,,0
 ALEX RUFER,New Zealand,Midfielder,4.5,,,,,,,,,,0
-BEN OLD,New Zealand,Midfielder,4.5,,,,,,,,,,0
-JOE BELL,New Zealand,Midfielder,4.5,,,,,,,,,,0
+BEN OLD,New Zealand,Midfielder,4.5,1,,,,,,,,,1
+JOE BELL,New Zealand,Midfielder,4.5,2,,,,,,,,,2
 LACHLAN BAYLISS,New Zealand,Midfielder,4.5,,,,,,,,,,0
-MARKO STAMENIC,New Zealand,Midfielder,4.5,,,,,,,,,,0
+MARKO STAMENIC,New Zealand,Midfielder,4.5,2,,,,,,,,,2
 MATTHEW GARBETT,New Zealand,Midfielder,4.5,,,,,,,,,,0
-RYAN THOMAS,New Zealand,Midfielder,4.5,,,,,,,,,,0
-SARPREET SINGH,New Zealand,Midfielder,4.5,,,,,,,,,,0
-CHRIS WOOD,New Zealand,Forward,5.5,,,,,,,,,,0
+RYAN THOMAS,New Zealand,Midfielder,4.5,1,,,,,,,,,1
+SARPREET SINGH,New Zealand,Midfielder,4.5,2,,,,,,,,,2
+CHRIS WOOD,New Zealand,Forward,5.5,8,,,,,,,,,8
 BEN WAINE,New Zealand,Forward,5,,,,,,,,,,0
-JESSE RANDALL,New Zealand,Forward,5,,,,,,,,,,0
+JESSE RANDALL,New Zealand,Forward,5,1,,,,,,,,,1
 ORJAN NYLAND,Norway,Goalkeeper,6,,,,,,,,,,0
 EGIL SELVIK,Norway,Goalkeeper,5,,,,,,,,,,0
 SANDER TANGVIK,Norway,Goalkeeper,4.5,,,,,,,,,,0
@@ -910,30 +910,30 @@ ALMOEZ ALI,Qatar,Forward,5,,,,,,,,,,0
 HASSAN AL-HAYDOS,Qatar,Forward,5,1,,,,,,,,,1
 MOHAMMED MUNTARI,Qatar,Forward,5,,,,,,,,,,0
 AHMED AL-KASSAR,Saudi Arabia,Goalkeeper,4.5,,,,,,,,,,0
-MOHAMMED AL-OWAIS,Saudi Arabia,Goalkeeper,4.5,,,,,,,,,,0
+MOHAMMED AL-OWAIS,Saudi Arabia,Goalkeeper,4.5,1,,,,,,,,,1
 NAWAF AL-AQIDI,Saudi Arabia,Goalkeeper,4.5,,,,,,,,,,0
-ABDULELAH AL-AMRI,Saudi Arabia,Defender,4.5,,,,,,,,,,0
-ALI LAJAMI,Saudi Arabia,Defender,4.5,,,,,,,,,,0
+ABDULELAH AL-AMRI,Saudi Arabia,Defender,4.5,6,,,,,,,,,6
+ALI LAJAMI,Saudi Arabia,Defender,4.5,1,,,,,,,,,1
 ALI MAJRASHI,Saudi Arabia,Defender,4.5,,,,,,,,,,0
-HASSAN AL-TAMBAKTI,Saudi Arabia,Defender,4.5,,,,,,,,,,0
+HASSAN AL-TAMBAKTI,Saudi Arabia,Defender,4.5,1,,,,,,,,,1
 HASSAN KADESH,Saudi Arabia,Defender,4.5,,,,,,,,,,0
 JEHAD THAKRI,Saudi Arabia,Defender,4.5,,,,,,,,,,0
-MOHAMMED ABU AL-SHAMAT,Saudi Arabia,Defender,4.5,,,,,,,,,,0
-MOTEB AL-HARBI,Saudi Arabia,Defender,4.5,,,,,,,,,,0
-NAWAF BOUSHAL,Saudi Arabia,Defender,4.5,,,,,,,,,,0
-SAUD ABDULHAMID,Saudi Arabia,Defender,4.5,,,,,,,,,,0
-MOHAMED KANNO,Saudi Arabia,Midfielder,5,,,,,,,,,,0
-SALEM AL-DAWSARI,Saudi Arabia,Midfielder,5,,,,,,,,,,0
-ABDULLAH AL-KHAIBARI,Saudi Arabia,Midfielder,4.5,,,,,,,,,,0
-ALAA AL-HEJJI,Saudi Arabia,Midfielder,4.5,,,,,,,,,,0
+MOHAMMED ABU AL-SHAMAT,Saudi Arabia,Defender,4.5,1,,,,,,,,,1
+MOTEB AL-HARBI,Saudi Arabia,Defender,4.5,1,,,,,,,,,1
+NAWAF BOUSHAL,Saudi Arabia,Defender,4.5,1,,,,,,,,,1
+SAUD ABDULHAMID,Saudi Arabia,Defender,4.5,1,,,,,,,,,1
+MOHAMED KANNO,Saudi Arabia,Midfielder,5,2,,,,,,,,,2
+SALEM AL-DAWSARI,Saudi Arabia,Midfielder,5,2,,,,,,,,,2
+ABDULLAH AL-KHAIBARI,Saudi Arabia,Midfielder,4.5,2,,,,,,,,,2
+ALAA AL-HEJJI,Saudi Arabia,Midfielder,4.5,1,,,,,,,,,1
 AYMAN YAHYA,Saudi Arabia,Midfielder,4.5,,,,,,,,,,0
 KHALID AL-GHANNAM,Saudi Arabia,Midfielder,4.5,,,,,,,,,,0
-MUSAB AL-JUWAYR,Saudi Arabia,Midfielder,4.5,,,,,,,,,,0
-NASSER AL-DAWSARI,Saudi Arabia,Midfielder,4.5,,,,,,,,,,0
+MUSAB AL-JUWAYR,Saudi Arabia,Midfielder,4.5,2,,,,,,,,,2
+NASSER AL-DAWSARI,Saudi Arabia,Midfielder,4.5,1,,,,,,,,,1
 SULTAN MANDASH,Saudi Arabia,Midfielder,4.5,,,,,,,,,,0
 ZIYAD AL-JOHANI,Saudi Arabia,Midfielder,4.5,,,,,,,,,,0
-ABDULLAH AL-HAMDAN,Saudi Arabia,Forward,5,,,,,,,,,,0
-FIRAS AL-BURAIKAN,Saudi Arabia,Forward,5,,,,,,,,,,0
+ABDULLAH AL-HAMDAN,Saudi Arabia,Forward,5,1,,,,,,,,,1
+FIRAS AL-BURAIKAN,Saudi Arabia,Forward,5,2,,,,,,,,,2
 SALEH AL-SHEHRI,Saudi Arabia,Forward,5,,,,,,,,,,0
 ANGUS GUNN,Scotland,Goalkeeper,5,6,,,,,,,,,6
 CRAIG GORDON,Scotland,Goalkeeper,5,,,,,,,,,,0
@@ -1169,32 +1169,32 @@ YUNUS AKGUN,Turkey,Midfielder,4.5,0,,,,,,,,,0
 KENAN YILDIZ,Turkey,Forward,6,1,,,,,,,,,1
 KEREM AKTURKOGLU,Turkey,Forward,5.5,2,,,,,,,,,2
 DENIZ GUL,Turkey,Forward,5,1,,,,,,,,,1
-FERNANDO MUSLERA,Uruguay,Goalkeeper,5.5,,,,,,,,,,0
+FERNANDO MUSLERA,Uruguay,Goalkeeper,5.5,1,,,,,,,,,1
 SERGIO ROCHET,Uruguay,Goalkeeper,5.5,,,,,,,,,,0
 SANTIAGO MELE,Uruguay,Goalkeeper,5,,,,,,,,,,0
 JOSE MARIA GIMENEZ,Uruguay,Defender,6,,,,,,,,,,0
-MATHIAS OLIVERA,Uruguay,Defender,5.5,,,,,,,,,,0
-MATIAS VINA,Uruguay,Defender,5.5,,,,,,,,,,0
+MATHIAS OLIVERA,Uruguay,Defender,5.5,1,,,,,,,,,1
+MATIAS VINA,Uruguay,Defender,5.5,1,,,,,,,,,1
 RONALD ARAUJO,Uruguay,Defender,5.5,,,,,,,,,,0
-GUILLERMO VARELA,Uruguay,Defender,5,,,,,,,,,,0
-SEBASTIAN CACERES,Uruguay,Defender,5,,,,,,,,,,0
+GUILLERMO VARELA,Uruguay,Defender,5,1,,,,,,,,,1
+SEBASTIAN CACERES,Uruguay,Defender,5,1,,,,,,,,,1
 JOAQUIN PIQUEREZ,Uruguay,Defender,4.5,,,,,,,,,,0
 SANTIAGO BUENO,Uruguay,Defender,4.5,,,,,,,,,,0
-FEDERICO VALVERDE,Uruguay,Midfielder,6.5,,,,,,,,,,0
+FEDERICO VALVERDE,Uruguay,Midfielder,6.5,2,,,,,,,,,2
 FACUNDO PELLISTRI,Uruguay,Midfielder,5.5,,,,,,,,,,0
 GIORGIAN DE ARRASCAETA,Uruguay,Midfielder,5.5,,,,,,,,,,0
-MAXIMILIANO ARAUJO,Uruguay,Midfielder,5.5,,,,,,,,,,0
-AGUSTIN CANOBBIO,Uruguay,Midfielder,5,,,,,,,,,,0
-BRIAN RODRIGUEZ,Uruguay,Midfielder,5,,,,,,,,,,0
-MANUEL UGARTE,Uruguay,Midfielder,5,,,,,,,,,,0
-RODRIGO BENTANCUR,Uruguay,Midfielder,5,,,,,,,,,,0
+MAXIMILIANO ARAUJO,Uruguay,Midfielder,5.5,9,,,,,,,,,9
+AGUSTIN CANOBBIO,Uruguay,Midfielder,5,1,,,,,,,,,1
+BRIAN RODRIGUEZ,Uruguay,Midfielder,5,1,,,,,,,,,1
+MANUEL UGARTE,Uruguay,Midfielder,5,2,,,,,,,,,2
+RODRIGO BENTANCUR,Uruguay,Midfielder,5,2,,,,,,,,,2
 RODRIGO ZALAZAR,Uruguay,Midfielder,5,,,,,,,,,,0
 EMILIANO MARTINEZ (URU),Uruguay,Midfielder,4.5,,,,,,,,,,0
-JUAN MANUEL SANABRIA,Uruguay,Midfielder,4.5,,,,,,,,,,0
-NICOLAS DE LA CRUZ,Uruguay,Midfielder,4.5,,,,,,,,,,0
-DARWIN NUNEZ,Uruguay,Forward,7.5,,,,,,,,,,0
-FEDERICO VINAS,Uruguay,Forward,5,,,,,,,,,,0
-RODRIGO AGUIRRE,Uruguay,Forward,5,,,,,,,,,,0
+JUAN MANUEL SANABRIA,Uruguay,Midfielder,4.5,1,,,,,,,,,1
+NICOLAS DE LA CRUZ,Uruguay,Midfielder,4.5,1,,,,,,,,,1
+DARWIN NUNEZ,Uruguay,Forward,7.5,2,,,,,,,,,2
+FEDERICO VINAS,Uruguay,Forward,5,2,,,,,,,,,2
+RODRIGO AGUIRRE,Uruguay,Forward,5,1,,,,,,,,,1
 MATT FREESE,USA,Goalkeeper,5,1,,,,,,,,,1
 MATT TURNER,USA,Goalkeeper,5,,,,,,,,,,0
 CHRIS BRADY,USA,Goalkeeper,4.5,,,,,,,,,,0
