@@ -441,30 +441,30 @@ HARRY KANE,England,Forward,12.5,,,,,,,,,,0
 MARCUS RASHFORD,England,Forward,7.5,,,,,,,,,,0
 OLLIE WATKINS,England,Forward,6.5,,,,,,,,,,0
 IVAN TONEY,England,Forward,6,,,,,,,,,,0
-MIKE MAIGNAN,France,Goalkeeper,7.5,,,,,,,,,,0
+MIKE MAIGNAN,France,Goalkeeper,7.5,1,,,,,,,,,1
 BRICE SAMBA,France,Goalkeeper,6.5,,,,,,,,,,0
 ROBIN RISSER,France,Goalkeeper,6.5,,,,,,,,,,0
-DAYOT UPAMECANO,France,Defender,7.5,,,,,,,,,,0
-WILLIAM SALIBA,France,Defender,7.5,,,,,,,,,,0
+DAYOT UPAMECANO,France,Defender,7.5,1,,,,,,,,,1
+WILLIAM SALIBA,France,Defender,7.5,1,,,,,,,,,1
 IBRAHIMA KONATE,France,Defender,7,,,,,,,,,,0
-JULES KOUNDE,France,Defender,7,,,,,,,,,,0
-THEO HERNANDEZ,France,Defender,7,,,,,,,,,,0
+JULES KOUNDE,France,Defender,7,1,,,,,,,,,1
+THEO HERNANDEZ,France,Defender,7,1,,,,,,,,,1
 LUCAS DIGNE,France,Defender,6.5,,,,,,,,,,0
 LUCAS HERNANDEZ,France,Defender,6,,,,,,,,,,0
 MALO GUSTO,France,Defender,6,,,,,,,,,,0
 MAXENCE LACROIX,France,Defender,5.5,,,,,,,,,,0
-MICHAEL OLISE,France,Midfielder,9,,,,,,,,,,0
-BRADLEY BARCOLA,France,Midfielder,7,,,,,,,,,,0
-RAYAN CHERKI,France,Midfielder,6.5,,,,,,,,,,0
+MICHAEL OLISE,France,Midfielder,9,5,,,,,,,,,5
+BRADLEY BARCOLA,France,Midfielder,7,6,,,,,,,,,6
+RAYAN CHERKI,France,Midfielder,6.5,1,,,,,,,,,1
 MAGHNES AKLIOUCHE,France,Midfielder,6,,,,,,,,,,0
-AURELIEN TCHOUAMENI,France,Midfielder,5.5,,,,,,,,,,0
+AURELIEN TCHOUAMENI,France,Midfielder,5.5,2,,,,,,,,,2
 MANU KONE,France,Midfielder,5.5,,,,,,,,,,0
 WARREN ZAIRE-EMERY,France,Midfielder,5.5,,,,,,,,,,0
-ADRIEN RABIOT,France,Midfielder,5,,,,,,,,,,0
+ADRIEN RABIOT,France,Midfielder,5,5,,,,,,,,,5
 N'GOLO KANTE,France,Midfielder,5,,,,,,,,,,0
-KYLIAN MBAPPE,France,Forward,12.5,,,,,,,,,,0
-OUSMANE DEMBELE,France,Forward,9.5,,,,,,,,,,0
-DESIRE DOUE,France,Forward,7.5,,,,,,,,,,0
+KYLIAN MBAPPE,France,Forward,12.5,12,,,,,,,,,12
+OUSMANE DEMBELE,France,Forward,9.5,2,,,,,,,,,2
+DESIRE DOUE,France,Forward,7.5,2,,,,,,,,,2
 JEAN-PHILIPPE MATETA,France,Forward,6.5,,,,,,,,,,0
 MARCUS THURAM,France,Forward,6.5,,,,,,,,,,0
 MANUEL NEUER,Germany,Goalkeeper,7,1,,,,,,,,,1
@@ -961,32 +961,32 @@ GEORGE HIRST,Scotland,Forward,5,,,,,,,,,,0
 LAWRENCE SHANKLAND,Scotland,Forward,5,2,,,,,,,,,2
 LYNDON DYKES,Scotland,Forward,5,1,,,,,,,,,1
 ROSS STEWART,Scotland,Forward,5,,,,,,,,,,0
-EDOUARD MENDY,Senegal,Goalkeeper,5,,,,,,,,,,0
+EDOUARD MENDY,Senegal,Goalkeeper,5,-1,,,,,,,,,-1
 MORY DIAW,Senegal,Goalkeeper,4.5,,,,,,,,,,0
 YEHVANN DIOUF,Senegal,Goalkeeper,4.5,,,,,,,,,,0
-EL HADJI MALICK DIOUF,Senegal,Defender,5,,,,,,,,,,0
-KALIDOU KOULIBALY,Senegal,Defender,5,,,,,,,,,,0
-KREPIN DIATTA,Senegal,Defender,5,,,,,,,,,,0
-MOUSSA NIAKHATE,Senegal,Defender,5,,,,,,,,,,0
+EL HADJI MALICK DIOUF,Senegal,Defender,5,-1,,,,,,,,,-1
+KALIDOU KOULIBALY,Senegal,Defender,5,-1,,,,,,,,,-1
+KREPIN DIATTA,Senegal,Defender,5,-1,,,,,,,,,-1
+MOUSSA NIAKHATE,Senegal,Defender,5,-1,,,,,,,,,-1
 ABDOULAYE SECK,Senegal,Defender,4.5,,,,,,,,,,0
 ANTOINE MENDY,Senegal,Defender,4.5,,,,,,,,,,0
 ISMAIL JAKOBS,Senegal,Defender,4.5,,,,,,,,,,0
 MAMADOU SARR,Senegal,Defender,4.5,,,,,,,,,,0
-SADIO MANE,Senegal,Midfielder,7,,,,,,,,,,0
-ISMAILA SARR,Senegal,Midfielder,5.5,,,,,,,,,,0
-IDRISSA GUEYE,Senegal,Midfielder,5,,,,,,,,,,0
-ILIMAN NDIAYE,Senegal,Midfielder,5,,,,,,,,,,0
-PAPE GUEYE,Senegal,Midfielder,5,,,,,,,,,,0
+SADIO MANE,Senegal,Midfielder,7,2,,,,,,,,,2
+ISMAILA SARR,Senegal,Midfielder,5.5,2,,,,,,,,,2
+IDRISSA GUEYE,Senegal,Midfielder,5,2,,,,,,,,,2
+ILIMAN NDIAYE,Senegal,Midfielder,5,4,,,,,,,,,4
+PAPE GUEYE,Senegal,Midfielder,5,2,,,,,,,,,2
 ASSANE DIAO,Senegal,Midfielder,4.5,,,,,,,,,,0
 BARA SAPOKO NDIAYE,Senegal,Midfielder,4.5,,,,,,,,,,0
-HABIB DIARRA,Senegal,Midfielder,4.5,,,,,,,,,,0
-LAMINE CAMARA,Senegal,Midfielder,4.5,,,,,,,,,,0
+HABIB DIARRA,Senegal,Midfielder,4.5,1,,,,,,,,,1
+LAMINE CAMARA,Senegal,Midfielder,4.5,2,,,,,,,,,2
 PAPE MATAR SARR,Senegal,Midfielder,4.5,,,,,,,,,,0
-PATHE CISS,Senegal,Midfielder,4.5,,,,,,,,,,0
-NICOLAS JACKSON,Senegal,Forward,6,,,,,,,,,,0
-BAMBA DIENG,Senegal,Forward,5,,,,,,,,,,0
+PATHE CISS,Senegal,Midfielder,4.5,1,,,,,,,,,1
+NICOLAS JACKSON,Senegal,Forward,6,2,,,,,,,,,2
+BAMBA DIENG,Senegal,Forward,5,1,,,,,,,,,1
 CHERIF NDIAYE,Senegal,Forward,5,,,,,,,,,,0
-IBRAHIM MBAYE,Senegal,Forward,5,,,,,,,,,,0
+IBRAHIM MBAYE,Senegal,Forward,5,5,,,,,,,,,5
 RONWEN WILLIAMS,South Africa,Goalkeeper,5,0,,,,,,,,,0
 RICARDO GOSS,South Africa,Goalkeeper,4.5,,,,,,,,,,0
 SIPHO CHAINE,South Africa,Goalkeeper,4.5,,,,,,,,,,0
