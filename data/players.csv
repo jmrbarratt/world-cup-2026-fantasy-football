@@ -337,32 +337,32 @@ ADAM HLOZEK,Czech Republic,Forward,5,1,,,,,,,,,1
 JAN KUCHTA,Czech Republic,Forward,5,,,,,,,,,,0
 MOJMIR CHYTIL,Czech Republic,Forward,5,1,,,,,,,,,1
 TOMAS CHORY,Czech Republic,Forward,5,1,,,,,,,,,1
-LIONEL MPASI,DR Congo,Goalkeeper,4.5,,,,,,,,,,0
+LIONEL MPASI,DR Congo,Goalkeeper,4.5,1,,,,,,,,,1
 MATTHIEU EPOLO,DR Congo,Goalkeeper,4.5,,,,,,,,,,0
 TIMOTHY FAYULU,DR Congo,Goalkeeper,4.5,,,,,,,,,,0
-AARON WAN-BISSAKA,DR Congo,Defender,5,,,,,,,,,,0
-ARTHUR MASUAKU,DR Congo,Defender,5,,,,,,,,,,0
-AXEL TUANZEBE,DR Congo,Defender,5,,,,,,,,,,0
-CHANCEL MBEMBA,DR Congo,Defender,5,,,,,,,,,,0
+AARON WAN-BISSAKA,DR Congo,Defender,5,1,,,,,,,,,1
+ARTHUR MASUAKU,DR Congo,Defender,5,4,,,,,,,,,4
+AXEL TUANZEBE,DR Congo,Defender,5,1,,,,,,,,,1
+CHANCEL MBEMBA,DR Congo,Defender,5,0,,,,,,,,,0
 DYLAN BATUBINSIKA,DR Congo,Defender,4.5,,,,,,,,,,0
-GEDEON KALULU,DR Congo,Defender,4.5,,,,,,,,,,0
-JORIS KAYEMBE,DR Congo,Defender,4.5,,,,,,,,,,0
-STEVE KAPUADI,DR Congo,Defender,4.5,,,,,,,,,,0
+GEDEON KALULU,DR Congo,Defender,4.5,1,,,,,,,,,1
+JORIS KAYEMBE,DR Congo,Defender,4.5,1,,,,,,,,,1
+STEVE KAPUADI,DR Congo,Defender,4.5,1,,,,,,,,,1
 MESCHAK ELIA,DR Congo,Midfielder,5,,,,,,,,,,0
 THEO BONGONDA,DR Congo,Midfielder,5,,,,,,,,,,0
 AARON TSHIBOLA,DR Congo,Midfielder,4.5,,,,,,,,,,0
 BRIAN CIPENGA,DR Congo,Midfielder,4.5,,,,,,,,,,0
-CHARLES PICKEL,DR Congo,Midfielder,4.5,,,,,,,,,,0
-EDO KAYEMBE,DR Congo,Midfielder,4.5,,,,,,,,,,0
+CHARLES PICKEL,DR Congo,Midfielder,4.5,1,,,,,,,,,1
+EDO KAYEMBE,DR Congo,Midfielder,4.5,2,,,,,,,,,2
 GAEL KAKUTA,DR Congo,Midfielder,4.5,,,,,,,,,,0
 NATHANAEL MBUKU,DR Congo,Midfielder,4.5,,,,,,,,,,0
-NGAL'AYEL MUKAU,DR Congo,Midfielder,4.5,,,,,,,,,,0
-NOAH SADIKI,DR Congo,Midfielder,4.5,,,,,,,,,,0
-SAMUEL MOUTOUSSAMY,DR Congo,Midfielder,4.5,,,,,,,,,,0
-CEDRIC BAKAMBU,DR Congo,Forward,5.5,,,,,,,,,,0
-YOANE WISSA,DR Congo,Forward,5.5,,,,,,,,,,0
+NGAL'AYEL MUKAU,DR Congo,Midfielder,4.5,2,,,,,,,,,2
+NOAH SADIKI,DR Congo,Midfielder,4.5,1,,,,,,,,,1
+SAMUEL MOUTOUSSAMY,DR Congo,Midfielder,4.5,2,,,,,,,,,2
+CEDRIC BAKAMBU,DR Congo,Forward,5.5,2,,,,,,,,,2
+YOANE WISSA,DR Congo,Forward,5.5,6,,,,,,,,,6
 FISTON MAYELE,DR Congo,Forward,5,,,,,,,,,,0
-SIMON BANZA,DR Congo,Forward,5,,,,,,,,,,0
+SIMON BANZA,DR Congo,Forward,5,1,,,,,,,,,1
 HERNAN GALINDEZ,Ecuador,Goalkeeper,5,1,,,,,,,,,1
 GONZALO VALLE,Ecuador,Goalkeeper,4.5,,,,,,,,,,0
 MOISES RAMIREZ,Ecuador,Goalkeeper,4.5,,,,,,,,,,0
@@ -857,32 +857,32 @@ ALEX ARCE,Paraguay,Forward,5,1,,,,,,,,,1
 ANTONIO SANABRIA,Paraguay,Forward,5,2,,,,,,,,,2
 GABRIEL AVALOS,Paraguay,Forward,5,,,,,,,,,,0
 ISIDRO PITTA,Paraguay,Forward,5,,,,,,,,,,0
-DIOGO COSTA,Portugal,Goalkeeper,7,,,,,,,,,,0
+DIOGO COSTA,Portugal,Goalkeeper,7,1,,,,,,,,,1
 JOSE SA,Portugal,Goalkeeper,6,,,,,,,,,,0
 RUI SILVA,Portugal,Goalkeeper,5.5,,,,,,,,,,0
-NUNO MENDES,Portugal,Defender,7.5,,,,,,,,,,0
-JOAO CANCELO,Portugal,Defender,7,,,,,,,,,,0
+NUNO MENDES,Portugal,Defender,7.5,1,,,,,,,,,1
+JOAO CANCELO,Portugal,Defender,7,1,,,,,,,,,1
 RUBEN DIAS,Portugal,Defender,7,,,,,,,,,,0
 DIOGO DALOT,Portugal,Defender,6.5,,,,,,,,,,0
 GONCALO INACIO,Portugal,Defender,6.5,,,,,,,,,,0
-RENATO VEIGA,Portugal,Defender,6.5,,,,,,,,,,0
-TOMAS ARAUJO,Portugal,Defender,6,,,,,,,,,,0
-NELSON SEMEDO,Portugal,Defender,5.5,,,,,,,,,,0
-BRUNO FERNANDES,Portugal,Midfielder,8.5,,,,,,,,,,0
-BERNARDO SILVA,Portugal,Midfielder,7,,,,,,,,,,0
-PEDRO NETO,Portugal,Midfielder,6.5,,,,,,,,,,0
-VITINHA,Portugal,Midfielder,6,,,,,,,,,,0
-FRANCISCO CONCEICAO,Portugal,Midfielder,5.5,,,,,,,,,,0
+RENATO VEIGA,Portugal,Defender,6.5,1,,,,,,,,,1
+TOMAS ARAUJO,Portugal,Defender,6,0,,,,,,,,,0
+NELSON SEMEDO,Portugal,Defender,5.5,0,,,,,,,,,0
+BRUNO FERNANDES,Portugal,Midfielder,8.5,2,,,,,,,,,2
+BERNARDO SILVA,Portugal,Midfielder,7,1,,,,,,,,,1
+PEDRO NETO,Portugal,Midfielder,6.5,5,,,,,,,,,5
+VITINHA,Portugal,Midfielder,6,2,,,,,,,,,2
+FRANCISCO CONCEICAO,Portugal,Midfielder,5.5,1,,,,,,,,,1
 FRANCISCO TRINCAO,Portugal,Midfielder,5.5,,,,,,,,,,0
 GONCALO GUEDES,Portugal,Midfielder,5.5,,,,,,,,,,0
-JOAO NEVES,Portugal,Midfielder,5.5,,,,,,,,,,0
+JOAO NEVES,Portugal,Midfielder,5.5,9,,,,,,,,,9
 RUBEN NEVES,Portugal,Midfielder,5.5,,,,,,,,,,0
 MATHEUS NUNES,Portugal,Midfielder,5,,,,,,,,,,0
 SAMU COSTA,Portugal,Midfielder,5,,,,,,,,,,0
-CRISTIANO RONALDO,Portugal,Forward,10,,,,,,,,,,0
-GONCALO RAMOS,Portugal,Forward,7,,,,,,,,,,0
+CRISTIANO RONALDO,Portugal,Forward,10,2,,,,,,,,,2
+GONCALO RAMOS,Portugal,Forward,7,1,,,,,,,,,1
 JOAO FELIX,Portugal,Forward,7,,,,,,,,,,0
-RAFAEL LEAO,Portugal,Forward,7,,,,,,,,,,0
+RAFAEL LEAO,Portugal,Forward,7,1,,,,,,,,,1
 MAHMUD ABUNADA,Qatar,Goalkeeper,4.5,0,,,,,,,,,0
 MESHAAL BARSHAM,Qatar,Goalkeeper,4.5,,,,,,,,,,0
 SALAH ZAKARIA,Qatar,Goalkeeper,4.5,,,,,,,,,,0
