@@ -129,31 +129,31 @@ HANS VANAKEN,Belgium,Midfielder,5,1,,,,,,,,,1
 NICOLAS RASKIN,Belgium,Midfielder,5,1,,,,,,,,,1
 ROMELU LUKAKU,Belgium,Forward,9,1,,,,,,,,,1
 MATIAS FERNANDEZ-PARDO,Belgium,Forward,6,1,,,,,,,,,1
-NIKOLA VASILJ,Bosnia-Herzegovina,Goalkeeper,5,1,,,,,,,,,1
+NIKOLA VASILJ,Bosnia-Herzegovina,Goalkeeper,5,1,-2,,,,,,,,-1
 MARTIN ZLOMISLIC,Bosnia-Herzegovina,Goalkeeper,4.5,,,,,,,,,,0
 MLADEN JURKAS,Bosnia-Herzegovina,Goalkeeper,4.5,,,,,,,,,,0
-AMAR DEDIC,Bosnia-Herzegovina,Defender,5,1,,,,,,,,,1
-NIKOLA KATIC,Bosnia-Herzegovina,Defender,5,2,,,,,,,,,2
-SEAD KOLASINAC,Bosnia-Herzegovina,Defender,5,4,,,,,,,,,4
+AMAR DEDIC,Bosnia-Herzegovina,Defender,5,1,-3,,,,,,,,-2
+NIKOLA KATIC,Bosnia-Herzegovina,Defender,5,2,-2,,,,,,,,0
+SEAD KOLASINAC,Bosnia-Herzegovina,Defender,5,4,-2,,,,,,,,2
 ARJAN MALIC,Bosnia-Herzegovina,Defender,4.5,,,,,,,,,,0
 DENNIS HADZIKADUNIC,Bosnia-Herzegovina,Defender,4.5,,,,,,,,,,0
 NIHAD MUJAKIC,Bosnia-Herzegovina,Defender,4.5,,,,,,,,,,0
 STJEPAN RADELJIC,Bosnia-Herzegovina,Defender,4.5,,,,,,,,,,0
-TARIK MUHAREMOVIC,Bosnia-Herzegovina,Defender,4.5,1,,,,,,,,,1
-BENJAMIN TAHIROVIC,Bosnia-Herzegovina,Midfielder,5,2,,,,,,,,,2
-ESMIR BAJRAKTAREVIC,Bosnia-Herzegovina,Midfielder,5,2,,,,,,,,,2
-KERIM ALAJBEGOVIC,Bosnia-Herzegovina,Midfielder,5,1,,,,,,,,,1
-AMAR MEMIC,Bosnia-Herzegovina,Midfielder,4.5,2,,,,,,,,,2
-AMIR HADZIAHMETOVIC,Bosnia-Herzegovina,Midfielder,4.5,,,,,,,,,,0
+TARIK MUHAREMOVIC,Bosnia-Herzegovina,Defender,4.5,1,-5,,,,,,,,-4
+BENJAMIN TAHIROVIC,Bosnia-Herzegovina,Midfielder,5,2,2,,,,,,,,4
+ESMIR BAJRAKTAREVIC,Bosnia-Herzegovina,Midfielder,5,2,1,,,,,,,,3
+KERIM ALAJBEGOVIC,Bosnia-Herzegovina,Midfielder,5,1,2,,,,,,,,3
+AMAR MEMIC,Bosnia-Herzegovina,Midfielder,4.5,2,2,,,,,,,,4
+AMIR HADZIAHMETOVIC,Bosnia-Herzegovina,Midfielder,4.5,,1,,,,,,,,1
 ARMIN GIGOVIC,Bosnia-Herzegovina,Midfielder,4.5,1,,,,,,,,,1
 DZENIS BURNIC,Bosnia-Herzegovina,Midfielder,4.5,1,,,,,,,,,1
-ERMIN MAHMIC,Bosnia-Herzegovina,Midfielder,4.5,,,,,,,,,,0
-IVAN BASIC,Bosnia-Herzegovina,Midfielder,4.5,2,,,,,,,,,2
-IVAN SUNJIC,Bosnia-Herzegovina,Midfielder,4.5,1,,,,,,,,,1
-EDIN DZEKO,Bosnia-Herzegovina,Forward,6,,,,,,,,,,0
-ERMEDIN DEMIROVIC,Bosnia-Herzegovina,Forward,5,1,,,,,,,,,1
+ERMIN MAHMIC,Bosnia-Herzegovina,Midfielder,4.5,,6,,,,,,,,6
+IVAN BASIC,Bosnia-Herzegovina,Midfielder,4.5,2,1,,,,,,,,3
+IVAN SUNJIC,Bosnia-Herzegovina,Midfielder,4.5,1,2,,,,,,,,3
+EDIN DZEKO,Bosnia-Herzegovina,Forward,6,,1,,,,,,,,1
+ERMEDIN DEMIROVIC,Bosnia-Herzegovina,Forward,5,1,2,,,,,,,,3
 HARIS TABAKOVIC,Bosnia-Herzegovina,Forward,5,,,,,,,,,,0
-JOVO LUKIC,Bosnia-Herzegovina,Forward,5,5,,,,,,,,,5
+JOVO LUKIC,Bosnia-Herzegovina,Forward,5,5,1,,,,,,,,6
 SAMED BAZDAR,Bosnia-Herzegovina,Forward,5,1,,,,,,,,,1
 ALISSON,Brazil,Goalkeeper,7.5,1,,,,,,,,,1
 EDERSON,Brazil,Goalkeeper,7,,,,,,,,,,0
@@ -311,29 +311,29 @@ TYRESE NOSLIN,Curacao,Midfielder,4.5,,,,,,,,,,0
 GERVANE KASTANEER,Curacao,Forward,5,1,,,,,,,,,1
 JEARL MARGARITHA,Curacao,Forward,5,1,,,,,,,,,1
 JURGEN LOCADIA,Curacao,Forward,5,2,,,,,,,,,2
-MATEJ KOVAR,Czech Republic,Goalkeeper,5,0,,,,,,,,,0
+MATEJ KOVAR,Czech Republic,Goalkeeper,5,0,1,,,,,,,,1
 JINDRICH STANEK,Czech Republic,Goalkeeper,4.5,,,,,,,,,,0
 LUKAS HORNICEK,Czech Republic,Goalkeeper,4.5,,,,,,,,,,0
-LADISLAV KREJCI,Czech Republic,Defender,5.5,6,,,,,,,,,6
-ROBIN HRANAC,Czech Republic,Defender,5,0,,,,,,,,,0
-TOMAS HOLES,Czech Republic,Defender,5,,,,,,,,,,0
-VLADIMIR COUFAL,Czech Republic,Defender,5,3,,,,,,,,,3
+LADISLAV KREJCI,Czech Republic,Defender,5.5,6,2,,,,,,,,8
+ROBIN HRANAC,Czech Republic,Defender,5,0,1,,,,,,,,1
+TOMAS HOLES,Czech Republic,Defender,5,,1,,,,,,,,1
+VLADIMIR COUFAL,Czech Republic,Defender,5,3,1,,,,,,,,4
 DAVID DOUDERA,Czech Republic,Defender,4.5,,,,,,,,,,0
 DAVID JURASEK,Czech Republic,Defender,4.5,,,,,,,,,,0
-DAVID ZIMA,Czech Republic,Defender,4.5,,,,,,,,,,0
-JAROSLAV ZELENY,Czech Republic,Defender,4.5,0,,,,,,,,,0
+DAVID ZIMA,Czech Republic,Defender,4.5,,0,,,,,,,,0
+JAROSLAV ZELENY,Czech Republic,Defender,4.5,0,0,,,,,,,,0
 STEPAN CHALOUPEK,Czech Republic,Defender,4.5,0,,,,,,,,,0
-PAVEL SULC,Czech Republic,Midfielder,5.5,2,,,,,,,,,2
-TOMAS SOUCEK,Czech Republic,Midfielder,5.5,2,,,,,,,,,2
-LUKAS PROVOD,Czech Republic,Midfielder,5,2,,,,,,,,,2
-VLADIMIR DARIDA,Czech Republic,Midfielder,5,,,,,,,,,,0
-ALEXANDR SOJKA,Czech Republic,Midfielder,4.5,2,,,,,,,,,2
+PAVEL SULC,Czech Republic,Midfielder,5.5,2,1,,,,,,,,3
+TOMAS SOUCEK,Czech Republic,Midfielder,5.5,2,1,,,,,,,,3
+LUKAS PROVOD,Czech Republic,Midfielder,5,2,1,,,,,,,,3
+VLADIMIR DARIDA,Czech Republic,Midfielder,5,,2,,,,,,,,2
+ALEXANDR SOJKA,Czech Republic,Midfielder,4.5,2,5,,,,,,,,7
 DENIS VISINSKY,Czech Republic,Midfielder,4.5,,,,,,,,,,0
 HUGO SOCHUREK,Czech Republic,Midfielder,4.5,,,,,,,,,,0
-LUKAS CERV,Czech Republic,Midfielder,4.5,,,,,,,,,,0
-MICHAL SADILEK,Czech Republic,Midfielder,4.5,1,,,,,,,,,1
-PATRIK SCHICK,Czech Republic,Forward,6.5,2,,,,,,,,,2
-ADAM HLOZEK,Czech Republic,Forward,5,1,,,,,,,,,1
+LUKAS CERV,Czech Republic,Midfielder,4.5,,2,,,,,,,,2
+MICHAL SADILEK,Czech Republic,Midfielder,4.5,1,7,,,,,,,,8
+PATRIK SCHICK,Czech Republic,Forward,6.5,2,2,,,,,,,,4
+ADAM HLOZEK,Czech Republic,Forward,5,1,2,,,,,,,,3
 JAN KUCHTA,Czech Republic,Forward,5,,,,,,,,,,0
 MOJMIR CHYTIL,Czech Republic,Forward,5,1,,,,,,,,,1
 TOMAS CHORY,Czech Republic,Forward,5,1,,,,,,,,,1
@@ -987,31 +987,31 @@ NICOLAS JACKSON,Senegal,Forward,6,2,,,,,,,,,2
 BAMBA DIENG,Senegal,Forward,5,1,,,,,,,,,1
 CHERIF NDIAYE,Senegal,Forward,5,,,,,,,,,,0
 IBRAHIM MBAYE,Senegal,Forward,5,5,,,,,,,,,5
-RONWEN WILLIAMS,South Africa,Goalkeeper,5,0,,,,,,,,,0
+RONWEN WILLIAMS,South Africa,Goalkeeper,5,0,1,,,,,,,,1
 RICARDO GOSS,South Africa,Goalkeeper,4.5,,,,,,,,,,0
 SIPHO CHAINE,South Africa,Goalkeeper,4.5,,,,,,,,,,0
-AUBREY MODIBA,South Africa,Defender,5,0,,,,,,,,,0
-KHULISO MUDAU,South Africa,Defender,5,0,,,,,,,,,0
+AUBREY MODIBA,South Africa,Defender,5,0,1,,,,,,,,1
+KHULISO MUDAU,South Africa,Defender,5,0,1,,,,,,,,1
 NKOSINATHI SIBISI,South Africa,Defender,5,-1,,,,,,,,,-1
 BRADLEY CROSS,South Africa,Defender,4.5,,,,,,,,,,0
-IME OKON,South Africa,Defender,4.5,0,,,,,,,,,0
+IME OKON,South Africa,Defender,4.5,0,1,,,,,,,,1
 KHULUMANI NDAMANE,South Africa,Defender,4.5,,,,,,,,,,0
-MBEKEZELI MBOKAZI,South Africa,Defender,4.5,0,,,,,,,,,0
+MBEKEZELI MBOKAZI,South Africa,Defender,4.5,0,1,,,,,,,,1
 OLWETHU MAKHANYA,South Africa,Defender,4.5,,,,,,,,,,0
 SAMUKELE KABINI,South Africa,Defender,4.5,,,,,,,,,,0
 THABANG MATULUDI,South Africa,Defender,4.5,,,,,,,,,,0
-OSWIN APPOLLIS,South Africa,Midfielder,5,1,,,,,,,,,1
-TEBOHO MOKOENA,South Africa,Midfielder,5,1,,,,,,,,,1
-JAYDEN ADAMS,South Africa,Midfielder,4.5,2,,,,,,,,,2
-KAMOGELO SEBELEBELE,South Africa,Midfielder,4.5,,,,,,,,,,0
-RELEBOHILE MOFOKENG,South Africa,Midfielder,4.5,,,,,,,,,,0
+OSWIN APPOLLIS,South Africa,Midfielder,5,1,2,,,,,,,,3
+TEBOHO MOKOENA,South Africa,Midfielder,5,1,4,,,,,,,,5
+JAYDEN ADAMS,South Africa,Midfielder,4.5,2,2,,,,,,,,4
+KAMOGELO SEBELEBELE,South Africa,Midfielder,4.5,,1,,,,,,,,1
+RELEBOHILE MOFOKENG,South Africa,Midfielder,4.5,,1,,,,,,,,1
 SPHEPHELO SITHOLE,South Africa,Midfielder,4.5,-1,,,,,,,,,-1
-THALENTE MBATHA,South Africa,Midfielder,4.5,1,,,,,,,,,1
-THAPELO MASEKO,South Africa,Midfielder,4.5,,,,,,,,,,0
+THALENTE MBATHA,South Africa,Midfielder,4.5,1,1,,,,,,,,2
+THAPELO MASEKO,South Africa,Midfielder,4.5,,2,,,,,,,,2
 THEMBA ZWANE,South Africa,Midfielder,4.5,-2,,,,,,,,,-2
 TSHEPANG MOREMI,South Africa,Midfielder,4.5,,,,,,,,,,0
-EVIDENCE MAKGOPA,South Africa,Forward,5,1,,,,,,,,,1
-IQRAAM RAYNERS,South Africa,Forward,5,2,,,,,,,,,2
+EVIDENCE MAKGOPA,South Africa,Forward,5,1,1,,,,,,,,2
+IQRAAM RAYNERS,South Africa,Forward,5,2,2,,,,,,,,4
 LYLE FOSTER,South Africa,Forward,5,2,,,,,,,,,2
 KIM SEUNG-GYU,South Korea,Goalkeeper,5,1,,,,,,,,,1
 JO HYEON-WOO,South Korea,Goalkeeper,4.5,,,,,,,,,,0
@@ -1091,31 +1091,31 @@ ALEXANDER ISAK,Sweden,Forward,8,12,,,,,,,,,12
 VIKTOR GYOKERES,Sweden,Forward,8,9,,,,,,,,,9
 ALEXANDER BERNHARDSSON,Sweden,Forward,5.5,2,,,,,,,,,2
 GUSTAF NILSSON,Sweden,Forward,5.5,,,,,,,,,,0
-GREGOR KOBEL,Switzerland,Goalkeeper,5.5,1,,,,,,,,,1
+GREGOR KOBEL,Switzerland,Goalkeeper,5.5,1,1,,,,,,,,2
 YVON MVOGO,Switzerland,Goalkeeper,5,,,,,,,,,,0
 MARVIN KELLER,Switzerland,Goalkeeper,4.5,,,,,,,,,,0
-MANUEL AKANJI,Switzerland,Defender,6,1,,,,,,,,,1
-RICARDO RODRIGUEZ,Switzerland,Defender,6,8,,,,,,,,,8
-NICO ELVEDI,Switzerland,Defender,5.5,1,,,,,,,,,1
-SILVAN WIDMER,Switzerland,Defender,5.5,,,,,,,,,,0
+MANUEL AKANJI,Switzerland,Defender,6,1,1,,,,,,,,2
+RICARDO RODRIGUEZ,Switzerland,Defender,6,8,1,,,,,,,,9
+NICO ELVEDI,Switzerland,Defender,5.5,1,0,,,,,,,,1
+SILVAN WIDMER,Switzerland,Defender,5.5,,6,,,,,,,,6
 ERAY CÖMERT,Switzerland,Defender,5,,,,,,,,,,0
 MIRO MUHEIM,Switzerland,Defender,5,-2,,,,,,,,,-2
 AURELE AMENDA,Switzerland,Defender,4.5,,,,,,,,,,0
-LUCA JAQUEZ,Switzerland,Defender,4.5,,,,,,,,,,0
-DAN NDOYE,Switzerland,Midfielder,5.5,2,,,,,,,,,2
-GRANIT XHAKA,Switzerland,Midfielder,5.5,2,,,,,,,,,2
-RUBEN VARGAS,Switzerland,Midfielder,5.5,2,,,,,,,,,2
+LUCA JAQUEZ,Switzerland,Defender,4.5,,0,,,,,,,,0
+DAN NDOYE,Switzerland,Midfielder,5.5,2,2,,,,,,,,4
+GRANIT XHAKA,Switzerland,Midfielder,5.5,2,5,,,,,,,,7
+RUBEN VARGAS,Switzerland,Midfielder,5.5,2,9,,,,,,,,11
 CHRISTIAN FASSNACHT,Switzerland,Midfielder,5,,,,,,,,,,0
-FABIAN RIEDER,Switzerland,Midfielder,5,1,,,,,,,,,1
-MICHEL AEBISCHER,Switzerland,Midfielder,5,2,,,,,,,,,2
-REMO FREULER,Switzerland,Midfielder,5,2,,,,,,,,,2
+FABIAN RIEDER,Switzerland,Midfielder,5,1,2,,,,,,,,3
+MICHEL AEBISCHER,Switzerland,Midfielder,5,2,2,,,,,,,,4
+REMO FREULER,Switzerland,Midfielder,5,2,2,,,,,,,,4
 ARDON JASHARI,Switzerland,Midfielder,4.5,1,,,,,,,,,1
 DENIS ZAKARIA,Switzerland,Midfielder,4.5,1,,,,,,,,,1
-DJIBRIL SOW,Switzerland,Midfielder,4.5,,,,,,,,,,0
-JOHAN MANZAMBI,Switzerland,Midfielder,4.5,1,,,,,,,,,1
-BREEL EMBOLO,Switzerland,Forward,6,5,,,,,,,,,5
+DJIBRIL SOW,Switzerland,Midfielder,4.5,,1,,,,,,,,1
+JOHAN MANZAMBI,Switzerland,Midfielder,4.5,1,13,,,,,,,,14
+BREEL EMBOLO,Switzerland,Forward,6,5,5,,,,,,,,10
 NOAH OKAFOR,Switzerland,Forward,5.5,,,,,,,,,,0
-CEDRIC ITTEN,Switzerland,Forward,5,,,,,,,,,,0
+CEDRIC ITTEN,Switzerland,Forward,5,,1,,,,,,,,1
 ZEKI AMDOUNI,Switzerland,Forward,5,1,,,,,,,,,1
 AYMEN DAHMEN,Tunisia,Goalkeeper,5,,,,,,,,,,0
 MOUHIB CHAMAKH,Tunisia,Goalkeeper,4.5,,,,,,,,,,0
