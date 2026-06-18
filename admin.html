@@ -293,9 +293,9 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 .sandbox-total { font-family:'DM Mono',monospace; font-size:1.3rem; font-weight:700; color:var(--gold); }
 
 .sandbox-slots { display:flex; flex-direction:column; gap:8px; }
-.sb-row { display:grid; grid-template-columns:60px 1fr 90px repeat(9,42px) 52px 36px; gap:0; align-items:center; padding:6px 0; border-bottom:1px solid rgba(255,255,255,.04); position:relative; }
+.sb-row { display:grid; grid-template-columns:50px 1fr 80px 70px repeat(9,38px) 48px 32px; gap:0; align-items:center; padding:3px 0; border-bottom:1px solid rgba(255,255,255,.04); position:relative; }
 .sb-row:last-child { border-bottom:none; }
-.sb-pos-tag { font-size:.62rem; font-weight:700; letter-spacing:.5px; padding:3px 0; text-align:center; border-radius:5px; width:46px; }
+.sb-pos-tag { font-size:.58rem; font-weight:700; letter-spacing:.5px; padding:2px 0; text-align:center; border-radius:4px; width:42px; }
 .sb-pos-tag.gk  { background:rgba(245,166,35,.15); color:var(--gk-c); }
 .sb-pos-tag.def { background:rgba(76,151,237,.15); color:var(--def-c); }
 .sb-pos-tag.mid { background:rgba(94,209,124,.15); color:var(--mid-c); }
@@ -315,7 +315,8 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 .sb-dropdown-item .ddi-meta { font-size:.68rem; color:var(--gray); white-space:nowrap; flex-shrink:0; }
 .sb-dropdown-empty { padding:14px; text-align:center; color:var(--gray); font-size:.78rem; }
 
-.sb-price { font-size:.72rem; color:var(--gray); text-align:center; font-family:'DM Mono',monospace; }
+.sb-price { font-size:.68rem; color:var(--gray); text-align:center; font-family:'DM Mono',monospace; }
+.sb-country { font-size:.68rem; color:var(--gray); text-align:left; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; padding-left:4px; }
 .sb-md { text-align:center; font-family:'DM Mono',monospace; font-size:.78rem; color:var(--gray2); }
 .sb-md.scored { color:var(--white); }
 .sb-md.captain-score { color:var(--gold); font-weight:700; }
@@ -475,6 +476,10 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
     <div class="sandbox-total-box">
       <span class="sandbox-label">Total Points</span>
       <span class="sandbox-total" id="sbTotalPts">0</span>
+    </div>
+    <div class="sandbox-total-box">
+      <span class="sandbox-label">Team Value</span>
+      <span class="sandbox-total" id="sbTotalVal" style="color:var(--white);">$0m</span>
     </div>
     <button class="btn btn-ghost" onclick="sbClearTeam()">🗑 Clear Team</button>
   </div>
@@ -907,7 +912,7 @@ function sbRender() {
 
   // Header row
   rows.push('<div class="sb-row header">'
-    + '<div>POS</div><div>PLAYER</div><div style="text-align:center">PRICE</div>'
+    + '<div>POS</div><div>PLAYER</div><div>COUNTRY</div><div style="text-align:center">PRICE</div>'
     + MD_LABELS.map(function(m){ return '<div style="text-align:center">' + m + '</div>'; }).join('')
     + '<div style="text-align:right">TOT</div><div></div>'
     + '</div>');
@@ -941,6 +946,7 @@ function sbRenderRow(slotId, cls) {
   }
 
   var priceCell = '<div class="sb-price">' + (p ? '$' + p.price + 'm' : '–') + '</div>';
+  var countryCell = '<div class="sb-country">' + (p ? esc(p.Country) : '') + '</div>';
 
   var playerTotal = 0;
   var mdCells = MATCHDAYS.map(function(md) {
@@ -967,6 +973,7 @@ function sbRenderRow(slotId, cls) {
     + pickerHtml
     + '<div class="sb-dropdown" id="sb-dd-' + slotId + '"></div>'
     + '</div>'
+    + countryCell
     + priceCell
     + mdCells
     + totalCell
@@ -1039,14 +1046,15 @@ function sbToggleCaptain(slotId) {
 }
 
 function sbUpdateTotal() {
-  var total = 0;
+  var total = 0, value = 0;
   Object.keys(sbState.slots).forEach(function(slotId) {
     var p = sbState.slots[slotId];
     var isCap = sbState.captain === slotId;
-    var pScore = getPlayerScore(p.Name);
-    total += isCap ? pScore * 2 : pScore;
+    total += isCap ? getPlayerScore(p.Name) * 2 : getPlayerScore(p.Name);
+    value += p.price || 0;
   });
   document.getElementById('sbTotalPts').textContent = total;
+  document.getElementById('sbTotalVal').textContent = '$' + value.toFixed(1) + 'm';
 }
 
 // Close sandbox dropdowns when clicking outside, and allow removing a player via the input
