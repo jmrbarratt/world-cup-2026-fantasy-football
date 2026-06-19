@@ -182,31 +182,31 @@ NEYMAR,Brazil,Forward,7,,,,,,,,,,0
 GABRIEL MARTINELLI,Brazil,Forward,6.5,,,,,,,,,,0
 RAYAN,Brazil,Forward,6,,,,,,,,,,0
 DAYNE ST. CLAIR,Canada,Goalkeeper,5,,,,,,,,,,0
-MAXIME CREPEAU,Canada,Goalkeeper,5,1,,,,,,,,,1
+MAXIME CREPEAU,Canada,Goalkeeper,5,1,6,,,,,,,,7
 OWEN GOODMAN,Canada,Goalkeeper,4.5,,,,,,,,,,0
 ALPHONSO DAVIES,Canada,Defender,5.5,,,,,,,,,,0
-ALISTAIR JOHNSTON,Canada,Defender,5,0,,,,,,,,,0
-DEREK CORNELIUS,Canada,Defender,5,1,,,,,,,,,1
-RICHIE LARYEA,Canada,Defender,5,1,,,,,,,,,1
+ALISTAIR JOHNSTON,Canada,Defender,5,0,6,,,,,,,,6
+DEREK CORNELIUS,Canada,Defender,5,1,1,,,,,,,,2
+RICHIE LARYEA,Canada,Defender,5,1,6,,,,,,,,7
 ALFIE JONES,Canada,Defender,4.5,,,,,,,,,,0
 JOEL WATERMAN,Canada,Defender,4.5,,,,,,,,,,0
-LUC DE FOUGEROLLES,Canada,Defender,4.5,0,,,,,,,,,0
-MOISE BOMBITO,Canada,Defender,4.5,,,,,,,,,,0
-NIKO SIGUR,Canada,Defender,4.5,,,,,,,,,,0
-ISMAEL KONE,Canada,Midfielder,5,2,,,,,,,,,2
+LUC DE FOUGEROLLES,Canada,Defender,4.5,0,6,,,,,,,,6
+MOISE BOMBITO,Canada,Defender,4.5,,1,,,,,,,,1
+NIKO SIGUR,Canada,Defender,4.5,,1,,,,,,,,1
+ISMAEL KONE,Canada,Midfielder,5,2,2,,,,,,,,4
 JONATHAN OSORIO,Canada,Midfielder,5,1,,,,,,,,,1
-TAJON BUCHANAN,Canada,Midfielder,5,2,,,,,,,,,2
-ALI AHMED,Canada,Midfielder,4.5,1,,,,,,,,,1
-JACOB SHAFFELBURG,Canada,Midfielder,4.5,1,,,,,,,,,1
+TAJON BUCHANAN,Canada,Midfielder,5,2,2,,,,,,,,4
+ALI AHMED,Canada,Midfielder,4.5,1,2,,,,,,,,3
+JACOB SHAFFELBURG,Canada,Midfielder,4.5,1,1,,,,,,,,2
 JAYDEN NELSON,Canada,Midfielder,4.5,,,,,,,,,,0
 LIAM MILLAR,Canada,Midfielder,4.5,2,,,,,,,,,2
 MATHIEU CHOINIERE,Canada,Midfielder,4.5,,,,,,,,,,0
-NATHAN SALIBA,Canada,Midfielder,4.5,,,,,,,,,,0
-STEPHEN ESTAQUIO,Canada,Midfielder,4.5,2,,,,,,,,,2
-JONATHAN DAVID,Canada,Forward,6,2,,,,,,,,,2
-CYLE LARIN,Canada,Forward,5.5,5,,,,,,,,,5
+NATHAN SALIBA,Canada,Midfielder,4.5,,9,,,,,,,,9
+STEPHEN ESTAQUIO,Canada,Midfielder,4.5,2,2,,,,,,,,4
+JONATHAN DAVID,Canada,Forward,6,2,16,,,,,,,,18
+CYLE LARIN,Canada,Forward,5.5,5,6,,,,,,,,11
 PROMISE DAVID,Canada,Forward,5,4,,,,,,,,,4
-TANI OLUWASEYI,Canada,Forward,5,2,,,,,,,,,2
+TANI OLUWASEYI,Canada,Forward,5,2,1,,,,,,,,3
 CJ DOS SANTOS,Cape Verde,Goalkeeper,4.5,,,,,,,,,,0
 MARCIO ROSA,Cape Verde,Goalkeeper,4.5,,,,,,,,,,0
 VOZINHA,Cape Verde,Goalkeeper,4.5,8,,,,,,,,,8
@@ -677,30 +677,30 @@ ALI OLWAN,Jordan,Forward,5,8,,,,,,,,,8
 ODEH AL-FAKHOURI,Jordan,Forward,5,2,,,,,,,,,2
 GUILLERMO OCHOA,Mexico,Goalkeeper,5,,,,,,,,,,0
 CARLOS ACEVEDO,Mexico,Goalkeeper,4.5,,,,,,,,,,0
-RAUL RANGEL,Mexico,Goalkeeper,4.5,6,,,,,,,,,6
+RAUL RANGEL,Mexico,Goalkeeper,4.5,6,6,,,,,,,,12
 CESAR MONTES,Mexico,Defender,5,3,,,,,,,,,3
-ISRAEL REYES,Mexico,Defender,5,6,,,,,,,,,6
-JESUS GALLARDO,Mexico,Defender,5,6,,,,,,,,,6
-JOHAN VASQUEZ,Mexico,Defender,5,6,,,,,,,,,6
-JORGE SANCHEZ,Mexico,Defender,5,,,,,,,,,,0
-LUIS ROMO,Mexico,Defender,4.5,,,,,,,,,,0
+ISRAEL REYES,Mexico,Defender,5,6,1,,,,,,,,7
+JESUS GALLARDO,Mexico,Defender,5,6,6,,,,,,,,12
+JOHAN VASQUEZ,Mexico,Defender,5,6,6,,,,,,,,12
+JORGE SANCHEZ,Mexico,Defender,5,,6,,,,,,,,6
+LUIS ROMO,Mexico,Defender,4.5,,14,,,,,,,,14
 MATEO CHAVEZ,Mexico,Defender,4.5,,,,,,,,,,0
 ALEXIS VEGA,Mexico,Midfielder,5,1,,,,,,,,,1
-CESAR HUERTA,Mexico,Midfielder,5,,,,,,,,,,0
-EDSON ALVAREZ,Mexico,Midfielder,5,1,,,,,,,,,1
-ERIK LIRA,Mexico,Midfielder,5,5,,,,,,,,,5
-ORBELIN PINEDA,Mexico,Midfielder,5,,,,,,,,,,0
-ROBERTO ALVARADO,Mexico,Midfielder,5,5,,,,,,,,,5
+CESAR HUERTA,Mexico,Midfielder,5,,1,,,,,,,,1
+EDSON ALVAREZ,Mexico,Midfielder,5,1,2,,,,,,,,3
+ERIK LIRA,Mexico,Midfielder,5,5,2,,,,,,,,7
+ORBELIN PINEDA,Mexico,Midfielder,5,,1,,,,,,,,1
+ROBERTO ALVARADO,Mexico,Midfielder,5,5,2,,,,,,,,7
 ALVARO FIDALGO,Mexico,Midfielder,4.5,2,,,,,,,,,2
-BRIAN GUTIERREZ,Mexico,Midfielder,4.5,1,,,,,,,,,1
+BRIAN GUTIERREZ,Mexico,Midfielder,4.5,1,2,,,,,,,,3
 GILBERTO MORA,Mexico,Midfielder,4.5,1,,,,,,,,,1
 LUIS CHAVEZ,Mexico,Midfielder,4.5,1,,,,,,,,,1
-OBED VARGAS,Mexico,Midfielder,4.5,,,,,,,,,,0
-RAUL JIMENEZ,Mexico,Forward,6,6,,,,,,,,,6
-SANTIAGO GIMENEZ,Mexico,Forward,5.5,,,,,,,,,,0
+OBED VARGAS,Mexico,Midfielder,4.5,,1,,,,,,,,1
+RAUL JIMENEZ,Mexico,Forward,6,6,2,,,,,,,,8
+SANTIAGO GIMENEZ,Mexico,Forward,5.5,,1,,,,,,,,1
 ARMANDO GONZALEZ,Mexico,Forward,5,1,,,,,,,,,1
 GUILLERMO MARTINEZ,Mexico,Forward,5,,,,,,,,,,0
-JULIAN QUINONES,Mexico,Forward,5,8,,,,,,,,,8
+JULIAN QUINONES,Mexico,Forward,5,8,2,,,,,,,,10
 YASSINE BOUNOU,Morocco,Goalkeeper,5,1,,,,,,,,,1
 AHMED REDA TAGNAOUTI,Morocco,Goalkeeper,4.5,,,,,,,,,,0
 MUNIR MOHAMEDI,Morocco,Goalkeeper,4.5,,,,,,,,,,0
@@ -883,28 +883,28 @@ CRISTIANO RONALDO,Portugal,Forward,10,2,,,,,,,,,2
 GONCALO RAMOS,Portugal,Forward,7,1,,,,,,,,,1
 JOAO FELIX,Portugal,Forward,7,,,,,,,,,,0
 RAFAEL LEAO,Portugal,Forward,7,1,,,,,,,,,1
-MAHMUD ABUNADA,Qatar,Goalkeeper,4.5,0,,,,,,,,,0
+MAHMUD ABUNADA,Qatar,Goalkeeper,4.5,0,-4,,,,,,,,-4
 MESHAAL BARSHAM,Qatar,Goalkeeper,4.5,,,,,,,,,,0
 SALAH ZAKARIA,Qatar,Goalkeeper,4.5,,,,,,,,,,0
-AL-HASHMI AL-HUSSAIN,Qatar,Defender,4.5,,,,,,,,,,0
-AYOUB AL-OUI,Qatar,Defender,4.5,1,,,,,,,,,1
-BOUALEM KHOUKHI,Qatar,Defender,4.5,1,,,,,,,,,1
-HOMAM AHMED,Qatar,Defender,4.5,1,,,,,,,,,1
-ISSA LAYE,Qatar,Defender,4.5,1,,,,,,,,,1
-LUCAS MENDES,Qatar,Defender,4.5,,,,,,,,,,0
-PEDRO MIGUEL,Qatar,Defender,4.5,1,,,,,,,,,1
-SULTAN AL-BRAKE,Qatar,Defender,4.5,,,,,,,,,,0
-AKRAM AFIF,Qatar,Midfielder,5,2,,,,,,,,,2
+AL-HASHMI AL-HUSSAIN,Qatar,Defender,4.5,,-2,,,,,,,,-2
+AYOUB AL-OUI,Qatar,Defender,4.5,1,-4,,,,,,,,-3
+BOUALEM KHOUKHI,Qatar,Defender,4.5,1,-4,,,,,,,,-3
+HOMAM AHMED,Qatar,Defender,4.5,1,-7,,,,,,,,-6
+ISSA LAYE,Qatar,Defender,4.5,1,-4,,,,,,,,-3
+LUCAS MENDES,Qatar,Defender,4.5,,0,,,,,,,,0
+PEDRO MIGUEL,Qatar,Defender,4.5,1,-4,,,,,,,,-3
+SULTAN AL-BRAKE,Qatar,Defender,4.5,,-3,,,,,,,,-3
+AKRAM AFIF,Qatar,Midfielder,5,2,2,,,,,,,,4
 ABDULAZIZ HATEM,Qatar,Midfielder,4.5,,,,,,,,,,0
 AHMED AL-GANEHI,Qatar,Midfielder,4.5,,,,,,,,,,0
-AHMED FATHY,Qatar,Midfielder,4.5,1,,,,,,,,,1
-ASSIM MADIBO,Qatar,Midfielder,4.5,2,,,,,,,,,2
-EDMILSON JUNIOR,Qatar,Midfielder,4.5,2,,,,,,,,,2
-JASSEM GABER,Qatar,Midfielder,4.5,1,,,,,,,,,1
+AHMED FATHY,Qatar,Midfielder,4.5,1,0,,,,,,,,1
+ASSIM MADIBO,Qatar,Midfielder,4.5,2,-1,,,,,,,,1
+EDMILSON JUNIOR,Qatar,Midfielder,4.5,2,2,,,,,,,,4
+JASSEM GABER,Qatar,Midfielder,4.5,1,2,,,,,,,,3
 KARIM BOUDIAF,Qatar,Midfielder,4.5,1,,,,,,,,,1
-MOHAMED AL-MANNAI,Qatar,Midfielder,4.5,1,,,,,,,,,1
+MOHAMED AL-MANNAI,Qatar,Midfielder,4.5,1,-1,,,,,,,,0
 TAHSIN JAMSHID,Qatar,Midfielder,4.5,,,,,,,,,,0
-YUSUF ABDURISAG,Qatar,Midfielder,4.5,2,,,,,,,,,2
+YUSUF ABDURISAG,Qatar,Midfielder,4.5,2,2,,,,,,,,4
 AHMED ALAAELDIN,Qatar,Forward,5,1,,,,,,,,,1
 ALMOEZ ALI,Qatar,Forward,5,,,,,,,,,,0
 HASSAN AL-HAYDOS,Qatar,Forward,5,1,,,,,,,,,1
@@ -1013,32 +1013,32 @@ TSHEPANG MOREMI,South Africa,Midfielder,4.5,,,,,,,,,,0
 EVIDENCE MAKGOPA,South Africa,Forward,5,1,1,,,,,,,,2
 IQRAAM RAYNERS,South Africa,Forward,5,2,2,,,,,,,,4
 LYLE FOSTER,South Africa,Forward,5,2,,,,,,,,,2
-KIM SEUNG-GYU,South Korea,Goalkeeper,5,1,,,,,,,,,1
+KIM SEUNG-GYU,South Korea,Goalkeeper,5,1,1,,,,,,,,2
 JO HYEON-WOO,South Korea,Goalkeeper,4.5,,,,,,,,,,0
 SONG BUM-KEUN,South Korea,Goalkeeper,4.5,,,,,,,,,,0
-KIM MIN-JAE,South Korea,Defender,5,1,,,,,,,,,1
-KIM MOON-HWAN,South Korea,Defender,5,,,,,,,,,,0
-SEOL YOUNG-WOO,South Korea,Defender,5,1,,,,,,,,,1
+KIM MIN-JAE,South Korea,Defender,5,1,1,,,,,,,,2
+KIM MOON-HWAN,South Korea,Defender,5,,1,,,,,,,,1
+SEOL YOUNG-WOO,South Korea,Defender,5,1,1,,,,,,,,2
 CHO WI-JE,South Korea,Defender,4.5,,,,,,,,,,0
 KIM TAE-HYEON,South Korea,Defender,4.5,,,,,,,,,,0
-LEE HAN-BEOM,South Korea,Defender,4.5,1,,,,,,,,,1
-LEE KI-HYUK,South Korea,Defender,4.5,0,,,,,,,,,0
+LEE HAN-BEOM,South Korea,Defender,4.5,1,1,,,,,,,,2
+LEE KI-HYUK,South Korea,Defender,4.5,0,1,,,,,,,,1
 LEE TAE-SEOK,South Korea,Defender,4.5,1,,,,,,,,,1
 PARK JIN-SEOB,South Korea,Defender,4.5,1,,,,,,,,,1
-LEE KANG-IN,South Korea,Midfielder,5.5,5,,,,,,,,,5
-HWANG IN-BEOM,South Korea,Midfielder,5,12,,,,,,,,,12
-LEE JAE-SUNG,South Korea,Midfielder,5,2,,,,,,,,,2
+LEE KANG-IN,South Korea,Midfielder,5.5,5,1,,,,,,,,6
+HWANG IN-BEOM,South Korea,Midfielder,5,12,2,,,,,,,,14
+LEE JAE-SUNG,South Korea,Midfielder,5,2,2,,,,,,,,4
 BAE JUN-HO,South Korea,Midfielder,4.5,,,,,,,,,,0
-EOM JI-SUNG,South Korea,Midfielder,4.5,1,,,,,,,,,1
+EOM JI-SUNG,South Korea,Midfielder,4.5,1,1,,,,,,,,2
 JENS CASTROP,South Korea,Midfielder,4.5,,,,,,,,,,0
 KIM JIN-GYU,South Korea,Midfielder,4.5,1,,,,,,,,,1
 LEE DONG-GYEONG,South Korea,Midfielder,4.5,,,,,,,,,,0
-PAIK SEUNG-HO,South Korea,Midfielder,4.5,2,,,,,,,,,2
-YANG HYUN-JUN,South Korea,Midfielder,4.5,,,,,,,,,,0
-SON HEUNG-MIN,South Korea,Forward,7,2,,,,,,,,,2
-HWANG HEE-CHAN,South Korea,Forward,5.5,1,,,,,,,,,1
-CHO GUE-SUNG,South Korea,Forward,5,,,,,,,,,,0
-OH HYEON-GYU,South Korea,Forward,5,5,,,,,,,,,5
+PAIK SEUNG-HO,South Korea,Midfielder,4.5,2,1,,,,,,,,3
+YANG HYUN-JUN,South Korea,Midfielder,4.5,,1,,,,,,,,1
+SON HEUNG-MIN,South Korea,Forward,7,2,2,,,,,,,,4
+HWANG HEE-CHAN,South Korea,Forward,5.5,1,1,,,,,,,,2
+CHO GUE-SUNG,South Korea,Forward,5,,1,,,,,,,,1
+OH HYEON-GYU,South Korea,Forward,5,5,1,,,,,,,,6
 UNAI SIMON,Spain,Goalkeeper,7.5,6,,,,,,,,,6
 DAVID RAYA,Spain,Goalkeeper,7,,,,,,,,,,0
 JOAN GARCIA,Spain,Goalkeeper,6,,,,,,,,,,0
