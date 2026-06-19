@@ -293,7 +293,9 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 .sandbox-total { font-family:'DM Mono',monospace; font-size:1rem; font-weight:700; color:var(--gold); }
 
 .sandbox-slots { display:flex; flex-direction:column; gap:8px; }
-.sb-row { display:grid; grid-template-columns:46px 1fr 74px 62px repeat(9,36px) 44px 28px; gap:0; align-items:center; padding:2px 0; border-bottom:1px solid rgba(255,255,255,.04); position:relative; }
+.sb-row { display:grid; grid-template-columns:46px 1fr 74px 62px repeat(9,36px) 44px 28px; gap:0; align-items:center; height:26px; border-bottom:1px solid rgba(255,255,255,.04); position:relative; overflow:visible; }
+.sb-row > * { display:flex; align-items:center; height:100%; overflow:visible; }
+.sb-row.header { height:24px; border-bottom:1px solid var(--border); }
 .sb-row:last-child { border-bottom:none; }
 .sb-pos-tag { font-size:.56rem; font-weight:700; letter-spacing:.5px; padding:2px 0; text-align:center; border-radius:4px; width:38px; }
 .sb-pos-tag.gk  { background:rgba(245,166,35,.15); color:var(--gk-c); }
@@ -315,12 +317,12 @@ input:focus, select:focus { outline:none; border-color:var(--gold); }
 .sb-dropdown-item .ddi-meta { font-size:.68rem; color:var(--gray); white-space:nowrap; flex-shrink:0; }
 .sb-dropdown-empty { padding:14px; text-align:center; color:var(--gray); font-size:.78rem; }
 
-.sb-price { font-size:.65rem; color:var(--gray); text-align:center; font-family:'DM Mono',monospace; }
-.sb-country { font-size:.65rem; color:var(--gray); text-align:left; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; padding-left:4px; }
-.sb-md { text-align:center; font-family:'DM Mono',monospace; font-size:.72rem; color:var(--gray2); }
+.sb-price { font-size:.65rem; color:var(--gray); text-align:center; font-family:'DM Mono',monospace; justify-content:center; width:100%; }
+.sb-country { font-size:.65rem; color:var(--gray); text-align:left; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; padding-left:4px; justify-content:flex-start; width:100%; }
+.sb-md { text-align:center; font-family:'DM Mono',monospace; font-size:.72rem; color:var(--gray2); justify-content:center; width:100%; }
 .sb-md.scored { color:var(--white); }
 .sb-md.captain-score { color:var(--gold); font-weight:700; }
-.sb-total { text-align:right; font-family:'DM Mono',monospace; font-weight:700; padding-right:4px; font-size:.78rem; }
+.sb-total { text-align:right; font-family:'DM Mono',monospace; font-weight:700; padding-right:4px; font-size:.78rem; justify-content:flex-end; width:100%; }
 .sb-total.captain-total { color:var(--gold); }
 .sb-cap-btn { width:20px; height:20px; border-radius:50%; border:1.5px solid var(--border); background:none; color:var(--gray); cursor:pointer; font-size:.7rem; display:flex; align-items:center; justify-content:center; margin:0 auto; transition:all .15s; }
 .sb-cap-btn:hover { border-color:var(--gold); color:var(--gold); }
@@ -912,9 +914,13 @@ function sbRender() {
 
   // Header row
   rows.push('<div class="sb-row header">'
-    + '<div>POS</div><div>PLAYER</div><div>COUNTRY</div><div style="text-align:center">PRICE</div>'
-    + MD_LABELS.map(function(m){ return '<div style="text-align:center">' + m + '</div>'; }).join('')
-    + '<div style="text-align:right">TOT</div><div></div>'
+    + '<div style="font-size:.6rem;letter-spacing:.5px;color:var(--gray)">POS</div>'
+    + '<div style="font-size:.6rem;letter-spacing:.5px;color:var(--gray)">PLAYER</div>'
+    + '<div style="font-size:.6rem;letter-spacing:.5px;color:var(--gray)">COUNTRY</div>'
+    + '<div style="font-size:.6rem;letter-spacing:.5px;color:var(--gray);justify-content:center;width:100%">PRICE</div>'
+    + MD_LABELS.map(function(m){ return '<div style="font-size:.6rem;letter-spacing:.5px;color:var(--gray);justify-content:center;width:100%">' + m + '</div>'; }).join('')
+    + '<div style="font-size:.6rem;letter-spacing:.5px;color:var(--gray);justify-content:flex-end;width:100%;padding-right:4px">TOT</div>'
+    + '<div></div>'
     + '</div>');
 
   ['gk','def','mid','fwd'].forEach(function(cls) {
