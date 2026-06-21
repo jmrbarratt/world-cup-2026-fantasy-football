@@ -910,30 +910,30 @@ ALMOEZ ALI,Qatar,Forward,5,,,,,,,,,,0
 HASSAN AL-HAYDOS,Qatar,Forward,5,1,,,,,,,,,1
 MOHAMMED MUNTARI,Qatar,Forward,5,,,,,,,,,,0
 AHMED AL-KASSAR,Saudi Arabia,Goalkeeper,4.5,,,,,,,,,,0
-MOHAMMED AL-OWAIS,Saudi Arabia,Goalkeeper,4.5,1,,,,,,,,,1
+MOHAMMED AL-OWAIS,Saudi Arabia,Goalkeeper,4.5,1,-2,,,,,,,,-1
 NAWAF AL-AQIDI,Saudi Arabia,Goalkeeper,4.5,,,,,,,,,,0
-ABDULELAH AL-AMRI,Saudi Arabia,Defender,4.5,6,,,,,,,,,6
-ALI LAJAMI,Saudi Arabia,Defender,4.5,1,,,,,,,,,1
+ABDULELAH AL-AMRI,Saudi Arabia,Defender,4.5,6,-2,,,,,,,,4
+ALI LAJAMI,Saudi Arabia,Defender,4.5,1,-2,,,,,,,,-1
 ALI MAJRASHI,Saudi Arabia,Defender,4.5,,,,,,,,,,0
-HASSAN AL-TAMBAKTI,Saudi Arabia,Defender,4.5,1,,,,,,,,,1
+HASSAN AL-TAMBAKTI,Saudi Arabia,Defender,4.5,1,-4,,,,,,,,-3
 HASSAN KADESH,Saudi Arabia,Defender,4.5,,,,,,,,,,0
 JEHAD THAKRI,Saudi Arabia,Defender,4.5,,,,,,,,,,0
-MOHAMMED ABU AL-SHAMAT,Saudi Arabia,Defender,4.5,1,,,,,,,,,1
-MOTEB AL-HARBI,Saudi Arabia,Defender,4.5,1,,,,,,,,,1
+MOHAMMED ABU AL-SHAMAT,Saudi Arabia,Defender,4.5,1,1,,,,,,,,2
+MOTEB AL-HARBI,Saudi Arabia,Defender,4.5,1,-2,,,,,,,,-1
 NAWAF BOUSHAL,Saudi Arabia,Defender,4.5,1,,,,,,,,,1
-SAUD ABDULHAMID,Saudi Arabia,Defender,4.5,1,,,,,,,,,1
-MOHAMED KANNO,Saudi Arabia,Midfielder,5,2,,,,,,,,,2
-SALEM AL-DAWSARI,Saudi Arabia,Midfielder,5,2,,,,,,,,,2
-ABDULLAH AL-KHAIBARI,Saudi Arabia,Midfielder,4.5,2,,,,,,,,,2
-ALAA AL-HEJJI,Saudi Arabia,Midfielder,4.5,1,,,,,,,,,1
+SAUD ABDULHAMID,Saudi Arabia,Defender,4.5,1,-2,,,,,,,,-1
+MOHAMED KANNO,Saudi Arabia,Midfielder,5,2,0,,,,,,,,2
+SALEM AL-DAWSARI,Saudi Arabia,Midfielder,5,2,1,,,,,,,,3
+ABDULLAH AL-KHAIBARI,Saudi Arabia,Midfielder,4.5,2,2,,,,,,,,4
+ALAA AL-HEJJI,Saudi Arabia,Midfielder,4.5,1,1,,,,,,,,2
 AYMAN YAHYA,Saudi Arabia,Midfielder,4.5,,,,,,,,,,0
-KHALID AL-GHANNAM,Saudi Arabia,Midfielder,4.5,,,,,,,,,,0
-MUSAB AL-JUWAYR,Saudi Arabia,Midfielder,4.5,2,,,,,,,,,2
-NASSER AL-DAWSARI,Saudi Arabia,Midfielder,4.5,1,,,,,,,,,1
+KHALID AL-GHANNAM,Saudi Arabia,Midfielder,4.5,,1,,,,,,,,1
+MUSAB AL-JUWAYR,Saudi Arabia,Midfielder,4.5,2,2,,,,,,,,4
+NASSER AL-DAWSARI,Saudi Arabia,Midfielder,4.5,1,2,,,,,,,,3
 SULTAN MANDASH,Saudi Arabia,Midfielder,4.5,,,,,,,,,,0
 ZIYAD AL-JOHANI,Saudi Arabia,Midfielder,4.5,,,,,,,,,,0
-ABDULLAH AL-HAMDAN,Saudi Arabia,Forward,5,1,,,,,,,,,1
-FIRAS AL-BURAIKAN,Saudi Arabia,Forward,5,2,,,,,,,,,2
+ABDULLAH AL-HAMDAN,Saudi Arabia,Forward,5,1,1,,,,,,,,2
+FIRAS AL-BURAIKAN,Saudi Arabia,Forward,5,2,2,,,,,,,,4
 SALEH AL-SHEHRI,Saudi Arabia,Forward,5,,,,,,,,,,0
 ANGUS GUNN,Scotland,Goalkeeper,5,6,1,,,,,,,,7
 CRAIG GORDON,Scotland,Goalkeeper,5,,,,,,,,,,0
@@ -1039,30 +1039,30 @@ SON HEUNG-MIN,South Korea,Forward,7,2,2,,,,,,,,4
 HWANG HEE-CHAN,South Korea,Forward,5.5,1,1,,,,,,,,2
 CHO GUE-SUNG,South Korea,Forward,5,,1,,,,,,,,1
 OH HYEON-GYU,South Korea,Forward,5,5,1,,,,,,,,6
-UNAI SIMON,Spain,Goalkeeper,7.5,6,,,,,,,,,6
+UNAI SIMON,Spain,Goalkeeper,7.5,6,6,,,,,,,,12
 DAVID RAYA,Spain,Goalkeeper,7,,,,,,,,,,0
 JOAN GARCIA,Spain,Goalkeeper,6,,,,,,,,,,0
-MARC CUCURELLA,Spain,Defender,7.5,6,,,,,,,,,6
-AYMERIC LAPORTE,Spain,Defender,7,6,,,,,,,,,6
-PAU CUBARSI,Spain,Defender,7,6,,,,,,,,,6
+MARC CUCURELLA,Spain,Defender,7.5,6,6,,,,,,,,12
+AYMERIC LAPORTE,Spain,Defender,7,6,9,,,,,,,,15
+PAU CUBARSI,Spain,Defender,7,6,6,,,,,,,,12
 ERIC GARCIA,Spain,Defender,6.5,,,,,,,,,,0
 MARCOS LLORENTE,Spain,Defender,6.5,6,,,,,,,,,6
-PEDRO PORRO,Spain,Defender,6.5,,,,,,,,,,0
+PEDRO PORRO,Spain,Defender,6.5,,6,,,,,,,,6
 ALEX GRIMALDO,Spain,Defender,6,,,,,,,,,,0
 MARC PUBILL,Spain,Defender,6,,,,,,,,,,0
-LAMINE YAMAL,Spain,Midfielder,9,1,,,,,,,,,1
-NICO WILLIAMS,Spain,Midfielder,8,1,,,,,,,,,1
-DANI OLMO,Spain,Midfielder,7,1,,,,,,,,,1
-MIKEL MERINO,Spain,Midfielder,7,1,,,,,,,,,1
-FABIAN RUIZ,Spain,Midfielder,6,2,,,,,,,,,2
-RODRI,Spain,Midfielder,6,2,,,,,,,,,2
-ALEX BAENA,Spain,Midfielder,5.5,,,,,,,,,,0
+LAMINE YAMAL,Spain,Midfielder,9,1,7,,,,,,,,8
+NICO WILLIAMS,Spain,Midfielder,8,1,1,,,,,,,,2
+DANI OLMO,Spain,Midfielder,7,1,5,,,,,,,,6
+MIKEL MERINO,Spain,Midfielder,7,1,1,,,,,,,,2
+FABIAN RUIZ,Spain,Midfielder,6,2,1,,,,,,,,3
+RODRI,Spain,Midfielder,6,2,2,,,,,,,,4
+ALEX BAENA,Spain,Midfielder,5.5,,2,,,,,,,,2
 GAVI,Spain,Midfielder,5.5,2,,,,,,,,,2
 MARTIN ZUBIMENDI,Spain,Midfielder,5.5,,,,,,,,,,0
-PEDRI,Spain,Midfielder,5.5,1,,,,,,,,,1
-YEREMY PINO,Spain,Midfielder,5.5,,,,,,,,,,0
-MIKEL OYARZABAL,Spain,Forward,9,2,,,,,,,,,2
-FERRAN TORRES,Spain,Forward,7.5,2,,,,,,,,,2
+PEDRI,Spain,Midfielder,5.5,1,2,,,,,,,,3
+YEREMY PINO,Spain,Midfielder,5.5,,1,,,,,,,,1
+MIKEL OYARZABAL,Spain,Forward,9,2,15,,,,,,,,17
+FERRAN TORRES,Spain,Forward,7.5,2,1,,,,,,,,3
 BORJA IGLESIAS,Spain,Forward,6,,,,,,,,,,0
 VICTOR MUNOZ,Spain,Forward,6,,,,,,,,,,0
 KRISTOFFER NORDFELDT,Sweden,Goalkeeper,5.5,1,-3,,,,,,,,-2
