@@ -25,31 +25,31 @@ MOHAMED AMOURA,Algeria,Forward,5.5,1,,,,,,,,,1
 AMINE GOUIRI,Algeria,Forward,5,2,,,,,,,,,2
 ANIS HADJ MOUSSA,Algeria,Forward,5,2,,,,,,,,,2
 NADHIR BENBOUALI,Algeria,Forward,5,,,,,,,,,,0
-EMILIANO MARTINEZ,Argentina,Goalkeeper,7.5,6,,,,,,,,,6
+EMILIANO MARTINEZ,Argentina,Goalkeeper,7.5,6,6,,,,,,,,12
 GERONIMO RULLI,Argentina,Goalkeeper,6.5,,,,,,,,,,0
 JUAN MUSSO,Argentina,Goalkeeper,6,,,,,,,,,,0
-CRISTIAN ROMERO,Argentina,Defender,7.5,6,,,,,,,,,6
-LISANDRO MARTINEZ,Argentina,Defender,7,6,,,,,,,,,6
-NAHUEL MOLINA,Argentina,Defender,7,1,,,,,,,,,1
-NICOLAS TAGLIAFICO,Argentina,Defender,7,,,,,,,,,,0
-NICOLAS OTAMENDI,Argentina,Defender,6.5,1,,,,,,,,,1
+CRISTIAN ROMERO,Argentina,Defender,7.5,6,2,,,,,,,,8
+LISANDRO MARTINEZ,Argentina,Defender,7,6,6,,,,,,,,12
+NAHUEL MOLINA,Argentina,Defender,7,1,6,,,,,,,,7
+NICOLAS TAGLIAFICO,Argentina,Defender,7,,1,,,,,,,,1
+NICOLAS OTAMENDI,Argentina,Defender,6.5,1,1,,,,,,,,2
 GONZALO MONTIEL,Argentina,Defender,6,2,,,,,,,,,2
 MARCOS SENESI,Argentina,Defender,6,,,,,,,,,,0
 VALENTIN BARCO,Argentina,Defender,5.5,,,,,,,,,,0
-FACUNDO MEDINA,Argentina,Defender,5,6,,,,,,,,,6
-ALEXIS MAC ALLISTER,Argentina,Midfielder,6.5,2,,,,,,,,,2
-ENZO FERNANDEZ,Argentina,Midfielder,6.5,2,,,,,,,,,2
+FACUNDO MEDINA,Argentina,Defender,5,6,8,,,,,,,,14
+ALEXIS MAC ALLISTER,Argentina,Midfielder,6.5,2,2,,,,,,,,4
+ENZO FERNANDEZ,Argentina,Midfielder,6.5,2,2,,,,,,,,4
 NICO PAZ,Argentina,Midfielder,6,1,,,,,,,,,1
-THIAGO ALMADA,Argentina,Midfielder,6,2,,,,,,,,,2
+THIAGO ALMADA,Argentina,Midfielder,6,2,2,,,,,,,,4
 GIULIANO SIMEONE,Argentina,Midfielder,5.5,,,,,,,,,,0
-LEANDRO PAREDES,Argentina,Midfielder,5.5,,,,,,,,,,0
-NICOLAS GONZALEZ,Argentina,Midfielder,5.5,4,,,,,,,,,4
-RODRIGO DE PAUL,Argentina,Midfielder,5.5,5,,,,,,,,,5
+LEANDRO PAREDES,Argentina,Midfielder,5.5,,0,,,,,,,,0
+NICOLAS GONZALEZ,Argentina,Midfielder,5.5,4,1,,,,,,,,5
+RODRIGO DE PAUL,Argentina,Midfielder,5.5,5,2,,,,,,,,7
 EXEQUIEL PALACIOS,Argentina,Midfielder,5,,,,,,,,,,0
 GIOVANI LO CELSO,Argentina,Midfielder,5,,,,,,,,,,0
-LIONEL MESSI,Argentina,Forward,11,16,,,,,,,,,16
-LAUTARO MARTINEZ,Argentina,Forward,9.5,2,,,,,,,,,2
-JULIAN ALVAREZ,Argentina,Forward,9,1,,,,,,,,,1
+LIONEL MESSI,Argentina,Forward,11,16,10,,,,,,,,26
+LAUTARO MARTINEZ,Argentina,Forward,9.5,2,2,,,,,,,,4
+JULIAN ALVAREZ,Argentina,Forward,9,1,1,,,,,,,,2
 JOSE MANUEL LOPEZ,Argentina,Forward,6,,,,,,,,,,0
 MATHEW RYAN,Australia,Goalkeeper,5,,,,,,,,,,0
 PATRICK BEACH,Australia,Goalkeeper,4.5,8,0,,,,,,,,8
@@ -77,31 +77,31 @@ PAUL OKON-ENGSTLER,Australia,Midfielder,4.5,5,2,,,,,,,,7
 MATHEW LECKIE,Australia,Forward,5,,2,,,,,,,,2
 MOHAMED TOURE,Australia,Forward,5,2,2,,,,,,,,4
 TETE YENGI,Australia,Forward,5,1,,,,,,,,,1
-ALEXANDER SCHLAGER,Austria,Goalkeeper,5.5,1,,,,,,,,,1
+ALEXANDER SCHLAGER,Austria,Goalkeeper,5.5,1,0,,,,,,,,1
 PATRICK PENTZ,Austria,Goalkeeper,5,,,,,,,,,,0
 FLORIAN WIEGELE,Austria,Goalkeeper,4.5,,,,,,,,,,0
-DAVID ALABA,Austria,Defender,5.5,1,,,,,,,,,1
-KEVIN DANSO,Austria,Defender,5,1,,,,,,,,,1
+DAVID ALABA,Austria,Defender,5.5,1,1,,,,,,,,2
+KEVIN DANSO,Austria,Defender,5,1,0,,,,,,,,1
 PHILLIPP MWENE,Austria,Defender,5,1,,,,,,,,,1
-STEFAN POSCH,Austria,Defender,5,1,,,,,,,,,1
-ALEXANDER PRASS,Austria,Defender,4.5,,,,,,,,,,0
+STEFAN POSCH,Austria,Defender,5,1,0,,,,,,,,1
+ALEXANDER PRASS,Austria,Defender,4.5,,0,,,,,,,,0
 DAVID AFFENGRUBER,Austria,Defender,4.5,,,,,,,,,,0
-MARCO FRIEDL,Austria,Defender,4.5,,,,,,,,,,0
+MARCO FRIEDL,Austria,Defender,4.5,,0,,,,,,,,0
 MICHAEL SVOBODA,Austria,Defender,4.5,,,,,,,,,,0
 PHILIPP LIENHART,Austria,Defender,4.5,1,,,,,,,,,1
-MARCEL SABITZER,Austria,Midfielder,5.5,1,,,,,,,,,1
-CARNEY CHUKWUEMEKA,Austria,Midfielder,5,1,,,,,,,,,1
-KONRAD LAIMER,Austria,Midfielder,5,2,,,,,,,,,2
-NICOLAS SEIWALD,Austria,Midfielder,5,2,,,,,,,,,2
-ROMANO SCHMID,Austria,Midfielder,5,7,,,,,,,,,7
-XAVER SCHLAGER,Austria,Midfielder,5,5,,,,,,,,,5
+MARCEL SABITZER,Austria,Midfielder,5.5,1,2,,,,,,,,3
+CARNEY CHUKWUEMEKA,Austria,Midfielder,5,1,1,,,,,,,,2
+KONRAD LAIMER,Austria,Midfielder,5,2,2,,,,,,,,4
+NICOLAS SEIWALD,Austria,Midfielder,5,2,2,,,,,,,,4
+ROMANO SCHMID,Austria,Midfielder,5,7,2,,,,,,,,9
+XAVER SCHLAGER,Austria,Midfielder,5,5,2,,,,,,,,7
 ALESSANDRO SCHOPF,Austria,Midfielder,4.5,,,,,,,,,,0
 DEJAN LJUBICIC,Austria,Midfielder,4.5,,,,,,,,,,0
 FLORIAN GRILLITSCH,Austria,Midfielder,4.5,,,,,,,,,,0
-PATRICK WIMMER,Austria,Midfielder,4.5,1,,,,,,,,,1
-PAUL WANNER,Austria,Midfielder,4.5,1,,,,,,,,,1
-MARKO ARNAUTOVIC,Austria,Forward,6,4,,,,,,,,,4
-MICHAEL GREGORITSCH,Austria,Forward,5.5,,,,,,,,,,0
+PATRICK WIMMER,Austria,Midfielder,4.5,1,1,,,,,,,,2
+PAUL WANNER,Austria,Midfielder,4.5,1,2,,,,,,,,3
+MARKO ARNAUTOVIC,Austria,Forward,6,4,1,,,,,,,,5
+MICHAEL GREGORITSCH,Austria,Forward,5.5,,2,,,,,,,,2
 SASA KALAJDZIC,Austria,Forward,5,2,,,,,,,,,2
 THIBAUT COURTOIS,Belgium,Goalkeeper,6.5,1,6,,,,,,,,7
 MIKE PENDERS,Belgium,Goalkeeper,5.5,,,,,,,,,,0
