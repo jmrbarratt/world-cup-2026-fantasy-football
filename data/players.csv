@@ -441,31 +441,31 @@ HARRY KANE,England,Forward,12.5,11,2,,,,,,,,13
 MARCUS RASHFORD,England,Forward,7.5,5,1,,,,,,,,6
 OLLIE WATKINS,England,Forward,6.5,,,,,,,,,,0
 IVAN TONEY,England,Forward,6,,,,,,,,,,0
-MIKE MAIGNAN,France,Goalkeeper,7.5,1,6,,,,,,,,7
+MIKE MAIGNAN,France,Goalkeeper,7.5,1,6,3,,,,,,,10
 BRICE SAMBA,France,Goalkeeper,6.5,,,,,,,,,,0
 ROBIN RISSER,France,Goalkeeper,6.5,,,,,,,,,,0
-DAYOT UPAMECANO,France,Defender,7.5,1,6,,,,,,,,7
+DAYOT UPAMECANO,France,Defender,7.5,1,6,1,,,,,,,8
 WILLIAM SALIBA,France,Defender,7.5,1,6,,,,,,,,7
-IBRAHIMA KONATE,France,Defender,7,,,,,,,,,,0
-JULES KOUNDE,France,Defender,7,1,6,,,,,,,,7
-THEO HERNANDEZ,France,Defender,7,1,,,,,,,,,1
+IBRAHIMA KONATE,France,Defender,7,,,1,,,,,,,1
+JULES KOUNDE,France,Defender,7,1,6,1,,,,,,,8
+THEO HERNANDEZ,France,Defender,7,1,,1,,,,,,,2
 LUCAS DIGNE,France,Defender,6.5,,6,,,,,,,,6
 LUCAS HERNANDEZ,France,Defender,6,,,,,,,,,,0
-MALO GUSTO,France,Defender,6,,1,,,,,,,,1
-MAXENCE LACROIX,France,Defender,5.5,,,,,,,,,,0
-MICHAEL OLISE,France,Midfielder,9,5,8,,,,,,,,13
-BRADLEY BARCOLA,France,Midfielder,7,6,2,,,,,,,,8
-RAYAN CHERKI,France,Midfielder,6.5,1,1,,,,,,,,2
+MALO GUSTO,France,Defender,6,,1,1,,,,,,,2
+MAXENCE LACROIX,France,Defender,5.5,,,1,,,,,,,1
+MICHAEL OLISE,France,Midfielder,9,5,8,2,,,,,,,15
+BRADLEY BARCOLA,France,Midfielder,7,6,2,4,,,,,,,12
+RAYAN CHERKI,France,Midfielder,6.5,1,1,1,,,,,,,3
 MAGHNES AKLIOUCHE,France,Midfielder,6,,1,,,,,,,,1
-AURELIEN TCHOUAMENI,France,Midfielder,5.5,2,,,,,,,,,2
-MANU KONE,France,Midfielder,5.5,,2,,,,,,,,2
+AURELIEN TCHOUAMENI,France,Midfielder,5.5,2,,4,,,,,,,6
+MANU KONE,France,Midfielder,5.5,,2,2,,,,,,,4
 WARREN ZAIRE-EMERY,France,Midfielder,5.5,,,,,,,,,,0
 ADRIEN RABIOT,France,Midfielder,5,5,2,,,,,,,,7
 N'GOLO KANTE,France,Midfielder,5,,,,,,,,,,0
-KYLIAN MBAPPE,France,Forward,12.5,12,12,,,,,,,,24
-OUSMANE DEMBELE,France,Forward,9.5,2,9,,,,,,,,11
-DESIRE DOUE,France,Forward,7.5,2,1,,,,,,,,3
-JEAN-PHILIPPE MATETA,France,Forward,6.5,,,,,,,,,,0
+KYLIAN MBAPPE,France,Forward,12.5,12,12,8,,,,,,,32
+OUSMANE DEMBELE,France,Forward,9.5,2,9,16,,,,,,,27
+DESIRE DOUE,France,Forward,7.5,2,1,6,,,,,,,9
+JEAN-PHILIPPE MATETA,France,Forward,6.5,,,1,,,,,,,1
 MARCUS THURAM,France,Forward,6.5,,1,,,,,,,,1
 MANUEL NEUER,Germany,Goalkeeper,7,1,1,0,,,,,,,2
 OLIVER BAUMANN,Germany,Goalkeeper,6.5,,,,,,,,,,0
@@ -571,30 +571,30 @@ ALI ALIPOUR,Iran,Forward,5,1,,,,,,,,,1
 DENNIS ECKERT,Iran,Forward,5,,,,,,,,,,0
 MEHDI GHAYEDI,Iran,Forward,5,1,,,,,,,,,1
 SHAHRIYAR MOGHANLOU,Iran,Forward,5,2,1,,,,,,,,3
-AHMED BASIL,Iraq,Goalkeeper,4.5,,-1,,,,,,,,-1
+AHMED BASIL,Iraq,Goalkeeper,4.5,,-1,1,,,,,,,0
 FAHAD TALIB,Iraq,Goalkeeper,4.5,,,,,,,,,,0
-JALAL HASSAN,Iraq,Goalkeeper,4.5,-2,,,,,,,,,-2
-AHMED MAKNZI,Iraq,Defender,4.5,,,,,,,,,,0
-AKAM HASHIM,Iraq,Defender,4.5,-2,-1,,,,,,,,-3
-FRANS PUTROS,Iraq,Defender,4.5,,,,,,,,,,0
+JALAL HASSAN,Iraq,Goalkeeper,4.5,-2,,-3,,,,,,,-5
+AHMED MAKNZI,Iraq,Defender,4.5,,,-2,,,,,,,-2
+AKAM HASHIM,Iraq,Defender,4.5,-2,-1,-3,,,,,,,-6
+FRANS PUTROS,Iraq,Defender,4.5,,,-3,,,,,,,-3
 HUSSEIN ALI,Iraq,Defender,4.5,0,-1,,,,,,,,-1
-MANAF YOUNIS,Iraq,Defender,4.5,,,,,,,,,,0
-MERCHAS DOSKI,Iraq,Defender,4.5,-2,-1,,,,,,,,-3
+MANAF YOUNIS,Iraq,Defender,4.5,,,-3,,,,,,,-3
+MERCHAS DOSKI,Iraq,Defender,4.5,-2,-1,-4,,,,,,,-7
 MUSTAFA SAADOON,Iraq,Defender,4.5,-1,,,,,,,,,-1
-REBIN SULAKA,Iraq,Defender,4.5,,0,,,,,,,,0
+REBIN SULAKA,Iraq,Defender,4.5,,0,-6,,,,,,,-6
 ZAID TAHSEEN,Iraq,Defender,4.5,-3,0,,,,,,,,-3
-AHMED QASEM,Iraq,Midfielder,4.5,1,2,,,,,,,,3
+AHMED QASEM,Iraq,Midfielder,4.5,1,2,2,,,,,,,5
 AIMAR SHER,Iraq,Midfielder,4.5,,1,,,,,,,,1
-ALI JASIM,Iraq,Midfielder,4.5,2,,,,,,,,,2
-AMIR AL-AMMARI,Iraq,Midfielder,4.5,5,1,,,,,,,,6
-IBRAHIM BAYESH,Iraq,Midfielder,4.5,2,2,,,,,,,,4
-KEVIN YAKOB,Iraq,Midfielder,4.5,,,,,,,,,,0
+ALI JASIM,Iraq,Midfielder,4.5,2,,2,,,,,,,4
+AMIR AL-AMMARI,Iraq,Midfielder,4.5,5,1,2,,,,,,,8
+IBRAHIM BAYESH,Iraq,Midfielder,4.5,2,2,2,,,,,,,6
+KEVIN YAKOB,Iraq,Midfielder,4.5,,,1,,,,,,,1
 MARKO FARJI,Iraq,Midfielder,4.5,1,1,,,,,,,,2
 YOUSSEF AMYN,Iraq,Midfielder,4.5,,1,,,,,,,,1
 ZAID ISMAIL,Iraq,Midfielder,4.5,2,2,,,,,,,,4
-ZIDANE IQBAL,Iraq,Midfielder,4.5,1,2,,,,,,,,3
-ALI AL-HAMADI,Iraq,Forward,5,2,1,,,,,,,,3
-ALI YOUSIF,Iraq,Forward,5,,,,,,,,,,0
+ZIDANE IQBAL,Iraq,Midfielder,4.5,1,2,2,,,,,,,5
+ALI AL-HAMADI,Iraq,Forward,5,2,1,2,,,,,,,5
+ALI YOUSIF,Iraq,Forward,5,,,1,,,,,,,1
 AYMEN HUSSEIN,Iraq,Forward,5,4,2,,,,,,,,6
 MOHANAD ALI,Iraq,Forward,5,1,,,,,,,,,1
 YAHIA FOFANA,Ivory Coast,Goalkeeper,5,6,0,6,,,,,,,12
@@ -780,31 +780,31 @@ CHRIS WOOD,New Zealand,Forward,5.5,8,2,,,,,,,,10
 BEN WAINE,New Zealand,Forward,5,,,,,,,,,,0
 JESSE RANDALL,New Zealand,Forward,5,1,1,,,,,,,,2
 ORJAN NYLAND,Norway,Goalkeeper,6,1,0,,,,,,,,1
-EGIL SELVIK,Norway,Goalkeeper,5,,,,,,,,,,0
+EGIL SELVIK,Norway,Goalkeeper,5,,,-2,,,,,,,-2
 SANDER TANGVIK,Norway,Goalkeeper,4.5,,,,,,,,,,0
 JULIAN RYERSON,Norway,Defender,6,1,2,,,,,,,,3
 KRISTOFFER AJER,Norway,Defender,6,1,0,,,,,,,,1
 DAVID MOLLER WOLFE,Norway,Defender,5.5,4,0,,,,,,,,4
 TORBJORN HEGGEM,Norway,Defender,5.5,1,1,,,,,,,,2
-FREDRIK ANDRE BJORKAN,Norway,Defender,5,,,,,,,,,,0
-LEO SKIRI OSTIGARD,Norway,Defender,5,7,0,,,,,,,,7
-MARCUS HOLMGREN PEDERSEN,Norway,Defender,5,,5,,,,,,,,5
-HENRIK FALCHENER,Norway,Defender,4.5,,,,,,,,,,0
-SONDRE LANGAS,Norway,Defender,4.5,,,,,,,,,,0
+FREDRIK ANDRE BJORKAN,Norway,Defender,5,,,-1,,,,,,,-1
+LEO SKIRI OSTIGARD,Norway,Defender,5,7,0,-2,,,,,,,5
+MARCUS HOLMGREN PEDERSEN,Norway,Defender,5,,5,0,,,,,,,5
+HENRIK FALCHENER,Norway,Defender,4.5,,,-1,,,,,,,-1
+SONDRE LANGAS,Norway,Defender,4.5,,,0,,,,,,,0
 MARTIN ODEGAARD,Norway,Midfielder,6.5,5,5,,,,,,,,10
-ANTONIO NUSA,Norway,Midfielder,6,2,2,,,,,,,,4
-OSCAR BOBB,Norway,Midfielder,5.5,1,1,,,,,,,,2
-JENS PETTER HAUGE,Norway,Midfielder,5,,,,,,,,,,0
-PATRICK BERG,Norway,Midfielder,5,1,4,,,,,,,,5
+ANTONIO NUSA,Norway,Midfielder,6,2,2,1,,,,,,,5
+OSCAR BOBB,Norway,Midfielder,5.5,1,1,2,,,,,,,4
+JENS PETTER HAUGE,Norway,Midfielder,5,,,1,,,,,,,1
+PATRICK BERG,Norway,Midfielder,5,1,4,1,,,,,,,6
 SANDER BERGE,Norway,Midfielder,5,2,2,,,,,,,,4
-THELO AASGAARD,Norway,Midfielder,5,,,,,,,,,,0
-FREDRIK AURSNES,Norway,Midfielder,4.5,2,2,,,,,,,,4
-KRISTIAN THORSTVEDT,Norway,Midfielder,4.5,1,,,,,,,,,1
-MORTEN THORSBY,Norway,Midfielder,4.5,,,,,,,,,,0
+THELO AASGAARD,Norway,Midfielder,5,,,7,,,,,,,7
+FREDRIK AURSNES,Norway,Midfielder,4.5,2,2,2,,,,,,,6
+KRISTIAN THORSTVEDT,Norway,Midfielder,4.5,1,,2,,,,,,,3
+MORTEN THORSBY,Norway,Midfielder,4.5,,,1,,,,,,,1
 ERLING HAALAND,Norway,Forward,10.5,12,12,,,,,,,,24
 ALEXANDER SORLOTH,Norway,Forward,6.5,2,2,,,,,,,,4
-ANDREAS SCHJELDERUP,Norway,Forward,5.5,1,1,,,,,,,,2
-JORGEN STRAND LARSEN,Norway,Forward,5.5,,,,,,,,,,0
+ANDREAS SCHJELDERUP,Norway,Forward,5.5,1,1,5,,,,,,,7
+JORGEN STRAND LARSEN,Norway,Forward,5.5,,,0,,,,,,,0
 CESAR SAMUDIO,Panama,Goalkeeper,4.5,,,,,,,,,,0
 LUIS MEJIA,Panama,Goalkeeper,4.5,,,,,,,,,,0
 ORLANDO MOSQUERA,Panama,Goalkeeper,4.5,1,1,,,,,,,,2
@@ -962,31 +962,31 @@ LAWRENCE SHANKLAND,Scotland,Forward,5,2,,2,,,,,,,4
 LYNDON DYKES,Scotland,Forward,5,1,1,,,,,,,,2
 ROSS STEWART,Scotland,Forward,5,,1,,,,,,,,1
 EDOUARD MENDY,Senegal,Goalkeeper,5,-1,-1,,,,,,,,-2
-MORY DIAW,Senegal,Goalkeeper,4.5,,1,,,,,,,,1
+MORY DIAW,Senegal,Goalkeeper,4.5,,1,6,,,,,,,7
 YEHVANN DIOUF,Senegal,Goalkeeper,4.5,,,,,,,,,,0
 EL HADJI MALICK DIOUF,Senegal,Defender,5,-1,0,,,,,,,,-1
 KALIDOU KOULIBALY,Senegal,Defender,5,-1,-1,,,,,,,,-2
-KREPIN DIATTA,Senegal,Defender,5,-1,-1,,,,,,,,-2
-MOUSSA NIAKHATE,Senegal,Defender,5,-1,-1,,,,,,,,-2
-ABDOULAYE SECK,Senegal,Defender,4.5,,,,,,,,,,0
+KREPIN DIATTA,Senegal,Defender,5,-1,-1,6,,,,,,,4
+MOUSSA NIAKHATE,Senegal,Defender,5,-1,-1,6,,,,,,,4
+ABDOULAYE SECK,Senegal,Defender,4.5,,,4,,,,,,,4
 ANTOINE MENDY,Senegal,Defender,4.5,,,,,,,,,,0
-ISMAIL JAKOBS,Senegal,Defender,4.5,,0,,,,,,,,0
+ISMAIL JAKOBS,Senegal,Defender,4.5,,0,6,,,,,,,6
 MAMADOU SARR,Senegal,Defender,4.5,,,,,,,,,,0
-SADIO MANE,Senegal,Midfielder,7,2,5,,,,,,,,7
-ISMAILA SARR,Senegal,Midfielder,5.5,2,12,,,,,,,,14
-IDRISSA GUEYE,Senegal,Midfielder,5,2,2,,,,,,,,4
-ILIMAN NDIAYE,Senegal,Midfielder,5,4,,,,,,,,,4
-PAPE GUEYE,Senegal,Midfielder,5,2,2,,,,,,,,4
-ASSANE DIAO,Senegal,Midfielder,4.5,,,,,,,,,,0
+SADIO MANE,Senegal,Midfielder,7,2,5,2,,,,,,,9
+ISMAILA SARR,Senegal,Midfielder,5.5,2,12,10,,,,,,,24
+IDRISSA GUEYE,Senegal,Midfielder,5,2,2,2,,,,,,,6
+ILIMAN NDIAYE,Senegal,Midfielder,5,4,,9,,,,,,,13
+PAPE GUEYE,Senegal,Midfielder,5,2,2,15,,,,,,,19
+ASSANE DIAO,Senegal,Midfielder,4.5,,,1,,,,,,,1
 BARA SAPOKO NDIAYE,Senegal,Midfielder,4.5,,,,,,,,,,0
-HABIB DIARRA,Senegal,Midfielder,4.5,1,,,,,,,,,1
-LAMINE CAMARA,Senegal,Midfielder,4.5,2,2,,,,,,,,4
+HABIB DIARRA,Senegal,Midfielder,4.5,1,,7,,,,,,,8
+LAMINE CAMARA,Senegal,Midfielder,4.5,2,2,5,,,,,,,9
 PAPE MATAR SARR,Senegal,Midfielder,4.5,,1,,,,,,,,1
-PATHE CISS,Senegal,Midfielder,4.5,1,1,,,,,,,,2
-NICOLAS JACKSON,Senegal,Forward,6,2,5,,,,,,,,7
+PATHE CISS,Senegal,Midfielder,4.5,1,1,1,,,,,,,3
+NICOLAS JACKSON,Senegal,Forward,6,2,5,1,,,,,,,8
 BAMBA DIENG,Senegal,Forward,5,1,,,,,,,,,1
 CHERIF NDIAYE,Senegal,Forward,5,,,,,,,,,,0
-IBRAHIM MBAYE,Senegal,Forward,5,5,1,,,,,,,,6
+IBRAHIM MBAYE,Senegal,Forward,5,5,1,2,,,,,,,8
 RONWEN WILLIAMS,South Africa,Goalkeeper,5,0,1,6,,,,,,,7
 RICARDO GOSS,South Africa,Goalkeeper,4.5,,,,,,,,,,0
 SIPHO CHAINE,South Africa,Goalkeeper,4.5,,,,,,,,,,0
