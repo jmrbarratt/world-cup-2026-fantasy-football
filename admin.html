@@ -745,6 +745,7 @@ function renderScoresTable() {
   var tbody = document.getElementById('scoresTbody');
   tbody.innerHTML = filtered.map(function(p) {
     var scores  = state.scores[p.Name] || {};
+    var hasAnyScore = MATCHDAYS.some(function(md){ var v=scores[md]; return v !== null && v !== undefined && v !== ''; });
     var total   = MATCHDAYS.reduce(function(s, md) {
       var v = scores[md];
       return s + (v !== null && v !== undefined && v !== '' ? parseFloat(v)||0 : 0);
@@ -769,7 +770,7 @@ function renderScoresTable() {
       + '<td class="col-sel">' + pct + '</td>'
       + '<td class="col-sel">' + (cap || '–') + '</td>'
       + cells
-      + '<td class="col-total">' + (total || '–') + '</td>'
+      + '<td class="col-total">' + (hasAnyScore ? total : '–') + '</td>'
       + '</tr>';
   }).join('');
 }
@@ -1102,12 +1103,14 @@ function openTeamModal(id) {
   var rows = sorted.map(function(p) {
     var isCap = p.Name === team.captain;
     var playerTotal = 0;
+    var playerHasAnyScore = false;
     var mdCells = MATCHDAYS.map(function(md) {
       var raw = getPlayerScoreForMD(p.Name, md);
       var display = isCap ? raw * 2 : raw;
       playerTotal += display;
       var scores = state.scores[p.Name] || {};
       var hasScore = scores[md] !== null && scores[md] !== undefined && scores[md] !== '';
+      if (hasScore) playerHasAnyScore = true;
       var cls = !hasScore ? 'p-md' : (isCap ? 'p-md captain-score' : 'p-md scored');
       var label = !hasScore ? '–' : (display || '0');
       return '<div class="' + cls + '">' + label + '</div>';
@@ -1117,7 +1120,7 @@ function openTeamModal(id) {
       + '<div class="p-name' + (isCap?' captain':'') + (!isValidPlayer(p.Name)?' p-invalid':'') + '">' + (isCap ? '★ ' : '') + esc(p.Name) + (!isValidPlayer(p.Name) ? '<span class="p-invalid-flag">NOT IN LIST</span>' : '') + '</div>'
       + '<div class="p-country">' + esc(p.Country) + ' · ' + POS_ABBR[p.Position] + ' · $' + p.price + 'm</div>'
       + mdCells
-      + '<div class="p-total' + (isCap?' captain-total':'') + '">' + (playerTotal||'–') + '</div>'
+      + '<div class="p-total' + (isCap?' captain-total':'') + '">' + (playerHasAnyScore ? playerTotal : '–') + '</div>'
       + '</div>';
   }).join('');
 
