@@ -1,56 +1,56 @@
 Name,Country,Position,Price,M1,M2,M3,L32,L16,QF,SF,3rd,Final,Total
 LUCA ZIDANE,Algeria,Goalkeeper,5,-1,1,,,,,,,,0
 MELVIN MOSTIL,Algeria,Goalkeeper,4.5,,,,,,,,,,0
-OUSSAMA BENBOT,Algeria,Goalkeeper,4.5,,,,,,,,,,0
-AISSA MANDI,Algeria,Defender,5,-1,1,,,,,,,,0
-RAMY BENSEBAINI,Algeria,Defender,5,-1,3,,,,,,,,2
-RAYAN AIT-NOURI,Algeria,Defender,5,-1,1,,,,,,,,0
+OUSSAMA BENBOT,Algeria,Goalkeeper,4.5,,,-1,,,,,,,-1
+AISSA MANDI,Algeria,Defender,5,-1,1,-1,,,,,,,-1
+RAMY BENSEBAINI,Algeria,Defender,5,-1,3,-1,,,,,,,1
+RAYAN AIT-NOURI,Algeria,Defender,5,-1,1,0,,,,,,,0
 ACHREF ABADA,Algeria,Defender,4.5,,,,,,,,,,0
-JAOUEN HADJAM,Algeria,Defender,4.5,,1,,,,,,,,1
+JAOUEN HADJAM,Algeria,Defender,4.5,,1,0,,,,,,,1
 MOHAMED AMINE TOUGAI,Algeria,Defender,4.5,,,,,,,,,,0
-RAFIK BELGHALI,Algeria,Defender,4.5,-1,1,,,,,,,,0
-SAMIR CHERGUI,Algeria,Defender,4.5,,,,,,,,,,0
-ZINEDDINE BELAID,Algeria,Defender,4.5,,1,,,,,,,,1
-RIYAD MAHREZ,Algeria,Midfielder,6,1,5,,,,,,,,6
-FARES CHAIBI,Algeria,Midfielder,5,2,2,,,,,,,,4
-HOUSSEM AOUAR,Algeria,Midfielder,5,1,,,,,,,,,1
-IBRAHIM MAZA,Algeria,Midfielder,5,2,2,,,,,,,,4
+RAFIK BELGHALI,Algeria,Defender,4.5,-1,1,6,,,,,,,6
+SAMIR CHERGUI,Algeria,Defender,4.5,,,0,,,,,,,0
+ZINEDDINE BELAID,Algeria,Defender,4.5,,1,0,,,,,,,1
+RIYAD MAHREZ,Algeria,Midfielder,6,1,5,14,,,,,,,20
+FARES CHAIBI,Algeria,Midfielder,5,2,2,2,,,,,,,6
+HOUSSEM AOUAR,Algeria,Midfielder,5,1,,8,,,,,,,9
+IBRAHIM MAZA,Algeria,Midfielder,5,2,2,2,,,,,,,6
 ADIL BOULBINA,Algeria,Midfielder,4.5,1,,,,,,,,,1
-FARES GHEDJEMIS,Algeria,Midfielder,4.5,,,,,,,,,,0
+FARES GHEDJEMIS,Algeria,Midfielder,4.5,,,1,,,,,,,1
 HICHAM BOUDAOUI,Algeria,Midfielder,4.5,2,2,,,,,,,,4
-NABIL BENTALEB,Algeria,Midfielder,4.5,2,1,,,,,,,,3
+NABIL BENTALEB,Algeria,Midfielder,4.5,2,1,2,,,,,,,5
 RAMIZ ZERROUKI,Algeria,Midfielder,4.5,1,1,,,,,,,,2
 YACINE TITRAOUI,Algeria,Midfielder,4.5,,,,,,,,,,0
 MOHAMED AMOURA,Algeria,Forward,5.5,1,,,,,,,,,1
-AMINE GOUIRI,Algeria,Forward,5,2,6,,,,,,,,8
+AMINE GOUIRI,Algeria,Forward,5,2,6,2,,,,,,,10
 ANIS HADJ MOUSSA,Algeria,Forward,5,2,1,,,,,,,,3
 NADHIR BENBOUALI,Algeria,Forward,5,,5,,,,,,,,5
-EMILIANO MARTINEZ,Argentina,Goalkeeper,7.5,6,6,,,,,,,,12
+EMILIANO MARTINEZ,Argentina,Goalkeeper,7.5,6,6,1,,,,,,,13
 GERONIMO RULLI,Argentina,Goalkeeper,6.5,,,,,,,,,,0
 JUAN MUSSO,Argentina,Goalkeeper,6,,,,,,,,,,0
 CRISTIAN ROMERO,Argentina,Defender,7.5,6,2,,,,,,,,8
 LISANDRO MARTINEZ,Argentina,Defender,7,6,6,,,,,,,,12
 NAHUEL MOLINA,Argentina,Defender,7,1,6,,,,,,,,7
-NICOLAS TAGLIAFICO,Argentina,Defender,7,,1,,,,,,,,1
-NICOLAS OTAMENDI,Argentina,Defender,6.5,1,1,,,,,,,,2
+NICOLAS TAGLIAFICO,Argentina,Defender,7,,1,1,,,,,,,2
+NICOLAS OTAMENDI,Argentina,Defender,6.5,1,1,1,,,,,,,3
 GONZALO MONTIEL,Argentina,Defender,6,2,,,,,,,,,2
-MARCOS SENESI,Argentina,Defender,6,,,,,,,,,,0
-VALENTIN BARCO,Argentina,Defender,5.5,,,,,,,,,,0
+MARCOS SENESI,Argentina,Defender,6,,,1,,,,,,,1
+VALENTIN BARCO,Argentina,Defender,5.5,,,1,,,,,,,1
 FACUNDO MEDINA,Argentina,Defender,5,6,8,,,,,,,,14
-ALEXIS MAC ALLISTER,Argentina,Midfielder,6.5,2,2,,,,,,,,4
+ALEXIS MAC ALLISTER,Argentina,Midfielder,6.5,2,2,1,,,,,,,5
 ENZO FERNANDEZ,Argentina,Midfielder,6.5,2,2,,,,,,,,4
-NICO PAZ,Argentina,Midfielder,6,1,,,,,,,,,1
-THIAGO ALMADA,Argentina,Midfielder,6,2,2,,,,,,,,4
-GIULIANO SIMEONE,Argentina,Midfielder,5.5,,,,,,,,,,0
-LEANDRO PAREDES,Argentina,Midfielder,5.5,,0,,,,,,,,0
+NICO PAZ,Argentina,Midfielder,6,1,,2,,,,,,,3
+THIAGO ALMADA,Argentina,Midfielder,6,2,2,1,,,,,,,5
+GIULIANO SIMEONE,Argentina,Midfielder,5.5,,,2,,,,,,,2
+LEANDRO PAREDES,Argentina,Midfielder,5.5,,0,2,,,,,,,2
 NICOLAS GONZALEZ,Argentina,Midfielder,5.5,4,1,,,,,,,,5
 RODRIGO DE PAUL,Argentina,Midfielder,5.5,5,2,,,,,,,,7
-EXEQUIEL PALACIOS,Argentina,Midfielder,5,,,,,,,,,,0
-GIOVANI LO CELSO,Argentina,Midfielder,5,,,,,,,,,,0
-LIONEL MESSI,Argentina,Forward,11,16,10,,,,,,,,26
-LAUTARO MARTINEZ,Argentina,Forward,9.5,2,2,,,,,,,,4
-JULIAN ALVAREZ,Argentina,Forward,9,1,1,,,,,,,,2
-JOSE MANUEL LOPEZ,Argentina,Forward,6,,,,,,,,,,0
+EXEQUIEL PALACIOS,Argentina,Midfielder,5,,,2,,,,,,,2
+GIOVANI LO CELSO,Argentina,Midfielder,5,,,9,,,,,,,9
+LIONEL MESSI,Argentina,Forward,11,16,10,5,,,,,,,31
+LAUTARO MARTINEZ,Argentina,Forward,9.5,2,2,5,,,,,,,9
+JULIAN ALVAREZ,Argentina,Forward,9,1,1,2,,,,,,,4
+JOSE MANUEL LOPEZ,Argentina,Forward,6,,,1,,,,,,,1
 MATHEW RYAN,Australia,Goalkeeper,5,,,,,,,,,,0
 PATRICK BEACH,Australia,Goalkeeper,4.5,8,0,6,,,,,,,14
 PAUL IZZO,Australia,Goalkeeper,4.5,,,,,,,,,,0
@@ -77,32 +77,32 @@ PAUL OKON-ENGSTLER,Australia,Midfielder,4.5,5,2,1,,,,,,,8
 MATHEW LECKIE,Australia,Forward,5,,2,,,,,,,,2
 MOHAMED TOURE,Australia,Forward,5,2,2,,,,,,,,4
 TETE YENGI,Australia,Forward,5,1,,1,,,,,,,2
-ALEXANDER SCHLAGER,Austria,Goalkeeper,5.5,1,0,,,,,,,,1
+ALEXANDER SCHLAGER,Austria,Goalkeeper,5.5,1,0,-1,,,,,,,0
 PATRICK PENTZ,Austria,Goalkeeper,5,,,,,,,,,,0
 FLORIAN WIEGELE,Austria,Goalkeeper,4.5,,,,,,,,,,0
-DAVID ALABA,Austria,Defender,5.5,1,1,,,,,,,,2
-KEVIN DANSO,Austria,Defender,5,1,0,,,,,,,,1
-PHILLIPP MWENE,Austria,Defender,5,1,,,,,,,,,1
-STEFAN POSCH,Austria,Defender,5,1,0,,,,,,,,1
+DAVID ALABA,Austria,Defender,5.5,1,1,3,,,,,,,5
+KEVIN DANSO,Austria,Defender,5,1,0,0,,,,,,,1
+PHILLIPP MWENE,Austria,Defender,5,1,,-1,,,,,,,0
+STEFAN POSCH,Austria,Defender,5,1,0,-1,,,,,,,0
 ALEXANDER PRASS,Austria,Defender,4.5,,0,,,,,,,,0
 DAVID AFFENGRUBER,Austria,Defender,4.5,,,,,,,,,,0
 MARCO FRIEDL,Austria,Defender,4.5,,0,,,,,,,,0
 MICHAEL SVOBODA,Austria,Defender,4.5,,,,,,,,,,0
-PHILIPP LIENHART,Austria,Defender,4.5,1,,,,,,,,,1
-MARCEL SABITZER,Austria,Midfielder,5.5,1,2,,,,,,,,3
+PHILIPP LIENHART,Austria,Defender,4.5,1,,-1,,,,,,,0
+MARCEL SABITZER,Austria,Midfielder,5.5,1,2,7,,,,,,,10
 CARNEY CHUKWUEMEKA,Austria,Midfielder,5,1,1,,,,,,,,2
-KONRAD LAIMER,Austria,Midfielder,5,2,2,,,,,,,,4
-NICOLAS SEIWALD,Austria,Midfielder,5,2,2,,,,,,,,4
-ROMANO SCHMID,Austria,Midfielder,5,7,2,,,,,,,,9
-XAVER SCHLAGER,Austria,Midfielder,5,5,2,,,,,,,,7
+KONRAD LAIMER,Austria,Midfielder,5,2,2,5,,,,,,,9
+NICOLAS SEIWALD,Austria,Midfielder,5,2,2,2,,,,,,,6
+ROMANO SCHMID,Austria,Midfielder,5,7,2,2,,,,,,,11
+XAVER SCHLAGER,Austria,Midfielder,5,5,2,2,,,,,,,9
 ALESSANDRO SCHOPF,Austria,Midfielder,4.5,,,,,,,,,,0
 DEJAN LJUBICIC,Austria,Midfielder,4.5,,,,,,,,,,0
-FLORIAN GRILLITSCH,Austria,Midfielder,4.5,,,,,,,,,,0
+FLORIAN GRILLITSCH,Austria,Midfielder,4.5,,,1,,,,,,,1
 PATRICK WIMMER,Austria,Midfielder,4.5,1,1,,,,,,,,2
-PAUL WANNER,Austria,Midfielder,4.5,1,2,,,,,,,,3
-MARKO ARNAUTOVIC,Austria,Forward,6,4,1,,,,,,,,5
-MICHAEL GREGORITSCH,Austria,Forward,5.5,,2,,,,,,,,2
-SASA KALAJDZIC,Austria,Forward,5,2,,,,,,,,,2
+PAUL WANNER,Austria,Midfielder,4.5,1,2,1,,,,,,,4
+MARKO ARNAUTOVIC,Austria,Forward,6,4,1,5,,,,,,,10
+MICHAEL GREGORITSCH,Austria,Forward,5.5,,2,4,,,,,,,6
+SASA KALAJDZIC,Austria,Forward,5,2,,5,,,,,,,7
 THIBAUT COURTOIS,Belgium,Goalkeeper,6.5,1,6,1,,,,,,,8
 MIKE PENDERS,Belgium,Goalkeeper,5.5,,,,,,,,,,0
 SENNE LAMMENS,Belgium,Goalkeeper,5.5,,,,,,,,,,0
@@ -233,57 +233,57 @@ YANNICK SEMEDO,Cape Verde,Midfielder,4.5,,1,,,,,,,,1
 DAILON LIVRAMENTO,Cape Verde,Forward,5,2,,2,,,,,,,4
 GILSON TAVARES,Cape Verde,Forward,5,,2,,,,,,,,2
 NUNO DA COSTA,Cape Verde,Forward,5,1,1,1,,,,,,,3
-CAMILO VARGAS,Colombia,Goalkeeper,5.5,1,6,,,,,,,,7
+CAMILO VARGAS,Colombia,Goalkeeper,5.5,1,6,6,,,,,,,13
 ALVARO MONTERO,Colombia,Goalkeeper,5,,,,,,,,,,0
 DAVID OSPINA,Colombia,Goalkeeper,5,,,,,,,,,,0
-DANIEL MUNOZ,Colombia,Defender,5.5,7,12,,,,,,,,19
-DAVINSON SANCHEZ,Colombia,Defender,5.5,1,6,,,,,,,,7
-JHON LUCUMI,Colombia,Defender,5.5,1,5,,,,,,,,6
+DANIEL MUNOZ,Colombia,Defender,5.5,7,12,1,,,,,,,20
+DAVINSON SANCHEZ,Colombia,Defender,5.5,1,6,6,,,,,,,13
+JHON LUCUMI,Colombia,Defender,5.5,1,5,6,,,,,,,12
 JOHAN MOJICA,Colombia,Defender,5.5,0,6,,,,,,,,6
 YERRY MINA,Colombia,Defender,5.5,,,,,,,,,,0
-SANTIAGO ARIAS,Colombia,Defender,5,,,,,,,,,,0
-DEIVER MACHADO,Colombia,Defender,4.5,,,,,,,,,,0
+SANTIAGO ARIAS,Colombia,Defender,5,,,6,,,,,,,6
+DEIVER MACHADO,Colombia,Defender,4.5,,,6,,,,,,,6
 WILLER DITTA,Colombia,Defender,4.5,,,,,,,,,,0
-LUIS DIAZ,Colombia,Midfielder,7.5,12,2,,,,,,,,14
-JAMES RODRIGUEZ,Colombia,Midfielder,6.5,2,2,,,,,,,,4
-JHON ARIAS,Colombia,Midfielder,5.5,2,2,,,,,,,,4
+LUIS DIAZ,Colombia,Midfielder,7.5,12,2,2,,,,,,,16
+JAMES RODRIGUEZ,Colombia,Midfielder,6.5,2,2,2,,,,,,,6
+JHON ARIAS,Colombia,Midfielder,5.5,2,2,2,,,,,,,6
 JAMINTON CAMPAZ,Colombia,Midfielder,5,6,,,,,,,,,6
-JEFFERSON LERMA,Colombia,Midfielder,5,2,1,,,,,,,,3
+JEFFERSON LERMA,Colombia,Midfielder,5,2,1,2,,,,,,,5
 JORGE CARRASCAL,Colombia,Midfielder,5,,,,,,,,,,0
-JUAN FERNANDO QUINTERO,Colombia,Midfielder,5,,4,,,,,,,,4
-KEVIN CASTANO,Colombia,Midfielder,5,1,,,,,,,,,1
-RICHARD RIOS,Colombia,Midfielder,5,1,1,,,,,,,,2
-GUSTAVO PUERTA,Colombia,Midfielder,4.5,5,2,,,,,,,,7
+JUAN FERNANDO QUINTERO,Colombia,Midfielder,5,,4,1,,,,,,,5
+KEVIN CASTANO,Colombia,Midfielder,5,1,,1,,,,,,,2
+RICHARD RIOS,Colombia,Midfielder,5,1,1,1,,,,,,,3
+GUSTAVO PUERTA,Colombia,Midfielder,4.5,5,2,1,,,,,,,8
 JUAN PORTILLA,Colombia,Midfielder,4.5,,,,,,,,,,0
-LUIS SUAREZ,Colombia,Forward,6.5,2,2,,,,,,,,4
-JHON CORDOBA,Colombia,Forward,5.5,,1,,,,,,,,1
+LUIS SUAREZ,Colombia,Forward,6.5,2,2,1,,,,,,,5
+JHON CORDOBA,Colombia,Forward,5.5,,1,2,,,,,,,3
 ANDRES GOMEZ,Colombia,Forward,5,1,,,,,,,,,1
 CUCHO HERNANDEZ,Colombia,Forward,5,4,,,,,,,,,4
-DOMINIK LIVAKOVIC,Croatia,Goalkeeper,5.5,-2,6,,,,,,,,4
+DOMINIK LIVAKOVIC,Croatia,Goalkeeper,5.5,-2,6,1,,,,,,,5
 DOMINIK KOTARSKI,Croatia,Goalkeeper,4.5,,,,,,,,,,0
 IVOR PANDUR,Croatia,Goalkeeper,4.5,,,,,,,,,,0
-JOSKO GVARDIOL,Croatia,Defender,6,-2,2,,,,,,,,0
+JOSKO GVARDIOL,Croatia,Defender,6,-2,2,1,,,,,,,1
 DUJE CALETA-CAR,Croatia,Defender,5.5,,,,,,,,,,0
-JOSIP STANISIC,Croatia,Defender,5.5,-2,11,,,,,,,,9
-JOSIP SUTALO,Croatia,Defender,5.5,-2,6,,,,,,,,4
+JOSIP STANISIC,Croatia,Defender,5.5,-2,11,1,,,,,,,10
+JOSIP SUTALO,Croatia,Defender,5.5,-2,6,1,,,,,,,5
 LUKA VUSKOVIC,Croatia,Defender,5.5,-1,,,,,,,,,-1
-MARIN PONGRACIC,Croatia,Defender,5,,6,,,,,,,,6
+MARIN PONGRACIC,Croatia,Defender,5,,6,1,,,,,,,7
 MARTIN ERLIC,Croatia,Defender,5,,,,,,,,,,0
-IVAN PERISIC,Croatia,Midfielder,6.5,5,2,,,,,,,,7
-LUKA MODRIC,Croatia,Midfielder,6,2,2,,,,,,,,4
-MARIO PASALIC,Croatia,Midfielder,5.5,2,1,,,,,,,,3
+IVAN PERISIC,Croatia,Midfielder,6.5,5,2,1,,,,,,,8
+LUKA MODRIC,Croatia,Midfielder,6,2,2,7,,,,,,,11
+MARIO PASALIC,Croatia,Midfielder,5.5,2,1,1,,,,,,,4
 KRISTIJAN JAKIC,Croatia,Midfielder,5,,,,,,,,,,0
 LUKA SUCIC,Croatia,Midfielder,5,,1,,,,,,,,1
-MARCO PASALIC,Croatia,Midfielder,5,1,2,,,,,,,,3
-MARTIN BATURINA,Croatia,Midfielder,5,7,2,,,,,,,,9
-MATEO KOVACIC,Croatia,Midfielder,5,1,2,,,,,,,,3
-NIKOLA VLASIC,Croatia,Midfielder,5,1,,,,,,,,,1
-PETAR SUCIC,Croatia,Midfielder,5,5,0,,,,,,,,5
+MARCO PASALIC,Croatia,Midfielder,5,1,2,1,,,,,,,4
+MARTIN BATURINA,Croatia,Midfielder,5,7,2,2,,,,,,,11
+MATEO KOVACIC,Croatia,Midfielder,5,1,2,5,,,,,,,8
+NIKOLA VLASIC,Croatia,Midfielder,5,1,,7,,,,,,,8
+PETAR SUCIC,Croatia,Midfielder,5,5,0,7,,,,,,,12
 NIKOLA MORO,Croatia,Midfielder,4.5,,,,,,,,,,0
 TONI FRUK,Croatia,Midfielder,4.5,,,,,,,,,,0
 ANDREJ KRAMARIC,Croatia,Forward,6,1,1,,,,,,,,2
-ANTE BUDIMIR,Croatia,Forward,5.5,,5,,,,,,,,5
-IGOR MATANOVIC,Croatia,Forward,5,1,,,,,,,,,1
+ANTE BUDIMIR,Croatia,Forward,5.5,,5,2,,,,,,,7
+IGOR MATANOVIC,Croatia,Forward,5,1,,1,,,,,,,2
 PETAR MUSA,Croatia,Forward,5,6,2,,,,,,,,8
 ELOY ROOM,Curacao,Goalkeeper,4.5,-5,8,0,,,,,,,3
 TREVOR DOORNBUSCH,Curacao,Goalkeeper,4.5,,,,,,,,,,0
@@ -337,31 +337,31 @@ ADAM HLOZEK,Czech Republic,Forward,5,1,2,2,,,,,,,5
 JAN KUCHTA,Czech Republic,Forward,5,,,,,,,,,,0
 MOJMIR CHYTIL,Czech Republic,Forward,5,1,,,,,,,,,1
 TOMAS CHORY,Czech Republic,Forward,5,1,,1,,,,,,,2
-LIONEL MPASI,DR Congo,Goalkeeper,4.5,1,3,,,,,,,,4
+LIONEL MPASI,DR Congo,Goalkeeper,4.5,1,3,1,,,,,,,5
 MATTHIEU EPOLO,DR Congo,Goalkeeper,4.5,,,,,,,,,,0
 TIMOTHY FAYULU,DR Congo,Goalkeeper,4.5,,,,,,,,,,0
-AARON WAN-BISSAKA,DR Congo,Defender,5,1,1,,,,,,,,2
-ARTHUR MASUAKU,DR Congo,Defender,5,4,6,,,,,,,,10
-AXEL TUANZEBE,DR Congo,Defender,5,1,1,,,,,,,,2
-CHANCEL MBEMBA,DR Congo,Defender,5,0,1,,,,,,,,1
+AARON WAN-BISSAKA,DR Congo,Defender,5,1,1,1,,,,,,,3
+ARTHUR MASUAKU,DR Congo,Defender,5,4,6,1,,,,,,,11
+AXEL TUANZEBE,DR Congo,Defender,5,1,1,1,,,,,,,3
+CHANCEL MBEMBA,DR Congo,Defender,5,0,1,1,,,,,,,2
 DYLAN BATUBINSIKA,DR Congo,Defender,4.5,,,,,,,,,,0
 GEDEON KALULU,DR Congo,Defender,4.5,1,,,,,,,,,1
-JORIS KAYEMBE,DR Congo,Defender,4.5,1,0,,,,,,,,1
+JORIS KAYEMBE,DR Congo,Defender,4.5,1,0,1,,,,,,,2
 STEVE KAPUADI,DR Congo,Defender,4.5,1,1,,,,,,,,2
-MESCHAK ELIA,DR Congo,Midfielder,5,,,,,,,,,,0
-THEO BONGONDA,DR Congo,Midfielder,5,,,,,,,,,,0
+MESCHAK ELIA,DR Congo,Midfielder,5,,,4,,,,,,,4
+THEO BONGONDA,DR Congo,Midfielder,5,,,1,,,,,,,1
 AARON TSHIBOLA,DR Congo,Midfielder,4.5,,,,,,,,,,0
-BRIAN CIPENGA,DR Congo,Midfielder,4.5,,,,,,,,,,0
+BRIAN CIPENGA,DR Congo,Midfielder,4.5,,,2,,,,,,,2
 CHARLES PICKEL,DR Congo,Midfielder,4.5,1,0,,,,,,,,1
 EDO KAYEMBE,DR Congo,Midfielder,4.5,2,2,,,,,,,,4
 GAEL KAKUTA,DR Congo,Midfielder,4.5,,,,,,,,,,0
-NATHANAEL MBUKU,DR Congo,Midfielder,4.5,,1,,,,,,,,1
-NGAL'AYEL MUKAU,DR Congo,Midfielder,4.5,2,2,,,,,,,,4
-NOAH SADIKI,DR Congo,Midfielder,4.5,1,1,,,,,,,,2
-SAMUEL MOUTOUSSAMY,DR Congo,Midfielder,4.5,2,2,,,,,,,,4
-CEDRIC BAKAMBU,DR Congo,Forward,5.5,2,2,,,,,,,,4
-YOANE WISSA,DR Congo,Forward,5.5,6,2,,,,,,,,8
-FISTON MAYELE,DR Congo,Forward,5,,,,,,,,,,0
+NATHANAEL MBUKU,DR Congo,Midfielder,4.5,,1,1,,,,,,,2
+NGAL'AYEL MUKAU,DR Congo,Midfielder,4.5,2,2,1,,,,,,,5
+NOAH SADIKI,DR Congo,Midfielder,4.5,1,1,1,,,,,,,3
+SAMUEL MOUTOUSSAMY,DR Congo,Midfielder,4.5,2,2,1,,,,,,,5
+CEDRIC BAKAMBU,DR Congo,Forward,5.5,2,2,2,,,,,,,6
+YOANE WISSA,DR Congo,Forward,5.5,6,2,11,,,,,,,19
+FISTON MAYELE,DR Congo,Forward,5,,,5,,,,,,,5
 SIMON BANZA,DR Congo,Forward,5,1,1,,,,,,,,2
 HERNAN GALINDEZ,Ecuador,Goalkeeper,5,1,6,1,,,,,,,8
 GONZALO VALLE,Ecuador,Goalkeeper,4.5,,,,,,,,,,0
@@ -415,31 +415,31 @@ MOHAMED SALAH,Egypt,Forward,7.5,5,11,2,,,,,,,18
 OMAR MARMOUSH,Egypt,Forward,6,2,2,1,,,,,,,5
 HAISSEM HASSAN,Egypt,Forward,5,,,,,,,,,,0
 HAMZA ABDELKARIM,Egypt,Forward,5,1,1,1,,,,,,,3
-JORDAN PICKFORD,England,Goalkeeper,7.5,0,6,,,,,,,,6
+JORDAN PICKFORD,England,Goalkeeper,7.5,0,6,6,,,,,,,12
 DEAN HENDERSON,England,Goalkeeper,6.5,,,,,,,,,,0
 JAMES TRAFFORD,England,Goalkeeper,6,,,,,,,,,,0
-MARC GUEHI,England,Defender,7.5,1,6,,,,,,,,7
+MARC GUEHI,England,Defender,7.5,1,6,6,,,,,,,13
 REECE JAMES,England,Defender,7.5,0,6,,,,,,,,6
-EZRI KONSA,England,Defender,7,0,6,,,,,,,,6
+EZRI KONSA,England,Defender,7,0,6,6,,,,,,,12
 JOHN STONES,England,Defender,7,0,,,,,,,,,0
-NICO O'REILLY,England,Defender,6.5,0,1,,,,,,,,1
+NICO O'REILLY,England,Defender,6.5,0,1,6,,,,,,,7
 DAN BURN,England,Defender,6,,,,,,,,,,0
 TINO LIVRAMENTO,England,Defender,6,,,,,,,,,,0
-DJED SPENCE,England,Defender,5.5,1,6,,,,,,,,7
-JARELL QUANSAH,England,Defender,5.5,,,,,,,,,,0
-BUKAYO SAKA,England,Midfielder,8.5,4,1,,,,,,,,5
-JUDE BELLINGHAM,England,Midfielder,8,7,2,,,,,,,,9
+DJED SPENCE,England,Defender,5.5,1,6,1,,,,,,,8
+JARELL QUANSAH,England,Defender,5.5,,,5,,,,,,,5
+BUKAYO SAKA,England,Midfielder,8.5,4,1,5,,,,,,,10
+JUDE BELLINGHAM,England,Midfielder,8,7,2,12,,,,,,,21
 ANTHONY GORDON,England,Midfielder,7.5,2,2,,,,,,,,4
-MORGAN ROGERS,England,Midfielder,7,1,1,,,,,,,,2
-EBERECHI EZE,England,Midfielder,6.5,,1,,,,,,,,1
-NONI MADUEKE,England,Midfielder,6.5,2,2,,,,,,,,4
+MORGAN ROGERS,England,Midfielder,7,1,1,2,,,,,,,4
+EBERECHI EZE,England,Midfielder,6.5,,1,1,,,,,,,2
+NONI MADUEKE,England,Midfielder,6.5,2,2,1,,,,,,,5
 DECLAN RICE,England,Midfielder,6,5,1,,,,,,,,6
-ELLIOT ANDERSON,England,Midfielder,5.5,5,2,,,,,,,,7
-JORDAN HENDERSON,England,Midfielder,5,,,,,,,,,,0
+ELLIOT ANDERSON,England,Midfielder,5.5,5,2,2,,,,,,,9
+JORDAN HENDERSON,England,Midfielder,5,,,1,,,,,,,1
 KOBBIE MAINOO,England,Midfielder,5,,,,,,,,,,0
-HARRY KANE,England,Forward,12.5,11,2,,,,,,,,13
-MARCUS RASHFORD,England,Forward,7.5,5,1,,,,,,,,6
-OLLIE WATKINS,England,Forward,6.5,,,,,,,,,,0
+HARRY KANE,England,Forward,12.5,11,2,6,,,,,,,19
+MARCUS RASHFORD,England,Forward,7.5,5,1,2,,,,,,,8
+OLLIE WATKINS,England,Forward,6.5,,,1,,,,,,,1
 IVAN TONEY,England,Forward,6,,,,,,,,,,0
 MIKE MAIGNAN,France,Goalkeeper,7.5,1,6,3,,,,,,,10
 BRICE SAMBA,France,Goalkeeper,6.5,,,,,,,,,,0
@@ -493,32 +493,32 @@ KAI HAVERTZ,Germany,Forward,8.5,9,2,2,,,,,,,13
 NICK WOLTEMADE,Germany,Forward,7.5,,,,,,,,,,0
 DENIZ UNDAV,Germany,Forward,6,11,11,1,,,,,,,23
 MAXIMILIAN BEIER,Germany,Forward,6,,,1,,,,,,,1
-BENJAMIN ASARE,Ghana,Goalkeeper,5,1,6,,,,,,,,7
+BENJAMIN ASARE,Ghana,Goalkeeper,5,1,6,0,,,,,,,7
 LAWRENCE ATI-ZIGI,Ghana,Goalkeeper,5,2,,,,,,,,,2
 JOSEPH ANANG,Ghana,Goalkeeper,4.5,,,,,,,,,,0
-GIDEON MENSAH,Ghana,Defender,5,6,8,,,,,,,,14
+GIDEON MENSAH,Ghana,Defender,5,6,8,0,,,,,,,14
 ABDUL MUMIN,Ghana,Defender,4.5,,,,,,,,,,0
 ABDUL RAHMAN BABA,Ghana,Defender,4.5,,1,,,,,,,,1
 ALIDU SEIDU,Ghana,Defender,4.5,,,,,,,,,,0
-DERRICK LUCKASSEN,Ghana,Defender,4.5,,,,,,,,,,0
+DERRICK LUCKASSEN,Ghana,Defender,4.5,,,6,,,,,,,6
 JEROME OPOKU,Ghana,Defender,4.5,6,6,,,,,,,,12
-JONAS ADJETEY,Ghana,Defender,4.5,6,6,,,,,,,,12
-KOJO PEPRAH OPPONG,Ghana,Defender,4.5,,1,,,,,,,,1
-MARVIN SENAYA,Ghana,Defender,4.5,6,6,,,,,,,,12
-ANTOINE SEMENYO,Ghana,Midfielder,6,2,2,,,,,,,,4
-ABDUL FATAWU,Ghana,Midfielder,5,1,1,,,,,,,,2
-ELISHA OWUSU,Ghana,Midfielder,5,2,,,,,,,,,2
-THOMAS PARTEY,Ghana,Midfielder,5,,2,,,,,,,,2
+JONAS ADJETEY,Ghana,Defender,4.5,6,6,1,,,,,,,13
+KOJO PEPRAH OPPONG,Ghana,Defender,4.5,,1,-1,,,,,,,0
+MARVIN SENAYA,Ghana,Defender,4.5,6,6,0,,,,,,,12
+ANTOINE SEMENYO,Ghana,Midfielder,6,2,2,2,,,,,,,6
+ABDUL FATAWU,Ghana,Midfielder,5,1,1,1,,,,,,,3
+ELISHA OWUSU,Ghana,Midfielder,5,2,,2,,,,,,,4
+THOMAS PARTEY,Ghana,Midfielder,5,,2,2,,,,,,,4
 AUGUSTINE BOAKYE,Ghana,Midfielder,4.5,,,,,,,,,,0
-CALEB YIRENKYI,Ghana,Midfielder,4.5,8,2,,,,,,,,10
+CALEB YIRENKYI,Ghana,Midfielder,4.5,8,2,1,,,,,,,11
 CHRISTOPHER BONSU BAAH,Ghana,Midfielder,4.5,,,,,,,,,,0
-ERNEST NUAMAH,Ghana,Midfielder,4.5,2,,,,,,,,,2
-KWASI SIBO,Ghana,Midfielder,4.5,1,2,,,,,,,,3
+ERNEST NUAMAH,Ghana,Midfielder,4.5,2,,4,,,,,,,6
+KWASI SIBO,Ghana,Midfielder,4.5,1,2,2,,,,,,,5
 PRINCE ADU,Ghana,Midfielder,4.5,1,1,,,,,,,,2
 INAKI WILLIAMS,Ghana,Forward,5.5,,1,,,,,,,,1
-JORDAN AYEW,Ghana,Forward,5.5,2,2,,,,,,,,4
-BRANDON THOMAS-ASANTE,Ghana,Forward,5,1,,,,,,,,,1
-KAMALDEEN SULEMANA,Ghana,Forward,5,2,,,,,,,,,2
+JORDAN AYEW,Ghana,Forward,5.5,2,2,2,,,,,,,6
+BRANDON THOMAS-ASANTE,Ghana,Forward,5,1,,1,,,,,,,2
+KAMALDEEN SULEMANA,Ghana,Forward,5,2,,2,,,,,,,4
 ALEXANDRE PIERRE,Haiti,Goalkeeper,4.5,,,,,,,,,,0
 JOHNY PLACIDE,Haiti,Goalkeeper,4.5,1,-1,-3,,,,,,,-3
 JOSUE DUVERGER,Haiti,Goalkeeper,4.5,,,,,,,,,,0
@@ -651,30 +651,30 @@ KOKI OGAWA,Japan,Forward,5,4,,1,,,,,,,5
 SHUTO MACHINO,Japan,Forward,5,,,,,,,,,,0
 ABDALLAH AL-FAKHOURI,Jordan,Goalkeeper,4.5,,,,,,,,,,0
 NOUR BANI ATTIAH,Jordan,Goalkeeper,4.5,,,,,,,,,,0
-YAZEED ABULAILA,Jordan,Goalkeeper,4.5,-1,0,,,,,,,,-1
-ABDALLAH NASIB,Jordan,Defender,4.5,0,0,,,,,,,,0
+YAZEED ABULAILA,Jordan,Goalkeeper,4.5,-1,0,-1,,,,,,,-2
+ABDALLAH NASIB,Jordan,Defender,4.5,0,0,-1,,,,,,,-1
 ANAS BADAWI,Jordan,Defender,4.5,,,,,,,,,,0
-HUSAM ABU DAHAB,Jordan,Defender,4.5,,-1,,,,,,,,-1
-IHSAN HADDAD,Jordan,Defender,4.5,0,0,,,,,,,,0
+HUSAM ABU DAHAB,Jordan,Defender,4.5,,-1,-1,,,,,,,-2
+IHSAN HADDAD,Jordan,Defender,4.5,0,0,2,,,,,,,2
 MOHAMMAD ABUALNADI,Jordan,Defender,4.5,1,,,,,,,,,1
 MOHAMMAD TAHA,Jordan,Defender,4.5,,,,,,,,,,0
 SAED AL-ROSAN,Jordan,Defender,4.5,0,,,,,,,,,0
-SALIM OBAID,Jordan,Defender,4.5,-1,1,,,,,,,,0
-YAZAN AL-ARAB,Jordan,Defender,4.5,-3,0,,,,,,,,-3
-MUSA AL-TAAMARI,Jordan,Midfielder,5,2,5,,,,,,,,7
-ALI AZAIZEH,Jordan,Midfielder,4.5,1,1,,,,,,,,2
-AMER JAMOUS,Jordan,Midfielder,4.5,,,,,,,,,,0
+SALIM OBAID,Jordan,Defender,4.5,-1,1,1,,,,,,,1
+YAZAN AL-ARAB,Jordan,Defender,4.5,-3,0,-2,,,,,,,-5
+MUSA AL-TAAMARI,Jordan,Midfielder,5,2,5,6,,,,,,,13
+ALI AZAIZEH,Jordan,Midfielder,4.5,1,1,2,,,,,,,4
+AMER JAMOUS,Jordan,Midfielder,4.5,,,1,,,,,,,1
 IBRAHIM SA'DEH,Jordan,Midfielder,4.5,,,,,,,,,,0
-MAHMOUD AL-MARDI,Jordan,Midfielder,4.5,1,2,,,,,,,,3
+MAHMOUD AL-MARDI,Jordan,Midfielder,4.5,1,2,1,,,,,,,4
 MOHAMMAD ABU HASHISH,Jordan,Midfielder,4.5,,1,,,,,,,,1
-MOHAMMAD ABU ZRAYQ,Jordan,Midfielder,4.5,,1,,,,,,,,1
+MOHAMMAD ABU ZRAYQ,Jordan,Midfielder,4.5,,1,0,,,,,,,1
 MOHAMMAD AL-DAWOUD,Jordan,Midfielder,4.5,1,,,,,,,,,1
-MOHANNAD ABU TAHA,Jordan,Midfielder,4.5,2,2,,,,,,,,4
-NIZAR AL-RASHDAN,Jordan,Midfielder,4.5,2,7,,,,,,,,9
-NOOR AL-RAWABDEH,Jordan,Midfielder,4.5,5,2,,,,,,,,7
+MOHANNAD ABU TAHA,Jordan,Midfielder,4.5,2,2,1,,,,,,,5
+NIZAR AL-RASHDAN,Jordan,Midfielder,4.5,2,7,2,,,,,,,11
+NOOR AL-RAWABDEH,Jordan,Midfielder,4.5,5,2,2,,,,,,,9
 RAJAEI AYED,Jordan,Midfielder,4.5,,,,,,,,,,0
-ALI OLWAN,Jordan,Forward,5,8,2,,,,,,,,10
-ODEH AL-FAKHOURI,Jordan,Forward,5,2,1,,,,,,,,3
+ALI OLWAN,Jordan,Forward,5,8,2,2,,,,,,,12
+ODEH AL-FAKHOURI,Jordan,Forward,5,2,1,2,,,,,,,5
 GUILLERMO OCHOA,Mexico,Goalkeeper,5,,,1,,,,,,,1
 CARLOS ACEVEDO,Mexico,Goalkeeper,4.5,,,,,,,,,,0
 RAUL RANGEL,Mexico,Goalkeeper,4.5,6,6,6,,,,,,,18
@@ -807,30 +807,30 @@ ANDREAS SCHJELDERUP,Norway,Forward,5.5,1,1,5,,,,,,,7
 JORGEN STRAND LARSEN,Norway,Forward,5.5,,,0,,,,,,,0
 CESAR SAMUDIO,Panama,Goalkeeper,4.5,,,,,,,,,,0
 LUIS MEJIA,Panama,Goalkeeper,4.5,,,,,,,,,,0
-ORLANDO MOSQUERA,Panama,Goalkeeper,4.5,1,1,,,,,,,,2
-AMIR MURILLO,Panama,Defender,5,1,1,,,,,,,,2
-ANDRES ANDRADE,Panama,Defender,4.5,1,1,,,,,,,,2
+ORLANDO MOSQUERA,Panama,Goalkeeper,4.5,1,1,0,,,,,,,2
+AMIR MURILLO,Panama,Defender,5,1,1,0,,,,,,,2
+ANDRES ANDRADE,Panama,Defender,4.5,1,1,-1,,,,,,,1
 CESAR BLACKMAN,Panama,Defender,4.5,5,1,,,,,,,,6
 EDGARDO FARINA,Panama,Defender,4.5,,,,,,,,,,0
-ERIC DAVIS,Panama,Defender,4.5,,1,,,,,,,,1
-FIDEL ESCOBAR,Panama,Defender,4.5,,,,,,,,,,0
+ERIC DAVIS,Panama,Defender,4.5,,1,1,,,,,,,2
+FIDEL ESCOBAR,Panama,Defender,4.5,,,0,,,,,,,0
 JIOVANY RAMOS,Panama,Defender,4.5,1,1,,,,,,,,2
-JORGE GUTIERREZ,Panama,Defender,4.5,,,,,,,,,,0
-JOSE CORDOBA,Panama,Defender,4.5,1,1,,,,,,,,2
+JORGE GUTIERREZ,Panama,Defender,4.5,,,0,,,,,,,0
+JOSE CORDOBA,Panama,Defender,4.5,1,1,0,,,,,,,2
 RODERICK MILLER,Panama,Defender,4.5,,,,,,,,,,0
-ISMAEL DIAZ,Panama,Midfielder,5,1,,,,,,,,,1
+ISMAEL DIAZ,Panama,Midfielder,5,1,,1,,,,,,,2
 ADALBERTO CARRASQUILLA,Panama,Midfielder,4.5,,,,,,,,,,0
-ALBERTO QUINTERO,Panama,Midfielder,4.5,,,,,,,,,,0
+ALBERTO QUINTERO,Panama,Midfielder,4.5,,,1,,,,,,,1
 ANIBAL GODOY,Panama,Midfielder,4.5,1,,,,,,,,,1
-CARLOS HARVEY,Panama,Midfielder,4.5,1,2,,,,,,,,3
+CARLOS HARVEY,Panama,Midfielder,4.5,1,2,2,,,,,,,5
 CESAR YANIS,Panama,Midfielder,4.5,,,,,,,,,,0
-CRISTIAN MARTINEZ,Panama,Midfielder,4.5,2,2,,,,,,,,4
-JOSE LUIS RODRIGUEZ,Panama,Midfielder,4.5,2,2,,,,,,,,4
-YOEL BARCENAS,Panama,Midfielder,4.5,2,1,,,,,,,,3
-AZARIAS LONDONO,Panama,Forward,5,1,1,,,,,,,,2
+CRISTIAN MARTINEZ,Panama,Midfielder,4.5,2,2,2,,,,,,,6
+JOSE LUIS RODRIGUEZ,Panama,Midfielder,4.5,2,2,2,,,,,,,6
+YOEL BARCENAS,Panama,Midfielder,4.5,2,1,2,,,,,,,5
+AZARIAS LONDONO,Panama,Forward,5,1,1,1,,,,,,,3
 CECILIO WATERMAN,Panama,Forward,5,2,1,,,,,,,,3
-JOSE FAJARDO,Panama,Forward,5,1,2,,,,,,,,3
-TOMAS RODRIGUEZ,Panama,Forward,5,,1,,,,,,,,1
+JOSE FAJARDO,Panama,Forward,5,1,2,0,,,,,,,3
+TOMAS RODRIGUEZ,Panama,Forward,5,,1,2,,,,,,,3
 ROBERTO FERNANDEZ,Paraguay,Goalkeeper,5,,,,,,,,,,0
 GASTON OLVEIRA,Paraguay,Goalkeeper,4.5,,,,,,,,,,0
 ORLANDO GILL,Paraguay,Goalkeeper,4.5,-2,6,6,,,,,,,10
@@ -857,32 +857,32 @@ ALEX ARCE,Paraguay,Forward,5,1,,1,,,,,,,2
 ANTONIO SANABRIA,Paraguay,Forward,5,2,,,,,,,,,2
 GABRIEL AVALOS,Paraguay,Forward,5,,1,2,,,,,,,3
 ISIDRO PITTA,Paraguay,Forward,5,,2,,,,,,,,2
-DIOGO COSTA,Portugal,Goalkeeper,7,1,6,,,,,,,,7
+DIOGO COSTA,Portugal,Goalkeeper,7,1,6,8,,,,,,,15
 JOSE SA,Portugal,Goalkeeper,6,,,,,,,,,,0
 RUI SILVA,Portugal,Goalkeeper,5.5,,,,,,,,,,0
-NUNO MENDES,Portugal,Defender,7.5,1,12,,,,,,,,13
-JOAO CANCELO,Portugal,Defender,7,1,5,,,,,,,,6
-RUBEN DIAS,Portugal,Defender,7,,6,,,,,,,,6
-DIOGO DALOT,Portugal,Defender,6.5,,,,,,,,,,0
+NUNO MENDES,Portugal,Defender,7.5,1,12,6,,,,,,,19
+JOAO CANCELO,Portugal,Defender,7,1,5,2,,,,,,,8
+RUBEN DIAS,Portugal,Defender,7,,6,6,,,,,,,12
+DIOGO DALOT,Portugal,Defender,6.5,,,1,,,,,,,1
 GONCALO INACIO,Portugal,Defender,6.5,,,,,,,,,,0
-RENATO VEIGA,Portugal,Defender,6.5,1,5,,,,,,,,6
+RENATO VEIGA,Portugal,Defender,6.5,1,5,6,,,,,,,12
 TOMAS ARAUJO,Portugal,Defender,6,0,,,,,,,,,0
 NELSON SEMEDO,Portugal,Defender,5.5,0,1,,,,,,,,1
-BRUNO FERNANDES,Portugal,Midfielder,8.5,2,5,,,,,,,,7
+BRUNO FERNANDES,Portugal,Midfielder,8.5,2,5,2,,,,,,,9
 BERNARDO SILVA,Portugal,Midfielder,7,1,1,,,,,,,,2
-PEDRO NETO,Portugal,Midfielder,6.5,5,2,,,,,,,,7
-VITINHA,Portugal,Midfielder,6,2,2,,,,,,,,4
+PEDRO NETO,Portugal,Midfielder,6.5,5,2,2,,,,,,,9
+VITINHA,Portugal,Midfielder,6,2,2,2,,,,,,,6
 FRANCISCO CONCEICAO,Portugal,Midfielder,5.5,1,1,,,,,,,,2
 FRANCISCO TRINCAO,Portugal,Midfielder,5.5,,1,,,,,,,,1
 GONCALO GUEDES,Portugal,Midfielder,5.5,,,,,,,,,,0
-JOAO NEVES,Portugal,Midfielder,5.5,9,2,,,,,,,,11
-RUBEN NEVES,Portugal,Midfielder,5.5,,,,,,,,,,0
-MATHEUS NUNES,Portugal,Midfielder,5,,,,,,,,,,0
-SAMU COSTA,Portugal,Midfielder,5,,,,,,,,,,0
-CRISTIANO RONALDO,Portugal,Forward,10,2,12,,,,,,,,14
+JOAO NEVES,Portugal,Midfielder,5.5,9,2,1,,,,,,,12
+RUBEN NEVES,Portugal,Midfielder,5.5,,,2,,,,,,,2
+MATHEUS NUNES,Portugal,Midfielder,5,,,1,,,,,,,1
+SAMU COSTA,Portugal,Midfielder,5,,,1,,,,,,,1
+CRISTIANO RONALDO,Portugal,Forward,10,2,12,2,,,,,,,16
 GONCALO RAMOS,Portugal,Forward,7,1,,,,,,,,,1
-JOAO FELIX,Portugal,Forward,7,,2,,,,,,,,2
-RAFAEL LEAO,Portugal,Forward,7,1,5,,,,,,,,6
+JOAO FELIX,Portugal,Forward,7,,2,2,,,,,,,4
+RAFAEL LEAO,Portugal,Forward,7,1,5,1,,,,,,,7
 MAHMUD ABUNADA,Qatar,Goalkeeper,4.5,0,-4,-3,,,,,,,-7
 MESHAAL BARSHAM,Qatar,Goalkeeper,4.5,,,,,,,,,,0
 SALAH ZAKARIA,Qatar,Goalkeeper,4.5,,,,,,,,,,0
@@ -1221,29 +1221,29 @@ SEBASTIAN BERHALTER,USA,Midfielder,4.5,1,1,11,,,,,,,13
 FOLARIN BALOGUN,USA,Forward,5.5,12,1,,,,,,,,13
 RICARDO PEPI,USA,Forward,5.5,1,2,2,,,,,,,5
 HAJI WRIGHT,USA,Forward,5,,1,,,,,,,,1
-ABDUVOHID NEMATOV,Uzbekistan,Goalkeeper,4.5,,-5,,,,,,,,-5
+ABDUVOHID NEMATOV,Uzbekistan,Goalkeeper,4.5,,-5,-1,,,,,,,-6
 BOTIRALI ERGASHEV,Uzbekistan,Goalkeeper,4.5,,,,,,,,,,0
 UTKIR YUSUPOV,Uzbekistan,Goalkeeper,4.5,-1,,,,,,,,,-1
-ABDUKODIR KHUSANOV,Uzbekistan,Defender,5,-2,-3,,,,,,,,-5
+ABDUKODIR KHUSANOV,Uzbekistan,Defender,5,-2,-3,-2,,,,,,,-7
 ABDULLA ABDULLAEV,Uzbekistan,Defender,4.5,-1,-3,,,,,,,,-4
 AVAZBEK ULMASALIEV,Uzbekistan,Defender,4.5,,,,,,,,,,0
 BEKHRUZ KARIMOV,Uzbekistan,Defender,4.5,-1,-3,,,,,,,,-4
 FARRUKH SAYFIEV,Uzbekistan,Defender,4.5,-1,,,,,,,,,-1
-JAKHONGIR UROZOV,Uzbekistan,Defender,4.5,0,,,,,,,,,0
-KHOJIAKBAR ALIJONOV,Uzbekistan,Defender,4.5,,-1,,,,,,,,-1
-RUSTAM ASHURMATOV,Uzbekistan,Defender,4.5,0,-3,,,,,,,,-3
-SHERZOD NASRULLAEV,Uzbekistan,Defender,4.5,1,-1,,,,,,,,0
+JAKHONGIR UROZOV,Uzbekistan,Defender,4.5,0,,0,,,,,,,0
+KHOJIAKBAR ALIJONOV,Uzbekistan,Defender,4.5,,-1,-1,,,,,,,-2
+RUSTAM ASHURMATOV,Uzbekistan,Defender,4.5,0,-3,-1,,,,,,,-4
+SHERZOD NASRULLAEV,Uzbekistan,Defender,4.5,1,-1,-2,,,,,,,-2
 UMAR ESHMURODOV,Uzbekistan,Defender,4.5,,,,,,,,,,0
-OSTON URUNOV,Uzbekistan,Midfielder,5,2,,,,,,,,,2
-ABBOSBEK FAYZULLAEV,Uzbekistan,Midfielder,4.5,7,2,,,,,,,,9
-AKMAL MOZGOVOY,Uzbekistan,Midfielder,4.5,2,1,,,,,,,,3
+OSTON URUNOV,Uzbekistan,Midfielder,5,2,,1,,,,,,,3
+ABBOSBEK FAYZULLAEV,Uzbekistan,Midfielder,4.5,7,2,2,,,,,,,11
+AKMAL MOZGOVOY,Uzbekistan,Midfielder,4.5,2,1,5,,,,,,,8
 AZIZBEK AMONOV,Uzbekistan,Midfielder,4.5,1,,,,,,,,,1
-AZIZJON GANIEV,Uzbekistan,Midfielder,4.5,,2,,,,,,,,2
-DOSTONBEK KHAMDAMOV,Uzbekistan,Midfielder,4.5,1,,,,,,,,,1
-JAMSHID ISKANDEROV,Uzbekistan,Midfielder,4.5,,,,,,,,,,0
-ODILJON HAMROBEKOV,Uzbekistan,Midfielder,4.5,,1,,,,,,,,1
-OTABEK SHUKUROV,Uzbekistan,Midfielder,4.5,2,2,,,,,,,,4
+AZIZJON GANIEV,Uzbekistan,Midfielder,4.5,,2,1,,,,,,,3
+DOSTONBEK KHAMDAMOV,Uzbekistan,Midfielder,4.5,1,,2,,,,,,,3
+JAMSHID ISKANDEROV,Uzbekistan,Midfielder,4.5,,,1,,,,,,,1
+ODILJON HAMROBEKOV,Uzbekistan,Midfielder,4.5,,1,1,,,,,,,2
+OTABEK SHUKUROV,Uzbekistan,Midfielder,4.5,2,2,2,,,,,,,6
 SHERZOD ESANOV,Uzbekistan,Midfielder,4.5,,1,,,,,,,,1
-ELDOR SHOMURODOV,Uzbekistan,Forward,5,2,2,,,,,,,,4
-IGOR SERGEEV,Uzbekistan,Forward,5,1,1,,,,,,,,2
+ELDOR SHOMURODOV,Uzbekistan,Forward,5,2,2,6,,,,,,,10
+IGOR SERGEEV,Uzbekistan,Forward,5,1,1,1,,,,,,,3
 RUSLANBEK JIYANOV,Uzbekistan,Forward,5,,1,,,,,,,,1
