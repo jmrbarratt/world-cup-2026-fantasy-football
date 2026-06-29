@@ -155,32 +155,32 @@ ERMEDIN DEMIROVIC,Bosnia-Herzegovina,Forward,5,1,2,2,,,,,,,5
 HARIS TABAKOVIC,Bosnia-Herzegovina,Forward,5,,,,,,,,,,0
 JOVO LUKIC,Bosnia-Herzegovina,Forward,5,5,1,,,,,,,,6
 SAMED BAZDAR,Bosnia-Herzegovina,Forward,5,1,,,,,,,,,1
-ALISSON,Brazil,Goalkeeper,7.5,1,6,6,,,,,,,13
+ALISSON,Brazil,Goalkeeper,7.5,1,6,6,1,,,,,,14
 EDERSON,Brazil,Goalkeeper,7,,,,,,,,,,0
 WEVERTON,Brazil,Goalkeeper,6.5,,,,,,,,,,0
-GABRIEL MAGALHAES,Brazil,Defender,7.5,1,6,6,,,,,,,13
-MARQUINHOS,Brazil,Defender,7.5,1,6,6,,,,,,,13
+GABRIEL MAGALHAES,Brazil,Defender,7.5,1,6,6,4,,,,,,17
+MARQUINHOS,Brazil,Defender,7.5,1,6,6,1,,,,,,14
 ALEX SANDRO,Brazil,Defender,7,,,1,,,,,,,1
-DANILO,Brazil,Defender,6.5,1,6,5,,,,,,,12
-DOUGLAS SANTOS,Brazil,Defender,6,1,5,6,,,,,,,12
+DANILO,Brazil,Defender,6.5,1,6,5,0,,,,,,12
+DOUGLAS SANTOS,Brazil,Defender,6,1,5,6,1,,,,,,13
 GLEISON BREMER,Brazil,Defender,6,,,,,,,,,,0
 LEO PEREIRA,Brazil,Defender,5.5,,,,,,,,,,0
 ROGER IBANEZ,Brazil,Defender,5.5,0,,,,,,,,,0
-LUCAS PAQUETA,Brazil,Midfielder,6.5,2,5,2,,,,,,,9
-BRUNO GUIMARAES,Brazil,Midfielder,6,5,2,8,,,,,,,15
-CASEMIRO,Brazil,Midfielder,6,1,2,2,,,,,,,5
+LUCAS PAQUETA,Brazil,Midfielder,6.5,2,5,2,2,,,,,,11
+BRUNO GUIMARAES,Brazil,Midfielder,6,5,2,8,5,,,,,,20
+CASEMIRO,Brazil,Midfielder,6,1,2,2,8,,,,,,13
 LUIZ HENRIQUE,Brazil,Midfielder,5.5,1,,,,,,,,,1
-DANILO OLIVEIRA,Brazil,Midfielder,5,1,1,,,,,,,,2
+DANILO OLIVEIRA,Brazil,Midfielder,5,1,1,,1,,,,,,3
 EDERSON SILVA,Brazil,Midfielder,5,,1,,,,,,,,1
-FABINHO,Brazil,Midfielder,5,1,,1,,,,,,,2
-VINICIUS JUNIOR,Brazil,Forward,9.5,6,9,12,,,,,,,27
+FABINHO,Brazil,Midfielder,5,1,,1,1,,,,,,3
+VINICIUS JUNIOR,Brazil,Forward,9.5,6,9,12,2,,,,,,29
 RAPHINHA,Brazil,Forward,9,2,2,,,,,,,,4
 IGOR THIAGO,Brazil,Forward,8,2,,,,,,,,,2
-MATHEUS CUNHA,Brazil,Forward,7.5,1,12,6,,,,,,,19
-ENDRICK,Brazil,Forward,7,,1,1,,,,,,,2
+MATHEUS CUNHA,Brazil,Forward,7.5,1,12,6,2,,,,,,21
+ENDRICK,Brazil,Forward,7,,1,1,1,,,,,,3
 NEYMAR,Brazil,Forward,7,,,1,,,,,,,1
-GABRIEL MARTINELLI,Brazil,Forward,6.5,,1,1,,,,,,,2
-RAYAN,Brazil,Forward,6,,1,5,,,,,,,6
+GABRIEL MARTINELLI,Brazil,Forward,6.5,,1,1,5,,,,,,7
+RAYAN,Brazil,Forward,6,,1,5,2,,,,,,8
 DAYNE ST. CLAIR,Canada,Goalkeeper,5,,,,,,,,,,0
 MAXIME CREPEAU,Canada,Goalkeeper,5,1,6,0,6,,,,,,13
 OWEN GOODMAN,Canada,Goalkeeper,4.5,,,,,,,,,,0
@@ -623,32 +623,32 @@ EVANN GUESSAND,Ivory Coast,Forward,5.5,,1,,,,,,,,1
 ANGE-YOAN BONNY,Ivory Coast,Forward,5,1,2,2,,,,,,,5
 ELYE WAHI,Ivory Coast,Forward,5,2,,1,,,,,,,3
 OUMAR DIAKITE,Ivory Coast,Forward,5,,,1,,,,,,,1
-ZION SUZUKI,Japan,Goalkeeper,5,0,6,1,,,,,,,7
+ZION SUZUKI,Japan,Goalkeeper,5,0,6,1,0,,,,,,7
 KEISUKE OSAKO,Japan,Goalkeeper,4.5,,,,,,,,,,0
 TOMOKI HAYAKAWA,Japan,Goalkeeper,4.5,,,,,,,,,,0
-HIROKI ITO,Japan,Defender,5,0,6,1,,,,,,,7
+HIROKI ITO,Japan,Defender,5,0,6,1,0,,,,,,7
 KO ITAKURA,Japan,Defender,5,,9,2,,,,,,,11
-SHOGO TANIGUCHI,Japan,Defender,5,0,,-1,,,,,,,-1
-TAKEHIRO TOMIYASU,Japan,Defender,5,1,6,,,,,,,,7
+SHOGO TANIGUCHI,Japan,Defender,5,0,,-1,0,,,,,,-1
+TAKEHIRO TOMIYASU,Japan,Defender,5,1,6,,0,,,,,,7
 TSUYOSHI WATANABE,Japan,Defender,5,0,,1,,,,,,,1
-YUKINARI SUGAWARA,Japan,Defender,5,,1,1,,,,,,,2
+YUKINARI SUGAWARA,Japan,Defender,5,,1,1,0,,,,,,2
 AYUMU SEKO,Japan,Defender,4.5,,1,1,,,,,,,2
-JUNNOSUKE SUZUKI,Japan,Defender,4.5,,1,,,,,,,,1
+JUNNOSUKE SUZUKI,Japan,Defender,4.5,,1,,-1,,,,,,0
 YUTO NAGATOMO,Japan,Defender,4.5,,,1,,,,,,,1
-JUNYA ITO,Japan,Midfielder,5.5,1,7,1,,,,,,,9
+JUNYA ITO,Japan,Midfielder,5.5,1,7,1,2,,,,,,11
 TAKEFUSA KUBO,Japan,Midfielder,5.5,5,,,,,,,,,5
-AO TANAKA,Japan,Midfielder,5,,2,2,,,,,,,4
-DAICHI KAMADA,Japan,Midfielder,5,9,7,2,,,,,,,18
-KEITO NAKAMURA,Japan,Midfielder,5,7,5,2,,,,,,,14
-RITSU DOAN,Japan,Midfielder,5,2,2,5,,,,,,,9
-KAISHU SANO,Japan,Midfielder,4.5,2,5,,,,,,,,7
+AO TANAKA,Japan,Midfielder,5,,2,2,1,,,,,,5
+DAICHI KAMADA,Japan,Midfielder,5,9,7,2,1,,,,,,19
+KEITO NAKAMURA,Japan,Midfielder,5,7,5,2,2,,,,,,16
+RITSU DOAN,Japan,Midfielder,5,2,2,5,2,,,,,,11
+KAISHU SANO,Japan,Midfielder,4.5,2,5,,6,,,,,,13
 YUITO SUZUKI,Japan,Midfielder,4.5,,1,,,,,,,,1
-AYASE UEDA,Japan,Forward,5.5,2,15,2,,,,,,,19
-DAIZEN MAEDA,Japan,Forward,5,2,,6,,,,,,,8
+AYASE UEDA,Japan,Forward,5.5,2,15,2,2,,,,,,21
+DAIZEN MAEDA,Japan,Forward,5,2,,6,2,,,,,,10
 KEISUKE GOTO,Japan,Forward,5,,1,,,,,,,,1
 KENTO SHIOGAI,Japan,Forward,5,1,,,,,,,,,1
-KOKI OGAWA,Japan,Forward,5,4,,1,,,,,,,5
-SHUTO MACHINO,Japan,Forward,5,,,,,,,,,,0
+KOKI OGAWA,Japan,Forward,5,4,,1,1,,,,,,6
+SHUTO MACHINO,Japan,Forward,5,,,,1,,,,,,1
 ABDALLAH AL-FAKHOURI,Jordan,Goalkeeper,4.5,,,,,,,,,,0
 NOUR BANI ATTIAH,Jordan,Goalkeeper,4.5,,,,,,,,,,0
 YAZEED ABULAILA,Jordan,Goalkeeper,4.5,-1,0,-1,,,,,,,-2
