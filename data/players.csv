@@ -158,7 +158,7 @@ SAMED BAZDAR,Bosnia-Herzegovina,Forward,5,1,,,,,,,,,1
 ALISSON,Brazil,Goalkeeper,7.5,1,6,6,1,,,,,,14
 EDERSON,Brazil,Goalkeeper,7,,,,,,,,,,0
 WEVERTON,Brazil,Goalkeeper,6.5,,,,,,,,,,0
-GABRIEL MAGALHAES,Brazil,Defender,7.5,1,6,6,4,,,,,,17
+GABRIEL MAGALHAES,Brazil,Defender,7.5,1,6,6,6,,,,,,19
 MARQUINHOS,Brazil,Defender,7.5,1,6,6,1,,,,,,14
 ALEX SANDRO,Brazil,Defender,7,,,1,,,,,,,1
 DANILO,Brazil,Defender,6.5,1,6,5,0,,,,,,12
@@ -168,7 +168,7 @@ LEO PEREIRA,Brazil,Defender,5.5,,,,,,,,,,0
 ROGER IBANEZ,Brazil,Defender,5.5,0,,,,,,,,,0
 LUCAS PAQUETA,Brazil,Midfielder,6.5,2,5,2,2,,,,,,11
 BRUNO GUIMARAES,Brazil,Midfielder,6,5,2,8,5,,,,,,20
-CASEMIRO,Brazil,Midfielder,6,1,2,2,8,,,,,,13
+CASEMIRO,Brazil,Midfielder,6,1,2,2,6,,,,,,11
 LUIZ HENRIQUE,Brazil,Midfielder,5.5,1,,,,,,,,,1
 DANILO OLIVEIRA,Brazil,Midfielder,5,1,1,,1,,,,,,3
 EDERSON SILVA,Brazil,Midfielder,5,,1,,,,,,,,1
@@ -467,31 +467,31 @@ OUSMANE DEMBELE,France,Forward,9.5,2,9,16,,,,,,,27
 DESIRE DOUE,France,Forward,7.5,2,1,6,,,,,,,9
 JEAN-PHILIPPE MATETA,France,Forward,6.5,,,1,,,,,,,1
 MARCUS THURAM,France,Forward,6.5,,1,,,,,,,,1
-MANUEL NEUER,Germany,Goalkeeper,7,1,1,0,,,,,,,2
+MANUEL NEUER,Germany,Goalkeeper,7,1,1,0,1,,,,,,3
 OLIVER BAUMANN,Germany,Goalkeeper,6.5,,,,,,,,,,0
 ALEXANDER NUBEL,Germany,Goalkeeper,6,,,,,,,,,,0
-JOSHUA KIMMICH,Germany,Defender,7.5,7,1,1,,,,,,,9
+JOSHUA KIMMICH,Germany,Defender,7.5,7,1,1,1,,,,,,10
 DAVID RAUM,Germany,Defender,7,1,,0,,,,,,,1
-JONATHAN TAH,Germany,Defender,7,1,1,0,,,,,,,2
+JONATHAN TAH,Germany,Defender,7,1,1,0,1,,,,,,3
 NICO SCHLOTTERBECK,Germany,Defender,7,9,1,,,,,,,,10
-ANTONIO RUDIGER,Germany,Defender,6.5,1,1,0,,,,,,,2
-MALICK THIAW,Germany,Defender,6,,,0,,,,,,,0
-NATHANIEL BROWN,Germany,Defender,6,10,1,,,,,,,,11
-WALDEMAR ANTON,Germany,Defender,6,1,,,,,,,,,1
-FLORIAN WIRTZ,Germany,Midfielder,8.5,5,2,5,,,,,,,12
-JAMAL MUSIALA,Germany,Midfielder,8,7,2,2,,,,,,,11
-LEROY SANE,Germany,Midfielder,7.5,2,2,7,,,,,,,11
-LEON GORETZKA,Germany,Midfielder,6,1,1,,,,,,,,2
-ALEKSANDAR PAVLOVIC,Germany,Midfielder,5.5,2,2,1,,,,,,,5
+ANTONIO RUDIGER,Germany,Defender,6.5,1,1,0,1,,,,,,3
+MALICK THIAW,Germany,Defender,6,,,0,1,,,,,,1
+NATHANIEL BROWN,Germany,Defender,6,10,1,,1,,,,,,12
+WALDEMAR ANTON,Germany,Defender,6,1,,,1,,,,,,2
+FLORIAN WIRTZ,Germany,Midfielder,8.5,5,2,5,7,,,,,,19
+JAMAL MUSIALA,Germany,Midfielder,8,7,2,2,0,,,,,,11
+LEROY SANE,Germany,Midfielder,7.5,2,2,7,2,,,,,,13
+LEON GORETZKA,Germany,Midfielder,6,1,1,,1,,,,,,3
+ALEKSANDAR PAVLOVIC,Germany,Midfielder,5.5,2,2,1,2,,,,,,7
 JAMIE LEWELING,Germany,Midfielder,5.5,,1,,,,,,,,1
-NADIEM AMIRI,Germany,Midfielder,5.5,,4,,,,,,,,4
+NADIEM AMIRI,Germany,Midfielder,5.5,,4,,1,,,,,,5
 ANGELO STILLER,Germany,Midfielder,5,,,1,,,,,,,1
 ASSAN OUEDRAOGO,Germany,Midfielder,5,,,,,,,,,,0
-FELIX NMECHA,Germany,Midfielder,5,7,5,2,,,,,,,14
+FELIX NMECHA,Germany,Midfielder,5,7,5,2,2,,,,,,16
 PASCAL GROSS,Germany,Midfielder,5,,,1,,,,,,,1
-KAI HAVERTZ,Germany,Forward,8.5,9,2,2,,,,,,,13
-NICK WOLTEMADE,Germany,Forward,7.5,,,,,,,,,,0
-DENIZ UNDAV,Germany,Forward,6,11,11,1,,,,,,,23
+KAI HAVERTZ,Germany,Forward,8.5,9,2,2,5,,,,,,18
+NICK WOLTEMADE,Germany,Forward,7.5,,,,1,,,,,,1
+DENIZ UNDAV,Germany,Forward,6,11,11,1,2,,,,,,25
 MAXIMILIAN BEIER,Germany,Forward,6,,,1,,,,,,,1
 BENJAMIN ASARE,Ghana,Goalkeeper,5,1,6,0,,,,,,,7
 LAWRENCE ATI-ZIGI,Ghana,Goalkeeper,5,2,,,,,,,,,2
@@ -701,58 +701,58 @@ SANTIAGO GIMENEZ,Mexico,Forward,5.5,,1,1,,,,,,,2
 ARMANDO GONZALEZ,Mexico,Forward,5,1,,,,,,,,,1
 GUILLERMO MARTINEZ,Mexico,Forward,5,,,2,,,,,,,2
 JULIAN QUINONES,Mexico,Forward,5,8,2,6,,,,,,,16
-YASSINE BOUNOU,Morocco,Goalkeeper,5,1,6,-2,,,,,,,5
+YASSINE BOUNOU,Morocco,Goalkeeper,5,1,6,-2,1,,,,,,6
 AHMED REDA TAGNAOUTI,Morocco,Goalkeeper,4.5,,,,,,,,,,0
 MUNIR MOHAMEDI,Morocco,Goalkeeper,4.5,,,,,,,,,,0
-ACHRAF HAKIMI,Morocco,Defender,5.5,1,6,11,,,,,,,18
-NOUSSAIR MAZRAOUI,Morocco,Defender,5,1,6,1,,,,,,,8
-ANASS SALAH-EDDINE,Morocco,Defender,4.5,1,,0,,,,,,,1
-CHADI RIAD,Morocco,Defender,4.5,1,6,3,,,,,,,10
-ISSA DIOP,Morocco,Defender,4.5,1,5,,,,,,,,6
+ACHRAF HAKIMI,Morocco,Defender,5.5,1,6,11,1,,,,,,19
+NOUSSAIR MAZRAOUI,Morocco,Defender,5,1,6,1,3,,,,,,11
+ANASS SALAH-EDDINE,Morocco,Defender,4.5,1,,0,1,,,,,,2
+CHADI RIAD,Morocco,Defender,4.5,1,6,3,1,,,,,,11
+ISSA DIOP,Morocco,Defender,4.5,1,5,,6,,,,,,12
 MARWANE SAADANE,Morocco,Defender,4.5,,,,,,,,,,0
 REDOUANE HALHAL,Morocco,Defender,4.5,,,0,,,,,,,0
 YOUSSEF BELAMMARI,Morocco,Defender,4.5,,,,,,,,,,0
 ZAKARIA EL OUAHDI,Morocco,Defender,4.5,,,,,,,,,,0
-BRAHIM DIAZ,Morocco,Midfielder,6,5,7,2,,,,,,,14
-AZZEDINE OUNAHI,Morocco,Midfielder,5,2,2,1,,,,,,,5
-ISMAEL SAIBARI,Morocco,Midfielder,5,9,7,7,,,,,,,23
+BRAHIM DIAZ,Morocco,Midfielder,6,5,7,2,2,,,,,,16
+AZZEDINE OUNAHI,Morocco,Midfielder,5,2,2,1,2,,,,,,7
+ISMAEL SAIBARI,Morocco,Midfielder,5,9,7,7,2,,,,,,25
 AMINE SBAI,Morocco,Midfielder,4.5,,,,,,,,,,0
 AYOUBE AMAIMOUNI,Morocco,Midfielder,4.5,1,1,,,,,,,,2
-AYYOUB BOUADDI,Morocco,Midfielder,4.5,2,2,,,,,,,,4
-BILAL EL KHANNOUSS,Morocco,Midfielder,4.5,2,2,2,,,,,,,6
-CHEMSDINE TALBI,Morocco,Midfielder,4.5,1,1,,,,,,,,2
-GESSIME YASSINE,Morocco,Midfielder,4.5,,,6,,,,,,,6
-NEIL EL AYNAOUI,Morocco,Midfielder,4.5,2,2,2,,,,,,,6
-SAMIR EL MOURABET,Morocco,Midfielder,4.5,1,1,1,,,,,,,3
+AYYOUB BOUADDI,Morocco,Midfielder,4.5,2,2,,2,,,,,,6
+BILAL EL KHANNOUSS,Morocco,Midfielder,4.5,2,2,2,2,,,,,,8
+CHEMSDINE TALBI,Morocco,Midfielder,4.5,1,1,,4,,,,,,6
+GESSIME YASSINE,Morocco,Midfielder,4.5,,,6,1,,,,,,7
+NEIL EL AYNAOUI,Morocco,Midfielder,4.5,2,2,2,2,,,,,,8
+SAMIR EL MOURABET,Morocco,Midfielder,4.5,1,1,1,1,,,,,,4
 SOFYAN AMRABAT,Morocco,Midfielder,4.5,,,2,,,,,,,2
 AYOUB EL KAABI,Morocco,Forward,5.5,,,2,,,,,,,2
-SOUFIANE RAHIMI,Morocco,Forward,5,1,1,8,,,,,,,10
-BART VERBRUGGEN,Netherlands,Goalkeeper,6.5,0,1,1,,,,,,,2
+SOUFIANE RAHIMI,Morocco,Forward,5,1,1,8,1,,,,,,11
+BART VERBRUGGEN,Netherlands,Goalkeeper,6.5,0,1,1,1,,,,,,3
 MARK FLEKKEN,Netherlands,Goalkeeper,6,,,,,,,,,,0
 ROBIN ROEFS,Netherlands,Goalkeeper,5.5,,,,,,,,,,0
-DENZEL DUMFRIES,Netherlands,Defender,7.5,0,7,1,,,,,,,8
-MICKY VAN DE VEN,Netherlands,Defender,7,-1,1,,,,,,,,0
-VIRGIL VAN DIJK,Netherlands,Defender,7,6,1,6,,,,,,,13
-NATHAN AKE,Netherlands,Defender,6.5,0,,1,,,,,,,1
-JAN PAUL VAN HECKE,Netherlands,Defender,6,0,1,7,,,,,,,8
-JORREL HATO,Netherlands,Defender,5.5,,,,,,,,,,0
+DENZEL DUMFRIES,Netherlands,Defender,7.5,0,7,1,1,,,,,,9
+MICKY VAN DE VEN,Netherlands,Defender,7,-1,1,,6,,,,,,6
+VIRGIL VAN DIJK,Netherlands,Defender,7,6,1,6,1,,,,,,14
+NATHAN AKE,Netherlands,Defender,6.5,0,,1,6,,,,,,7
+JAN PAUL VAN HECKE,Netherlands,Defender,6,0,1,7,1,,,,,,9
+JORREL HATO,Netherlands,Defender,5.5,,,,0,,,,,,0
 LUTSHAREL GEERTRUIDA,Netherlands,Defender,5.5,,,,,,,,,,0
 TIJJANI REIJNDERS,Netherlands,Midfielder,7,2,2,5,,,,,,,9
-FRENKIE DE JONG,Netherlands,Midfielder,6,2,2,2,,,,,,,6
-CRYSENCIO SUMMERVILLE,Netherlands,Midfielder,5.5,6,9,1,,,,,,,16
+FRENKIE DE JONG,Netherlands,Midfielder,6,2,2,2,2,,,,,,8
+CRYSENCIO SUMMERVILLE,Netherlands,Midfielder,5.5,6,9,1,5,,,,,,21
 GUUS TIL,Netherlands,Midfielder,5.5,,1,,,,,,,,1
 NOA LANG,Netherlands,Midfielder,5.5,,1,1,,,,,,,2
-RYAN GRAVENBERCH,Netherlands,Midfielder,5.5,8,2,2,,,,,,,12
-MARTEN DE ROON,Netherlands,Midfielder,5,,,,,,,,,,0
+RYAN GRAVENBERCH,Netherlands,Midfielder,5.5,8,2,2,2,,,,,,14
+MARTEN DE ROON,Netherlands,Midfielder,5,,,,1,,,,,,1
 MATS WIEFFER,Netherlands,Midfielder,5,,,,,,,,,,0
-QUINTEN TIMBER,Netherlands,Midfielder,5,1,,,,,,,,,1
-TEUN KOOPMEINERS,Netherlands,Midfielder,5,1,1,1,,,,,,,3
-CODY GAKPO,Netherlands,Forward,8.5,2,15,2,,,,,,,19
+QUINTEN TIMBER,Netherlands,Midfielder,5,1,,,1,,,,,,2
+TEUN KOOPMEINERS,Netherlands,Midfielder,5,1,1,1,1,,,,,,4
+CODY GAKPO,Netherlands,Forward,8.5,2,15,2,6,,,,,,25
 MEMPHIS DEPAY,Netherlands,Forward,8.5,0,4,1,,,,,,,5
 DONYELL MALEN,Netherlands,Forward,7,2,2,2,,,,,,,6
-JUSTIN KLUIVERT,Netherlands,Forward,6,,,1,,,,,,,1
-WOUT WEGHORST,Netherlands,Forward,6,,,,,,,,,,0
-BRIAN BROBBEY,Netherlands,Forward,5.5,1,10,6,,,,,,,17
+JUSTIN KLUIVERT,Netherlands,Forward,6,,,1,1,,,,,,2
+WOUT WEGHORST,Netherlands,Forward,6,,,,1,,,,,,1
+BRIAN BROBBEY,Netherlands,Forward,5.5,1,10,6,2,,,,,,19
 ALEX PAULSEN,New Zealand,Goalkeeper,4.5,,,,,,,,,,0
 MAX CROCOMBE,New Zealand,Goalkeeper,4.5,0,-1,-3,,,,,,,-4
 MICHAEL WOUD,New Zealand,Goalkeeper,4.5,,,,,,,,,,0
@@ -833,29 +833,29 @@ JOSE FAJARDO,Panama,Forward,5,1,2,0,,,,,,,3
 TOMAS RODRIGUEZ,Panama,Forward,5,,1,2,,,,,,,3
 ROBERTO FERNANDEZ,Paraguay,Goalkeeper,5,,,,,,,,,,0
 GASTON OLVEIRA,Paraguay,Goalkeeper,4.5,,,,,,,,,,0
-ORLANDO GILL,Paraguay,Goalkeeper,4.5,-2,6,6,,,,,,,10
-GUSTAVO GOMEZ,Paraguay,Defender,5,-2,6,6,,,,,,,10
-JUAN CACERES,Paraguay,Defender,5,-2,8,6,,,,,,,12
-JUNIOR ALONSO,Paraguay,Defender,5,-3,6,1,,,,,,,4
+ORLANDO GILL,Paraguay,Goalkeeper,4.5,-2,6,6,1,,,,,,11
+GUSTAVO GOMEZ,Paraguay,Defender,5,-2,6,6,1,,,,,,11
+JUAN CACERES,Paraguay,Defender,5,-2,8,6,1,,,,,,13
+JUNIOR ALONSO,Paraguay,Defender,5,-3,6,1,1,,,,,,5
 OMAR ALDERETE,Paraguay,Defender,5,-2,6,6,,,,,,,10
 ALEXANDRO MAIDANA,Paraguay,Defender,4.5,,1,2,,,,,,,3
-FABIAN BALBUENA,Paraguay,Defender,4.5,,,,,,,,,,0
-GUSTAVO VELAZQUEZ,Paraguay,Defender,4.5,0,1,6,,,,,,,7
-JOSE CANALE,Paraguay,Defender,4.5,,1,1,,,,,,,2
-ANDRES CUBAS,Paraguay,Midfielder,5,2,2,2,,,,,,,6
+FABIAN BALBUENA,Paraguay,Defender,4.5,,,,1,,,,,,1
+GUSTAVO VELAZQUEZ,Paraguay,Defender,4.5,0,1,6,1,,,,,,8
+JOSE CANALE,Paraguay,Defender,4.5,,1,1,1,,,,,,3
+ANDRES CUBAS,Paraguay,Midfielder,5,2,2,2,1,,,,,,7
 DIEGO GOMEZ,Paraguay,Midfielder,5,1,2,1,,,,,,,4
-JULIO ENCISO,Paraguay,Midfielder,5,5,5,2,,,,,,,12
-MIGUEL ALMIRON,Paraguay,Midfielder,5,1,-1,,,,,,,,0
+JULIO ENCISO,Paraguay,Midfielder,5,5,5,2,7,,,,,,19
+MIGUEL ALMIRON,Paraguay,Midfielder,5,1,-1,,2,,,,,,2
 RAMON SOSA,Paraguay,Midfielder,5,1,,,,,,,,,1
-BRAIAN OJEDA,Paraguay,Midfielder,4.5,,,,,,,,,,0
-DAMIAN BOBADILLA,Paraguay,Midfielder,4.5,0,1,1,,,,,,,2
-GUSTAVO CABALLERO,Paraguay,Midfielder,4.5,,,,,,,,,,0
+BRAIAN OJEDA,Paraguay,Midfielder,4.5,,,,1,,,,,,1
+DAMIAN BOBADILLA,Paraguay,Midfielder,4.5,0,1,1,2,,,,,,4
+GUSTAVO CABALLERO,Paraguay,Midfielder,4.5,,,,1,,,,,,1
 KAKU,Paraguay,Midfielder,4.5,1,,,,,,,,,1
-MATIAS GALARZA,Paraguay,Midfielder,4.5,,6,2,,,,,,,8
-MAURICIO,Paraguay,Midfielder,4.5,6,,1,,,,,,,7
+MATIAS GALARZA,Paraguay,Midfielder,4.5,,6,2,4,,,,,,12
+MAURICIO,Paraguay,Midfielder,4.5,6,,1,1,,,,,,8
 ALEX ARCE,Paraguay,Forward,5,1,,1,,,,,,,2
-ANTONIO SANABRIA,Paraguay,Forward,5,2,,,,,,,,,2
-GABRIEL AVALOS,Paraguay,Forward,5,,1,2,,,,,,,3
+ANTONIO SANABRIA,Paraguay,Forward,5,2,,,1,,,,,,3
+GABRIEL AVALOS,Paraguay,Forward,5,,1,2,2,,,,,,5
 ISIDRO PITTA,Paraguay,Forward,5,,2,,,,,,,,2
 DIOGO COSTA,Portugal,Goalkeeper,7,1,6,8,,,,,,,15
 JOSE SA,Portugal,Goalkeeper,6,,,,,,,,,,0
