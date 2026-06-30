@@ -597,32 +597,32 @@ ALI AL-HAMADI,Iraq,Forward,5,2,1,2,,,,,,,5
 ALI YOUSIF,Iraq,Forward,5,,,1,,,,,,,1
 AYMEN HUSSEIN,Iraq,Forward,5,4,2,,,,,,,,6
 MOHANAD ALI,Iraq,Forward,5,1,,,,,,,,,1
-YAHIA FOFANA,Ivory Coast,Goalkeeper,5,6,0,6,,,,,,,12
+YAHIA FOFANA,Ivory Coast,Goalkeeper,5,6,0,6,0,,,,,,12
 ALBAN LAFONT,Ivory Coast,Goalkeeper,4.5,,,,,,,,,,0
 MOHAMED KONE,Ivory Coast,Goalkeeper,4.5,,,,,,,,,,0
 EVAN NDICKA,Ivory Coast,Defender,5,,,,,,,,,,0
-GHISLAIN KONAN,Ivory Coast,Defender,5,6,0,,,,,,,,6
-GUELA DOUE,Ivory Coast,Defender,5,5,0,6,,,,,,,11
-ODILON KOSSOUNOU,Ivory Coast,Defender,5,1,0,6,,,,,,,7
+GHISLAIN KONAN,Ivory Coast,Defender,5,6,0,,0,,,,,,6
+GUELA DOUE,Ivory Coast,Defender,5,5,0,6,0,,,,,,11
+ODILON KOSSOUNOU,Ivory Coast,Defender,5,1,0,6,0,,,,,,7
 CHRISTOPHER OPERI,Ivory Coast,Defender,4.5,,,6,,,,,,,6
-EMMANUEL AGBADOU,Ivory Coast,Defender,4.5,6,0,,,,,,,,6
+EMMANUEL AGBADOU,Ivory Coast,Defender,4.5,6,0,,0,,,,,,6
 OUSMANE DIOMANDE,Ivory Coast,Defender,4.5,,,6,,,,,,,6
 WILFRIED SINGO,Ivory Coast,Defender,4.5,9,1,,,,,,,,10
-AMAD DIALLO,Ivory Coast,Midfielder,6,8,2,2,,,,,,,12
-NICOLAS PEPE,Ivory Coast,Midfielder,5.5,2,1,13,,,,,,,16
+AMAD DIALLO,Ivory Coast,Midfielder,6,8,2,2,8,,,,,,20
+NICOLAS PEPE,Ivory Coast,Midfielder,5.5,2,1,13,5,,,,,,21
 SIMON ADINGRA,Ivory Coast,Midfielder,5.5,,1,,,,,,,,1
-YAN DIOMANDE,Ivory Coast,Midfielder,5.5,2,2,5,,,,,,,9
-FRANCK KESSIE,Ivory Coast,Midfielder,5,1,7,2,,,,,,,10
-IBRAHIM SANGARE,Ivory Coast,Midfielder,5,1,2,5,,,,,,,8
+YAN DIOMANDE,Ivory Coast,Midfielder,5.5,2,2,5,2,,,,,,11
+FRANCK KESSIE,Ivory Coast,Midfielder,5,1,7,2,2,,,,,,12
+IBRAHIM SANGARE,Ivory Coast,Midfielder,5,1,2,5,2,,,,,,10
 SEKO FOFANA,Ivory Coast,Midfielder,5,1,1,,,,,,,,2
-BAZOUMANA TOURE,Ivory Coast,Midfielder,4.5,2,,1,,,,,,,3
-CHRIST INAO OULAI,Ivory Coast,Midfielder,4.5,1,2,1,,,,,,,4
+BAZOUMANA TOURE,Ivory Coast,Midfielder,4.5,2,,1,1,,,,,,4
+CHRIST INAO OULAI,Ivory Coast,Midfielder,4.5,1,2,1,2,,,,,,6
 JEAN MICHAEL SERI,Ivory Coast,Midfielder,4.5,,,1,,,,,,,1
 PARFAIT GUIAGON,Ivory Coast,Midfielder,4.5,,,,,,,,,,0
-EVANN GUESSAND,Ivory Coast,Forward,5.5,,1,,,,,,,,1
-ANGE-YOAN BONNY,Ivory Coast,Forward,5,1,2,2,,,,,,,5
-ELYE WAHI,Ivory Coast,Forward,5,2,,1,,,,,,,3
-OUMAR DIAKITE,Ivory Coast,Forward,5,,,1,,,,,,,1
+EVANN GUESSAND,Ivory Coast,Forward,5.5,,1,,1,,,,,,2
+ANGE-YOAN BONNY,Ivory Coast,Forward,5,1,2,2,2,,,,,,7
+ELYE WAHI,Ivory Coast,Forward,5,2,,1,1,,,,,,4
+OUMAR DIAKITE,Ivory Coast,Forward,5,,,1,1,,,,,,2
 ZION SUZUKI,Japan,Goalkeeper,5,0,6,1,0,,,,,,7
 KEISUKE OSAKO,Japan,Goalkeeper,4.5,,,,,,,,,,0
 TOMOKI HAYAKAWA,Japan,Goalkeeper,4.5,,,,,,,,,,0
@@ -779,31 +779,31 @@ SARPREET SINGH,New Zealand,Midfielder,4.5,2,1,2,,,,,,,5
 CHRIS WOOD,New Zealand,Forward,5.5,8,2,2,,,,,,,12
 BEN WAINE,New Zealand,Forward,5,,,,,,,,,,0
 JESSE RANDALL,New Zealand,Forward,5,1,1,1,,,,,,,3
-ORJAN NYLAND,Norway,Goalkeeper,6,1,0,,,,,,,,1
+ORJAN NYLAND,Norway,Goalkeeper,6,1,0,,1,,,,,,2
 EGIL SELVIK,Norway,Goalkeeper,5,,,-2,,,,,,,-2
 SANDER TANGVIK,Norway,Goalkeeper,4.5,,,,,,,,,,0
 JULIAN RYERSON,Norway,Defender,6,1,2,,,,,,,,3
-KRISTOFFER AJER,Norway,Defender,6,1,0,,,,,,,,1
-DAVID MOLLER WOLFE,Norway,Defender,5.5,4,0,,,,,,,,4
-TORBJORN HEGGEM,Norway,Defender,5.5,1,1,,,,,,,,2
+KRISTOFFER AJER,Norway,Defender,6,1,0,,1,,,,,,2
+DAVID MOLLER WOLFE,Norway,Defender,5.5,4,0,,1,,,,,,5
+TORBJORN HEGGEM,Norway,Defender,5.5,1,1,,1,,,,,,3
 FREDRIK ANDRE BJORKAN,Norway,Defender,5,,,-1,,,,,,,-1
 LEO SKIRI OSTIGARD,Norway,Defender,5,7,0,-2,,,,,,,5
-MARCUS HOLMGREN PEDERSEN,Norway,Defender,5,,5,0,,,,,,,5
+MARCUS HOLMGREN PEDERSEN,Norway,Defender,5,,5,0,1,,,,,,6
 HENRIK FALCHENER,Norway,Defender,4.5,,,-1,,,,,,,-1
 SONDRE LANGAS,Norway,Defender,4.5,,,0,,,,,,,0
-MARTIN ODEGAARD,Norway,Midfielder,6.5,5,5,,,,,,,,10
-ANTONIO NUSA,Norway,Midfielder,6,2,2,1,,,,,,,5
-OSCAR BOBB,Norway,Midfielder,5.5,1,1,2,,,,,,,4
+MARTIN ODEGAARD,Norway,Midfielder,6.5,5,5,,5,,,,,,15
+ANTONIO NUSA,Norway,Midfielder,6,2,2,1,6,,,,,,11
+OSCAR BOBB,Norway,Midfielder,5.5,1,1,2,1,,,,,,5
 JENS PETTER HAUGE,Norway,Midfielder,5,,,1,,,,,,,1
-PATRICK BERG,Norway,Midfielder,5,1,4,1,,,,,,,6
-SANDER BERGE,Norway,Midfielder,5,2,2,,,,,,,,4
+PATRICK BERG,Norway,Midfielder,5,1,4,1,5,,,,,,11
+SANDER BERGE,Norway,Midfielder,5,2,2,,2,,,,,,6
 THELO AASGAARD,Norway,Midfielder,5,,,7,,,,,,,7
-FREDRIK AURSNES,Norway,Midfielder,4.5,2,2,2,,,,,,,6
+FREDRIK AURSNES,Norway,Midfielder,4.5,2,2,2,1,,,,,,7
 KRISTIAN THORSTVEDT,Norway,Midfielder,4.5,1,,2,,,,,,,3
 MORTEN THORSBY,Norway,Midfielder,4.5,,,1,,,,,,,1
-ERLING HAALAND,Norway,Forward,10.5,12,12,,,,,,,,24
-ALEXANDER SORLOTH,Norway,Forward,6.5,2,2,,,,,,,,4
-ANDREAS SCHJELDERUP,Norway,Forward,5.5,1,1,5,,,,,,,7
+ERLING HAALAND,Norway,Forward,10.5,12,12,,6,,,,,,30
+ALEXANDER SORLOTH,Norway,Forward,6.5,2,2,,2,,,,,,6
+ANDREAS SCHJELDERUP,Norway,Forward,5.5,1,1,5,1,,,,,,8
 JORGEN STRAND LARSEN,Norway,Forward,5.5,,,0,,,,,,,0
 CESAR SAMUDIO,Panama,Goalkeeper,4.5,,,,,,,,,,0
 LUIS MEJIA,Panama,Goalkeeper,4.5,,,,,,,,,,0
