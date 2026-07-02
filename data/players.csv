@@ -103,56 +103,56 @@ PAUL WANNER,Austria,Midfielder,4.5,1,2,1,,,,,,,4
 MARKO ARNAUTOVIC,Austria,Forward,6,4,1,5,,,,,,,10
 MICHAEL GREGORITSCH,Austria,Forward,5.5,,2,4,,,,,,,6
 SASA KALAJDZIC,Austria,Forward,5,2,,5,,,,,,,7
-THIBAUT COURTOIS,Belgium,Goalkeeper,6.5,1,6,1,,,,,,,8
+THIBAUT COURTOIS,Belgium,Goalkeeper,6.5,1,6,1,0,,,,,,8
 MIKE PENDERS,Belgium,Goalkeeper,5.5,,,,,,,,,,0
 SENNE LAMMENS,Belgium,Goalkeeper,5.5,,,,,,,,,,0
-MAXIM DE CUYPER,Belgium,Defender,6.5,0,6,1,,,,,,,7
+MAXIM DE CUYPER,Belgium,Defender,6.5,0,6,1,0,,,,,,7
 ZENO DEBAST,Belgium,Defender,6.5,,,,,,,,,,0
-ARTHUR THEATE,Belgium,Defender,6,,1,1,,,,,,,2
-THOMAS MEUNIER,Belgium,Defender,6,1,2,,,,,,,,3
-TIMOTHY CASTAGNE,Belgium,Defender,6,0,1,1,,,,,,,2
-BRANDON MECHELE,Belgium,Defender,5.5,1,6,1,,,,,,,8
+ARTHUR THEATE,Belgium,Defender,6,,1,1,0,,,,,,2
+THOMAS MEUNIER,Belgium,Defender,6,1,2,,4,,,,,,7
+TIMOTHY CASTAGNE,Belgium,Defender,6,0,1,1,0,,,,,,2
+BRANDON MECHELE,Belgium,Defender,5.5,1,6,1,-1,,,,,,7
 KONI DE WINTER,Belgium,Defender,5.5,,,,,,,,,,0
 JOAQUIN SEYS,Belgium,Defender,5,,,,,,,,,,0
 NATHAN NGOY,Belgium,Defender,5,1,3,,,,,,,,4
-JEREMY DOKU,Belgium,Midfielder,8,2,,2,,,,,,,4
-KEVIN DE BRUYNE,Belgium,Midfielder,7.5,2,2,7,,,,,,,11
-LEANDRO TROSSARD,Belgium,Midfielder,7.5,2,2,14,,,,,,,18
-YOURI TIELEMANS,Belgium,Midfielder,6,2,2,2,,,,,,,6
+JEREMY DOKU,Belgium,Midfielder,8,2,,2,2,,,,,,6
+KEVIN DE BRUYNE,Belgium,Midfielder,7.5,2,2,7,2,,,,,,13
+LEANDRO TROSSARD,Belgium,Midfielder,7.5,2,2,14,5,,,,,,23
+YOURI TIELEMANS,Belgium,Midfielder,6,2,2,2,12,,,,,,18
 ALEXIS SAELEMAEKERS,Belgium,Midfielder,5.5,,2,6,,,,,,,8
-CHARLES DE KETELAERE,Belgium,Midfielder,5.5,2,,2,,,,,,,4
-DODI LUKEBAKIO,Belgium,Midfielder,5.5,,1,,,,,,,,1
-AMADOU ONANA,Belgium,Midfielder,5,2,,1,,,,,,,3
+CHARLES DE KETELAERE,Belgium,Midfielder,5.5,2,,2,2,,,,,,6
+DODI LUKEBAKIO,Belgium,Midfielder,5.5,,1,,1,,,,,,2
+AMADOU ONANA,Belgium,Midfielder,5,2,,1,1,,,,,,4
 AXEL WITSEL,Belgium,Midfielder,5,,,,,,,,,,0
-DIEGO MOREIRA,Belgium,Midfielder,5,,,,,,,,,,0
-HANS VANAKEN,Belgium,Midfielder,5,1,1,5,,,,,,,7
-NICOLAS RASKIN,Belgium,Midfielder,5,1,2,4,,,,,,,7
-ROMELU LUKAKU,Belgium,Forward,9,1,1,8,,,,,,,10
+DIEGO MOREIRA,Belgium,Midfielder,5,,,,1,,,,,,1
+HANS VANAKEN,Belgium,Midfielder,5,1,1,5,2,,,,,,9
+NICOLAS RASKIN,Belgium,Midfielder,5,1,2,4,1,,,,,,8
+ROMELU LUKAKU,Belgium,Forward,9,1,1,8,5,,,,,,15
 MATIAS FERNANDEZ-PARDO,Belgium,Forward,6,1,1,1,,,,,,,3
-NIKOLA VASILJ,Bosnia-Herzegovina,Goalkeeper,5,1,-2,1,,,,,,,0
+NIKOLA VASILJ,Bosnia-Herzegovina,Goalkeeper,5,1,-2,1,0,,,,,,0
 MARTIN ZLOMISLIC,Bosnia-Herzegovina,Goalkeeper,4.5,,,,,,,,,,0
 MLADEN JURKAS,Bosnia-Herzegovina,Goalkeeper,4.5,,,,,,,,,,0
-AMAR DEDIC,Bosnia-Herzegovina,Defender,5,1,-3,,,,,,,,-2
-NIKOLA KATIC,Bosnia-Herzegovina,Defender,5,2,-2,1,,,,,,,1
-SEAD KOLASINAC,Bosnia-Herzegovina,Defender,5,4,-2,1,,,,,,,3
+AMAR DEDIC,Bosnia-Herzegovina,Defender,5,1,-3,,0,,,,,,-2
+NIKOLA KATIC,Bosnia-Herzegovina,Defender,5,2,-2,1,1,,,,,,2
+SEAD KOLASINAC,Bosnia-Herzegovina,Defender,5,4,-2,1,1,,,,,,4
 ARJAN MALIC,Bosnia-Herzegovina,Defender,4.5,,,1,,,,,,,1
 DENNIS HADZIKADUNIC,Bosnia-Herzegovina,Defender,4.5,,,4,,,,,,,4
 NIHAD MUJAKIC,Bosnia-Herzegovina,Defender,4.5,,,,,,,,,,0
-STJEPAN RADELJIC,Bosnia-Herzegovina,Defender,4.5,,,1,,,,,,,1
-TARIK MUHAREMOVIC,Bosnia-Herzegovina,Defender,4.5,1,-5,,,,,,,,-4
-BENJAMIN TAHIROVIC,Bosnia-Herzegovina,Midfielder,5,2,2,1,,,,,,,5
-ESMIR BAJRAKTAREVIC,Bosnia-Herzegovina,Midfielder,5,2,1,2,,,,,,,5
-KERIM ALAJBEGOVIC,Bosnia-Herzegovina,Midfielder,5,1,2,9,,,,,,,12
-AMAR MEMIC,Bosnia-Herzegovina,Midfielder,4.5,2,2,1,,,,,,,5
+STJEPAN RADELJIC,Bosnia-Herzegovina,Defender,4.5,,,1,-1,,,,,,0
+TARIK MUHAREMOVIC,Bosnia-Herzegovina,Defender,4.5,1,-5,,0,,,,,,-4
+BENJAMIN TAHIROVIC,Bosnia-Herzegovina,Midfielder,5,2,2,1,1,,,,,,6
+ESMIR BAJRAKTAREVIC,Bosnia-Herzegovina,Midfielder,5,2,1,2,1,,,,,,6
+KERIM ALAJBEGOVIC,Bosnia-Herzegovina,Midfielder,5,1,2,9,2,,,,,,14
+AMAR MEMIC,Bosnia-Herzegovina,Midfielder,4.5,2,2,1,1,,,,,,6
 AMIR HADZIAHMETOVIC,Bosnia-Herzegovina,Midfielder,4.5,,1,,,,,,,,1
-ARMIN GIGOVIC,Bosnia-Herzegovina,Midfielder,4.5,1,,,,,,,,,1
+ARMIN GIGOVIC,Bosnia-Herzegovina,Midfielder,4.5,1,,,2,,,,,,3
 DZENIS BURNIC,Bosnia-Herzegovina,Midfielder,4.5,1,,1,,,,,,,2
-ERMIN MAHMIC,Bosnia-Herzegovina,Midfielder,4.5,,6,5,,,,,,,11
+ERMIN MAHMIC,Bosnia-Herzegovina,Midfielder,4.5,,6,5,1,,,,,,12
 IVAN BASIC,Bosnia-Herzegovina,Midfielder,4.5,2,1,5,,,,,,,8
-IVAN SUNJIC,Bosnia-Herzegovina,Midfielder,4.5,1,2,2,,,,,,,5
-EDIN DZEKO,Bosnia-Herzegovina,Forward,6,,1,2,,,,,,,3
-ERMEDIN DEMIROVIC,Bosnia-Herzegovina,Forward,5,1,2,2,,,,,,,5
-HARIS TABAKOVIC,Bosnia-Herzegovina,Forward,5,,,,,,,,,,0
+IVAN SUNJIC,Bosnia-Herzegovina,Midfielder,4.5,1,2,2,2,,,,,,7
+EDIN DZEKO,Bosnia-Herzegovina,Forward,6,,1,2,2,,,,,,5
+ERMEDIN DEMIROVIC,Bosnia-Herzegovina,Forward,5,1,2,2,2,,,,,,7
+HARIS TABAKOVIC,Bosnia-Herzegovina,Forward,5,,,,1,,,,,,1
 JOVO LUKIC,Bosnia-Herzegovina,Forward,5,5,1,,,,,,,,6
 SAMED BAZDAR,Bosnia-Herzegovina,Forward,5,1,,,,,,,,,1
 ALISSON,Brazil,Goalkeeper,7.5,1,6,6,1,,,,,,14
@@ -962,31 +962,31 @@ LAWRENCE SHANKLAND,Scotland,Forward,5,2,,2,,,,,,,4
 LYNDON DYKES,Scotland,Forward,5,1,1,,,,,,,,2
 ROSS STEWART,Scotland,Forward,5,,1,,,,,,,,1
 EDOUARD MENDY,Senegal,Goalkeeper,5,-1,-1,,,,,,,,-2
-MORY DIAW,Senegal,Goalkeeper,4.5,,1,6,,,,,,,7
+MORY DIAW,Senegal,Goalkeeper,4.5,,1,6,0,,,,,,7
 YEHVANN DIOUF,Senegal,Goalkeeper,4.5,,,,,,,,,,0
-EL HADJI MALICK DIOUF,Senegal,Defender,5,-1,0,,,,,,,,-1
+EL HADJI MALICK DIOUF,Senegal,Defender,5,-1,0,,1,,,,,,0
 KALIDOU KOULIBALY,Senegal,Defender,5,-1,-1,,,,,,,,-2
-KREPIN DIATTA,Senegal,Defender,5,-1,-1,6,,,,,,,4
-MOUSSA NIAKHATE,Senegal,Defender,5,-1,-1,6,,,,,,,4
+KREPIN DIATTA,Senegal,Defender,5,-1,-1,6,0,,,,,,4
+MOUSSA NIAKHATE,Senegal,Defender,5,-1,-1,6,3,,,,,,7
 ABDOULAYE SECK,Senegal,Defender,4.5,,,4,,,,,,,4
 ANTOINE MENDY,Senegal,Defender,4.5,,,,,,,,,,0
-ISMAIL JAKOBS,Senegal,Defender,4.5,,0,6,,,,,,,6
+ISMAIL JAKOBS,Senegal,Defender,4.5,,0,6,0,,,,,,6
 MAMADOU SARR,Senegal,Defender,4.5,,,,,,,,,,0
-SADIO MANE,Senegal,Midfielder,7,2,5,2,,,,,,,9
-ISMAILA SARR,Senegal,Midfielder,5.5,2,12,10,,,,,,,24
-IDRISSA GUEYE,Senegal,Midfielder,5,2,2,2,,,,,,,6
-ILIMAN NDIAYE,Senegal,Midfielder,5,4,,9,,,,,,,13
-PAPE GUEYE,Senegal,Midfielder,5,2,2,15,,,,,,,19
+SADIO MANE,Senegal,Midfielder,7,2,5,2,2,,,,,,11
+ISMAILA SARR,Senegal,Midfielder,5.5,2,12,10,7,,,,,,31
+IDRISSA GUEYE,Senegal,Midfielder,5,2,2,2,2,,,,,,8
+ILIMAN NDIAYE,Senegal,Midfielder,5,4,,9,2,,,,,,15
+PAPE GUEYE,Senegal,Midfielder,5,2,2,15,2,,,,,,21
 ASSANE DIAO,Senegal,Midfielder,4.5,,,1,,,,,,,1
-BARA SAPOKO NDIAYE,Senegal,Midfielder,4.5,,,,,,,,,,0
-HABIB DIARRA,Senegal,Midfielder,4.5,1,,7,,,,,,,8
-LAMINE CAMARA,Senegal,Midfielder,4.5,2,2,5,,,,,,,9
-PAPE MATAR SARR,Senegal,Midfielder,4.5,,1,,,,,,,,1
-PATHE CISS,Senegal,Midfielder,4.5,1,1,1,,,,,,,3
-NICOLAS JACKSON,Senegal,Forward,6,2,5,1,,,,,,,8
+BARA SAPOKO NDIAYE,Senegal,Midfielder,4.5,,,,1,,,,,,1
+HABIB DIARRA,Senegal,Midfielder,4.5,1,,7,7,,,,,,15
+LAMINE CAMARA,Senegal,Midfielder,4.5,2,2,5,0,,,,,,9
+PAPE MATAR SARR,Senegal,Midfielder,4.5,,1,,1,,,,,,2
+PATHE CISS,Senegal,Midfielder,4.5,1,1,1,2,,,,,,5
+NICOLAS JACKSON,Senegal,Forward,6,2,5,1,1,,,,,,9
 BAMBA DIENG,Senegal,Forward,5,1,,,,,,,,,1
 CHERIF NDIAYE,Senegal,Forward,5,,,,,,,,,,0
-IBRAHIM MBAYE,Senegal,Forward,5,5,1,2,,,,,,,8
+IBRAHIM MBAYE,Senegal,Forward,5,5,1,2,1,,,,,,9
 RONWEN WILLIAMS,South Africa,Goalkeeper,5,0,1,6,1,,,,,,8
 RICARDO GOSS,South Africa,Goalkeeper,4.5,,,,,,,,,,0
 SIPHO CHAINE,South Africa,Goalkeeper,4.5,,,,,,,,,,0
@@ -1195,31 +1195,31 @@ NICOLAS DE LA CRUZ,Uruguay,Midfielder,4.5,1,1,0,,,,,,,2
 DARWIN NUNEZ,Uruguay,Forward,7.5,2,1,2,,,,,,,5
 FEDERICO VINAS,Uruguay,Forward,5,2,2,1,,,,,,,5
 RODRIGO AGUIRRE,Uruguay,Forward,5,1,,,,,,,,,1
-MATT FREESE,USA,Goalkeeper,5,1,6,,,,,,,,7
+MATT FREESE,USA,Goalkeeper,5,1,6,,6,,,,,,13
 MATT TURNER,USA,Goalkeeper,5,,,-1,,,,,,,-1
 CHRIS BRADY,USA,Goalkeeper,4.5,,,,,,,,,,0
-ANTONEE ROBINSON,USA,Defender,5.5,1,5,,,,,,,,6
-CHRIS RICHARDS,USA,Defender,5,1,5,,,,,,,,6
-SERGINO DEST,USA,Defender,5,6,6,0,,,,,,,12
-TIM REAM,USA,Defender,5,1,6,,,,,,,,7
-ALEX FREEMAN,USA,Defender,4.5,4,14,0,,,,,,,18
+ANTONEE ROBINSON,USA,Defender,5.5,1,5,,6,,,,,,12
+CHRIS RICHARDS,USA,Defender,5,1,5,,6,,,,,,12
+SERGINO DEST,USA,Defender,5,6,6,0,6,,,,,,18
+TIM REAM,USA,Defender,5,1,6,,6,,,,,,13
+ALEX FREEMAN,USA,Defender,4.5,4,14,0,6,,,,,,24
 AUSTON TRUSTY,USA,Defender,4.5,,1,5,,,,,,,6
 JOE SCALLY,USA,Defender,4.5,,1,0,,,,,,,1
 MARK MCKENZIE,USA,Defender,4.5,,,-1,,,,,,,-1
 MAXIMILIAN ARFSTEN,USA,Defender,4.5,,,,,,,,,,0
 MILES ROBINSON,USA,Defender,4.5,,,-1,,,,,,,-1
-CHRISTIAN PULISIC,USA,Midfielder,6,5,,1,,,,,,,6
+CHRISTIAN PULISIC,USA,Midfielder,6,5,,1,2,,,,,,8
 BRENDEN AARONSON,USA,Midfielder,5.5,,,2,,,,,,,2
-GIOVANNI REYNA,USA,Midfielder,5.5,6,1,2,,,,,,,9
-WESTON MCKENNIE,USA,Midfielder,5.5,2,2,2,,,,,,,6
+GIOVANNI REYNA,USA,Midfielder,5.5,6,1,2,1,,,,,,10
+WESTON MCKENNIE,USA,Midfielder,5.5,2,2,2,2,,,,,,8
 CRISTIAN ROLDAN,USA,Midfielder,5,,,,,,,,,,0
-MALIK TILLMAN,USA,Midfielder,5,5,2,1,,,,,,,8
+MALIK TILLMAN,USA,Midfielder,5,5,2,1,9,,,,,,17
 TIMOTHY WEAH,USA,Midfielder,5,1,,2,,,,,,,3
-TYLER ADAMS,USA,Midfielder,5,1,2,,,,,,,,3
+TYLER ADAMS,USA,Midfielder,5,1,2,,2,,,,,,5
 ALEJANDRO ZENDEJAS,USA,Midfielder,4.5,,,1,,,,,,,1
-SEBASTIAN BERHALTER,USA,Midfielder,4.5,1,1,11,,,,,,,13
-FOLARIN BALOGUN,USA,Forward,5.5,12,1,,,,,,,,13
-RICARDO PEPI,USA,Forward,5.5,1,2,2,,,,,,,5
+SEBASTIAN BERHALTER,USA,Midfielder,4.5,1,1,11,1,,,,,,14
+FOLARIN BALOGUN,USA,Forward,5.5,12,1,,3,,,,,,16
+RICARDO PEPI,USA,Forward,5.5,1,2,2,1,,,,,,6
 HAJI WRIGHT,USA,Forward,5,,1,,,,,,,,1
 ABDUVOHID NEMATOV,Uzbekistan,Goalkeeper,4.5,,-5,-1,,,,,,,-6
 BOTIRALI ERGASHEV,Uzbekistan,Goalkeeper,4.5,,,,,,,,,,0
