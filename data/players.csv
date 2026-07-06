@@ -155,32 +155,32 @@ ERMEDIN DEMIROVIC,Bosnia-Herzegovina,Forward,5,1,2,2,2,,,,,,7
 HARIS TABAKOVIC,Bosnia-Herzegovina,Forward,5,,,,1,,,,,,1
 JOVO LUKIC,Bosnia-Herzegovina,Forward,5,5,1,,,,,,,,6
 SAMED BAZDAR,Bosnia-Herzegovina,Forward,5,1,,,,,,,,,1
-ALISSON,Brazil,Goalkeeper,7.5,1,6,6,1,,,,,,14
+ALISSON,Brazil,Goalkeeper,7.5,1,6,6,1,0,,,,,14
 EDERSON,Brazil,Goalkeeper,7,,,,,,,,,,0
 WEVERTON,Brazil,Goalkeeper,6.5,,,,,,,,,,0
-GABRIEL MAGALHAES,Brazil,Defender,7.5,1,6,6,6,,,,,,19
-MARQUINHOS,Brazil,Defender,7.5,1,6,6,1,,,,,,14
+GABRIEL MAGALHAES,Brazil,Defender,7.5,1,6,6,6,0,,,,,19
+MARQUINHOS,Brazil,Defender,7.5,1,6,6,1,0,,,,,14
 ALEX SANDRO,Brazil,Defender,7,,,1,,,,,,,1
-DANILO,Brazil,Defender,6.5,1,6,5,0,,,,,,12
-DOUGLAS SANTOS,Brazil,Defender,6,1,5,6,1,,,,,,13
+DANILO,Brazil,Defender,6.5,1,6,5,0,0,,,,,12
+DOUGLAS SANTOS,Brazil,Defender,6,1,5,6,1,0,,,,,13
 GLEISON BREMER,Brazil,Defender,6,,,,,,,,,,0
 LEO PEREIRA,Brazil,Defender,5.5,,,,,,,,,,0
 ROGER IBANEZ,Brazil,Defender,5.5,0,,,,,,,,,0
 LUCAS PAQUETA,Brazil,Midfielder,6.5,2,5,2,2,,,,,,11
-BRUNO GUIMARAES,Brazil,Midfielder,6,5,2,8,5,,,,,,20
-CASEMIRO,Brazil,Midfielder,6,1,2,2,6,,,,,,11
+BRUNO GUIMARAES,Brazil,Midfielder,6,5,2,8,5,0,,,,,20
+CASEMIRO,Brazil,Midfielder,6,1,2,2,6,2,,,,,13
 LUIZ HENRIQUE,Brazil,Midfielder,5.5,1,,,,,,,,,1
-DANILO OLIVEIRA,Brazil,Midfielder,5,1,1,,1,,,,,,3
-EDERSON SILVA,Brazil,Midfielder,5,,1,,,,,,,,1
+DANILO OLIVEIRA,Brazil,Midfielder,5,1,1,,1,1,,,,,4
+EDERSON SILVA,Brazil,Midfielder,5,,1,,,1,,,,,2
 FABINHO,Brazil,Midfielder,5,1,,1,1,,,,,,3
-VINICIUS JUNIOR,Brazil,Forward,9.5,6,9,12,2,,,,,,29
+VINICIUS JUNIOR,Brazil,Forward,9.5,6,9,12,2,2,,,,,31
 RAPHINHA,Brazil,Forward,9,2,2,,,,,,,,4
 IGOR THIAGO,Brazil,Forward,8,2,,,,,,,,,2
-MATHEUS CUNHA,Brazil,Forward,7.5,1,12,6,2,,,,,,21
-ENDRICK,Brazil,Forward,7,,1,1,1,,,,,,3
-NEYMAR,Brazil,Forward,7,,,1,,,,,,,1
-GABRIEL MARTINELLI,Brazil,Forward,6.5,,1,1,5,,,,,,7
-RAYAN,Brazil,Forward,6,,1,5,2,,,,,,8
+MATHEUS CUNHA,Brazil,Forward,7.5,1,12,6,2,2,,,,,23
+ENDRICK,Brazil,Forward,7,,1,1,1,1,,,,,4
+NEYMAR,Brazil,Forward,7,,,1,,3,,,,,4
+GABRIEL MARTINELLI,Brazil,Forward,6.5,,1,1,5,2,,,,,9
+RAYAN,Brazil,Forward,6,,1,5,2,2,,,,,10
 DAYNE ST. CLAIR,Canada,Goalkeeper,5,,,,,,,,,,0
 MAXIME CREPEAU,Canada,Goalkeeper,5,1,6,0,6,-1,,,,,12
 OWEN GOODMAN,Canada,Goalkeeper,4.5,,,,,,,,,,0
@@ -415,29 +415,29 @@ MOHAMED SALAH,Egypt,Forward,7.5,5,11,2,4,,,,,,22
 OMAR MARMOUSH,Egypt,Forward,6,2,2,1,2,,,,,,7
 HAISSEM HASSAN,Egypt,Forward,5,,,,0,,,,,,0
 HAMZA ABDELKARIM,Egypt,Forward,5,1,1,1,1,,,,,,4
-JORDAN PICKFORD,England,Goalkeeper,7.5,0,6,6,1,,,,,,13
+JORDAN PICKFORD,England,Goalkeeper,7.5,0,6,6,1,0,,,,,13
 DEAN HENDERSON,England,Goalkeeper,6.5,,,,,,,,,,0
 JAMES TRAFFORD,England,Goalkeeper,6,,,,,,,,,,0
-MARC GUEHI,England,Defender,7.5,1,6,6,1,,,,,,14
+MARC GUEHI,England,Defender,7.5,1,6,6,1,-1,,,,,13
 REECE JAMES,England,Defender,7.5,0,6,,,,,,,,6
-EZRI KONSA,England,Defender,7,0,6,6,1,,,,,,13
-JOHN STONES,England,Defender,7,0,,,1,,,,,,1
-NICO O'REILLY,England,Defender,6.5,0,1,6,1,,,,,,8
-DAN BURN,England,Defender,6,,,,,,,,,,0
+EZRI KONSA,England,Defender,7,0,6,6,1,0,,,,,13
+JOHN STONES,England,Defender,7,0,,,1,0,,,,,1
+NICO O'REILLY,England,Defender,6.5,0,1,6,1,-1,,,,,7
+DAN BURN,England,Defender,6,,,,,1,,,,,1
 TINO LIVRAMENTO,England,Defender,6,,,,,,,,,,0
-DJED SPENCE,England,Defender,5.5,1,6,1,1,,,,,,9
-JARELL QUANSAH,England,Defender,5.5,,,5,,,,,,,5
-BUKAYO SAKA,England,Midfielder,8.5,4,1,5,1,,,,,,11
-JUDE BELLINGHAM,England,Midfielder,8,7,2,12,1,,,,,,22
-ANTHONY GORDON,England,Midfielder,7.5,2,2,,7,,,,,,11
-MORGAN ROGERS,England,Midfielder,7,1,1,2,,,,,,,4
+DJED SPENCE,England,Defender,5.5,1,6,1,1,1,,,,,10
+JARELL QUANSAH,England,Defender,5.5,,,5,,-3,,,,,2
+BUKAYO SAKA,England,Midfielder,8.5,4,1,5,1,5,,,,,16
+JUDE BELLINGHAM,England,Midfielder,8,7,2,12,1,14,,,,,36
+ANTHONY GORDON,England,Midfielder,7.5,2,2,,7,2,,,,,13
+MORGAN ROGERS,England,Midfielder,7,1,1,2,,1,,,,,5
 EBERECHI EZE,England,Midfielder,6.5,,1,1,1,,,,,,3
 NONI MADUEKE,England,Midfielder,6.5,2,2,1,2,,,,,,7
-DECLAN RICE,England,Midfielder,6,5,1,,2,,,,,,8
-ELLIOT ANDERSON,England,Midfielder,5.5,5,2,2,2,,,,,,11
-JORDAN HENDERSON,England,Midfielder,5,,,1,,,,,,,1
+DECLAN RICE,England,Midfielder,6,5,1,,2,1,,,,,9
+ELLIOT ANDERSON,England,Midfielder,5.5,5,2,2,2,2,,,,,13
+JORDAN HENDERSON,England,Midfielder,5,,,1,,-1,,,,,0
 KOBBIE MAINOO,England,Midfielder,5,,,,,,,,,,0
-HARRY KANE,England,Forward,12.5,11,2,6,12,,,,,,31
+HARRY KANE,England,Forward,12.5,11,2,6,12,8,,,,,39
 MARCUS RASHFORD,England,Forward,7.5,5,1,2,2,,,,,,10
 OLLIE WATKINS,England,Forward,6.5,,,1,,,,,,,1
 IVAN TONEY,England,Forward,6,,,,,,,,,,0
@@ -677,30 +677,30 @@ ALI OLWAN,Jordan,Forward,5,8,2,2,,,,,,,12
 ODEH AL-FAKHOURI,Jordan,Forward,5,2,1,2,,,,,,,5
 GUILLERMO OCHOA,Mexico,Goalkeeper,5,,,1,,,,,,,1
 CARLOS ACEVEDO,Mexico,Goalkeeper,4.5,,,,,,,,,,0
-RAUL RANGEL,Mexico,Goalkeeper,4.5,6,6,6,6,,,,,,24
-CESAR MONTES,Mexico,Defender,5,3,,6,6,,,,,,15
+RAUL RANGEL,Mexico,Goalkeeper,4.5,6,6,6,6,-1,,,,,23
+CESAR MONTES,Mexico,Defender,5,3,,6,6,0,,,,,15
 ISRAEL REYES,Mexico,Defender,5,6,1,6,1,,,,,,14
-JESUS GALLARDO,Mexico,Defender,5,6,6,1,6,,,,,,19
-JOHAN VASQUEZ,Mexico,Defender,5,6,6,,6,,,,,,18
-JORGE SANCHEZ,Mexico,Defender,5,,6,9,6,,,,,,21
-LUIS ROMO,Mexico,Defender,4.5,,14,9,6,,,,,,29
+JESUS GALLARDO,Mexico,Defender,5,6,6,1,6,-1,,,,,18
+JOHAN VASQUEZ,Mexico,Defender,5,6,6,,6,-2,,,,,16
+JORGE SANCHEZ,Mexico,Defender,5,,6,9,6,-2,,,,,19
+LUIS ROMO,Mexico,Defender,4.5,,14,9,6,-1,,,,,28
 MATEO CHAVEZ,Mexico,Defender,4.5,,,14,,,,,,,14
 ALEXIS VEGA,Mexico,Midfielder,5,1,,,,,,,,,1
 CESAR HUERTA,Mexico,Midfielder,5,,1,,,,,,,,1
-EDSON ALVAREZ,Mexico,Midfielder,5,1,2,1,,,,,,,4
-ERIK LIRA,Mexico,Midfielder,5,5,2,,2,,,,,,9
+EDSON ALVAREZ,Mexico,Midfielder,5,1,2,1,,1,,,,,5
+ERIK LIRA,Mexico,Midfielder,5,5,2,,2,2,,,,,11
 ORBELIN PINEDA,Mexico,Midfielder,5,,1,,1,,,,,,2
-ROBERTO ALVARADO,Mexico,Midfielder,5,5,2,5,5,,,,,,17
-ALVARO FIDALGO,Mexico,Midfielder,4.5,2,,6,,,,,,,8
-BRIAN GUTIERREZ,Mexico,Midfielder,4.5,1,2,,1,,,,,,4
-GILBERTO MORA,Mexico,Midfielder,4.5,1,,2,2,,,,,,5
+ROBERTO ALVARADO,Mexico,Midfielder,5,5,2,5,5,2,,,,,19
+ALVARO FIDALGO,Mexico,Midfielder,4.5,2,,6,,1,,,,,9
+BRIAN GUTIERREZ,Mexico,Midfielder,4.5,1,2,,1,1,,,,,5
+GILBERTO MORA,Mexico,Midfielder,4.5,1,,2,2,2,,,,,7
 LUIS CHAVEZ,Mexico,Midfielder,4.5,1,,,,,,,,,1
 OBED VARGAS,Mexico,Midfielder,4.5,,1,1,1,,,,,,3
-RAUL JIMENEZ,Mexico,Forward,6,6,2,,6,,,,,,14
-SANTIAGO GIMENEZ,Mexico,Forward,5.5,,1,1,1,,,,,,3
+RAUL JIMENEZ,Mexico,Forward,6,6,2,,6,5,,,,,19
+SANTIAGO GIMENEZ,Mexico,Forward,5.5,,1,1,1,1,,,,,4
 ARMANDO GONZALEZ,Mexico,Forward,5,1,,,,,,,,,1
-GUILLERMO MARTINEZ,Mexico,Forward,5,,,2,,,,,,,2
-JULIAN QUINONES,Mexico,Forward,5,8,2,6,11,,,,,,27
+GUILLERMO MARTINEZ,Mexico,Forward,5,,,2,,1,,,,,3
+JULIAN QUINONES,Mexico,Forward,5,8,2,6,11,6,,,,,33
 YASSINE BOUNOU,Morocco,Goalkeeper,5,1,6,-2,1,6,,,,,12
 AHMED REDA TAGNAOUTI,Morocco,Goalkeeper,4.5,,,,,,,,,,0
 MUNIR MOHAMEDI,Morocco,Goalkeeper,4.5,,,,,,,,,,0
@@ -779,31 +779,31 @@ SARPREET SINGH,New Zealand,Midfielder,4.5,2,1,2,,,,,,,5
 CHRIS WOOD,New Zealand,Forward,5.5,8,2,2,,,,,,,12
 BEN WAINE,New Zealand,Forward,5,,,,,,,,,,0
 JESSE RANDALL,New Zealand,Forward,5,1,1,1,,,,,,,3
-ORJAN NYLAND,Norway,Goalkeeper,6,1,0,,1,,,,,,2
+ORJAN NYLAND,Norway,Goalkeeper,6,1,0,,1,3,,,,,5
 EGIL SELVIK,Norway,Goalkeeper,5,,,-2,,,,,,,-2
 SANDER TANGVIK,Norway,Goalkeeper,4.5,,,,,,,,,,0
-JULIAN RYERSON,Norway,Defender,6,1,2,,,,,,,,3
-KRISTOFFER AJER,Norway,Defender,6,1,0,,1,,,,,,2
-DAVID MOLLER WOLFE,Norway,Defender,5.5,4,0,,1,,,,,,5
-TORBJORN HEGGEM,Norway,Defender,5.5,1,1,,1,,,,,,3
+JULIAN RYERSON,Norway,Defender,6,1,2,,,6,,,,,9
+KRISTOFFER AJER,Norway,Defender,6,1,0,,1,1,,,,,3
+DAVID MOLLER WOLFE,Norway,Defender,5.5,4,0,,1,6,,,,,11
+TORBJORN HEGGEM,Norway,Defender,5.5,1,1,,1,1,,,,,4
 FREDRIK ANDRE BJORKAN,Norway,Defender,5,,,-1,,,,,,,-1
-LEO SKIRI OSTIGARD,Norway,Defender,5,7,0,-2,,,,,,,5
+LEO SKIRI OSTIGARD,Norway,Defender,5,7,0,-2,,0,,,,,5
 MARCUS HOLMGREN PEDERSEN,Norway,Defender,5,,5,0,1,,,,,,6
 HENRIK FALCHENER,Norway,Defender,4.5,,,-1,,,,,,,-1
 SONDRE LANGAS,Norway,Defender,4.5,,,0,,,,,,,0
-MARTIN ODEGAARD,Norway,Midfielder,6.5,5,5,,5,,,,,,15
-ANTONIO NUSA,Norway,Midfielder,6,2,2,1,6,,,,,,11
-OSCAR BOBB,Norway,Midfielder,5.5,1,1,2,1,,,,,,5
+MARTIN ODEGAARD,Norway,Midfielder,6.5,5,5,,5,2,,,,,17
+ANTONIO NUSA,Norway,Midfielder,6,2,2,1,6,2,,,,,13
+OSCAR BOBB,Norway,Midfielder,5.5,1,1,2,1,1,,,,,6
 JENS PETTER HAUGE,Norway,Midfielder,5,,,1,,,,,,,1
-PATRICK BERG,Norway,Midfielder,5,1,4,1,5,,,,,,11
-SANDER BERGE,Norway,Midfielder,5,2,2,,2,,,,,,6
+PATRICK BERG,Norway,Midfielder,5,1,4,1,5,2,,,,,13
+SANDER BERGE,Norway,Midfielder,5,2,2,,2,2,,,,,8
 THELO AASGAARD,Norway,Midfielder,5,,,7,,,,,,,7
-FREDRIK AURSNES,Norway,Midfielder,4.5,2,2,2,1,,,,,,7
+FREDRIK AURSNES,Norway,Midfielder,4.5,2,2,2,1,2,,,,,9
 KRISTIAN THORSTVEDT,Norway,Midfielder,4.5,1,,2,,,,,,,3
 MORTEN THORSBY,Norway,Midfielder,4.5,,,1,,,,,,,1
-ERLING HAALAND,Norway,Forward,10.5,12,12,,6,,,,,,30
-ALEXANDER SORLOTH,Norway,Forward,6.5,2,2,,2,,,,,,6
-ANDREAS SCHJELDERUP,Norway,Forward,5.5,1,1,5,1,,,,,,8
+ERLING HAALAND,Norway,Forward,10.5,12,12,,6,12,,,,,42
+ALEXANDER SORLOTH,Norway,Forward,6.5,2,2,,2,2,,,,,8
+ANDREAS SCHJELDERUP,Norway,Forward,5.5,1,1,5,1,7,,,,,15
 JORGEN STRAND LARSEN,Norway,Forward,5.5,,,0,,,,,,,0
 CESAR SAMUDIO,Panama,Goalkeeper,4.5,,,,,,,,,,0
 LUIS MEJIA,Panama,Goalkeeper,4.5,,,,,,,,,,0
