@@ -25,31 +25,31 @@ MOHAMED AMOURA,Algeria,Forward,5.5,1,,,,,,,,,1
 AMINE GOUIRI,Algeria,Forward,5,2,6,2,1,,,,,,11
 ANIS HADJ MOUSSA,Algeria,Forward,5,2,1,,1,,,,,,4
 NADHIR BENBOUALI,Algeria,Forward,5,,5,,,,,,,,5
-EMILIANO MARTINEZ,Argentina,Goalkeeper,7.5,6,6,1,1,,,,,,14
+EMILIANO MARTINEZ,Argentina,Goalkeeper,7.5,6,6,1,1,0,,,,,14
 GERONIMO RULLI,Argentina,Goalkeeper,6.5,,,,,,,,,,0
 JUAN MUSSO,Argentina,Goalkeeper,6,,,,,,,,,,0
-CRISTIAN ROMERO,Argentina,Defender,7.5,6,2,,1,,,,,,9
-LISANDRO MARTINEZ,Argentina,Defender,7,6,6,,10,,,,,,22
-NAHUEL MOLINA,Argentina,Defender,7,1,6,,1,,,,,,8
-NICOLAS TAGLIAFICO,Argentina,Defender,7,,1,1,1,,,,,,3
-NICOLAS OTAMENDI,Argentina,Defender,6.5,1,1,1,,,,,,,3
-GONZALO MONTIEL,Argentina,Defender,6,2,,,0,,,,,,2
+CRISTIAN ROMERO,Argentina,Defender,7.5,6,2,,1,6,,,,,15
+LISANDRO MARTINEZ,Argentina,Defender,7,6,6,,10,0,,,,,22
+NAHUEL MOLINA,Argentina,Defender,7,1,6,,1,0,,,,,8
+NICOLAS TAGLIAFICO,Argentina,Defender,7,,1,1,1,0,,,,,3
+NICOLAS OTAMENDI,Argentina,Defender,6.5,1,1,1,,1,,,,,4
+GONZALO MONTIEL,Argentina,Defender,6,2,,,0,4,,,,,6
 MARCOS SENESI,Argentina,Defender,6,,,1,,,,,,,1
 VALENTIN BARCO,Argentina,Defender,5.5,,,1,,,,,,,1
-FACUNDO MEDINA,Argentina,Defender,5,6,8,,1,,,,,,15
-ALEXIS MAC ALLISTER,Argentina,Midfielder,6.5,2,2,1,5,,,,,,10
-ENZO FERNANDEZ,Argentina,Midfielder,6.5,2,2,,2,,,,,,6
+FACUNDO MEDINA,Argentina,Defender,5,6,8,,1,1,,,,,16
+ALEXIS MAC ALLISTER,Argentina,Midfielder,6.5,2,2,1,5,2,,,,,12
+ENZO FERNANDEZ,Argentina,Midfielder,6.5,2,2,,2,7,,,,,13
 NICO PAZ,Argentina,Midfielder,6,1,,2,,,,,,,3
 THIAGO ALMADA,Argentina,Midfielder,6,2,2,1,2,,,,,,7
 GIULIANO SIMEONE,Argentina,Midfielder,5.5,,,2,,,,,,,2
-LEANDRO PAREDES,Argentina,Midfielder,5.5,,0,2,1,,,,,,3
-NICOLAS GONZALEZ,Argentina,Midfielder,5.5,4,1,,1,,,,,,6
-RODRIGO DE PAUL,Argentina,Midfielder,5.5,5,2,,2,,,,,,9
+LEANDRO PAREDES,Argentina,Midfielder,5.5,,0,2,1,2,,,,,5
+NICOLAS GONZALEZ,Argentina,Midfielder,5.5,4,1,,1,1,,,,,7
+RODRIGO DE PAUL,Argentina,Midfielder,5.5,5,2,,2,2,,,,,11
 EXEQUIEL PALACIOS,Argentina,Midfielder,5,,,2,,,,,,,2
 GIOVANI LO CELSO,Argentina,Midfielder,5,,,9,,,,,,,9
-LIONEL MESSI,Argentina,Forward,11,16,10,5,8,,,,,,39
-LAUTARO MARTINEZ,Argentina,Forward,9.5,2,2,5,2,,,,,,11
-JULIAN ALVAREZ,Argentina,Forward,9,1,1,2,1,,,,,,5
+LIONEL MESSI,Argentina,Forward,11,16,10,5,8,9,,,,,48
+LAUTARO MARTINEZ,Argentina,Forward,9.5,2,2,5,2,4,,,,,15
+JULIAN ALVAREZ,Argentina,Forward,9,1,1,2,1,2,,,,,7
 JOSE MANUEL LOPEZ,Argentina,Forward,6,,,1,,,,,,,1
 MATHEW RYAN,Australia,Goalkeeper,5,,,,1,,,,,,1
 PATRICK BEACH,Australia,Goalkeeper,4.5,8,0,6,1,,,,,,15
@@ -392,28 +392,28 @@ KEVIN RODRIGUEZ,Ecuador,Forward,5,1,1,4,1,,,,,,7
 MOHAMED EL SHENAWY,Egypt,Goalkeeper,5,,,,,,,,,,0
 EL MAHDY SOLIMAN,Egypt,Goalkeeper,4.5,,,,,,,,,,0
 MOHAMED ALAA,Egypt,Goalkeeper,4.5,,,,,,,,,,0
-MOSTAFA SHOBEIR,Egypt,Goalkeeper,4.5,1,1,5,1,,,,,,8
-MOHAMED HANY,Egypt,Defender,5,-1,4,1,-1,,,,,,3
-RAMY RABIA,Egypt,Defender,5,1,1,1,1,,,,,,4
-YASSER IBRAHIM,Egypt,Defender,5,1,1,4,0,,,,,,6
+MOSTAFA SHOBEIR,Egypt,Goalkeeper,4.5,1,1,5,1,0,,,,,8
+MOHAMED HANY,Egypt,Defender,5,-1,4,1,-1,-1,,,,,2
+RAMY RABIA,Egypt,Defender,5,1,1,1,1,-1,,,,,3
+YASSER IBRAHIM,Egypt,Defender,5,1,1,4,0,5,,,,,11
 AHMED ABOU EL FOTOUH,Egypt,Defender,4.5,0,1,1,,,,,,,2
 HOSSAM ABDELMAGUID,Egypt,Defender,4.5,,1,,1,,,,,,2
-KARIM HAFEZ,Egypt,Defender,4.5,1,,,4,,,,,,5
+KARIM HAFEZ,Egypt,Defender,4.5,1,,,4,-1,,,,,4
 MOHAMED ABDELMONEM,Egypt,Defender,4.5,,1,1,,,,,,,2
 TAREK ALAA,Egypt,Defender,4.5,,,,,,,,,,0
-HAMDY FATHY,Egypt,Midfielder,5,1,2,,2,,,,,,5
-MARWAN ATTIA,Egypt,Midfielder,5,1,2,1,2,,,,,,6
-TREZEGUET,Egypt,Midfielder,5,,6,5,1,,,,,,12
-EMAM ASHOUR,Egypt,Midfielder,4.5,9,2,2,7,,,,,,20
+HAMDY FATHY,Egypt,Midfielder,5,1,2,,2,0,,,,,5
+MARWAN ATTIA,Egypt,Midfielder,5,1,2,1,2,4,,,,,10
+TREZEGUET,Egypt,Midfielder,5,,6,5,1,1,,,,,13
+EMAM ASHOUR,Egypt,Midfielder,4.5,9,2,2,7,2,,,,,22
 IBRAHIM ADEL,Egypt,Midfielder,4.5,1,,,,,,,,,1
 MAHMOUD SABER,Egypt,Midfielder,4.5,,,6,1,,,,,,7
-MOHANAD LASHEEN,Egypt,Midfielder,4.5,2,1,1,,,,,,,4
-MOSTAFA ZIKO,Egypt,Midfielder,4.5,2,10,2,2,,,,,,16
+MOHANAD LASHEEN,Egypt,Midfielder,4.5,2,1,1,,2,,,,,6
+MOSTAFA ZIKO,Egypt,Midfielder,4.5,2,10,2,2,7,,,,,23
 NABIL EMAD,Egypt,Midfielder,4.5,,,,,,,,,,0
-ZIZO,Egypt,Midfielder,4.5,1,1,1,,,,,,,3
-MOHAMED SALAH,Egypt,Forward,7.5,5,11,2,4,,,,,,22
-OMAR MARMOUSH,Egypt,Forward,6,2,2,1,2,,,,,,7
-HAISSEM HASSAN,Egypt,Forward,5,,,,0,,,,,,0
+ZIZO,Egypt,Midfielder,4.5,1,1,1,,1,,,,,4
+MOHAMED SALAH,Egypt,Forward,7.5,5,11,2,4,2,,,,,24
+OMAR MARMOUSH,Egypt,Forward,6,2,2,1,2,1,,,,,8
+HAISSEM HASSAN,Egypt,Forward,5,,,,0,4,,,,,4
 HAMZA ABDELKARIM,Egypt,Forward,5,1,1,1,1,,,,,,4
 JORDAN PICKFORD,England,Goalkeeper,7.5,0,6,6,1,0,,,,,13
 DEAN HENDERSON,England,Goalkeeper,6.5,,,,,,,,,,0
