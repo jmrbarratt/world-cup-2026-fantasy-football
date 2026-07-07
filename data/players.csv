@@ -103,31 +103,31 @@ PAUL WANNER,Austria,Midfielder,4.5,1,2,1,2,,,,,,6
 MARKO ARNAUTOVIC,Austria,Forward,6,4,1,5,1,,,,,,11
 MICHAEL GREGORITSCH,Austria,Forward,5.5,,2,4,2,,,,,,8
 SASA KALAJDZIC,Austria,Forward,5,2,,5,1,,,,,,8
-THIBAUT COURTOIS,Belgium,Goalkeeper,6.5,1,6,1,0,,,,,,8
+THIBAUT COURTOIS,Belgium,Goalkeeper,6.5,1,6,1,0,1,,,,,9
 MIKE PENDERS,Belgium,Goalkeeper,5.5,,,,,,,,,,0
 SENNE LAMMENS,Belgium,Goalkeeper,5.5,,,,,,,,,,0
-MAXIM DE CUYPER,Belgium,Defender,6.5,0,6,1,0,,,,,,7
+MAXIM DE CUYPER,Belgium,Defender,6.5,0,6,1,0,1,,,,,8
 ZENO DEBAST,Belgium,Defender,6.5,,,,,,,,,,0
 ARTHUR THEATE,Belgium,Defender,6,,1,1,0,,,,,,2
 THOMAS MEUNIER,Belgium,Defender,6,1,2,,4,,,,,,7
-TIMOTHY CASTAGNE,Belgium,Defender,6,0,1,1,0,,,,,,2
-BRANDON MECHELE,Belgium,Defender,5.5,1,6,1,-1,,,,,,7
+TIMOTHY CASTAGNE,Belgium,Defender,6,0,1,1,0,1,,,,,3
+BRANDON MECHELE,Belgium,Defender,5.5,1,6,1,-1,1,,,,,8
 KONI DE WINTER,Belgium,Defender,5.5,,,,,,,,,,0
 JOAQUIN SEYS,Belgium,Defender,5,,,,,,,,,,0
-NATHAN NGOY,Belgium,Defender,5,1,3,,,,,,,,4
-JEREMY DOKU,Belgium,Midfielder,8,2,,2,2,,,,,,6
+NATHAN NGOY,Belgium,Defender,5,1,3,,,1,,,,,5
+JEREMY DOKU,Belgium,Midfielder,8,2,,2,2,1,,,,,7
 KEVIN DE BRUYNE,Belgium,Midfielder,7.5,2,2,7,2,,,,,,13
-LEANDRO TROSSARD,Belgium,Midfielder,7.5,2,2,14,5,,,,,,23
-YOURI TIELEMANS,Belgium,Midfielder,6,2,2,2,12,,,,,,18
-ALEXIS SAELEMAEKERS,Belgium,Midfielder,5.5,,2,6,,,,,,,8
-CHARLES DE KETELAERE,Belgium,Midfielder,5.5,2,,2,2,,,,,,6
-DODI LUKEBAKIO,Belgium,Midfielder,5.5,,1,,1,,,,,,2
-AMADOU ONANA,Belgium,Midfielder,5,2,,1,1,,,,,,4
-AXEL WITSEL,Belgium,Midfielder,5,,,,,,,,,,0
+LEANDRO TROSSARD,Belgium,Midfielder,7.5,2,2,14,5,5,,,,,28
+YOURI TIELEMANS,Belgium,Midfielder,6,2,2,2,12,2,,,,,20
+ALEXIS SAELEMAEKERS,Belgium,Midfielder,5.5,,2,6,,1,,,,,9
+CHARLES DE KETELAERE,Belgium,Midfielder,5.5,2,,2,2,17,,,,,23
+DODI LUKEBAKIO,Belgium,Midfielder,5.5,,1,,1,2,,,,,4
+AMADOU ONANA,Belgium,Midfielder,5,2,,1,1,2,,,,,6
+AXEL WITSEL,Belgium,Midfielder,5,,,,,1,,,,,1
 DIEGO MOREIRA,Belgium,Midfielder,5,,,,1,,,,,,1
-HANS VANAKEN,Belgium,Midfielder,5,1,1,5,2,,,,,,9
-NICOLAS RASKIN,Belgium,Midfielder,5,1,2,4,1,,,,,,8
-ROMELU LUKAKU,Belgium,Forward,9,1,1,8,5,,,,,,15
+HANS VANAKEN,Belgium,Midfielder,5,1,1,5,2,9,,,,,18
+NICOLAS RASKIN,Belgium,Midfielder,5,1,2,4,1,5,,,,,13
+ROMELU LUKAKU,Belgium,Forward,9,1,1,8,5,5,,,,,20
 MATIAS FERNANDEZ-PARDO,Belgium,Forward,6,1,1,1,,,,,,,3
 NIKOLA VASILJ,Bosnia-Herzegovina,Goalkeeper,5,1,-2,1,0,,,,,,0
 MARTIN ZLOMISLIC,Bosnia-Herzegovina,Goalkeeper,4.5,,,,,,,,,,0
@@ -857,32 +857,32 @@ ALEX ARCE,Paraguay,Forward,5,1,,1,,,,,,,2
 ANTONIO SANABRIA,Paraguay,Forward,5,2,,,1,,,,,,3
 GABRIEL AVALOS,Paraguay,Forward,5,,1,2,2,1,,,,,6
 ISIDRO PITTA,Paraguay,Forward,5,,2,,,,,,,,2
-DIOGO COSTA,Portugal,Goalkeeper,7,1,6,8,1,,,,,,16
+DIOGO COSTA,Portugal,Goalkeeper,7,1,6,8,1,3,,,,,19
 JOSE SA,Portugal,Goalkeeper,6,,,,,,,,,,0
 RUI SILVA,Portugal,Goalkeeper,5.5,,,,,,,,,,0
-NUNO MENDES,Portugal,Defender,7.5,1,12,6,3,,,,,,22
-JOAO CANCELO,Portugal,Defender,7,1,5,2,1,,,,,,9
-RUBEN DIAS,Portugal,Defender,7,,6,6,0,,,,,,12
-DIOGO DALOT,Portugal,Defender,6.5,,,1,,,,,,,1
+NUNO MENDES,Portugal,Defender,7.5,1,12,6,3,2,,,,,24
+JOAO CANCELO,Portugal,Defender,7,1,5,2,1,6,,,,,15
+RUBEN DIAS,Portugal,Defender,7,,6,6,0,1,,,,,13
+DIOGO DALOT,Portugal,Defender,6.5,,,1,,0,,,,,1
 GONCALO INACIO,Portugal,Defender,6.5,,,,,,,,,,0
-RENATO VEIGA,Portugal,Defender,6.5,1,5,6,1,,,,,,13
+RENATO VEIGA,Portugal,Defender,6.5,1,5,6,1,0,,,,,13
 TOMAS ARAUJO,Portugal,Defender,6,0,,,,,,,,,0
-NELSON SEMEDO,Portugal,Defender,5.5,0,1,,1,,,,,,2
-BRUNO FERNANDES,Portugal,Midfielder,8.5,2,5,2,2,,,,,,11
-BERNARDO SILVA,Portugal,Midfielder,7,1,1,,1,,,,,,3
-PEDRO NETO,Portugal,Midfielder,6.5,5,2,2,2,,,,,,11
-VITINHA,Portugal,Midfielder,6,2,2,2,2,,,,,,8
-FRANCISCO CONCEICAO,Portugal,Midfielder,5.5,1,1,,1,,,,,,3
+NELSON SEMEDO,Portugal,Defender,5.5,0,1,,1,0,,,,,2
+BRUNO FERNANDES,Portugal,Midfielder,8.5,2,5,2,2,2,,,,,13
+BERNARDO SILVA,Portugal,Midfielder,7,1,1,,1,0,,,,,3
+PEDRO NETO,Portugal,Midfielder,6.5,5,2,2,2,2,,,,,13
+VITINHA,Portugal,Midfielder,6,2,2,2,2,2,,,,,10
+FRANCISCO CONCEICAO,Portugal,Midfielder,5.5,1,1,,1,1,,,,,4
 FRANCISCO TRINCAO,Portugal,Midfielder,5.5,,1,,,,,,,,1
 GONCALO GUEDES,Portugal,Midfielder,5.5,,,,,,,,,,0
-JOAO NEVES,Portugal,Midfielder,5.5,9,2,1,2,,,,,,14
+JOAO NEVES,Portugal,Midfielder,5.5,9,2,1,2,2,,,,,16
 RUBEN NEVES,Portugal,Midfielder,5.5,,,2,1,,,,,,3
 MATHEUS NUNES,Portugal,Midfielder,5,,,1,,,,,,,1
 SAMU COSTA,Portugal,Midfielder,5,,,1,,,,,,,1
-CRISTIANO RONALDO,Portugal,Forward,10,2,12,2,5,,,,,,21
+CRISTIANO RONALDO,Portugal,Forward,10,2,12,2,5,2,,,,,23
 GONCALO RAMOS,Portugal,Forward,7,1,,,5,,,,,,6
-JOAO FELIX,Portugal,Forward,7,,2,2,,,,,,,4
-RAFAEL LEAO,Portugal,Forward,7,1,5,1,5,,,,,,12
+JOAO FELIX,Portugal,Forward,7,,2,2,,2,,,,,6
+RAFAEL LEAO,Portugal,Forward,7,1,5,1,5,1,,,,,13
 MAHMUD ABUNADA,Qatar,Goalkeeper,4.5,0,-4,-3,,,,,,,-7
 MESHAAL BARSHAM,Qatar,Goalkeeper,4.5,,,,,,,,,,0
 SALAH ZAKARIA,Qatar,Goalkeeper,4.5,,,,,,,,,,0
@@ -1039,31 +1039,31 @@ SON HEUNG-MIN,South Korea,Forward,7,2,2,1,,,,,,,5
 HWANG HEE-CHAN,South Korea,Forward,5.5,1,1,2,,,,,,,4
 CHO GUE-SUNG,South Korea,Forward,5,,1,0,,,,,,,1
 OH HYEON-GYU,South Korea,Forward,5,5,1,2,,,,,,,8
-UNAI SIMON,Spain,Goalkeeper,7.5,6,6,6,6,,,,,,24
+UNAI SIMON,Spain,Goalkeeper,7.5,6,6,6,6,6,,,,,30
 DAVID RAYA,Spain,Goalkeeper,7,,,,,,,,,,0
 JOAN GARCIA,Spain,Goalkeeper,6,,,,,,,,,,0
-MARC CUCURELLA,Spain,Defender,7.5,6,6,6,12,,,,,,30
-AYMERIC LAPORTE,Spain,Defender,7,6,9,6,6,,,,,,27
-PAU CUBARSI,Spain,Defender,7,6,6,6,6,,,,,,24
+MARC CUCURELLA,Spain,Defender,7.5,6,6,6,12,6,,,,,36
+AYMERIC LAPORTE,Spain,Defender,7,6,9,6,6,6,,,,,33
+PAU CUBARSI,Spain,Defender,7,6,6,6,6,6,,,,,30
 ERIC GARCIA,Spain,Defender,6.5,,,,,,,,,,0
 MARCOS LLORENTE,Spain,Defender,6.5,6,,11,,,,,,,17
-PEDRO PORRO,Spain,Defender,6.5,,6,,14,,,,,,20
+PEDRO PORRO,Spain,Defender,6.5,,6,,14,6,,,,,26
 ALEX GRIMALDO,Spain,Defender,6,,,,,,,,,,0
 MARC PUBILL,Spain,Defender,6,,,,1,,,,,,1
-LAMINE YAMAL,Spain,Midfielder,9,1,7,2,2,,,,,,12
+LAMINE YAMAL,Spain,Midfielder,9,1,7,2,2,2,,,,,14
 NICO WILLIAMS,Spain,Midfielder,8,1,1,1,,,,,,,3
-DANI OLMO,Spain,Midfielder,7,1,5,1,2,,,,,,9
-MIKEL MERINO,Spain,Midfielder,7,1,1,2,1,,,,,,5
-FABIAN RUIZ,Spain,Midfielder,6,2,1,1,1,,,,,,5
-RODRI,Spain,Midfielder,6,2,2,2,2,,,,,,8
-ALEX BAENA,Spain,Midfielder,5.5,,2,6,5,,,,,,13
+DANI OLMO,Spain,Midfielder,7,1,5,1,2,2,,,,,11
+MIKEL MERINO,Spain,Midfielder,7,1,1,2,1,6,,,,,11
+FABIAN RUIZ,Spain,Midfielder,6,2,1,1,1,1,,,,,6
+RODRI,Spain,Midfielder,6,2,2,2,2,2,,,,,10
+ALEX BAENA,Spain,Midfielder,5.5,,2,6,5,2,,,,,15
 GAVI,Spain,Midfielder,5.5,2,,,1,,,,,,3
 MARTIN ZUBIMENDI,Spain,Midfielder,5.5,,,,,,,,,,0
-PEDRI,Spain,Midfielder,5.5,1,2,2,2,,,,,,7
+PEDRI,Spain,Midfielder,5.5,1,2,2,2,2,,,,,9
 YEREMY PINO,Spain,Midfielder,5.5,,1,1,,,,,,,2
-MIKEL OYARZABAL,Spain,Forward,9,2,15,2,10,,,,,,29
-FERRAN TORRES,Spain,Forward,7.5,2,1,1,1,,,,,,5
-BORJA IGLESIAS,Spain,Forward,6,,,,,,,,,,0
+MIKEL OYARZABAL,Spain,Forward,9,2,15,2,10,2,,,,,31
+FERRAN TORRES,Spain,Forward,7.5,2,1,1,1,3,,,,,8
+BORJA IGLESIAS,Spain,Forward,6,,,,,1,,,,,1
 VICTOR MUNOZ,Spain,Forward,6,,,,,,,,,,0
 KRISTOFFER NORDFELDT,Sweden,Goalkeeper,5.5,1,-3,,,,,,,,-2
 JACOB WIDELL ZETTERSTROM,Sweden,Goalkeeper,5,,,1,-1,,,,,,0
@@ -1195,32 +1195,32 @@ NICOLAS DE LA CRUZ,Uruguay,Midfielder,4.5,1,1,0,,,,,,,2
 DARWIN NUNEZ,Uruguay,Forward,7.5,2,1,2,,,,,,,5
 FEDERICO VINAS,Uruguay,Forward,5,2,2,1,,,,,,,5
 RODRIGO AGUIRRE,Uruguay,Forward,5,1,,,,,,,,,1
-MATT FREESE,USA,Goalkeeper,5,1,6,,6,,,,,,13
+MATT FREESE,USA,Goalkeeper,5,1,6,,6,-2,,,,,11
 MATT TURNER,USA,Goalkeeper,5,,,-1,,,,,,,-1
 CHRIS BRADY,USA,Goalkeeper,4.5,,,,,,,,,,0
-ANTONEE ROBINSON,USA,Defender,5.5,1,5,,6,,,,,,12
-CHRIS RICHARDS,USA,Defender,5,1,5,,6,,,,,,12
-SERGINO DEST,USA,Defender,5,6,6,0,6,,,,,,18
-TIM REAM,USA,Defender,5,1,6,,6,,,,,,13
-ALEX FREEMAN,USA,Defender,4.5,4,14,0,6,,,,,,24
+ANTONEE ROBINSON,USA,Defender,5.5,1,5,,6,-1,,,,,11
+CHRIS RICHARDS,USA,Defender,5,1,5,,6,-2,,,,,10
+SERGINO DEST,USA,Defender,5,6,6,0,6,0,,,,,18
+TIM REAM,USA,Defender,5,1,6,,6,-2,,,,,11
+ALEX FREEMAN,USA,Defender,4.5,4,14,0,6,-2,,,,,22
 AUSTON TRUSTY,USA,Defender,4.5,,1,5,,,,,,,6
 JOE SCALLY,USA,Defender,4.5,,1,0,,,,,,,1
 MARK MCKENZIE,USA,Defender,4.5,,,-1,,,,,,,-1
-MAXIMILIAN ARFSTEN,USA,Defender,4.5,,,,,,,,,,0
+MAXIMILIAN ARFSTEN,USA,Defender,4.5,,,,,0,,,,,0
 MILES ROBINSON,USA,Defender,4.5,,,-1,,,,,,,-1
-CHRISTIAN PULISIC,USA,Midfielder,6,5,,1,2,,,,,,8
+CHRISTIAN PULISIC,USA,Midfielder,6,5,,1,2,2,,,,,10
 BRENDEN AARONSON,USA,Midfielder,5.5,,,2,,,,,,,2
-GIOVANNI REYNA,USA,Midfielder,5.5,6,1,2,1,,,,,,10
-WESTON MCKENNIE,USA,Midfielder,5.5,2,2,2,2,,,,,,8
+GIOVANNI REYNA,USA,Midfielder,5.5,6,1,2,1,1,,,,,11
+WESTON MCKENNIE,USA,Midfielder,5.5,2,2,2,2,1,,,,,9
 CRISTIAN ROLDAN,USA,Midfielder,5,,,,,,,,,,0
-MALIK TILLMAN,USA,Midfielder,5,5,2,1,9,,,,,,17
+MALIK TILLMAN,USA,Midfielder,5,5,2,1,9,6,,,,,23
 TIMOTHY WEAH,USA,Midfielder,5,1,,2,,,,,,,3
-TYLER ADAMS,USA,Midfielder,5,1,2,,2,,,,,,5
+TYLER ADAMS,USA,Midfielder,5,1,2,,2,2,,,,,7
 ALEJANDRO ZENDEJAS,USA,Midfielder,4.5,,,1,,,,,,,1
-SEBASTIAN BERHALTER,USA,Midfielder,4.5,1,1,11,1,,,,,,14
-FOLARIN BALOGUN,USA,Forward,5.5,12,1,,3,,,,,,16
-RICARDO PEPI,USA,Forward,5.5,1,2,2,1,,,,,,6
-HAJI WRIGHT,USA,Forward,5,,1,,,,,,,,1
+SEBASTIAN BERHALTER,USA,Midfielder,4.5,1,1,11,1,1,,,,,15
+FOLARIN BALOGUN,USA,Forward,5.5,12,1,,3,2,,,,,18
+RICARDO PEPI,USA,Forward,5.5,1,2,2,1,1,,,,,7
+HAJI WRIGHT,USA,Forward,5,,1,,,1,,,,,2
 ABDUVOHID NEMATOV,Uzbekistan,Goalkeeper,4.5,,-5,-1,,,,,,,-6
 BOTIRALI ERGASHEV,Uzbekistan,Goalkeeper,4.5,,,,,,,,,,0
 UTKIR YUSUPOV,Uzbekistan,Goalkeeper,4.5,-1,,,,,,,,,-1
