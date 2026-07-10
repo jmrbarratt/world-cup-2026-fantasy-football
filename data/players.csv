@@ -441,31 +441,31 @@ HARRY KANE,England,Forward,12.5,11,2,6,12,8,,,,,39
 MARCUS RASHFORD,England,Forward,7.5,5,1,2,2,,,,,,10
 OLLIE WATKINS,England,Forward,6.5,,,1,,,,,,,1
 IVAN TONEY,England,Forward,6,,,,,,,,,,0
-MIKE MAIGNAN,France,Goalkeeper,7.5,1,6,3,6,6,,,,,22
+MIKE MAIGNAN,France,Goalkeeper,7.5,1,6,3,6,6,6,,,,28
 BRICE SAMBA,France,Goalkeeper,6.5,,,,,,,,,,0
 ROBIN RISSER,France,Goalkeeper,6.5,,,,,,,,,,0
-DAYOT UPAMECANO,France,Defender,7.5,1,6,1,6,6,,,,,20
-WILLIAM SALIBA,France,Defender,7.5,1,6,,6,6,,,,,19
+DAYOT UPAMECANO,France,Defender,7.5,1,6,1,6,6,6,,,,26
+WILLIAM SALIBA,France,Defender,7.5,1,6,,6,6,6,,,,25
 IBRAHIMA KONATE,France,Defender,7,,,1,,,,,,,1
-JULES KOUNDE,France,Defender,7,1,6,1,6,6,,,,,20
+JULES KOUNDE,France,Defender,7,1,6,1,6,6,6,,,,26
 THEO HERNANDEZ,France,Defender,7,1,,1,1,,,,,,3
-LUCAS DIGNE,France,Defender,6.5,,6,,6,8,,,,,20
+LUCAS DIGNE,France,Defender,6.5,,6,,6,8,6,,,,26
 LUCAS HERNANDEZ,France,Defender,6,,,,,,,,,,0
-MALO GUSTO,France,Defender,6,,1,1,1,,,,,,3
+MALO GUSTO,France,Defender,6,,1,1,1,,1,,,,4
 MAXENCE LACROIX,France,Defender,5.5,,,1,,,,,,,1
-MICHAEL OLISE,France,Midfielder,9,5,8,2,8,1,,,,,24
-BRADLEY BARCOLA,France,Midfielder,7,6,2,4,7,1,,,,,20
+MICHAEL OLISE,France,Midfielder,9,5,8,2,8,1,2,,,,26
+BRADLEY BARCOLA,France,Midfielder,7,6,2,4,7,1,1,,,,21
 RAYAN CHERKI,France,Midfielder,6.5,1,1,1,1,1,,,,,5
 MAGHNES AKLIOUCHE,France,Midfielder,6,,1,,,,,,,,1
 AURELIEN TCHOUAMENI,France,Midfielder,5.5,2,,4,2,,,,,,8
-MANU KONE,France,Midfielder,5.5,,2,2,,1,,,,,5
-WARREN ZAIRE-EMERY,France,Midfielder,5.5,,,,,,,,,,0
-ADRIEN RABIOT,France,Midfielder,5,5,2,,2,2,,,,,11
+MANU KONE,France,Midfielder,5.5,,2,2,,1,2,,,,7
+WARREN ZAIRE-EMERY,France,Midfielder,5.5,,,,,,1,,,,1
+ADRIEN RABIOT,France,Midfielder,5,5,2,,2,2,2,,,,13
 N'GOLO KANTE,France,Midfielder,5,,,,,,,,,,0
-KYLIAN MBAPPE,France,Forward,12.5,12,12,8,12,5,,,,,49
-OUSMANE DEMBELE,France,Forward,9.5,2,9,16,5,2,,,,,34
-DESIRE DOUE,France,Forward,7.5,2,1,6,1,1,,,,,11
-JEAN-PHILIPPE MATETA,France,Forward,6.5,,,1,1,,,,,,2
+KYLIAN MBAPPE,France,Forward,12.5,12,12,8,12,5,7,,,,56
+OUSMANE DEMBELE,France,Forward,9.5,2,9,16,5,2,8,,,,42
+DESIRE DOUE,France,Forward,7.5,2,1,6,1,1,5,,,,16
+JEAN-PHILIPPE MATETA,France,Forward,6.5,,,1,1,,1,,,,3
 MARCUS THURAM,France,Forward,6.5,,1,,,,,,,,1
 MANUEL NEUER,Germany,Goalkeeper,7,1,1,0,1,,,,,,3
 OLIVER BAUMANN,Germany,Goalkeeper,6.5,,,,,,,,,,0
@@ -701,32 +701,32 @@ SANTIAGO GIMENEZ,Mexico,Forward,5.5,,1,1,1,1,,,,,4
 ARMANDO GONZALEZ,Mexico,Forward,5,1,,,,,,,,,1
 GUILLERMO MARTINEZ,Mexico,Forward,5,,,2,,1,,,,,3
 JULIAN QUINONES,Mexico,Forward,5,8,2,6,11,6,,,,,33
-YASSINE BOUNOU,Morocco,Goalkeeper,5,1,6,-2,1,6,,,,,12
+YASSINE BOUNOU,Morocco,Goalkeeper,5,1,6,-2,1,6,2,,,,14
 AHMED REDA TAGNAOUTI,Morocco,Goalkeeper,4.5,,,,,,,,,,0
 MUNIR MOHAMEDI,Morocco,Goalkeeper,4.5,,,,,,,,,,0
-ACHRAF HAKIMI,Morocco,Defender,5.5,1,6,11,1,8,,,,,27
-NOUSSAIR MAZRAOUI,Morocco,Defender,5,1,6,1,3,6,,,,,17
-ANASS SALAH-EDDINE,Morocco,Defender,4.5,1,,0,1,,,,,,2
+ACHRAF HAKIMI,Morocco,Defender,5.5,1,6,11,1,8,0,,,,27
+NOUSSAIR MAZRAOUI,Morocco,Defender,5,1,6,1,3,6,0,,,,17
+ANASS SALAH-EDDINE,Morocco,Defender,4.5,1,,0,1,,0,,,,2
 CHADI RIAD,Morocco,Defender,4.5,1,6,3,1,,,,,,11
-ISSA DIOP,Morocco,Defender,4.5,1,5,,6,6,,,,,18
+ISSA DIOP,Morocco,Defender,4.5,1,5,,6,6,-1,,,,17
 MARWANE SAADANE,Morocco,Defender,4.5,,,,,1,,,,,1
 REDOUANE HALHAL,Morocco,Defender,4.5,,,0,,5,,,,,5
 YOUSSEF BELAMMARI,Morocco,Defender,4.5,,,,,,,,,,0
-ZAKARIA EL OUAHDI,Morocco,Defender,4.5,,,,,,,,,,0
-BRAHIM DIAZ,Morocco,Midfielder,6,5,7,2,2,8,,,,,24
-AZZEDINE OUNAHI,Morocco,Midfielder,5,2,2,1,2,13,,,,,20
+ZAKARIA EL OUAHDI,Morocco,Defender,4.5,,,,,,1,,,,1
+BRAHIM DIAZ,Morocco,Midfielder,6,5,7,2,2,8,2,,,,26
+AZZEDINE OUNAHI,Morocco,Midfielder,5,2,2,1,2,13,2,,,,22
 ISMAEL SAIBARI,Morocco,Midfielder,5,9,7,7,2,2,,,,,27
-AMINE SBAI,Morocco,Midfielder,4.5,,,,,,,,,,0
+AMINE SBAI,Morocco,Midfielder,4.5,,,,,,1,,,,1
 AYOUBE AMAIMOUNI,Morocco,Midfielder,4.5,1,1,,,,,,,,2
-AYYOUB BOUADDI,Morocco,Midfielder,4.5,2,2,,2,2,,,,,8
-BILAL EL KHANNOUSS,Morocco,Midfielder,4.5,2,2,2,2,1,,,,,9
-CHEMSDINE TALBI,Morocco,Midfielder,4.5,1,1,,4,1,,,,,7
-GESSIME YASSINE,Morocco,Midfielder,4.5,,,6,1,,,,,,7
-NEIL EL AYNAOUI,Morocco,Midfielder,4.5,2,2,2,2,2,,,,,10
+AYYOUB BOUADDI,Morocco,Midfielder,4.5,2,2,,2,2,2,,,,10
+BILAL EL KHANNOUSS,Morocco,Midfielder,4.5,2,2,2,2,1,2,,,,11
+CHEMSDINE TALBI,Morocco,Midfielder,4.5,1,1,,4,1,2,,,,9
+GESSIME YASSINE,Morocco,Midfielder,4.5,,,6,1,,1,,,,8
+NEIL EL AYNAOUI,Morocco,Midfielder,4.5,2,2,2,2,2,2,,,,12
 SAMIR EL MOURABET,Morocco,Midfielder,4.5,1,1,1,1,1,,,,,5
-SOFYAN AMRABAT,Morocco,Midfielder,4.5,,,2,,1,,,,,3
+SOFYAN AMRABAT,Morocco,Midfielder,4.5,,,2,,1,1,,,,4
 AYOUB EL KAABI,Morocco,Forward,5.5,,,2,,,,,,,2
-SOUFIANE RAHIMI,Morocco,Forward,5,1,1,8,1,5,,,,,16
+SOUFIANE RAHIMI,Morocco,Forward,5,1,1,8,1,5,1,,,,17
 BART VERBRUGGEN,Netherlands,Goalkeeper,6.5,0,1,1,1,,,,,,3
 MARK FLEKKEN,Netherlands,Goalkeeper,6,,,,,,,,,,0
 ROBIN ROEFS,Netherlands,Goalkeeper,5.5,,,,,,,,,,0
