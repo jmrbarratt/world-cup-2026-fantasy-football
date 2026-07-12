@@ -25,32 +25,32 @@ MOHAMED AMOURA,Algeria,Forward,5.5,1,,,,,,,,,1
 AMINE GOUIRI,Algeria,Forward,5,2,6,2,1,,,,,,11
 ANIS HADJ MOUSSA,Algeria,Forward,5,2,1,,1,,,,,,4
 NADHIR BENBOUALI,Algeria,Forward,5,,5,,,,,,,,5
-EMILIANO MARTINEZ,Argentina,Goalkeeper,7.5,6,6,1,1,0,,,,,14
+EMILIANO MARTINEZ,Argentina,Goalkeeper,7.5,6,6,1,1,0,1,,,,15
 GERONIMO RULLI,Argentina,Goalkeeper,6.5,,,,,,,,,,0
 JUAN MUSSO,Argentina,Goalkeeper,6,,,,,,,,,,0
-CRISTIAN ROMERO,Argentina,Defender,7.5,6,2,,1,6,,,,,15
-LISANDRO MARTINEZ,Argentina,Defender,7,6,6,,10,0,,,,,22
-NAHUEL MOLINA,Argentina,Defender,7,1,6,,1,0,,,,,8
-NICOLAS TAGLIAFICO,Argentina,Defender,7,,1,1,1,0,,,,,3
-NICOLAS OTAMENDI,Argentina,Defender,6.5,1,1,1,,1,,,,,4
-GONZALO MONTIEL,Argentina,Defender,6,2,,,0,4,,,,,6
+CRISTIAN ROMERO,Argentina,Defender,7.5,6,2,,1,6,1,,,,16
+LISANDRO MARTINEZ,Argentina,Defender,7,6,6,,10,0,1,,,,23
+NAHUEL MOLINA,Argentina,Defender,7,1,6,,1,0,1,,,,9
+NICOLAS TAGLIAFICO,Argentina,Defender,7,,1,1,1,0,1,,,,4
+NICOLAS OTAMENDI,Argentina,Defender,6.5,1,1,1,,1,1,,,,5
+GONZALO MONTIEL,Argentina,Defender,6,2,,,0,4,1,,,,7
 MARCOS SENESI,Argentina,Defender,6,,,1,,,,,,,1
 VALENTIN BARCO,Argentina,Defender,5.5,,,1,,,,,,,1
 FACUNDO MEDINA,Argentina,Defender,5,6,8,,1,1,,,,,16
-ALEXIS MAC ALLISTER,Argentina,Midfielder,6.5,2,2,1,5,2,,,,,12
-ENZO FERNANDEZ,Argentina,Midfielder,6.5,2,2,,2,7,,,,,13
+ALEXIS MAC ALLISTER,Argentina,Midfielder,6.5,2,2,1,5,2,7,,,,19
+ENZO FERNANDEZ,Argentina,Midfielder,6.5,2,2,,2,7,2,,,,15
 NICO PAZ,Argentina,Midfielder,6,1,,2,,,,,,,3
-THIAGO ALMADA,Argentina,Midfielder,6,2,2,1,2,,,,,,7
+THIAGO ALMADA,Argentina,Midfielder,6,2,2,1,2,,0,,,,7
 GIULIANO SIMEONE,Argentina,Midfielder,5.5,,,2,,,,,,,2
-LEANDRO PAREDES,Argentina,Midfielder,5.5,,0,2,1,2,,,,,5
-NICOLAS GONZALEZ,Argentina,Midfielder,5.5,4,1,,1,1,,,,,7
-RODRIGO DE PAUL,Argentina,Midfielder,5.5,5,2,,2,2,,,,,11
+LEANDRO PAREDES,Argentina,Midfielder,5.5,,0,2,1,2,2,,,,7
+NICOLAS GONZALEZ,Argentina,Midfielder,5.5,4,1,,1,1,1,,,,8
+RODRIGO DE PAUL,Argentina,Midfielder,5.5,5,2,,2,2,2,,,,13
 EXEQUIEL PALACIOS,Argentina,Midfielder,5,,,2,,,,,,,2
 GIOVANI LO CELSO,Argentina,Midfielder,5,,,9,,,,,,,9
-LIONEL MESSI,Argentina,Forward,11,16,10,5,8,9,,,,,48
-LAUTARO MARTINEZ,Argentina,Forward,9.5,2,2,5,2,4,,,,,15
-JULIAN ALVAREZ,Argentina,Forward,9,1,1,2,1,2,,,,,7
-JOSE MANUEL LOPEZ,Argentina,Forward,6,,,1,,,,,,,1
+LIONEL MESSI,Argentina,Forward,11,16,10,5,8,9,7,,,,55
+LAUTARO MARTINEZ,Argentina,Forward,9.5,2,2,5,2,4,4,,,,19
+JULIAN ALVAREZ,Argentina,Forward,9,1,1,2,1,2,6,,,,13
+JOSE MANUEL LOPEZ,Argentina,Forward,6,,,1,,,3,,,,4
 MATHEW RYAN,Australia,Goalkeeper,5,,,,1,,,,,,1
 PATRICK BEACH,Australia,Goalkeeper,4.5,8,0,6,1,,,,,,15
 PAUL IZZO,Australia,Goalkeeper,4.5,,,,,,,,,,0
@@ -415,29 +415,29 @@ MOHAMED SALAH,Egypt,Forward,7.5,5,11,2,4,2,,,,,24
 OMAR MARMOUSH,Egypt,Forward,6,2,2,1,2,1,,,,,8
 HAISSEM HASSAN,Egypt,Forward,5,,,,0,4,,,,,4
 HAMZA ABDELKARIM,Egypt,Forward,5,1,1,1,1,,,,,,4
-JORDAN PICKFORD,England,Goalkeeper,7.5,0,6,6,1,0,,,,,13
+JORDAN PICKFORD,England,Goalkeeper,7.5,0,6,6,1,0,1,,,,14
 DEAN HENDERSON,England,Goalkeeper,6.5,,,,,,,,,,0
 JAMES TRAFFORD,England,Goalkeeper,6,,,,,,,,,,0
-MARC GUEHI,England,Defender,7.5,1,6,6,1,-1,,,,,13
-REECE JAMES,England,Defender,7.5,0,6,,,,,,,,6
-EZRI KONSA,England,Defender,7,0,6,6,1,0,,,,,13
-JOHN STONES,England,Defender,7,0,,,1,0,,,,,1
-NICO O'REILLY,England,Defender,6.5,0,1,6,1,-1,,,,,7
-DAN BURN,England,Defender,6,,,,,1,,,,,1
+MARC GUEHI,England,Defender,7.5,1,6,6,1,-1,1,,,,14
+REECE JAMES,England,Defender,7.5,0,6,,,,1,,,,7
+EZRI KONSA,England,Defender,7,0,6,6,1,0,1,,,,14
+JOHN STONES,England,Defender,7,0,,,1,0,1,,,,2
+NICO O'REILLY,England,Defender,6.5,0,1,6,1,-1,1,,,,8
+DAN BURN,England,Defender,6,,,,,1,1,,,,2
 TINO LIVRAMENTO,England,Defender,6,,,,,,,,,,0
-DJED SPENCE,England,Defender,5.5,1,6,1,1,1,,,,,10
+DJED SPENCE,England,Defender,5.5,1,6,1,1,1,1,,,,11
 JARELL QUANSAH,England,Defender,5.5,,,5,,-3,,,,,2
-BUKAYO SAKA,England,Midfielder,8.5,4,1,5,1,5,,,,,16
-JUDE BELLINGHAM,England,Midfielder,8,7,2,12,1,14,,,,,36
-ANTHONY GORDON,England,Midfielder,7.5,2,2,,7,2,,,,,13
-MORGAN ROGERS,England,Midfielder,7,1,1,2,,1,,,,,5
-EBERECHI EZE,England,Midfielder,6.5,,1,1,1,,,,,,3
-NONI MADUEKE,England,Midfielder,6.5,2,2,1,2,,,,,,7
-DECLAN RICE,England,Midfielder,6,5,1,,2,1,,,,,9
-ELLIOT ANDERSON,England,Midfielder,5.5,5,2,2,2,2,,,,,13
+BUKAYO SAKA,England,Midfielder,8.5,4,1,5,1,5,1,,,,17
+JUDE BELLINGHAM,England,Midfielder,8,7,2,12,1,14,14,,,,50
+ANTHONY GORDON,England,Midfielder,7.5,2,2,,7,2,5,,,,18
+MORGAN ROGERS,England,Midfielder,7,1,1,2,,1,1,,,,6
+EBERECHI EZE,England,Midfielder,6.5,,1,1,1,,1,,,,4
+NONI MADUEKE,England,Midfielder,6.5,2,2,1,2,,2,,,,9
+DECLAN RICE,England,Midfielder,6,5,1,,2,1,2,,,,11
+ELLIOT ANDERSON,England,Midfielder,5.5,5,2,2,2,2,2,,,,15
 JORDAN HENDERSON,England,Midfielder,5,,,1,,-1,,,,,0
 KOBBIE MAINOO,England,Midfielder,5,,,,,,,,,,0
-HARRY KANE,England,Forward,12.5,11,2,6,12,8,,,,,39
+HARRY KANE,England,Forward,12.5,11,2,6,12,8,2,,,,41
 MARCUS RASHFORD,England,Forward,7.5,5,1,2,2,,,,,,10
 OLLIE WATKINS,England,Forward,6.5,,,1,,,,,,,1
 IVAN TONEY,England,Forward,6,,,,,,,,,,0
@@ -779,32 +779,32 @@ SARPREET SINGH,New Zealand,Midfielder,4.5,2,1,2,,,,,,,5
 CHRIS WOOD,New Zealand,Forward,5.5,8,2,2,,,,,,,12
 BEN WAINE,New Zealand,Forward,5,,,,,,,,,,0
 JESSE RANDALL,New Zealand,Forward,5,1,1,1,,,,,,,3
-ORJAN NYLAND,Norway,Goalkeeper,6,1,0,,1,3,,,,,5
+ORJAN NYLAND,Norway,Goalkeeper,6,1,0,,1,3,1,,,,6
 EGIL SELVIK,Norway,Goalkeeper,5,,,-2,,,,,,,-2
 SANDER TANGVIK,Norway,Goalkeeper,4.5,,,,,,,,,,0
-JULIAN RYERSON,Norway,Defender,6,1,2,,,6,,,,,9
-KRISTOFFER AJER,Norway,Defender,6,1,0,,1,1,,,,,3
-DAVID MOLLER WOLFE,Norway,Defender,5.5,4,0,,1,6,,,,,11
-TORBJORN HEGGEM,Norway,Defender,5.5,1,1,,1,1,,,,,4
+JULIAN RYERSON,Norway,Defender,6,1,2,,,6,1,,,,10
+KRISTOFFER AJER,Norway,Defender,6,1,0,,1,1,0,,,,3
+DAVID MOLLER WOLFE,Norway,Defender,5.5,4,0,,1,6,1,,,,12
+TORBJORN HEGGEM,Norway,Defender,5.5,1,1,,1,1,1,,,,5
 FREDRIK ANDRE BJORKAN,Norway,Defender,5,,,-1,,,,,,,-1
-LEO SKIRI OSTIGARD,Norway,Defender,5,7,0,-2,,0,,,,,5
-MARCUS HOLMGREN PEDERSEN,Norway,Defender,5,,5,0,1,,,,,,6
+LEO SKIRI OSTIGARD,Norway,Defender,5,7,0,-2,,0,1,,,,6
+MARCUS HOLMGREN PEDERSEN,Norway,Defender,5,,5,0,1,,1,,,,7
 HENRIK FALCHENER,Norway,Defender,4.5,,,-1,,,,,,,-1
 SONDRE LANGAS,Norway,Defender,4.5,,,0,,,,,,,0
-MARTIN ODEGAARD,Norway,Midfielder,6.5,5,5,,5,2,,,,,17
-ANTONIO NUSA,Norway,Midfielder,6,2,2,1,6,2,,,,,13
-OSCAR BOBB,Norway,Midfielder,5.5,1,1,2,1,1,,,,,6
+MARTIN ODEGAARD,Norway,Midfielder,6.5,5,5,,5,2,5,,,,22
+ANTONIO NUSA,Norway,Midfielder,6,2,2,1,6,2,1,,,,14
+OSCAR BOBB,Norway,Midfielder,5.5,1,1,2,1,1,1,,,,7
 JENS PETTER HAUGE,Norway,Midfielder,5,,,1,,,,,,,1
-PATRICK BERG,Norway,Midfielder,5,1,4,1,5,2,,,,,13
-SANDER BERGE,Norway,Midfielder,5,2,2,,2,2,,,,,8
+PATRICK BERG,Norway,Midfielder,5,1,4,1,5,2,2,,,,15
+SANDER BERGE,Norway,Midfielder,5,2,2,,2,2,2,,,,10
 THELO AASGAARD,Norway,Midfielder,5,,,7,,,,,,,7
-FREDRIK AURSNES,Norway,Midfielder,4.5,2,2,2,1,2,,,,,9
+FREDRIK AURSNES,Norway,Midfielder,4.5,2,2,2,1,2,1,,,,10
 KRISTIAN THORSTVEDT,Norway,Midfielder,4.5,1,,2,,,,,,,3
 MORTEN THORSBY,Norway,Midfielder,4.5,,,1,,,,,,,1
-ERLING HAALAND,Norway,Forward,10.5,12,12,,6,12,,,,,42
-ALEXANDER SORLOTH,Norway,Forward,6.5,2,2,,2,2,,,,,8
-ANDREAS SCHJELDERUP,Norway,Forward,5.5,1,1,5,1,7,,,,,15
-JORGEN STRAND LARSEN,Norway,Forward,5.5,,,0,,,,,,,0
+ERLING HAALAND,Norway,Forward,10.5,12,12,,6,12,2,,,,44
+ALEXANDER SORLOTH,Norway,Forward,6.5,2,2,,2,2,2,,,,10
+ANDREAS SCHJELDERUP,Norway,Forward,5.5,1,1,5,1,7,6,,,,21
+JORGEN STRAND LARSEN,Norway,Forward,5.5,,,0,,,1,,,,1
 CESAR SAMUDIO,Panama,Goalkeeper,4.5,,,,,,,,,,0
 LUIS MEJIA,Panama,Goalkeeper,4.5,,,,,,,,,,0
 ORLANDO MOSQUERA,Panama,Goalkeeper,4.5,1,1,0,,,,,,,2
@@ -1091,32 +1091,32 @@ ALEXANDER ISAK,Sweden,Forward,8,12,4,2,2,,,,,,20
 VIKTOR GYOKERES,Sweden,Forward,8,9,2,4,2,,,,,,17
 ALEXANDER BERNHARDSSON,Sweden,Forward,5.5,2,2,2,,,,,,,6
 GUSTAF NILSSON,Sweden,Forward,5.5,,,,1,,,,,,1
-GREGOR KOBEL,Switzerland,Goalkeeper,5.5,1,1,3,6,8,,,,,19
+GREGOR KOBEL,Switzerland,Goalkeeper,5.5,1,1,3,6,8,1,,,,20
 YVON MVOGO,Switzerland,Goalkeeper,5,,,,,,,,,,0
 MARVIN KELLER,Switzerland,Goalkeeper,4.5,,,,,,,,,,0
-MANUEL AKANJI,Switzerland,Defender,6,1,1,1,6,6,,,,,15
-RICARDO RODRIGUEZ,Switzerland,Defender,6,8,1,1,6,6,,,,,22
-NICO ELVEDI,Switzerland,Defender,5.5,1,0,1,6,6,,,,,14
-SILVAN WIDMER,Switzerland,Defender,5.5,,6,0,1,1,,,,,8
-ERAY CÖMERT,Switzerland,Defender,5,,,,,,,,,,0
-MIRO MUHEIM,Switzerland,Defender,5,-2,,,,0,,,,,-2
+MANUEL AKANJI,Switzerland,Defender,6,1,1,1,6,6,1,,,,16
+RICARDO RODRIGUEZ,Switzerland,Defender,6,8,1,1,6,6,4,,,,26
+NICO ELVEDI,Switzerland,Defender,5.5,1,0,1,6,6,1,,,,15
+SILVAN WIDMER,Switzerland,Defender,5.5,,6,0,1,1,1,,,,9
+ERAY CÖMERT,Switzerland,Defender,5,,,,,,1,,,,1
+MIRO MUHEIM,Switzerland,Defender,5,-2,,,,0,1,,,,-1
 AURELE AMENDA,Switzerland,Defender,4.5,,,,,,,,,,0
 LUCA JAQUEZ,Switzerland,Defender,4.5,,0,6,,,,,,,6
-DAN NDOYE,Switzerland,Midfielder,5.5,2,2,1,9,2,,,,,16
-GRANIT XHAKA,Switzerland,Midfielder,5.5,2,5,1,2,1,,,,,11
-RUBEN VARGAS,Switzerland,Midfielder,5.5,2,9,7,2,1,,,,,21
+DAN NDOYE,Switzerland,Midfielder,5.5,2,2,1,9,2,7,,,,23
+GRANIT XHAKA,Switzerland,Midfielder,5.5,2,5,1,2,1,2,,,,13
+RUBEN VARGAS,Switzerland,Midfielder,5.5,2,9,7,2,1,1,,,,22
 CHRISTIAN FASSNACHT,Switzerland,Midfielder,5,,,1,,,,,,,1
-FABIAN RIEDER,Switzerland,Midfielder,5,1,2,,1,2,,,,,6
+FABIAN RIEDER,Switzerland,Midfielder,5,1,2,,1,2,2,,,,8
 MICHEL AEBISCHER,Switzerland,Midfielder,5,2,2,1,1,,,,,,6
-REMO FREULER,Switzerland,Midfielder,5,2,2,2,2,2,,,,,10
-ARDON JASHARI,Switzerland,Midfielder,4.5,1,,,,2,,,,,3
-DENIS ZAKARIA,Switzerland,Midfielder,4.5,1,,,2,1,,,,,4
-DJIBRIL SOW,Switzerland,Midfielder,4.5,,1,2,,1,,,,,4
+REMO FREULER,Switzerland,Midfielder,5,2,2,2,2,2,2,,,,12
+ARDON JASHARI,Switzerland,Midfielder,4.5,1,,,,2,1,,,,4
+DENIS ZAKARIA,Switzerland,Midfielder,4.5,1,,,2,1,2,,,,6
+DJIBRIL SOW,Switzerland,Midfielder,4.5,,1,2,,1,2,,,,6
 JOHAN MANZAMBI,Switzerland,Midfielder,4.5,1,13,10,5,,,,,,29
-BREEL EMBOLO,Switzerland,Forward,6,5,5,5,6,2,,,,,23
+BREEL EMBOLO,Switzerland,Forward,6,5,5,5,6,2,-1,,,,22
 NOAH OKAFOR,Switzerland,Forward,5.5,,,,1,,,,,,1
 CEDRIC ITTEN,Switzerland,Forward,5,,1,1,,1,,,,,3
-ZEKI AMDOUNI,Switzerland,Forward,5,1,,,1,1,,,,,3
+ZEKI AMDOUNI,Switzerland,Forward,5,1,,,1,1,1,,,,4
 AYMEN DAHMEN,Tunisia,Goalkeeper,5,,-2,-1,,,,,,,-3
 MOUHIB CHAMAKH,Tunisia,Goalkeeper,4.5,-3,,,,,,,,,-3
 SABRI BEN HESSEN,Tunisia,Goalkeeper,4.5,,,,,,,,,,0
