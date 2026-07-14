@@ -441,30 +441,30 @@ HARRY KANE,England,Forward,12.5,11,2,6,12,8,2,,,,41
 MARCUS RASHFORD,England,Forward,7.5,5,1,2,2,,,,,,10
 OLLIE WATKINS,England,Forward,6.5,,,1,,,,,,,1
 IVAN TONEY,England,Forward,6,,,,,,,,,,0
-MIKE MAIGNAN,France,Goalkeeper,7.5,1,6,3,6,6,6,,,,28
+MIKE MAIGNAN,France,Goalkeeper,7.5,1,6,3,6,6,6,0,,,28
 BRICE SAMBA,France,Goalkeeper,6.5,,,,,,,,,,0
 ROBIN RISSER,France,Goalkeeper,6.5,,,,,,,,,,0
-DAYOT UPAMECANO,France,Defender,7.5,1,6,1,6,6,6,,,,26
-WILLIAM SALIBA,France,Defender,7.5,1,6,,6,6,6,,,,25
+DAYOT UPAMECANO,France,Defender,7.5,1,6,1,6,6,6,0,,,26
+WILLIAM SALIBA,France,Defender,7.5,1,6,,6,6,6,1,,,26
 IBRAHIMA KONATE,France,Defender,7,,,1,,,,,,,1
-JULES KOUNDE,France,Defender,7,1,6,1,6,6,6,,,,26
-THEO HERNANDEZ,France,Defender,7,1,,1,1,,,,,,3
-LUCAS DIGNE,France,Defender,6.5,,6,,6,8,6,,,,26
+JULES KOUNDE,France,Defender,7,1,6,1,6,6,6,0,,,26
+THEO HERNANDEZ,France,Defender,7,1,,1,1,,,1,,,4
+LUCAS DIGNE,France,Defender,6.5,,6,,6,8,6,0,,,26
 LUCAS HERNANDEZ,France,Defender,6,,,,,,,,,,0
 MALO GUSTO,France,Defender,6,,1,1,1,,1,,,,4
-MAXENCE LACROIX,France,Defender,5.5,,,1,,,,,,,1
-MICHAEL OLISE,France,Midfielder,9,5,8,2,8,1,2,,,,26
-BRADLEY BARCOLA,France,Midfielder,7,6,2,4,7,1,1,,,,21
-RAYAN CHERKI,France,Midfielder,6.5,1,1,1,1,1,,,,,5
+MAXENCE LACROIX,France,Defender,5.5,,,1,,,,0,,,1
+MICHAEL OLISE,France,Midfielder,9,5,8,2,8,1,2,2,,,28
+BRADLEY BARCOLA,France,Midfielder,7,6,2,4,7,1,1,2,,,23
+RAYAN CHERKI,France,Midfielder,6.5,1,1,1,1,1,,1,,,6
 MAGHNES AKLIOUCHE,France,Midfielder,6,,1,,,,,,,,1
-AURELIEN TCHOUAMENI,France,Midfielder,5.5,2,,4,2,,,,,,8
-MANU KONE,France,Midfielder,5.5,,2,2,,1,2,,,,7
+AURELIEN TCHOUAMENI,France,Midfielder,5.5,2,,4,2,,,2,,,10
+MANU KONE,France,Midfielder,5.5,,2,2,,1,2,1,,,8
 WARREN ZAIRE-EMERY,France,Midfielder,5.5,,,,,,1,,,,1
-ADRIEN RABIOT,France,Midfielder,5,5,2,,2,2,2,,,,13
+ADRIEN RABIOT,France,Midfielder,5,5,2,,2,2,2,1,,,14
 N'GOLO KANTE,France,Midfielder,5,,,,,,,,,,0
-KYLIAN MBAPPE,France,Forward,12.5,12,12,8,12,5,7,,,,56
-OUSMANE DEMBELE,France,Forward,9.5,2,9,16,5,2,8,,,,42
-DESIRE DOUE,France,Forward,7.5,2,1,6,1,1,5,,,,16
+KYLIAN MBAPPE,France,Forward,12.5,12,12,8,12,5,7,1,,,57
+OUSMANE DEMBELE,France,Forward,9.5,2,9,16,5,2,8,2,,,44
+DESIRE DOUE,France,Forward,7.5,2,1,6,1,1,5,1,,,17
 JEAN-PHILIPPE MATETA,France,Forward,6.5,,,1,1,,1,,,,3
 MARCUS THURAM,France,Forward,6.5,,1,,,,,,,,1
 MANUEL NEUER,Germany,Goalkeeper,7,1,1,0,1,,,,,,3
@@ -1039,30 +1039,30 @@ SON HEUNG-MIN,South Korea,Forward,7,2,2,1,,,,,,,5
 HWANG HEE-CHAN,South Korea,Forward,5.5,1,1,2,,,,,,,4
 CHO GUE-SUNG,South Korea,Forward,5,,1,0,,,,,,,1
 OH HYEON-GYU,South Korea,Forward,5,5,1,2,,,,,,,8
-UNAI SIMON,Spain,Goalkeeper,7.5,6,6,6,6,6,1,,,,31
+UNAI SIMON,Spain,Goalkeeper,7.5,6,6,6,6,6,1,6,,,37
 DAVID RAYA,Spain,Goalkeeper,7,,,,,,,,,,0
 JOAN GARCIA,Spain,Goalkeeper,6,,,,,,,,,,0
-MARC CUCURELLA,Spain,Defender,7.5,6,6,6,12,6,1,,,,37
-AYMERIC LAPORTE,Spain,Defender,7,6,9,6,6,6,0,,,,33
-PAU CUBARSI,Spain,Defender,7,6,6,6,6,6,0,,,,30
+MARC CUCURELLA,Spain,Defender,7.5,6,6,6,12,6,1,5,,,42
+AYMERIC LAPORTE,Spain,Defender,7,6,9,6,6,6,0,6,,,39
+PAU CUBARSI,Spain,Defender,7,6,6,6,6,6,0,6,,,36
 ERIC GARCIA,Spain,Defender,6.5,,,,,,,,,,0
-MARCOS LLORENTE,Spain,Defender,6.5,6,,11,,,,,,,17
-PEDRO PORRO,Spain,Defender,6.5,,6,,14,6,1,,,,27
+MARCOS LLORENTE,Spain,Defender,6.5,6,,11,,,,1,,,18
+PEDRO PORRO,Spain,Defender,6.5,,6,,14,6,1,14,,,41
 ALEX GRIMALDO,Spain,Defender,6,,,,,,,,,,0
 MARC PUBILL,Spain,Defender,6,,,,1,,,,,,1
-LAMINE YAMAL,Spain,Midfielder,9,1,7,2,2,2,4,,,,18
-NICO WILLIAMS,Spain,Midfielder,8,1,1,1,,,1,,,,4
-DANI OLMO,Spain,Midfielder,7,1,5,1,2,2,2,,,,13
-MIKEL MERINO,Spain,Midfielder,7,1,1,2,1,6,6,,,,17
-FABIAN RUIZ,Spain,Midfielder,6,2,1,1,1,1,7,,,,13
-RODRI,Spain,Midfielder,6,2,2,2,2,2,2,,,,12
-ALEX BAENA,Spain,Midfielder,5.5,,2,6,5,2,2,,,,17
+LAMINE YAMAL,Spain,Midfielder,9,1,7,2,2,2,4,2,,,20
+NICO WILLIAMS,Spain,Midfielder,8,1,1,1,,,1,1,,,5
+DANI OLMO,Spain,Midfielder,7,1,5,1,2,2,2,5,,,18
+MIKEL MERINO,Spain,Midfielder,7,1,1,2,1,6,6,1,,,18
+FABIAN RUIZ,Spain,Midfielder,6,2,1,1,1,1,7,2,,,15
+RODRI,Spain,Midfielder,6,2,2,2,2,2,2,2,,,14
+ALEX BAENA,Spain,Midfielder,5.5,,2,6,5,2,2,2,,,19
 GAVI,Spain,Midfielder,5.5,2,,,1,,,,,,3
 MARTIN ZUBIMENDI,Spain,Midfielder,5.5,,,,,,,,,,0
-PEDRI,Spain,Midfielder,5.5,1,2,2,2,2,1,,,,10
+PEDRI,Spain,Midfielder,5.5,1,2,2,2,2,1,1,,,11
 YEREMY PINO,Spain,Midfielder,5.5,,1,1,,,,,,,2
-MIKEL OYARZABAL,Spain,Forward,9,2,15,2,10,2,2,,,,33
-FERRAN TORRES,Spain,Forward,7.5,2,1,1,1,3,1,,,,9
+MIKEL OYARZABAL,Spain,Forward,9,2,15,2,10,2,2,5,,,38
+FERRAN TORRES,Spain,Forward,7.5,2,1,1,1,3,1,1,,,10
 BORJA IGLESIAS,Spain,Forward,6,,,,,1,,,,,1
 VICTOR MUNOZ,Spain,Forward,6,,,,,,,,,,0
 KRISTOFFER NORDFELDT,Sweden,Goalkeeper,5.5,1,-3,,,,,,,,-2
