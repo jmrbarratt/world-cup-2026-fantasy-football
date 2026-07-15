@@ -25,31 +25,31 @@ MOHAMED AMOURA,Algeria,Forward,5.5,1,,,,,,,,,1
 AMINE GOUIRI,Algeria,Forward,5,2,6,2,1,,,,,,11
 ANIS HADJ MOUSSA,Algeria,Forward,5,2,1,,1,,,,,,4
 NADHIR BENBOUALI,Algeria,Forward,5,,5,,,,,,,,5
-EMILIANO MARTINEZ,Argentina,Goalkeeper,7.5,6,6,1,1,0,1,,,,15
+EMILIANO MARTINEZ,Argentina,Goalkeeper,7.5,6,6,1,1,0,1,1,,,16
 GERONIMO RULLI,Argentina,Goalkeeper,6.5,,,,,,,,,,0
 JUAN MUSSO,Argentina,Goalkeeper,6,,,,,,,,,,0
-CRISTIAN ROMERO,Argentina,Defender,7.5,6,2,,1,6,1,,,,16
-LISANDRO MARTINEZ,Argentina,Defender,7,6,6,,10,0,1,,,,23
-NAHUEL MOLINA,Argentina,Defender,7,1,6,,1,0,1,,,,9
-NICOLAS TAGLIAFICO,Argentina,Defender,7,,1,1,1,0,1,,,,4
-NICOLAS OTAMENDI,Argentina,Defender,6.5,1,1,1,,1,1,,,,5
-GONZALO MONTIEL,Argentina,Defender,6,2,,,0,4,1,,,,7
+CRISTIAN ROMERO,Argentina,Defender,7.5,6,2,,1,6,1,0,,,16
+LISANDRO MARTINEZ,Argentina,Defender,7,6,6,,10,0,1,0,,,23
+NAHUEL MOLINA,Argentina,Defender,7,1,6,,1,0,1,1,,,10
+NICOLAS TAGLIAFICO,Argentina,Defender,7,,1,1,1,0,1,1,,,5
+NICOLAS OTAMENDI,Argentina,Defender,6.5,1,1,1,,1,1,1,,,6
+GONZALO MONTIEL,Argentina,Defender,6,2,,,0,4,1,1,,,8
 MARCOS SENESI,Argentina,Defender,6,,,1,,,,,,,1
 VALENTIN BARCO,Argentina,Defender,5.5,,,1,,,,,,,1
 FACUNDO MEDINA,Argentina,Defender,5,6,8,,1,1,,,,,16
-ALEXIS MAC ALLISTER,Argentina,Midfielder,6.5,2,2,1,5,2,7,,,,19
-ENZO FERNANDEZ,Argentina,Midfielder,6.5,2,2,,2,7,2,,,,15
+ALEXIS MAC ALLISTER,Argentina,Midfielder,6.5,2,2,1,5,2,7,2,,,21
+ENZO FERNANDEZ,Argentina,Midfielder,6.5,2,2,,2,7,2,7,,,22
 NICO PAZ,Argentina,Midfielder,6,1,,2,,,,,,,3
 THIAGO ALMADA,Argentina,Midfielder,6,2,2,1,2,,0,,,,7
-GIULIANO SIMEONE,Argentina,Midfielder,5.5,,,2,,,,,,,2
-LEANDRO PAREDES,Argentina,Midfielder,5.5,,0,2,1,2,2,,,,7
-NICOLAS GONZALEZ,Argentina,Midfielder,5.5,4,1,,1,1,1,,,,8
-RODRIGO DE PAUL,Argentina,Midfielder,5.5,5,2,,2,2,2,,,,13
+GIULIANO SIMEONE,Argentina,Midfielder,5.5,,,2,,,,2,,,4
+LEANDRO PAREDES,Argentina,Midfielder,5.5,,0,2,1,2,2,2,,,9
+NICOLAS GONZALEZ,Argentina,Midfielder,5.5,4,1,,1,1,1,1,,,9
+RODRIGO DE PAUL,Argentina,Midfielder,5.5,5,2,,2,2,2,0,,,13
 EXEQUIEL PALACIOS,Argentina,Midfielder,5,,,2,,,,,,,2
 GIOVANI LO CELSO,Argentina,Midfielder,5,,,9,,,,,,,9
-LIONEL MESSI,Argentina,Forward,11,16,10,5,8,9,7,,,,55
-LAUTARO MARTINEZ,Argentina,Forward,9.5,2,2,5,2,4,4,,,,19
-JULIAN ALVAREZ,Argentina,Forward,9,1,1,2,1,2,6,,,,13
+LIONEL MESSI,Argentina,Forward,11,16,10,5,8,9,7,10,,,65
+LAUTARO MARTINEZ,Argentina,Forward,9.5,2,2,5,2,4,4,5,,,24
+JULIAN ALVAREZ,Argentina,Forward,9,1,1,2,1,2,6,2,,,15
 JOSE MANUEL LOPEZ,Argentina,Forward,6,,,1,,,3,,,,4
 MATHEW RYAN,Australia,Goalkeeper,5,,,,1,,,,,,1
 PATRICK BEACH,Australia,Goalkeeper,4.5,8,0,6,1,,,,,,15
@@ -415,32 +415,32 @@ MOHAMED SALAH,Egypt,Forward,7.5,5,11,2,4,2,,,,,24
 OMAR MARMOUSH,Egypt,Forward,6,2,2,1,2,1,,,,,8
 HAISSEM HASSAN,Egypt,Forward,5,,,,0,4,,,,,4
 HAMZA ABDELKARIM,Egypt,Forward,5,1,1,1,1,,,,,,4
-JORDAN PICKFORD,England,Goalkeeper,7.5,0,6,6,1,0,1,,,,14
+JORDAN PICKFORD,England,Goalkeeper,7.5,0,6,6,1,0,1,0,,,14
 DEAN HENDERSON,England,Goalkeeper,6.5,,,,,,,,,,0
 JAMES TRAFFORD,England,Goalkeeper,6,,,,,,,,,,0
-MARC GUEHI,England,Defender,7.5,1,6,6,1,-1,1,,,,14
-REECE JAMES,England,Defender,7.5,0,6,,,,1,,,,7
-EZRI KONSA,England,Defender,7,0,6,6,1,0,1,,,,14
-JOHN STONES,England,Defender,7,0,,,1,0,1,,,,2
-NICO O'REILLY,England,Defender,6.5,0,1,6,1,-1,1,,,,8
-DAN BURN,England,Defender,6,,,,,1,1,,,,2
+MARC GUEHI,England,Defender,7.5,1,6,6,1,-1,1,0,,,14
+REECE JAMES,England,Defender,7.5,0,6,,,,1,6,,,13
+EZRI KONSA,England,Defender,7,0,6,6,1,0,1,-1,,,13
+JOHN STONES,England,Defender,7,0,,,1,0,1,0,,,2
+NICO O'REILLY,England,Defender,6.5,0,1,6,1,-1,1,-1,,,7
+DAN BURN,England,Defender,6,,,,,1,1,-1,,,1
 TINO LIVRAMENTO,England,Defender,6,,,,,,,,,,0
-DJED SPENCE,England,Defender,5.5,1,6,1,1,1,1,,,,11
+DJED SPENCE,England,Defender,5.5,1,6,1,1,1,1,0,,,11
 JARELL QUANSAH,England,Defender,5.5,,,5,,-3,,,,,2
 BUKAYO SAKA,England,Midfielder,8.5,4,1,5,1,5,1,,,,17
-JUDE BELLINGHAM,England,Midfielder,8,7,2,12,1,14,14,,,,50
-ANTHONY GORDON,England,Midfielder,7.5,2,2,,7,2,5,,,,18
-MORGAN ROGERS,England,Midfielder,7,1,1,2,,1,1,,,,6
+JUDE BELLINGHAM,England,Midfielder,8,7,2,12,1,14,14,2,,,52
+ANTHONY GORDON,England,Midfielder,7.5,2,2,,7,2,5,7,,,25
+MORGAN ROGERS,England,Midfielder,7,1,1,2,,1,1,5,,,11
 EBERECHI EZE,England,Midfielder,6.5,,1,1,1,,1,,,,4
 NONI MADUEKE,England,Midfielder,6.5,2,2,1,2,,2,,,,9
-DECLAN RICE,England,Midfielder,6,5,1,,2,1,2,,,,11
-ELLIOT ANDERSON,England,Midfielder,5.5,5,2,2,2,2,2,,,,15
+DECLAN RICE,England,Midfielder,6,5,1,,2,1,2,2,,,13
+ELLIOT ANDERSON,England,Midfielder,5.5,5,2,2,2,2,2,1,,,16
 JORDAN HENDERSON,England,Midfielder,5,,,1,,-1,,,,,0
 KOBBIE MAINOO,England,Midfielder,5,,,,,,,,,,0
-HARRY KANE,England,Forward,12.5,11,2,6,12,8,2,,,,41
-MARCUS RASHFORD,England,Forward,7.5,5,1,2,2,,,,,,10
+HARRY KANE,England,Forward,12.5,11,2,6,12,8,2,2,,,43
+MARCUS RASHFORD,England,Forward,7.5,5,1,2,2,,,1,,,11
 OLLIE WATKINS,England,Forward,6.5,,,1,,,,,,,1
-IVAN TONEY,England,Forward,6,,,,,,,,,,0
+IVAN TONEY,England,Forward,6,,,,,,,1,,,1
 MIKE MAIGNAN,France,Goalkeeper,7.5,1,6,3,6,6,6,0,,,28
 BRICE SAMBA,France,Goalkeeper,6.5,,,,,,,,,,0
 ROBIN RISSER,France,Goalkeeper,6.5,,,,,,,,,,0
